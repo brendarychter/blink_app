@@ -1,2 +1,2 @@
 # blink_app
-Proyecto de grupos
+Todos tus grupos en un mismo lugar
