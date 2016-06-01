@@ -1,6 +1,13 @@
 body{
   background-color: #65CCB8;
 }
+a, a:hover, a:focus, a:active, a.active {
+  outline: 0;
+  text-decoration: none;
+}
+a {
+  color: #65CCB8;
+}
 .login-box{
   position:relative;
   margin: 10px auto;
@@ -8,11 +15,9 @@ body{
   height: 380px;
   background-color: #fff;
   padding: 10px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-  -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
   top: 100px;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
 .lb-header{
   position:relative;
@@ -35,7 +40,7 @@ body{
   transition: all 0.1s linear;
 }
 .lb-header .active{
-  color: #029f5b;
+  color: #65CCB8;
   font-size: 18px;
 }
 .social-login{
@@ -85,6 +90,7 @@ body{
   margin-bottom: 10px;
 }
 .u-form-group input[type="email"],
+.u-form-group input[type="telephone"],
 .u-form-group input[type="password"]{
   width: calc(50% - 22px);
   height:45px;
@@ -92,33 +98,17 @@ body{
   border: 1px solid #ddd;
   padding: 0 10px;
   border-radius: 2px;
-  color: #333;
-  font-size:0.8rem;
+  font-size: 12px;
   -webkit-transition:all 0.1s linear;
   -moz-transition:all 0.1s linear;
   transition:all 0.1s linear;
-}
-.u-form-group input:focus{
-  border-color: #358efb;
-}
-.u-form-group button{
-  width:50%;
-  background-color: #1CB94E;
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 14px;
-  font-weight: normal;
-  padding: 14px 0;
-  border-radius: 2px;
-  text-transform: uppercase;
 }
 .forgot-password{
   width:50%;
   text-align: left;
   text-decoration: underline;
   color: #888;
-  font-size: 0.75rem;
+  font-size: 10px;
 }
 
 

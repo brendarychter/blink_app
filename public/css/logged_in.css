@@ -1,0 +1,55 @@
+.navbar-logged-in{
+  background-color: #222;
+  padding: 10px 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  min-height: 50px;
+  margin-bottom: 20px;
+}
+
+#header{
+    display: block;
+    background-color: #100;
+    color: #FFF;
+    position: absolute;
+    width: 20%;
+    right: 0;
+    padding: 92px 0;
+}
+
+.image.avatar img {
+    border-radius: 100%;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+header{
+	background-image: none;
+}
+#nav ul{
+	list-style-type: none;
+	padding: 0;
+}
+#nav ul li a{
+	text-transform: uppercase;
+	color: #FFF;	
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	line-height: 20px;
+}
+#nav ul li a:hover{
+	text-decoration: none;
+}
+#nav ul li a.activo{
+	background-color: #4acaa8;
+}
+.col{
+	background-color: #FFF;
+	height: 15%;
+}
+#logo{
+	font-weight: 200;
+}
