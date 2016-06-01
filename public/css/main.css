@@ -1,0 +1,19 @@
+#more-info{
+	margin-right: 5px;
+    display: block;
+    margin: 0 auto;
+    width: 22%;
+    margin-top: 30px;
+}
+@media (min-width:320px) and (max-width:768px){
+	.container a{
+		font-size: 12px;
+	}
+	.btn-xl{
+		padding: 10px 10px;
+	}
+	#more-info{
+		width: 50%;
+	}
+}
+

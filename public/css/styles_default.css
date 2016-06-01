@@ -19,7 +19,7 @@ a, a:hover, a:focus, a:active, a.active {
     outline: 0;
 }
 a {
-    color: #fed136;
+    color: #65CCB8;
 }
 a:hover, a:focus, a:active, a.active {
     color: #fec503;
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
     border-color: transparent;
 }
 .navbar-default .navbar-brand {
-    color: #fed136;
+    color: #65CCB8;
     font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
@@ -104,14 +104,15 @@ h1, h2, h3, h4, h5, h6 {
     border-color: rgba(255, 255, 255, .02);
 }
 .navbar-default .navbar-toggle {
-    background-color: #fed136;
-    border-color: #fed136;
+    background-color: #65CCB8;
+    border-color: #65CCB8;
+    border-radius: 0;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #fed136;
+    background-color: #65CCB8;
 }
 .navbar-default .nav li a {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -121,17 +122,19 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
-    color: #fed136;
+    color: #65CCB8;
     outline: 0;
 }
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #fed136;
+    border-radius: 0;
+    background-color: #65CCB8;
 }
 .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #fec503;
+    background-color: #65CCB8;
+    border-radius: 0;
 }
 @media (min-width:768px) {
     .navbar-default {
@@ -149,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all .3s;
 }
 .navbar-default .navbar-nav>.active>a {
-    border-radius: 3px;
+    border-radius: 0;
 }
 .navbar-default.navbar-shrink {
     background-color: #222;
@@ -563,7 +566,7 @@ ul.social-buttons li a {
     transition: all .3s;
 }
 ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
-    background-color: #fed136;
+    background-color: #65CCB8;
 }
 .btn:focus, .btn:active, .btn.active, .btn:active:focus {
     outline: 0;
