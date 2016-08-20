@@ -19,6 +19,7 @@
 
 </head>
 <body>
+
     <nav class="navbar navbar-default navbar-fixed-top navbar-login">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -71,9 +72,21 @@
                         <a href="#login-box-link" class="active" id="login-box-link">Inici&aacute; sesi&oacute;n</a>
                         <a href="#signup-box-link" id="signup-box-link">Registrate</a>
                     </div>
-                    <form class="email-login">
+                    <?php 
+
+                        require_once("../back/admin/connection.php");
+                        $connection = new connection;
+
+                        if(!mysqli_connect_error()){
+                            echo "no errror;";
+                        }else{
+                            echo "errror;";
+                        }
+
+                    ?>
+                    <form action="user-login" class="email-login">
                         <div class="u-form-group">
-                            <input type="email" placeholder="Email"/>
+                            <input type="email" placeholder="Usuario o email"/>
                         </div>
                         <div class="u-form-group">
                             <input type="password" placeholder="Contrase&ntilde;a"/>
@@ -85,12 +98,10 @@
                             <a href="#" class="forgot-password">&#191;Olvidaste tu contrase&ntilde;a?</a>
                         </div>
                     </form>
-                    <form class="email-signup">
+                    <?php include '../back/user/createUser.php';?>
+                    <form action="user-signin" class="email-signup">
                         <div class="u-form-group">
-                            <input type="email" placeholder="Email"/>
-                        </div>
-                        <div class="u-form-group">
-                            <input type="telephone" placeholder="Celular"/>
+                            <input type="email" placeholder="Nombre de usuario"/>
                         </div>
                         <div class="u-form-group">
                             <input type="password" placeholder="Contrase&ntilde;a"/>
@@ -98,6 +109,13 @@
                         <div class="u-form-group">
                             <input type="password" placeholder="Confirmar contrase&ntilde;a"/>
                         </div>
+                        <div class="u-form-group">
+                            <input type="email" placeholder="Email"/>
+                        </div>
+                        <div class="u-form-group">
+                            <input type="telephone" placeholder="Celular"/>
+                        </div>
+                        
                         <div class="u-form-group" style="margin-top:20px">
                             <a href="logged_in.html" class="btn-xl">Crear cuenta</a>
                         </div>
@@ -112,7 +130,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <!--<footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -128,7 +146,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>-->
     <!-- Scripts -->
 
     <!-- jQuery -->
