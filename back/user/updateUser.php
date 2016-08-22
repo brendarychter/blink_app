@@ -1,19 +1,29 @@
 <?php
 	require_once("../admin/connection.php");
+	session_start();
     $connection = new connection;
-
 	//si esta establecida la conexion
-	if($conexion=mysqli_connect("localhost","root","","blink")){
+	if($connection->connected){
+		$userID = $_SESSION["userID"];
+		$username = $_POST["username-logged"];
+		$password = $_POST["password-logged"];
+		$mail = $_POST["mail-logged"];
+		$mobile = $_POST["mobile-logged"];
 
-		//2.Preparar la consulta SQL
-			$id_categoria=$_POST["id_categoria"];
-			$nombre_categoria=$_POST["nombre_categoria"];
-			
-			$consulta ="UPDATE users SET username='$nombre_categoria' WHERE id_categoria='$id_categoria'";
+		$consulta ="UPDATE users SET username='$username', password='$password', phoneNumber='$mobile', mail='$mail' WHERE userID='$userID'";
 		//3.Ejecutr esa consulta en la base
-			if(mysqli_query($conexion,$consulta)){
-			echo"<p>Se ha modificado con éxito.</p>";
-		echo"<ul><li><a href='admin_categories.php'>Volver</a> </li></ul>";
+		$query2 = "SELECT * FROM users WHERE userID='$userID'";
+		
+		if(mysqli_query($connection->connected,$consulta)){
+			
+			$response = mysqli_query($connection->connected,$query2);
+			while($obj = mysqli_fetch_object($response)){
+				$matriz = array('username' => $obj->username, 'password' => $obj->password, 'mail' => utf8_encode($obj->mail), 'phoneNumber' => $obj->phoneNumber);
+			}
+			$datos = json_encode($matriz);
+			echo $datos;
+		}else{
+			echo "Error";
 		}
 	}
 ?>

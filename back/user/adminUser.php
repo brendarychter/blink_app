@@ -1,6 +1,6 @@
 <?php
 
-
+	session_start();
 	require_once("../admin/connection.php");
     $connection = new connection;
 

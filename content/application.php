@@ -65,16 +65,16 @@
             <span style="color: #222;">AJUSTES</span>
             <form class="user-config">
                 <div class="u-form-group">
-                    <input type="email" placeholder="Nombre de usuario" id="username-logged" name="username-logged"/>
+                    <input type="text" placeholder="Nombre de usuario" id="username-logged" name="username-logged"/>
                 </div>
                 <div class="u-form-group">
-                    <input type="email" placeholder="Contrase&ntilde;a" id="password-logged" name="password-logged"/>
+                    <input type="text" placeholder="Contrase&ntilde;a" id="password-logged" name="password-logged"/>
                 </div>
                 <div class="u-form-group">
-                    <input type="email" placeholder="Email" id="mail-logged" name="mail-logged"/>
+                    <input type="text" placeholder="Email" id="mail-logged" name="mail-logged"/>
                 </div>
                 <div class="u-form-group">
-                    <input type="email" placeholder="Celular" id="mobile-logged" name="mobile-logged"/>
+                    <input type="text" placeholder="Celular" id="mobile-logged" name="mobile-logged"/>
                 </div>
                 <div style="padding-top:10px;">
                     <button id="modify-user" style="background-color: #222; padding:8px; color: #fff; border:none;">Modificar </button>
@@ -92,10 +92,10 @@
                         </header>
                         <nav id="nav">
                             <ul>
-                                <li><a href="#groups" class="activo" id="my-groups">Mis grupos</a></li>
-                                <li><a href="#create" id="create-group">Crear grupo</a></li>
-                                <li><a href="#config" id="config-user">Ajustes</a></li>
-                                <li><a id="log-out" href="log_in.php">Cerrar sesi&oacute;n</a></li>
+                                <li><a href="#" class="menu-item activo" id="my-groups">Mis grupos</a></li>
+                                <li><a href="#" id="create-group" class="menu-item">Crear grupo</a></li>
+                                <li><a href="#" id="config-user" class="menu-item">Ajustes</a></li>
+                                <li><a id="log-out" href="log_in.php" class="menu-item">Cerrar sesi&oacute;n</a></li>
                             </ul>
                         </nav>
                     </div>
