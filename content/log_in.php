@@ -83,6 +83,7 @@
                         <div class="u-form-group" style="margin-top:20px">
                             <a href="" id="log-in-app" class="btn-xl">Acceder</a>
                         </div>
+                        <input type="hidden" name="userID" id="userID"></input>
                         <div class="u-form-group">
                             <a href="#" class="forgot-password">&#191;Olvidaste tu contrase&ntilde;a?</a>
                         </div>
@@ -104,9 +105,9 @@
                         <div class="u-form-group">
                             <input type="telephone" placeholder="Celular" id="mobile-signin" name="mobile-signin"/>
                         </div>
-                        
+                        <input type="hidden" name="userID" id="userID"></input>
                         <div class="u-form-group" style="margin-top:20px">
-                            <a href="" id="sign-in-app" class="btn-xl">Crear cuenta</a>
+                            <a href="#" id="sign-in-app" class="btn-xl">Crear cuenta</a>
                         </div>
                     </form>
                     <!--<div class="legales">

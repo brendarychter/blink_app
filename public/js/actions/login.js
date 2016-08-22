@@ -19,12 +19,16 @@ $(document).ready(function(){
             url: "../back/user/adminUser.php",
             type: "POST",
             data: formData,
-            type: "POST",
             cache: false,
             dataType: "json"
         }).done(function( user ) {
-            console.log(user);
-            localStorage.setItem("username", $("#username-login").val());
+        	console.log(user)
+            localStorage.setItem("username", user.username);
+            //store password not in localstorage
+            localStorage.setItem("password", user.password);
+            localStorage.setItem("mail", user.mail);
+            localStorage.setItem("phoneNumber", user.phoneNumber);
+            $("#userID").val(user.userID);
             window.location.href = "application.php";
 
             //store password not in localstorage
@@ -37,21 +41,30 @@ $(document).ready(function(){
 
     $('#sign-in-app').on('click', function(){
     	var formData = $(".email-signup").serialize();
-    	console.log(formData);
-        $.ajax({
-            url: "../back/user/createUser.php",
-            type: "POST",
-            data: formData
-        }).done(function( user ) {
-            console.log(user);
-            localStorage.setItem("username", $("#username-login").val());
-            window.location.href = "application.php";
-            //store password not in localstorage
-            //localStorage.setItem("password", $("#password-login").val());
-                    
-        }).error(function(error, textStatus){
-        	console.log(error)
-        	console.log("No pudo conectarse: " + textStatus);
-        });
+    	if ($("#username-signin").val()){
+			console.log(formData);
+	        $.ajax({
+	            url: "../back/user/createUser.php",
+	            type: "POST",
+	            data: formData
+	        }).done(function( user ) {
+	            console.log("user " + user);
+	            localStorage.setItem("username", $("#username-signin").val());
+	            //store password not in localstorage
+	            localStorage.setItem("password", $("#password-signin").val());
+	            localStorage.setItem("mail", $("#mail-signin").val());
+	            localStorage.setItem("phoneNumber", $("#mobile-signin").val());
+            	$("#userID").val(user.userID);
+	            window.location.href = "application.php";
+	                    
+	        }).error(function(error, textStatus){
+	        	console.log(error)
+	        	console.log("No pudo conectarse: " + textStatus);
+	        });
+
+    	}else{
+    		console.log("error en los campos");
+    	}
+    	
     })
 })

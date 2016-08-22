@@ -43,7 +43,7 @@
 
     <!-- Header -->
     <div class='application-content'>
-        <div class="groups row">
+        <div class="groups row" id="grupos">
             <div class="actions">
                 <div>
                     <button style="background-color: #222; padding:8px; color: #fff; border: none;">+ CREAR GRUPO</button>
@@ -61,6 +61,27 @@
                 </div>
             </div> -->
         </div>
+        <div class="groups row" id="ajustes">
+            <span style="color: #222;">AJUSTES</span>
+            <form class="user-config">
+                <div class="u-form-group">
+                    <input type="email" placeholder="Nombre de usuario" id="username-logged" name="username-logged"/>
+                </div>
+                <div class="u-form-group">
+                    <input type="email" placeholder="Contrase&ntilde;a" id="password-logged" name="password-logged"/>
+                </div>
+                <div class="u-form-group">
+                    <input type="email" placeholder="Email" id="mail-logged" name="mail-logged"/>
+                </div>
+                <div class="u-form-group">
+                    <input type="email" placeholder="Celular" id="mobile-logged" name="mobile-logged"/>
+                </div>
+                <div style="padding-top:10px;">
+                    <button id="modify-user" style="background-color: #222; padding:8px; color: #fff; border:none;">Modificar </button>
+                    <button id="delete-user" style="background-color: #222; padding:8px; color: #fff; border:none;">Borrar cuenta</button>
+                </div>
+            </form>
+        </div>
         <div class="profile-account">
             <div class="row">
                 <div class="col-md-12">
@@ -71,10 +92,10 @@
                         </header>
                         <nav id="nav">
                             <ul>
-                                <li><a href="#groups" class="activo">Mis grupos</a></li>
-                                <li><a href="#create">Crear grupo</a></li>
-                                <li><a href="#config">Ajustes</a></li>
-                                <li><a id="log-out" href="">Cerrar sesi&oacute;n</a></li>
+                                <li><a href="#groups" class="activo" id="my-groups">Mis grupos</a></li>
+                                <li><a href="#create" id="create-group">Crear grupo</a></li>
+                                <li><a href="#config" id="config-user">Ajustes</a></li>
+                                <li><a id="log-out" href="log_in.php">Cerrar sesi&oacute;n</a></li>
                             </ul>
                         </nav>
                     </div>
