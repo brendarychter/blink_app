@@ -25,7 +25,7 @@
 </head>
 <body id="page-top" class="index landing-main-page">
     <!-- Navigation -->
-        <!--#include virtual="views/header.html" -->
+        <!--#include virtual="content/header.html" -->
         <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -68,10 +68,10 @@
             </ul>
             <ul class="nav navbar-nav navbar-right" id="logandsign">
                 <li>
-                    <a class="button" href="views/log_in.php#login-box-link">Inici&aacute; sesi&oacute;n</a>
+                    <a class="button" href="content/log_in.php#login-box-link">Inici&aacute; sesi&oacute;n</a>
                 </li>
                 <li class="" style="border-left: 1px solid #CCC;">
-                    <a class="button" href="views/log_in.php#signup-box-link"><b>Registrate</b></a>
+                    <a class="button" href="content/log_in.php#signup-box-link"><b>Registrate</b></a>
                 </li>
             </ul>
         </div>
@@ -237,24 +237,22 @@
     <!-- Scripts -->
     
     <!-- jQuery -->
-    <script src="public/js/jquery.js"></script>
+    <script src="public/js/global/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/global/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="public/js/jqueryeasing.js"></script>
-    <script src="public/js/classie.js"></script>
-    <script src="public/js/cbpAnimatedHeader.js"></script>
+    <script src="public/js/global/jqueryeasing.js"></script>
+    <script src="public/js/global/classie.js"></script>
+    <script src="public/js/global/cbpAnimatedHeader.js"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="public/js/jqBootstrapValidation.js"></script>
-    <script src="public/js/contact_me.js"></script>
+    <script src="public/js/global/jqBootstrapValidation.js"></script>
+    <script src="public/js/global/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="public/js/agency.js"></script>
+    <script src="public/js/global/agency.js"></script>
 
-    <!-- Actions -->
-    <script src="public/js/actions.js"></script>
 </body>
 </html>
