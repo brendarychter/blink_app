@@ -19,7 +19,6 @@
 
 </head>
 <body>
-
     <nav class="navbar navbar-default navbar-fixed-top navbar-login">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->

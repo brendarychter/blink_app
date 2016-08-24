@@ -15,8 +15,9 @@ $("#login-box-link").click(function(){
 $(document).ready(function(){
 	$('#log-in-app').on('click', function(){
         var formData = $(".email-login").serialize();
+        console.log("!!!!")
         $.ajax({
-            url: "../back/user/adminUser.php",
+            url: "http://blinkapp.com.ar/back/user/adminUser.php",
             type: "POST",
             data: formData,
             cache: false,
@@ -44,6 +45,7 @@ $(document).ready(function(){
     	if ($("#username-signin").val()){
 			console.log(formData);
 	        $.ajax({
+	        	//http://blinkapp.com.ar/
 	            url: "../back/user/createUser.php",
 	            type: "POST",
 	            data: formData

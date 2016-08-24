@@ -110,7 +110,7 @@
     <script src="../public/js/global/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../public/js/global/bootstrap.min.js"></script>
+    <!--<script src="../public/js/global/bootstrap.min.js"></script>-->
 
     <!-- Plugin JavaScript -->
     <script src="../public/js/global/jqueryeasing.js"></script>

@@ -11,7 +11,6 @@
 		$mobile = $_POST["mobile-logged"];
 
 		$consulta ="UPDATE users SET username='$username', password='$password', phoneNumber='$mobile', mail='$mail' WHERE userID='$userID'";
-		//3.Ejecutr esa consulta en la base
 		$query2 = "SELECT * FROM users WHERE userID='$userID'";
 		
 		if(mysqli_query($connection->connected,$consulta)){
