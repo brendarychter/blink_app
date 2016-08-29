@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #65CCB8;
     border-radius: 0;
 }
-@media (min-width:768px) {
+@media (min-width:770px) {
     .navbar-default {
     background-color: transparent;
     padding: 25px 0;
@@ -192,7 +192,7 @@ header .intro-text .intro-heading {
     line-height: 50px;
     margin-bottom: 25px;
 }
-@media (min-width:768px) {
+@media (min-width:770px) {
     header .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
@@ -228,7 +228,7 @@ section h3.section-subheading {
     font-weight: 400;
     margin-bottom: 75px;
 }
-@media (min-width:768px) {
+@media (min-width:770px) {
     section {
     padding: 150px 0;
 }
@@ -393,7 +393,7 @@ section h3.section-subheading {
 .timeline .timeline-body>p, .timeline .timeline-body>ul {
     margin-bottom: 0;
 }
-@media (min-width:768px) {
+@media (min-width:770px) {
     .timeline: before {
     left: 50%}
 .timeline>li {

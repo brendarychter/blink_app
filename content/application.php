@@ -8,15 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--CSS-->
-    <!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
-    <link rel="stylesheet" href="../public/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="../public/css/main.css">
+    <link rel="stylesheet" href="../public/css/bootstrap.css" >
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../public/css/styles_default.css">
     <link rel="stylesheet" href="../public/css/main.css">
     <link rel="stylesheet" href="../public/css/application.css">
     <link rel="shortcut icon" type="image/png" href="../../public/img/icon_tab.png"/>
-
 </head>
 <body style="background-color: #4acaa8">
     <nav class="navbar navbar-default navbar-fixed-top navbar-logged-in">
