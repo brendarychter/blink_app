@@ -22,11 +22,9 @@
         }
     </style>
 </head>
-<body>
-    <div class="login-section">
-        <?php include('header.php');?> 
-    </div>
-<!--     <nav class="navbar navbar-default navbar-fixed-top navbar-login">
+<body id="page-top" class="index landing-main-page">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-login">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -64,8 +62,19 @@
                 </ul>
             </div>
         </div>
-    </nav> -->
-    <section id="login_section">
+    </nav>
+    <!-- Header -->
+    <header id="main-page">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Una &uacute;nica aplicaci&oacute;n. Todo lo que necesit&aacute;s.</div>
+                <div class="intro-heading">Tus grupos en un mismo lugar</div>
+                <!--<a href="#conoce" class="page-scroll btn btn-xl" style="margin-right:5px">Conoc&eacute; m&aacute;s</a>-->
+                <a href="#download-app" class="page-scroll btn btn-xl">Descarg&aacute; la app</a>
+            </div>
+        </div>
+    </header>
+    <!-- <section id="login_section">
         <div class="row">
             <div class="col-lg-12">
                 <div class="login-box">
@@ -111,33 +120,10 @@
                             <a href="#" id="sign-in-app" class="btn-xl">Crear cuenta</a>
                         </div>
                     </form>
-                    <!--<div class="legales">
-                        <a href="#">T&eacute;rminos</a>
-                        <a href="#">Privacidad</a>
-                        <a href="#">Seguridad</a>
-                        <a href="#">Contacto</a>
-                    </div>-->
                 </div>
             </div>
         </div>
-    </section>
-    <!--<footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Blink App 2016</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Pol&iacute;ticas de privacidad</a>
-                        </li>
-                        <li><a href="#">T&eacute;rminos de uso</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>-->
+    </section> -->
     <!-- Scripts -->
     
     <!-- jQuery -->

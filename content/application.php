@@ -14,8 +14,10 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../public/css/styles_default.css">
     <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="../public/css/cards.css">
     <link rel="stylesheet" href="../public/css/application.css">
     <link rel="shortcut icon" type="image/png" href="../../public/img/icon_tab.png"/>
+
 </head>
 <body style="background-color: #4acaa8">
     <nav class="navbar navbar-default navbar-fixed-top navbar-logged-in">
@@ -48,17 +50,10 @@
                     <button style="background-color: #222; padding:8px; color: #fff; border: none;">+ CREAR GRUPO</button>
                 </div>
             </div>
-            <!-- <div class="my-groups">
-                <div class="col-md-4 col">
-                    asdads
-                </div>
-                <div class="col-md-4 col">
-                    asdasd
-                </div>
-                <div class="col-md-4 col">
-                    asdads
-                </div>
-            </div> -->
+            <!-- For var i in groups of user -->
+            <div class="my-groups">
+                <?php include('partials/card.php');?> 
+            </div>        
         </div>
         <div class="groups row" id="ajustes">
             <span style="color: #222;">AJUSTES</span>
@@ -126,5 +121,17 @@
     <!-- Actions -->
     <script src="../public/js/actions/login.js"></script>
     <script src="../public/js/actions/application.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function($) {
+
+            $('.card__share > a').on('click', function(e){ 
+                e.preventDefault() // prevent default action - hash doesn't appear in url
+                $(this).parent().find( 'div' ).toggleClass( 'card__social--active' );
+                $(this).toggleClass('share-expanded');
+            });
+          
+        });
+ 
+    </script>
 </body>
 </html>
