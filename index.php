@@ -13,7 +13,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="public/css/styles_default.css">
-    <link rel="stylesheet" href="public/css/main.css">
     <link rel="shortcut icon" type="image/png" href="public/img/icon_tab.png"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

@@ -28,16 +28,8 @@ $(document).ready(function(){
             dataType: "json"
         }).done(function( user ) {
         	console.log(user)
-            // localStorage.setItem("username", user.username);
-            // //store password not in localstorage
-            // localStorage.setItem("password", user.password);
-            // localStorage.setItem("mail", user.mail);
-            // localStorage.setItem("phoneNumber", user.phoneNumber);
-            // $("#userID").val(user.userID); 
             window.location.href = "application.php";
-
-            //store password not in localstorage
-            //localStorage.setItem("password", $("#password-login").val());
+            //get session storage
                     
         }).error(function(error, textStatus){
         	console.log(error);
@@ -55,11 +47,6 @@ $(document).ready(function(){
 	            data: formData
 	        }).done(function( user ) {
 	            console.log("user " + user);
-	            localStorage.setItem("username", $("#username-signin").val());
-	            //store password not in localstorage
-	            localStorage.setItem("password", $("#password-signin").val());
-	            localStorage.setItem("mail", $("#mail-signin").val());
-	            localStorage.setItem("phoneNumber", $("#mobile-signin").val());
             	$("#userID").val(user.userID);
 	            window.location.href = "application.php";
 	                    

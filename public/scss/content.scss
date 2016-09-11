@@ -1,3 +1,8 @@
+@import '_login';
+@import '_signin';
+@import '_application';
+@import '_landing';
+
 #more-info{
 	margin-right: 5px;
     margin: 0 auto;
@@ -60,4 +65,3 @@
 	    line-height: 31px;
 	}
 }
-

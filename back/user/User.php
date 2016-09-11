@@ -7,7 +7,7 @@
 		private $picture;
 
 
-		/*Getter y setter nombre*/
+		/*Getters & setters properties*/
 		public function getUsername(){
 			return $this->username;
 		}
@@ -22,6 +22,7 @@
 		}
 
 		public function getUser($connection){
+			//VALIDAR QUE DEVUELVA TRUE
 			$consulta = "SELECT * FROM users WHERE username = '$this->username' AND password = '$this->password'";
 			$response = mysqli_query($connection->connected,$consulta);
 

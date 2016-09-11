@@ -1,11 +1,17 @@
 var username = localStorage.getItem("username");
-$("#logo").append(username);
+
 $(document).ready(function(){
+
+    $.ajaxSetup({cache: false})
+    $.get('../back/user/getUserSession.php', function (data) {
+        var user = JSON.parse(data);
+        console.log(user);
+        $("#logo").append(user.username);
+    });
 
 
     $("#log-out").on("click", function(){
         console.log("logged out")
-        localStorage.clear();
         //No funciona
         window.location.href = "../index.php";
 
@@ -68,9 +74,9 @@ $(document).ready(function(){
     })
 
     function setLocalStorageValues(){
-        $("#username-logged").val(localStorage.getItem("username"));
-        $("#password-logged").val(localStorage.getItem("password"));
-        $("#mail-logged").val(localStorage.getItem("mail"));
-        $("#mobile-logged").val(localStorage.getItem("phoneNumber"));
+        // $("#username-logged").val(localStorage.getItem("username"));
+        // $("#password-logged").val(localStorage.getItem("password"));
+        // $("#mail-logged").val(localStorage.getItem("mail"));
+        // $("#mobile-logged").val(localStorage.getItem("phoneNumber"));
     }
 })

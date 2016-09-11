@@ -16,8 +16,19 @@
 			        	$user = new User;
 			        	$user->setUsername($_POST['username']);
 			        	$user->setPassword($_POST['password']);
+			        	//VALIDAR ESTO
+			        	$_SESSION["username"] = $_POST['username'];
+			        	$_SESSION["password"] = $_POST['password'];
+
 			        	$user->getUser($connection);
+
 			        break;
+			        case "createUser":
+			        break;
+
+
+			        case "deleteUser":
+			        break;	
 	    		}
 	    	}
     	}else{
@@ -27,20 +38,5 @@
 	}else{
 		echo "error";
 	}
-
-	// if(isset($username) && isset($password)){
-		// 	$consulta = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-		// 	$response = mysqli_query($connection->connected,$consulta);
-
-		// 	while($obj = mysqli_fetch_object($response)){
-		// 		$matriz = array('username' => $obj->username, 'password' => $obj->password, 'mail' => utf8_encode($obj->mail), 'phoneNumber' => $obj->phoneNumber);
-		// 		$_SESSION["username"] = $obj->username;
-		// 		$_SESSION["password"] = $obj->password;
-		// 		$_SESSION["phoneNumber"] = $obj->phoneNumber;
-		// 	}
-		// 	$datos = json_encode($matriz);
-			
-		// 	echo $datos;
-		// }
 ?>
 
