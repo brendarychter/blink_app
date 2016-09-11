@@ -115,9 +115,6 @@
     <script src="../public/js/global/jqBootstrapValidation.js"></script>
     <script src="../public/js/global/contact_me.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="../public/js/global/agency.js"></script>
-
     <!-- Actions -->
     <script src="../public/js/actions/login.js"></script>
     <script src="../public/js/actions/application.js"></script>

@@ -66,64 +66,59 @@
     <!-- Header -->
     <header id="main-page">
         <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Una &uacute;nica aplicaci&oacute;n. Todo lo que necesit&aacute;s.</div>
-                <div class="intro-heading">Tus grupos en un mismo lugar</div>
-                <!--<a href="#conoce" class="page-scroll btn btn-xl" style="margin-right:5px">Conoc&eacute; m&aacute;s</a>-->
-                <a href="#download-app" class="page-scroll btn btn-xl">Descarg&aacute; la app</a>
-            </div>
-        </div>
-    </header>
-    <!-- <section id="login_section">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="login-box">
-                    <div class="lb-header">
-                        <a href="#login-box-link" class="active" id="login-box-link">Inici&aacute; sesi&oacute;n</a>
-                        <a href="#signup-box-link" id="signup-box-link">Registrate</a>
+            <div class="intro-text" style="padding-top:100px; padding-bottom: 200px;">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="login-box">
+                            <div class="lb-header">
+                                <a href="#login-box-link" class="active" id="login-box-link">Inici&aacute; sesi&oacute;n</a>
+                                <a href="#signup-box-link" id="signup-box-link">Registrate</a>
+                            </div>
+
+                            <form class="email-login">
+                                <div class="u-form-group">
+                                    <input type="email" placeholder="Nombre de usuario" id="username-login" name="username-login"/>
+                                </div>
+                                <div class="u-form-group">
+                                    <input type="password" placeholder="Contrase&ntilde;a" id="password-login" name="password-login"/>
+                                </div>
+                                <div class="u-form-group" style="margin-top:20px">
+                                    <a href="" id="log-in-app" class="btn-xl">Acceder</a>
+                                </div>
+                                <input type="hidden" name="userID" id="userID"></input>
+                                <div class="u-form-group">
+                                    <a href="#" class="forgot-password">&#191;Olvidaste tu contrase&ntilde;a?</a>
+                                </div>
+                            </form>
+
+                            <form class="email-signup">
+                                <div class="u-form-group">
+                                    <input type="email" placeholder="Nombre de usuario" id="username-signin" name="username-signin"/>
+                                </div>
+                                <div class="u-form-group">
+                                    <input type="password" placeholder="Contrase&ntilde;a" id="password-signin" class="password-login" name="password-signin"/>
+                                </div>
+                                <div class="u-form-group">
+                                    <input type="password" placeholder="Confirmar contrase&ntilde;a" class="password-signin"/>
+                                </div>
+                                <div class="u-form-group">
+                                    <input type="email" placeholder="Email" id="mail-signin" name="mail-signin"/>
+                                </div>
+                                <div class="u-form-group">
+                                    <input type="telephone" placeholder="Celular" id="mobile-signin" name="mobile-signin"/>
+                                </div>
+                                <input type="hidden" name="userID" id="userID"></input>
+                                <div class="u-form-group" style="margin-top:20px">
+                                    <a href="#" id="sign-in-app" class="btn-xl">Crear cuenta</a>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-
-                    <form class="email-login">
-                        <div class="u-form-group">
-                            <input type="email" placeholder="Nombre de usuario" id="username-login" name="username-login"/>
-                        </div>
-                        <div class="u-form-group">
-                            <input type="password" placeholder="Contrase&ntilde;a" id="password-login" name="password-login"/>
-                        </div>
-                        <div class="u-form-group" style="margin-top:20px">
-                            <a href="" id="log-in-app" class="btn-xl">Acceder</a>
-                        </div>
-                        <input type="hidden" name="userID" id="userID"></input>
-                        <div class="u-form-group">
-                            <a href="#" class="forgot-password">&#191;Olvidaste tu contrase&ntilde;a?</a>
-                        </div>
-                    </form>
-
-                    <form class="email-signup">
-                        <div class="u-form-group">
-                            <input type="email" placeholder="Nombre de usuario" id="username-signin" name="username-signin"/>
-                        </div>
-                        <div class="u-form-group">
-                            <input type="password" placeholder="Contrase&ntilde;a" id="password-signin" class="password-login" name="password-signin"/>
-                        </div>
-                        <div class="u-form-group">
-                            <input type="password" placeholder="Confirmar contrase&ntilde;a" class="password-signin"/>
-                        </div>
-                        <div class="u-form-group">
-                            <input type="email" placeholder="Email" id="mail-signin" name="mail-signin"/>
-                        </div>
-                        <div class="u-form-group">
-                            <input type="telephone" placeholder="Celular" id="mobile-signin" name="mobile-signin"/>
-                        </div>
-                        <input type="hidden" name="userID" id="userID"></input>
-                        <div class="u-form-group" style="margin-top:20px">
-                            <a href="#" id="sign-in-app" class="btn-xl">Crear cuenta</a>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
-    </section> -->
+    </header>
+    
     <!-- Scripts -->
     
     <!-- jQuery -->

@@ -1,6 +1,6 @@
 var username = localStorage.getItem("username");
-    $("#logo").append(username);
-    $(document).ready(function(){
+$("#logo").append(username);
+$(document).ready(function(){
 
 
     $("#log-out").on("click", function(){

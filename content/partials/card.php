@@ -1,10 +1,9 @@
-<div class="col-md-4 col-sm-6 col"> 
+<div class="col-md-4 col-sm-6 "> 
     <div class="wrapper">
         <div class="card radius shadowDepth1">
             <div class="card__image border-tlr-radius">
                 <img src="http://lorempixel.com/400/200/sports/" alt="image" class="border-tlr-radius">
             </div>
-
             <div class="card__content card__padding">
                 <div class="card__share">
                     <div class="card__social">  

@@ -14,29 +14,33 @@ $("#login-box-link").click(function(){
 
 $(document).ready(function(){
 	$('#log-in-app').on('click', function(){
-        var formData = $(".email-login").serialize();
-        console.log("!!!!")
+        params= {};
+        params.id= 1;
+        params.action="getUser";
+        params.username="brenda";
+        params.password="1234";
         $.ajax({
-            url: "http://blinkapp.com.ar/back/user/adminUser.php",
+            //http://blinkapp.com.ar/back/user/adminUser.php
+            url: "../back/user/adminUser.php",
             type: "POST",
-            data: formData,
+            data: params,
             cache: false,
             dataType: "json"
         }).done(function( user ) {
         	console.log(user)
-            localStorage.setItem("username", user.username);
-            //store password not in localstorage
-            localStorage.setItem("password", user.password);
-            localStorage.setItem("mail", user.mail);
-            localStorage.setItem("phoneNumber", user.phoneNumber);
-            $("#userID").val(user.userID);
+            // localStorage.setItem("username", user.username);
+            // //store password not in localstorage
+            // localStorage.setItem("password", user.password);
+            // localStorage.setItem("mail", user.mail);
+            // localStorage.setItem("phoneNumber", user.phoneNumber);
+            // $("#userID").val(user.userID); 
             window.location.href = "application.php";
 
             //store password not in localstorage
             //localStorage.setItem("password", $("#password-login").val());
                     
         }).error(function(error, textStatus){
-        	console.log("No pudo conectarse: " + textStatus);
+        	console.log(error);
         });
     })
 
