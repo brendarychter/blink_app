@@ -1,1 +1,3 @@
-public/sass/*
+public/sass/.sass-cache
+public/css/content.css.map
+index.html
