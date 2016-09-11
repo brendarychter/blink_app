@@ -16,9 +16,9 @@ $(document).ready(function(){
 	$('#log-in-app').on('click', function(){
         params= {};
         params.id= 1;
-        params.action="getUser";
-        params.username="brenda";
-        params.password="1234";
+        params.action = "getUser";
+        params.username = $('#username-login').val();
+        params.password = $('#password-login').val();
         $.ajax({
             //http://blinkapp.com.ar/back/user/adminUser.php
             url: "../back/user/adminUser.php",
@@ -27,10 +27,8 @@ $(document).ready(function(){
             cache: false,
             dataType: "json"
         }).done(function( user ) {
-        	console.log(user)
+            console.log(user)
             window.location.href = "application.php";
-            //get session storage
-                    
         }).error(function(error, textStatus){
         	console.log(error);
         });

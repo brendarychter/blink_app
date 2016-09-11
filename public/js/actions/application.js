@@ -13,7 +13,10 @@ $(document).ready(function(){
     $("#log-out").on("click", function(){
         console.log("logged out")
         //No funciona
-        window.location.href = "../index.php";
+        $.ajaxSetup({cache: false})
+        $.get('../back/user/destroyUserSession.php', function (data) {
+            window.location.href = "log_in.php";
+        });
 
     });
 

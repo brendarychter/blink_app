@@ -12,6 +12,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../public/css/styles_default.css">
+    <link rel="stylesheet" href="../public/css/content.css">
     <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png"/>
     <style type="text/css">
         .login-section .navbar-default .container .navbar-home .logandsign {
