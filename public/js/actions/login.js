@@ -14,11 +14,12 @@ $("#login-box-link").click(function(){
 
 $(document).ready(function(){
 	$('#log-in-app').on('click', function(){
+        //Validate empty input
         params= {};
-        params.id= 1;
         params.action = "getUser";
         params.username = $('#username-login').val();
         params.password = $('#password-login').val();
+
         $.ajax({
             //http://blinkapp.com.ar/back/user/adminUser.php
             url: "../back/user/adminUser.php",
@@ -26,8 +27,7 @@ $(document).ready(function(){
             data: params,
             cache: false,
             dataType: "json"
-        }).done(function( user ) {
-            console.log(user)
+        }).done(function( data ) {
             window.location.href = "application.php";
         }).error(function(error, textStatus){
         	console.log(error);
@@ -35,27 +35,27 @@ $(document).ready(function(){
     })
 
     $('#sign-in-app').on('click', function(){
-    	var formData = $(".email-signup").serialize();
     	if ($("#username-signin").val()){
-			console.log(formData);
+            params= {};
+            params.action = "createUser";
+            params.username = $('#username-signin').val();
+            params.password = $('#password-signin').val();
+            params.phoneNumber = $('#mobile-signin').val();
+            params.mail = $('#mail-signin').val();
 	        $.ajax({
 	        	//http://blinkapp.com.ar/
-	            url: "../back/user/createUser.php",
+                url: "../back/user/adminUser.php",
 	            type: "POST",
-	            data: formData
-	        }).done(function( user ) {
-	            console.log("user " + user);
-            	$("#userID").val(user.userID);
+                data: params,
+                cache: false,
+                dataType: "json"
+	        }).done(function( data ) {
 	            window.location.href = "application.php";
-	                    
 	        }).error(function(error, textStatus){
-	        	console.log(error)
 	        	console.log("No pudo conectarse: " + textStatus);
 	        });
-
     	}else{
     		console.log("error en los campos");
     	}
-    	
     })
 })

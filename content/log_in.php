@@ -62,7 +62,7 @@
         </div>
     </nav>
     <!-- Header -->
-    <header id="main-page">
+    <!-- <header id="main-page"> -->
         <div class="container">
             <div class="intro-text" style="padding-top:100px; padding-bottom: 200px;">
                 <div class="row">
@@ -115,8 +115,8 @@
                 </div>
             </div>
         </div>
-    </header>
-    
+    <!-- </header>
+ -->    
     <!-- Scripts -->
     
     <!-- jQuery -->
