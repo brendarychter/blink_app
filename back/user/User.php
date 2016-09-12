@@ -67,7 +67,7 @@
 			$query = "INSERT INTO users (username, password, mail, phoneNumber) VALUES ('$this->username', '$this->password', '$this->mail', '$this->phoneNumber')";
 			if (mysqli_query ($connection->connected, $query)) {
 				session_start();
-			    $this->getUserByID($connection);
+			    $this->getUser($connection);
 			} else {
 			    echo "Error en la creacion del usuario.";
 			}
