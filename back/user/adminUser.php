@@ -36,10 +36,13 @@
 
 
 	        			$user->setMail($_POST['mailUpdate']);
+	        			$user->setPhoneNumber($_POST['phoneNumberUpdate']);
+
 	        			$_SESSION["userID"] = $user->getUserID();
 
 			        	$user->updateUser($connection);
 	        			$_SESSION["mail"] = $user->getMail();
+	        			$_SESSION["phoneNumber"] = $user->getPhoneNumber();
 
 			        break;	
 

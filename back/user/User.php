@@ -74,7 +74,7 @@
 		}
 
 		public function updateUser($connection){
-			$query ="UPDATE users SET mail='$this->mail' WHERE userID='$this->userID'";
+			$query ="UPDATE users SET mail='$this->mail', phoneNumber='$this->phoneNumber' WHERE userID='$this->userID'";
 			
 			if(mysqli_query($connection->connected, $query)){
 				$this->getUserByID($connection);
