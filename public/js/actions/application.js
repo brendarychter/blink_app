@@ -104,6 +104,7 @@ $(document).ready(function(){
     function getUserGroups(){
         params = {};
         params.action = "getGroups";
+        params.userID = user.userID;
         $.ajax({
             //http://blinkapp.com.ar/back/user/adminUser.php
             url: "../back/groups/adminUserGroups.php",
@@ -113,6 +114,9 @@ $(document).ready(function(){
             dataType: "json"
         }).done(function( data ) {
             console.log(data);
+            //LISTA DE GRUPOS EN LA VISTA
+            $("#group-name").append(data.groupName);
+            $("#last-edit").append(data.text);
         }).error(function(error, textStatus){
             console.log(error);
         });

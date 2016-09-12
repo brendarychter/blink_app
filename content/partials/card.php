@@ -17,16 +17,10 @@
 
                     <a id="share" class="share-toggle share-icon" href="#"></a>
                 </div>
-<!-- 
-                <div class="card__meta">
-                    <a href="#">Web Design</a>
-                    <time>17th March</time>
-                </div> -->
-
                 <article class="card__article">
-                    <h2><a href="#">Nombre del grupo</a></h2>
+                    <h2><a href="#" id="group-name"></a></h2>
 
-                    <p>Ultima publicacion</p>
+                    <p id="last-edit"></p>
                 </article>
             </div>
 

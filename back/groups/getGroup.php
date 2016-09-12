@@ -8,7 +8,7 @@
 	$response = mysqli_query($connection->connected,$query);
 
 	while($obj = mysqli_fetch_object($response)){
-		$matriz = array('idModule' => $obj->idModule, 'idGroup' => $obj->idGroup, 'groupName' => $obj->groupName);
+		$matriz = array('idModule' => $obj->idModule, 'idGroup' => $obj->idGroup, 'groupName' => $obj->groupName, 'idType' => $obj->idType, 'typeName' => $obj->typeName, 'idType' => $obj->idType, 'text' => $obj->text);
 	}
 	$datos = json_encode($matriz);
 	echo $datos;

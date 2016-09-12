@@ -36,10 +36,10 @@
 
 
 	        			$user->setMail($_POST['mailUpdate']);
-	        			//$_SESSION["userID"] = $user->getUserID();
+	        			$_SESSION["userID"] = $user->getUserID();
 
 			        	$user->updateUser($connection);
-	        			//$_SESSION["mail"] = $user->getMail();
+	        			$_SESSION["mail"] = $user->getMail();
 
 			        break;	
 
@@ -53,11 +53,12 @@
 	        	$_SESSION["password"] = $user->getPassword();
 	        	//$_SESSION["mail"] = $user->getMail();
 	        	$_SESSION["phoneNumber"] = $user->getPhoneNumber();
+	    	}else{
+    			echo "username and password not setted";
 	    	}
     	}else{
     		echo "action not setted";
     	}
-		
 	}else{
 		echo "error";
 	}

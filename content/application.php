@@ -49,7 +49,10 @@
             </div>
             <!-- For var i in groups of user -->
             <div class="my-groups">
-                <?php include('partials/card.php');?> 
+                <?php 
+                        include('partials/card.php');
+
+                    ?> 
             </div>        
         </div>
         <div class="groups row" id="ajustes">
