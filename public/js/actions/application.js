@@ -2,30 +2,23 @@ var username = localStorage.getItem("username");
 
 $(document).ready(function(){
 
-    $.ajaxSetup({cache: false})
-    $.get('../back/user/getUserSession.php', function (data) {
-        var user = JSON.parse(data);
-        console.log(user);
-        $("#logo").append(user.username);
-    });
+    var user = {};
+    var id;
 
+    $.ajaxSetup({cache: false})
+    getSessionUser();
+
+    getUserGroups();
 
     $("#log-out").on("click", function(){
         console.log("logged out")
-        //No funciona
-        $.ajaxSetup({cache: false})
-        $.get('../back/user/destroyUserSession.php', function (data) {
-            window.location.href = "log_in.php";
-        });
-
+        destroySessionUser();
     });
 
     $("#config-user").on("click", function(){
         $("#grupos").hide();
         $("#ajustes").show();
         //mostrar data en el form
-        console.log(localStorage)
-        setLocalStorageValues();
     })
 
     $("#my-groups").on("click", function(){
@@ -33,53 +26,95 @@ $(document).ready(function(){
         $("#ajustes").hide();
     })
 
-    $("#delete-user").on("click", function(){
-        var formData = $(".user-config").serialize();
-        console.log(formData);
+    //UPDATE-MODIFY USER DATA
+    $("#modify-user").on("click", function(){
+        var params = {};
+        params.userID = id;
+        params.username = $("#username-logged").val();
+        params.password = $("#password-logged").val();
+        params.mailUpdate = $("#mail-logged").val();
+        params.phoneNumberUpdate = $("#mobile-logged").val();
+        params.action = "updateUser";
         $.ajax({
-            url: "../back/user/deleteUser.php",
+            url: "../back/user/adminUser.php",
             type: "POST",
-            data: formData
+            data: params,
+            cache: false,
+            dataType: "json"
         }).done(function( data ) {
             console.log(data);
-            localStorage.clear();
+            getSessionUser();
+        }).error(function(error, textStatus){
+            console.log("No pudo modificar: " + textStatus);
+        });
+    })
+
+    //UPDATE-MODIFY USER DATA
+    $("#delete-user").on("click", function(){
+        var params = {};
+        params.userID = id;
+        params.action = "deleteUser";
+        $.ajax({
+            url: "../back/user/adminUser.php",
+            type: "POST",
+            data: params,
+            cache: false
+        }).done(function( data ) {
+            console.log(typeof data);
+            console.log( data);
+            if (data == "true"){
+                console.log("removed");
+            }else{
+                console.log("not removed")
+            }
+            destroySessionUser();
             window.location.href = "log_in.php";
         }).error(function(error, textStatus){
             console.log("No pudo borrar: " + textStatus);
         });
     })
 
-    $("#modify-user").on("click", function(){
-        var formData = $(".user-config").serialize();
-        console.log(formData);
-        $.ajax({
-            url: "../back/user/updateUser.php",
-            type: "POST",
-            data: formData,
-            dataType: "json"
-        }).done(function( data ) {
-            //CHANGE ALL LOCALSTORAGE DATA WITH NEW DATA-> USE $_SESSION
-
-            localStorage.setItem("username", data.username);
-            //store password not in localstorage
-            localStorage.setItem("password", data.password);
-            localStorage.setItem("mail", data.mail);
-            localStorage.setItem("phoneNumber", data.phoneNumber);
-            setLocalStorageValues();
-
-        }).error(function(error, textStatus){
-            console.log("No pudo modificar: " + textStatus);
-        });
-    })
+    
     $(".menu-item").on("click", function(){
         $(".activo").removeClass("activo");
         $(this).addClass("activo");
     })
 
-    function setLocalStorageValues(){
-        // $("#username-logged").val(localStorage.getItem("username"));
-        // $("#password-logged").val(localStorage.getItem("password"));
-        // $("#mail-logged").val(localStorage.getItem("mail"));
-        // $("#mobile-logged").val(localStorage.getItem("phoneNumber"));
+    function destroySessionUser(){
+        $.ajaxSetup({cache: false})
+        $.get('../back/user/destroyUserSession.php', function (data) {
+            window.location.href = "log_in.php";
+        });
+    }
+
+    function getSessionUser(){
+        $.get('../back/user/getUserSession.php', function (data) {
+            var user = JSON.parse(data);
+            console.log(user);
+            id = user.userID;
+            $("#logo").append(user.username);
+            $("#username-logged").val(user.username);
+            $("#password-logged").val(user.password);
+            $("#mail-logged").val(user.mail);
+            $("#mobile-logged").val(user.phoneNumber);
+        });
+    }
+
+
+    function getUserGroups(){
+        params = {};
+        params.action = "getGroups";
+        $.ajax({
+            //http://blinkapp.com.ar/back/user/adminUser.php
+            url: "../back/groups/adminUserGroups.php",
+            type: "POST",
+            data: params,
+            cache: false,
+            dataType: "json"
+        }).done(function( data ) {
+            console.log(data);
+        }).error(function(error, textStatus){
+            console.log(error);
+        });
     }
 })

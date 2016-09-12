@@ -19,28 +19,40 @@
 	    			//asignar mobile y telefono acá
 	    			case "getUser":
 			        	$user->getUser($connection);
-			        	$_SESSION["username"] = $_POST['username'];
-	        			$_SESSION["password"] = $_POST['password'];
-	        			//$_SESSION["userID"] = $user->getUserID();
-			        break;
-			        case "createUser":
+	        			$_SESSION["userID"] = $user->getUserID();
 
+			        break;
+
+			        case "createUser":
 			        	$user->setPhoneNumber($_POST['phoneNumber']);
 	        			$user->setMail($_POST['mail']);
-
 			        	$user->createUser($connection);
-
-			        	$_SESSION["mail"] = $_POST['mail'];
-	        			$_SESSION["phoneNumber"] = $_POST['phoneNumber'];
-			        	$_SESSION["username"] = $_POST['username'];
-	        			$_SESSION["password"] = $_POST['password'];
+			        	
 			        break;
 
+			        case "updateUser":
+			        	//$user->setPhoneNumber($_POST['phoneNumber']);
+			        	$user->setUserID($_SESSION["userID"]);
+
+
+	        			$user->setMail($_POST['mailUpdate']);
+	        			//$_SESSION["userID"] = $user->getUserID();
+
+			        	$user->updateUser($connection);
+	        			//$_SESSION["mail"] = $user->getMail();
+
+			        break;	
 
 			        case "deleteUser":
+			        	$user->setUserID($_SESSION["userID"]);
+			        	$user->deleteUser($connection);
 			        break;	
 	    		}
 	    		//VALIDAR ESTO
+	    		$_SESSION["username"] = $user->getUsername();
+	        	$_SESSION["password"] = $user->getPassword();
+	        	//$_SESSION["mail"] = $user->getMail();
+	        	$_SESSION["phoneNumber"] = $user->getPhoneNumber();
 	    	}
     	}else{
     		echo "action not setted";

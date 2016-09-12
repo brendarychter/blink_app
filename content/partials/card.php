@@ -34,7 +34,6 @@
                 
                 <div class="card__author">
                     <img src="http://lorempixel.com/40/40/sports/" alt="user">
-                    <img src="http://lorempixel.com/40/40/sports/" alt="user">
                 </div>
             </div>
         </div>

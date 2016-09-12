@@ -28,6 +28,7 @@ $(document).ready(function(){
             cache: false,
             dataType: "json"
         }).done(function( data ) {
+            console.log(data);
             window.location.href = "application.php";
         }).error(function(error, textStatus){
         	console.log(error);
