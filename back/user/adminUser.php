@@ -19,7 +19,10 @@
 	    			//asignar mobile y telefono acá
 	    			case "getUser":
 			        	$user->getUser($connection);
+			        	//me trae nulos el mail y el telefono
 	        			$_SESSION["userID"] = $user->getUserID();
+	        			$_SESSION["mail"] = $user->getMail();
+	        			$_SESSION["phoneNumber"] = $user->getPhoneNumber();
 
 			        break;
 
@@ -54,8 +57,6 @@
 	    		//VALIDAR ESTO
 	    		$_SESSION["username"] = $user->getUsername();
 	        	$_SESSION["password"] = $user->getPassword();
-	        	//$_SESSION["mail"] = $user->getMail();
-	        	$_SESSION["phoneNumber"] = $user->getPhoneNumber();
 	    	}else{
     			echo "username and password not setted";
 	    	}

@@ -115,7 +115,8 @@ $(document).ready(function(){
         }).done(function( data ) {
             console.log(data);
             //LISTA DE GRUPOS EN LA VISTA
-            $("#group-name").append(data.groupName);
+            var nuevogrupo = $('ffff').clone();
+            $(".group-name",nuevogrupo).append(data.groupName);
             $("#last-edit").append(data.text);
         }).error(function(error, textStatus){
             console.log(error);
