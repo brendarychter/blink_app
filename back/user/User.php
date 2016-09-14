@@ -42,6 +42,16 @@
 			$this->userID = $userID;
 		}
 
+		/**
+		
+			TODO:
+			- ADD CONSTRUCTORS:
+				EMPTY
+				USERID
+				USERNAME AND PASSWORD
+		
+		 */
+		
 
 		public function getUser($connection){
 			//VALIDAR QUE DEVUELVA TRUE

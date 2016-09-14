@@ -88,6 +88,15 @@ $(document).ready(function(){
     }
 
     function getSessionUser(){
+
+        /**
+        
+            TODO:
+            - AJAX TYPE GET WITH PARAMS
+            - ONE FILE FOR GET AND DESTROY USER SESSION
+        
+         */
+        
         $.get('../back/user/getUserSession.php', function (data) {
             var user = JSON.parse(data);
             console.log(user);
