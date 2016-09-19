@@ -1,8 +1,50 @@
 .landing-main-page{
-	.navbar-header{
-		#page-top{
-			margin-top: -4px;
-			padding: 0;
+	.container{
+
+		.navbar-header{
+			#page-top{
+				margin-top: -4px;
+				padding: 0;
+			}
+		}
+		.navbar-home .navbar-right{
+			.sign-in-home{
+				border-left: 1px solid #CCC;
+			}
+		}
+	}
+	#conoce{
+		.container{
+			.text-muted{
+				line-height: 28px;
+				span{
+					font-style: normal;
+				}
+			}
+			.description-conoce{
+				margin-top:16px;
+				display: block;
+				font-weight: bold;
+				font-style: normal;
+			}
+			.know-more{
+				text-align: center;
+			}
+		}
+	}
+	#download-app{
+		.container{
+			.download-application {
+				img{
+					cursor:pointer;
+					margin-bottom: 18%;
+					margin-bottom: 40px;
+				}
+				h3{
+					font-style: normal;
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
 }

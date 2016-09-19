@@ -217,7 +217,7 @@ header {
   color: #FFF;
   height: 660px;
   /*position: absolute;*/
-  width: 15%;
+  width: 17%;
   /*right: 0;*/
   float: right;
   overflow: hidden; }
@@ -240,9 +240,29 @@ header {
 #ajustes {
   display: none; }
 
-.landing-main-page .navbar-header #page-top {
+.landing-main-page .container .navbar-header #page-top {
   margin-top: -4px;
   padding: 0; }
+.landing-main-page .container .navbar-home .navbar-right .sign-in-home {
+  border-left: 1px solid #CCC; }
+.landing-main-page #conoce .container .text-muted {
+  line-height: 28px; }
+  .landing-main-page #conoce .container .text-muted span {
+    font-style: normal; }
+.landing-main-page #conoce .container .description-conoce {
+  margin-top: 16px;
+  display: block;
+  font-weight: bold;
+  font-style: normal; }
+.landing-main-page #conoce .container .know-more {
+  text-align: center; }
+.landing-main-page #download-app .container .download-application img {
+  cursor: pointer;
+  margin-bottom: 18%;
+  margin-bottom: 40px; }
+.landing-main-page #download-app .container .download-application h3 {
+  font-style: normal;
+  margin-bottom: 0; }
 
 /*
 *  Basic Reset

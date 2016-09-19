@@ -24,11 +24,21 @@
 			$response = mysqli_query($connection->connected,$query);
 
 			while($obj = mysqli_fetch_object($response)){
-				$matriz = array('idModule' => $obj->idModule, 'idGroup' => $obj->idGroup, 'groupName' => $obj->groupName, 'idType' => $obj->idType, 'typeName' => $obj->typeName, 'idType' => $obj->idType, 'text' => $obj->text);
+				$matriz[] = array('idModule' => $obj->idModule, 'idGroup' => $obj->idGroup, 'groupName' => $obj->groupName);
+				//$this->setGroupName($obj->groupName);
 			}
 			$datos = json_encode($matriz);
 			echo $datos;
 		}
+
+		public function deleteGroup($connection){
+
+		}
+
+		public function updateGroup($connection){
+			
+		}
+		
 	}
 ?>
 

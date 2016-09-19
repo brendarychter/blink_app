@@ -12,12 +12,15 @@
 		public function getUsername(){
 			return $this->username;
 		}
+
 		public function setUsername($nom){
 			$this->username = $nom;
 		}
+
 		public function getPassword(){
 			return $this->password;
 		}
+
 		public function setPassword($pass){
 			$this->password = $pass;
 		}
@@ -25,12 +28,15 @@
 		public function getPhoneNumber(){
 			return $this->phoneNumber;
 		}
+
 		public function setPhoneNumber($mobile){
 			$this->phoneNumber = $mobile;
 		}
+
 		public function getMail(){
 			return $this->mail;
 		}
+
 		public function setMail($mail){
 			$this->mail = $mail;
 		}
@@ -38,6 +44,7 @@
 		public function getUserID(){
 			return $this->userID;
 		}
+
 		public function setUserID($userID){
 			$this->userID = $userID;
 		}

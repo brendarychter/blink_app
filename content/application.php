@@ -50,9 +50,8 @@
             <!-- For var i in groups of user -->
             <div class="my-groups">
                 <?php 
-                        include('partials/card.php');
-
-                    ?> 
+                    include('partials/card.php');
+                ?> 
             </div>        
         </div>
         <div class="groups row" id="ajustes">
@@ -120,7 +119,6 @@
     <script src="../public/js/actions/application.js"></script>
     <script type="text/javascript">
         $(document).ready(function($) {
-
             $('.card__share > a').on('click', function(e){ 
                 e.preventDefault() // prevent default action - hash doesn't appear in url
                 $(this).parent().find( 'div' ).toggleClass( 'card__social--active' );

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--CSS-->
-	<link rel="stylesheet" type="text/css" href="public/css/main.css">
+	<link rel="stylesheet" type="text/css" href="public/css/content.css">
 	<link rel="stylesheet" href="public/css/bootstrap.css" >
 
     <!-- Custom CSS -->
@@ -44,8 +44,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">&#191;Qu&eacute; es blink?</h2>
-                    <h3 class="section-subheading text-muted" style="line-height: 28px;"> &#191;Ten&eacute;s un grupo de amigos de la facultad? &#191;Otro de la oficina? &#191;De f&uacute;tbol o baile?</br><span style="font-style: normal;">Blink te permite comunicarte con todos ellos desde un mismo lugar.</span> </br>
-                    <span style="margin-top:16px; display: block; font-weight: bold; font-style: normal;">Es una herramienta, un aliado en tu d&iacute;a a d&iacute;a. Es la mejor manera de mantenerte informado todo el tiempo de todo lo que pasa en tus grupos al recibir notificaciones en el momento en que tus amigos publican contenidos.</span></h3>
+                    <h3 class="section-subheading text-muted"> &#191;Ten&eacute;s un grupo de amigos de la facultad? &#191;Otro de la oficina? &#191;De f&uacute;tbol o baile?</br><span >Blink te permite comunicarte con todos ellos desde un mismo lugar.</span> </br>
+                    <span class="description-conoce">Es una herramienta, un aliado en tu d&iacute;a a d&iacute;a. Es la mejor manera de mantenerte informado todo el tiempo de todo lo que pasa en tus grupos al recibir notificaciones en el momento en que tus amigos publican contenidos.</span></h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -82,7 +82,7 @@
                     <p class="text-muted">Enterate de las &uacute;ltimas novedades</p>
                 </div>
             </div>
-            <div style="text-align: center;">
+            <div class="know-more">
                 <a href="#conoce-mas" class="page-scroll btn btn-xl"id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
             </div>
         </div>
@@ -97,10 +97,10 @@
     <section id="download-app">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <img src="public/img/qr_app_example.png" style="cursor:pointer; margin-bottom: 18%; margin-bottom: 40px">
+                <div class="col-lg-12 text-center download-application">
+                    <img src="public/img/qr_app_example.png">
                     <h2 class="section-heading text-app">Descargate la aplicaci&oacute;n para el celular</h2>
-                    <h3 class="section-subheading text-muted" style="font-style=normal; margin-bottom: 0;">Vas a poder acceder a las novedades m&aacute;s r&aacute;pidamente</h3>
+                    <h3 class="section-subheading text-muted">Vas a poder acceder a las novedades m&aacute;s r&aacute;pidamente</h3>
                 </div>
             </div>
         </div>

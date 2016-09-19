@@ -24,6 +24,8 @@
 	        			$_SESSION["mail"] = $user->getMail();
 	        			$_SESSION["phoneNumber"] = $user->getPhoneNumber();
 
+	        			//$this->setPhoneNumber($user->getPhoneNumber());
+	        			//$this->setMail($user->getMail());
 			        break;
 
 			        case "createUser":
@@ -36,7 +38,6 @@
 			        case "updateUser":
 			        	//$user->setPhoneNumber($_POST['phoneNumber']);
 			        	$user->setUserID($_SESSION["userID"]);
-
 
 	        			$user->setMail($_POST['mailUpdate']);
 	        			$user->setPhoneNumber($_POST['phoneNumberUpdate']);
