@@ -100,7 +100,7 @@
                 <div class="col-lg-12 text-center download-application">
                     <img src="public/img/qr_app_example.png">
                     <h2 class="section-heading text-app">Descargate la aplicaci&oacute;n para el celular</h2>
-                    <h3 class="section-subheading text-muted">Vas a poder acceder a las novedades m&aacute;s r&aacute;pidamente</h3>
+                    <h3 class="section-subheading text-muted">Vas a poder acceder a las novedades m&aacute;s r&aacute;pidamente y usar la aplicaci&oacute;n de forma m&aacute;s c&oacute;moda y eficiente</h3>
                 </div>
             </div>
         </div>
@@ -162,7 +162,7 @@
                         </li>
                         <li><a href="#"><i class="fa fa-facebook"><img src="public/img/twitter.svg" style="margin-top:-3px"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-linkedin"><img src="public/img/google.svg"></i></a>
+                        <li><a href="#"><i class="fa fa-google"><img src="public/img/google.svg"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-linkedin"><img src="public/img/linkedin.svg" style="margin-top:-5px"></i></a>
                         </li>
