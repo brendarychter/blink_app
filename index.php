@@ -50,34 +50,18 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-3">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                    </span>
                     <h4 class="service-heading"><img src="public/img/group.svg" /></h4>
                     <p class="text-muted">Cre&aacute; todos los grupos que necesites</p>
                 </div>
                 <div class="col-md-3">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
                     <h4 class="service-heading"><img src="public/img/hour.svg" /></h4>
                     <p class="text-muted">Llev&aacute; un registro de los gastos grupales</p>
                 </div>
                 <div class="col-md-3">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
                     <h4 class="service-heading"><img src="public/img/calendar.svg" /></h4>
                     <p class="text-muted">No te olvides de ning&uacute;n evento</p>
                 </div>
                 <div class="col-md-3">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
                     <h4 class="service-heading"><img src="public/img/chat.svg" /></h4>
                     <p class="text-muted">Enterate de las &uacute;ltimas novedades</p>
                 </div>
@@ -163,8 +147,6 @@
                         <li><a href="#"><i class="fa fa-facebook"><img src="public/img/twitter.svg" style="margin-top:-3px"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-google"><img src="public/img/google.svg"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"><img src="public/img/linkedin.svg" style="margin-top:-5px"></i></a>
                         </li>
                     </ul>
                 </div>

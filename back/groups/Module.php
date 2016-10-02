@@ -18,18 +18,32 @@
 			$this->idGroup = $id;
 		}
 
-
-		public function getGroupsByUser($connection){
-			$query = "SELECT * FROM modules INNER JOIN users ON modules.idUser = 1 INNER JOIN groups ON modules.idGroup = groups.idGroup INNER JOIN types ON modules.idType = types.idType";
+		function __construct($connection, $userID){
+			$query = "select * from modules inner join groups on groups.idGroup = modules.idGroup where modules.idUser = $userID";
 			$response = mysqli_query($connection->connected,$query);
 
 			while($obj = mysqli_fetch_object($response)){
 				$matriz[] = array('idModule' => $obj->idModule, 'idGroup' => $obj->idGroup, 'groupName' => $obj->groupName);
-				//$this->setGroupName($obj->groupName);
 			}
 			$datos = json_encode($matriz);
 			echo $datos;
 		}
+
+		//Crear nuevo grupo vacío???
+		// function __construct(){
+		// }
+
+		//Esto o el constructor
+		// public function getGroupsByUser($connection, $userID){
+		// 	$query = "select * from modules inner join groups on groups.idGroup = modules.idGroup where modules.idUser = $userID";
+		// 	$response = mysqli_query($connection->connected,$query);
+
+		// 	while($obj = mysqli_fetch_object($response)){
+		// 		$matriz[] = array('idModule' => $obj->idModule, 'idGroup' => $obj->idGroup, 'groupName' => $obj->groupName);
+		// 	}
+		// 	$datos = json_encode($matriz);
+		// 	echo $datos;
+		// }
 
 		public function deleteGroup($connection){
 

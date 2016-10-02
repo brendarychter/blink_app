@@ -8,7 +8,6 @@ $(document).ready(function(){
     $.ajaxSetup({cache: false})
     getSessionUser();
 
-    getUserGroups();
 
     $("#log-out").on("click", function(){
         console.log("logged out")
@@ -99,21 +98,22 @@ $(document).ready(function(){
         
         $.get('../back/user/getUserSession.php', function (data) {
             var user = JSON.parse(data);
-            console.log(user);
-            id = user.userID;
+            user.userID = user.userID;
             $("#logo").append(user.username);
             $("#username-logged").val(user.username);
             $("#password-logged").val(user.password);
             $("#mail-logged").val(user.mail);
             $("#mobile-logged").val(user.phoneNumber);
+            getUserGroups(user);
         });
     }
 
 
-    function getUserGroups(){
+    function getUserGroups(user){
         params = {};
         params.action = "getGroups";
         params.userID = user.userID;
+        console.log(user);
         $.ajax({
             //http://blinkapp.com.ar/back/user/adminUser.php
             url: "../back/groups/adminUserGroups.php",
@@ -124,7 +124,14 @@ $(document).ready(function(){
         }).done(function( data ) {
             console.log(data);
             //LISTA DE GRUPOS EN LA VISTA
-            var nuevogrupo = $('ffff').clone();
+            // var myGroups = $('.my-groups');
+            // console.log(data.length)
+            // for (var i = 0; i < data.length; i++){
+            //     $(".module-by-group").clone().appendTo(myGroups);
+                
+            //     console.log(data[i].groupName)
+            // }
+            var nuevogrupo = $('.my-groups').clone();
             $(".group-name",nuevogrupo).append(data.groupName);
             $("#last-edit").append(data.text);
         }).error(function(error, textStatus){

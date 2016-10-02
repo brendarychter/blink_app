@@ -10,14 +10,20 @@
     	if(isset($_POST['action'])){
     		$action = $_POST['action'];
     		
-			$group = new Module;
-    		switch($action){
-    			//asignar mobile y telefono acá
-    			case "getGroups":
-    				//Es un metodo de grupo o de usuario?
-		        	$group->getGroupsByUser($connection);
-		        break;
-    		}
+    		if(isset($_POST['userID'])){
+				$userID = $_POST['userID'];
+
+				$group = new Module($connection, $userID);
+
+	    		// switch($action){
+	    		// 	//asignar mobile y telefono acá
+	    		// 	case "getGroups":
+			    //     	$group->getGroupsByUser($connection, $userID);
+			    //     break;
+	    		// }
+	    	}else{
+	    		echo "userID not setted";
+	    	}
     	}else{
     		echo "action not setted";
     	}
