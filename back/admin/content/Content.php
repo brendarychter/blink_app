@@ -8,7 +8,7 @@
 	class Content{
 		private $value_id;
 		private $value;
-		private $spanishValue;
+		private $spanish;
 		private $englishValue;
 
 		public function getValue(){
@@ -28,11 +28,11 @@
 		}
 
 		public function getSpanishValue(){
-			return $this->spanishValue;
+			return $this->spanish;
 		}
 
 		public function setSpanishValue($spanishValue){
-			$this->spanishValue = $spanishValue;
+			$this->spanish = $spanishValue;
 		}
 
 		public function getValueID(){
@@ -50,7 +50,7 @@
 			$response = mysqli_query($connection->connected,$query);
 
 			while($obj = mysqli_fetch_object($response)){
-				$matriz[] = array('value' => $obj->value, 'spanishValue' => $obj->spanish, 'englishValue' => $obj->english, 'value_id' => $obj->value_id);
+				$matriz[$obj->value] = array('spanish' => $obj->spanish, 'english' => $obj->english, 'value_id' => $obj->value_id);
 			}
 			//, 'userID' => $obj->userID
 			$datos = json_encode($matriz);

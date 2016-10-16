@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 17-10-2016 a las 01:24:45
+-- Tiempo de generación: 17-10-2016 a las 01:41:29
 -- Versión del servidor: 10.1.13-MariaDB
 -- Versión de PHP: 5.5.35
 
@@ -78,8 +78,8 @@ CREATE TABLE `home` (
 --
 
 INSERT INTO `home` (`value_id`, `value`, `spanish`, `english`) VALUES
-(1, 'title', 'Tus grupos en un mismo lugar', 'Your groups in one place'),
-(3, 'subtitle', 'Una única aplicación. Todo lo que necesitás.', 'One app. All you need.');
+(5, 'title', 'Tus grupos en un mismo lugar', 'Your groups in one place'),
+(7, 'subtitle', 'Una &uacute;nica aplicaci&oacute;n. Todo lo que necesitas.', 'A single application. Everything you need.');
 
 -- --------------------------------------------------------
 
@@ -231,7 +231,7 @@ ALTER TABLE `groups`
 -- AUTO_INCREMENT de la tabla `home`
 --
 ALTER TABLE `home`
-  MODIFY `value_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `value_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT de la tabla `modules`
 --
