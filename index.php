@@ -138,11 +138,12 @@
         include 'content/footer.php';
     ?>
 
-
     <!-- Scripts -->
     
     <!-- jQuery -->
     <script src="public/js/global/jquery.js"></script>
+    
+    <script src="public/js/actions/load.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="public/js/global/bootstrap.min.js"></script>
@@ -158,6 +159,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="public/js/global/agency.js"></script>
+
 
 </body>
 </html>

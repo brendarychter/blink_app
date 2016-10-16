@@ -1,5 +1,3 @@
-var username = localStorage.getItem("username");
-
 $(document).ready(function(){
 
     var user = {};
