@@ -1,3 +1,4 @@
+<!--burger button animation https://envato.com/blog/pure-css-animation-snippets/-->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->

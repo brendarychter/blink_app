@@ -14,7 +14,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="public/css/styles_default.css">
     <link rel="shortcut icon" type="image/png" href="public/img/icon_tab.png"/>
-
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -134,33 +134,9 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Blink App 2016</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"><img src="public/img/fb.svg"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"><img src="public/img/twitter.svg" style="margin-top:-3px"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-google"><img src="public/img/google.svg"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Pol&iacute;ticas de privacidad</a>
-                        </li>
-                        <li><a href="#">T&eacute;rminos de uso</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php
+        include 'content/footer.php';
+    ?>
 
 
     <!-- Scripts -->

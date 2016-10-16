@@ -131,6 +131,21 @@ $(document).ready(function(){
                 
             //     console.log(data[i].groupName)
             // }
+            for (var i in data){
+                var group = data[i];
+                console.log(group.groupName);
+
+                var elem = $('#module-by-group').clone();
+                elem.attr("id", group.groupName);
+
+                console.log(elem);
+
+                elem.appendTo($('.my-groups'));
+                console.log($('#'+group.groupName, $('.group-name')));
+            }
+                $('#P13N.group-name').append("holas");
+
+
             var nuevogrupo = $('.my-groups').clone();
             $(".group-name",nuevogrupo).append(data.groupName);
             $("#last-edit").append(data.text);

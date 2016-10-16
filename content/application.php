@@ -49,7 +49,7 @@
             </div>
             <!-- For var i in groups of user -->
             <div class="my-groups" style="overflow: hidden;">
-                <div class="module-by-group">
+                <div id="module-by-group" class="module-by-group">
                     <div class="col-md-4 col-sm-6 "> 
                         <div class="wrapper">
                             <div class="card radius shadowDepth1">
@@ -67,7 +67,7 @@
                                             <a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a>
                                         </div>
 
-                                        <a id="share" class="share-toggle share-icon" href="#"></a>
+                                        <a id="share" class="share-icon" href="#">+</a>
                                     </div>
                                     <article class="card__article">
                                         <h2><a href="#" class="group-name"></a></h2>
@@ -87,7 +87,18 @@
                     </div>
                 </div>
 
-            </div>        
+            </div>
+            <div class="groups-abm">
+                <div>
+                    <input placeholder="Nombre del grupo"/>
+                </div>
+                <div>
+                    <span>Agregar contactos</span> <button>Ver lista</button>
+                </div>
+                <div>
+                    <input/>+
+                </div>
+            </div>       
         </div>
         <div class="groups row" id="ajustes">
             <span style="color: #222;">AJUSTES</span>

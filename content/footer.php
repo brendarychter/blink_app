@@ -1,44 +1,61 @@
-<nav class="navbar navbar-default navbar-fixed-top navbar-login">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!-- href="#page-top"-->
-            <a class="navbar-brand page-scroll" href="../index.php" style="margin-top: -14px; padding: 0;"><img alt="Blink app" title="Blink app" src="../public/img/logo_small.svg" id="icon-top"></img></a>
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+        <p class="footer-company-about">
+            <span>BLINK APP</span>
+            <p class="footer-links">
+                <a href="#">Espa&ntilde;ol</a>
+                ·
+                <a href="#">Ingl&eacute;s</a>
+                </br>
+                <a href="#">Pol&iacute;ticas de Privacidad</a>
+                ·
+                <a href="#">T&eacute;rminos de uso</a>
+            </p>
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+
+        </div>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Capital Federal</span> Buenos Aires, Argentina</p>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="../index.php">blink!</a>
-                </li>
-                 <li>
-                    <a class="page-scroll" href="#">Conoc&eacute; m&aacute;s</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#">Demo</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#">FAQ</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#">Qui&eacute;nes somos</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="../index.php#contact">Contactate</a>
-                </li>
-            </ul>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+1565220958</p>
         </div>
-        <!-- /.navbar-collapse -->
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">brendarychter@gmail.com</a></p>
+        </div>
+
     </div>
-    <!-- /.container-fluid -->
-</nav>
+
+    <div class="footer-right">
+
+        <h3>Brenda Rychter</h3>
+        <a href="">www.brendarychter.com.ar</a>
+        
+        <div class="footer-icons">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+
+        </div>
+        <p class="footer-company-name">Brenda Rychter &copy; 2016</p>
+        
+
+    </div>
+
+</footer>
