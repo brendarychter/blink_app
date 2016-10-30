@@ -40,16 +40,24 @@
 				</ul>
 			</div>
 							
-		</div><!-- /.container-fluid -->
+		</div>
 	</nav>
 	<div class="container-site">
-		<!-- INCLUIR EL INDEX COMPLETO PARA PODER EDITAR. CADA COSA EDITABLE -->
-		<!--<?php 
-			// include "../../index.php";
-		?>-->
-		<div class="section-home-title">
-			
-		</div>
+			<!-- SEPARACION POR SECCIONES -->
+			<p>Menú bar</p>
+			<div class="menu-buttons">
+				<form>
+				</form>
+			</div>
+			<p>Secciones</p>
+			<div class="seccion-home">
+				<form>
+				</form>
+			</div>
+			<div class="seccion-conoce">
+				<form>
+				</form>
+			</div>
 	</div>
     
     <!-- Scripts -->

@@ -12,11 +12,11 @@ $(document).ready(function(){
         dataType: "json"
     }).done(function( data ) {
     	if (language == "es"){
-    		$('.intro-heading').append(data["title"].spanish);
-    		$('.intro-lead-in').append(data["subtitle"].spanish);
+    		$('.intro-heading').val(data["title"].spanish);
+    		$('.intro-lead-in').val(data["subtitle"].spanish);
     	}else{
-    		$('.intro-heading').append(data["title"].english);
-    		$('.intro-lead-in').append(data["subtitle"].english);
+    		$('.intro-heading').val(data["title"].english);
+    		$('.intro-lead-in').val(data["subtitle"].english);
     	}
     }).error(function(error, textStatus){
         console.log(error);
