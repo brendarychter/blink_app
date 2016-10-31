@@ -285,7 +285,6 @@ html {
 
 body {
   background-color: #eee;
-  font-family: Roboto;
   font-weight: 400;
   font-size: 1.6em;
   line-height: 1.6;
@@ -453,6 +452,18 @@ h2 {
 
 .login-panel {
   padding: 0px 10px; }
+
+.main-admin-dashboard {
+  padding-top: 20px; }
+  .main-admin-dashboard button {
+    border-radius: 0; }
+  .main-admin-dashboard input {
+    margin-bottom: 2px; }
+  .main-admin-dashboard .edit-icon {
+    width: 15px;
+    height: 15px; }
+  .main-admin-dashboard .form-group span {
+    margin-bottom: 5px; }
 
 .footer-distributed {
   background-color: #292c2f;
