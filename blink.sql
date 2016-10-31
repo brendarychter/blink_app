@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 17-10-2016 a las 01:41:29
+-- Tiempo de generación: 31-10-2016 a las 04:15:30
 -- Versión del servidor: 10.1.13-MariaDB
 -- Versión de PHP: 5.5.35
 
@@ -63,6 +63,19 @@ INSERT INTO `groups` (`idGroup`, `groupName`, `picture`, `datetime`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `headers`
+--
+
+CREATE TABLE `headers` (
+  `id_header` int(11) NOT NULL,
+  `header_value` varchar(100) NOT NULL,
+  `header_spanish` varchar(100) NOT NULL,
+  `header_english` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `home`
 --
 
@@ -79,7 +92,8 @@ CREATE TABLE `home` (
 
 INSERT INTO `home` (`value_id`, `value`, `spanish`, `english`) VALUES
 (5, 'title', 'Tus grupos en un mismo lugar', 'Your groups in one place'),
-(7, 'subtitle', 'Una &uacute;nica aplicaci&oacute;n. Todo lo que necesitas.', 'A single application. Everything you need.');
+(7, 'subtitle', 'Una &uacute;nica aplicaci&oacute;n. Todo lo que necesitas.', 'A single application. Everything you need.'),
+(8, 'download_app', 'Descarg&aacute; la app', 'Download the app');
 
 -- --------------------------------------------------------
 
@@ -179,6 +193,12 @@ ALTER TABLE `groups`
   ADD PRIMARY KEY (`idGroup`);
 
 --
+-- Indices de la tabla `headers`
+--
+ALTER TABLE `headers`
+  ADD PRIMARY KEY (`id_header`);
+
+--
 -- Indices de la tabla `home`
 --
 ALTER TABLE `home`
@@ -228,10 +248,15 @@ ALTER TABLE `admin`
 ALTER TABLE `groups`
   MODIFY `idGroup` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
+-- AUTO_INCREMENT de la tabla `headers`
+--
+ALTER TABLE `headers`
+  MODIFY `id_header` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT de la tabla `home`
 --
 ALTER TABLE `home`
-  MODIFY `value_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `value_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT de la tabla `modules`
 --
