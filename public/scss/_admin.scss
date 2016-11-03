@@ -1,7 +1,13 @@
 .login-panel{
 	padding: 0px 10px;
 }
+.separation{
+	height:20px
+}
 .main-admin-dashboard{
+	li.active a:focus, li.active a:hover{
+		border: 0;
+	}
 	padding-top: 20px;
 	button{
 		border-radius: 0;
@@ -20,6 +26,28 @@
 		background-color: #FFF;
 		.panel-heading{
 			height: 0;
+		}
+		.section-name{
+			display: block;
+			text-transform: uppercase;
+		    font-size: 18px;
+		    letter-spacing: 2px;
+		}
+		.form-group {
+			span{
+				float: right;
+				font-weight: bold;
+			}
+		}
+		.form-section{
+			.edit-section{
+				float: right;
+				margin-right: 10px;
+			}
+			/* USAR EL NOT LAST CHILD :not(:last-child)*/
+			.box-section{
+			    border-right: 1px solid #ccc;
+			}
 		}
 	}
 }

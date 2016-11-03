@@ -6,6 +6,17 @@ $(document).ready(function(){
     getSessionAdminUser();
 
 
+
+    $(".toggle-nav-admin").click(function() {
+      // remove classes from all
+      $(".toggle-nav-admin").removeClass("active");
+      $(".tab-admin-page .admin-nav").hide();
+      // add class to the one we clicked
+      $(this).addClass("active");
+      $(".tab-admin-page ." + $(this).attr('id')).show();
+   });
+
+
     function getSessionAdminUser(){
     	console.log("entro")
     
