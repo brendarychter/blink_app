@@ -52,9 +52,10 @@
 			while($obj = mysqli_fetch_object($response)){
 				$matriz[$obj->value] = array('spanish' => $obj->spanish, 'english' => $obj->english, 'value_id' => $obj->value_id);
 			}
-			//, 'userID' => $obj->userID
 			$datos = json_encode($matriz);
 			echo $datos;
 		}
+		/*envio de form*/
+		public function setContent()
 	}
 ?>

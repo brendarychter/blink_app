@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Lumino - Dashboard</title>
+	<title>Blink - Panel de administraci&oacute;n</title>
 
 	<link href="../../public/css/bootstrap.css" rel="stylesheet">
 	<link href="../../public/css/datepicker3.css" rel="stylesheet">
@@ -47,37 +47,57 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
-					<div class="panel-heading"><a href=""><svg class="glyph stroked pencil edit-icon"><use xlink:href="#stroked-pencil"></use></svg></a>Home - Landing page</div>
-						<div class="panel-body">
-							<form role="form" class="form-seccion-1">
-								<div class="col-md-6">
-									<div class="form-group col-md-6">
-										<label>Secci&oacute;n 1</label> <span style="float: right;">espa&ntilde;ol</span>
-										<input class="form-control" placeholder="T&iacute;tulo">
-										<input class="form-control" placeholder="Subt&iacute;tulo">
-									</div>
-																	
-									<div class="form-group col-md-6">
-										<span style="float: right;">ingl&eacute;s</span>
-										<input class="form-control" placeholder="T&iacute;tulo">
-										<input class="form-control" placeholder="Subt&iacute;tulo">
+					<!-- Navs for each page in the website -->
+					<div class="tabs-page-blink">
+						<ul class="nav nav-tabs">
+						  	<li role="presentation" class="active"><a href="#">Home- Landing page</a></li>
+						  	<!-- <div class="panel-heading"><a href=""><svg class="glyph stroked pencil edit-icon"><use xlink:href="#stroked-pencil"></use></svg></a>Qui&eacute;nes somos</div> -->
+						 	<li role="presentation"><a href="#">Qui&eacute;nes somos</a></li>
+						  	<li role="presentation"><a href="#">FAQ</a></li>
+						  	<li role="presentation"><a href="#">Demo</a></li>
+						</ul>
+					</div>
+					<!-- QUIENES SOMOS ADMIN -->
+				    <div class="col-sm-12 col-lg-12 tab-admin-page">			
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="panel panel-default">
+									<div class="panel-heading"></div>
+										<div class="panel-body">
+											<form role="form" class="form-seccion-1">
+												<div class="col-md-6">
+													<div class="form-group col-md-6">
+														<label>Secci&oacute;n 1</label> <span style="float: right;">t&iacute;tulo</span>
+														<input class="form-control" placeholder="T&iacute;tulo espa&ntilde;ol">
+														<input class="form-control" placeholder="T&iacute;tulo ingl&eacute;s">
+													</div>
+																					
+													<div class="form-group col-md-6">
+														<span style="float: right;">subt&iacute;tulo</span>
+														<input class="form-control" placeholder="Subt&iacute;tulo espa&ntilde;ol">
+														<input class="form-control" placeholder="Subt&iacute;tulo ingl&eacute;s">
+													</div>
+
+													<button type="submit" class="btn btn-primary">Editar</button>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group col-md-6">
+														<label>Bot&oacute;n</label> <span style="float: right;">espa&ntilde;ol</span>
+														<input class="form-control" placeholder="T&iacute;tulo">
+														<input class="form-control" placeholder="Subt&iacute;tulo">
+													</div>
+																					
+													<div class="form-group col-md-6">
+														<span style="float: right;">ingl&eacute;s</span>
+														<input class="form-control" placeholder="T&iacute;tulo">
+														<input class="form-control" placeholder="Subt&iacute;tulo">
+													</div>
+												</div>
+											</form>		
+										</div>
 									</div>
 								</div>
-								<div class="col-md-6">
-									<div class="form-group col-md-6">
-										<label>Secci&oacute;n 1</label> <span style="float: right;">espa&ntilde;ol</span>
-										<input class="form-control" placeholder="T&iacute;tulo">
-										<input class="form-control" placeholder="Subt&iacute;tulo">
-									</div>
-																	
-									<div class="form-group col-md-6">
-										<span style="float: right;">ingl&eacute;s</span>
-										<input class="form-control" placeholder="T&iacute;tulo">
-										<input class="form-control" placeholder="Subt&iacute;tulo">
-									</div>
-								</div>
-									<button type="submit" class="btn btn-primary" style="float:right">Editar</button>
-							</form>		
+							</div>
 						</div>
 					</div>
 				</div>
@@ -86,7 +106,7 @@
 	</div>
 
 	<!-- QUIENES SOMOS ADMIN -->
-    <div class="col-sm-12 col-lg-12 main-admin-dashboard">			
+<!--     <div class="col-sm-12 col-lg-12 main-admin-dashboard">			
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
@@ -113,7 +133,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
     <!-- Scripts -->
     
     <script src="../../public/js/global/lumino.glyphs.js"></script>

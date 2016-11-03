@@ -464,6 +464,10 @@ h2 {
     height: 15px; }
   .main-admin-dashboard .form-group span {
     margin-bottom: 5px; }
+  .main-admin-dashboard .tab-admin-page {
+    background-color: #FFF; }
+    .main-admin-dashboard .tab-admin-page .panel-heading {
+      height: 0; }
 
 .footer-distributed {
   background-color: #292c2f;
