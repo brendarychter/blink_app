@@ -44,11 +44,13 @@ $(document).ready(function(){
   }
 
   function populateLabels(){
+    params= {};
+    params.action = "getContent";
     $.ajax({
-    //     //http://blinkapp.com.ar/back/user/adminUser.php
-        url: "../../back/admin/content/Content.php",
+        url: "../../back/admin/content/adminContent.php",
         type: "POST",
         cache: false,
+        data: params,
         dataType: "json"
     }).done(function( data ) {
       $('.titulo-spanish').append(data["title"].spanish);

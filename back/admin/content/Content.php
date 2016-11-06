@@ -1,10 +1,4 @@
 <?php
-	require_once("../connection.php");
-    $connection = new connection;
-
-	$content = new Content;
-	$content->getHomeContent($connection);
-
 	class Content{
 		private $value_id;
 		private $value;
@@ -57,7 +51,7 @@
 		}
 		/*envio de form*/
 		public function setContent(){
-			
+
 		}
 	}
 ?>
