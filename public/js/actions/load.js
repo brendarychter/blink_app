@@ -1,13 +1,14 @@
 $(document).ready(function(){
-	console.log("load first");
 	var language = "es";
 	//Configurar lenguaje html
-
+    params = {};
+    params.action = "getContent";
 	//if()spanish if english
 	$.ajax({
     //     //http://blinkapp.com.ar/back/user/adminUser.php
-        url: "back/admin/content/Content.php",
+        url: "back/admin/content/adminContent.php",
         type: "POST",
+        data: params,
         cache: false,
         dataType: "json"
     }).done(function( data ) {

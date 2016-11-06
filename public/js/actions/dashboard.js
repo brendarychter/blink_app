@@ -8,27 +8,26 @@ $(document).ready(function(){
   $('#edit-section-1').on("click", function(){
     params= {};
     params.action = "modifyContent";
-    params.spanish = $('#username-login').val();
-    params.password = $('#password-login').val();
-    $('#form-section-1').validate({
-      submitHandler: function(form) {
+    // params.value = {
+    //   "spanish": $('.titulo-spanish').val(),
+    //   "english": $('.titulo-english').val()
+    // }
+    //$('#form-section-1').validate({
+      //submitHandler: function(form) {
         $.ajax({
-            url: "../../back/admin/content/Content.php",
-            type: form.method,
-            data: $(form).serialize(),
-            success: function(response) {
-                $('#answers').html(response);
-            },
-            error: function(status, error){
-              console.log(error)
-            }  
+            url: "../../back/admin/content/adminContent.php",
+            type: "POST",
+            data: params
+        //    success: function(response) {
+                //$('#answers').html(response);
+            //} 
         }).done(function( data ) {
           console.log(data)
         }).error(function(error, textStatus){
             console.log(error);
         });
-      }
-    })    
+      //}
+    //})    
   })
 
   toggleTabs();

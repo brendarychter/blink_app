@@ -50,8 +50,15 @@
 			echo $datos;
 		}
 		/*envio de form*/
-		public function setContent(){
-
+		public function modifyHomeContent($connection){
+			//VALIDAR QUE DEVUELVA TRUE
+			$query = "UPDATE home SET spanish='adad' WHERE value='title'";
+			echo $query;
+			if (mysqli_query ($connection->connected, $query)) {
+			    echo "Escribio.";
+			} else {
+			    echo "Error updating";
+			}
 		}
 	}
 ?>
