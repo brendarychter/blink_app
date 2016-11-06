@@ -64,10 +64,10 @@
 								<div class="panel panel-default">
 									<div class="panel-heading"></div>
 										<div class="panel-body">
+											<label class="section-name">Secci&oacute;n 1</label>
 											<form role="form" class="form-section" id="form-section-1">
-												<label class="section-name">Secci&oacute;n 1</label>
-												<div class="col-md-6 col-sm-12">
-													<div class="form-group col-md-6 box-section col-sm-12">
+												<div class="col-md-12 col-sm-12 line-sections">
+													<div class="form-group col-md-3 box-section col-sm-12">
 														<div class="title-box">
 															<span class="global-title">t&iacute;tulo</span>
 														</div>
@@ -79,29 +79,45 @@
 															<label class="lan">Ingl&eacute;s</label>
 															<span class="editable-text"></span>
 														</div>
+													</div>						
+													<div class="form-group col-md-3 box-section col-sm-12">
+														<div class="title-box">
+															<span class="global-title">subt&iacute;tulo</span>
+														</div>
+														<div class="portion portion-spanish">
+															<label class="lan">Espa&ntilde;ol</label>
+															<span class="editable-text"></span>
+														</div>
+														<div class="portion portion-english">
+															<label class="lan">Ingl&eacute;s</label>
+															<span class="editable-text"></span>
+														</div>
 													</div>
-																					
-													<div class="form-group col-md-6 box-section col-sm-12">
-														<span>subt&iacute;tulo</span>
-														<input class="form-control" placeholder="Subt&iacute;tulo espa&ntilde;ol">
-														<input class="form-control" placeholder="Subt&iacute;tulo ingl&eacute;s">
+													<div class="form-group col-md-3 box-section col-sm-12">
+														<div class="title-box">
+															<span class="global-title">bot&oacute;n</span>
+														</div>
+														<div class="portion portion-spanish">
+															<label class="lan">Espa&ntilde;ol</label>
+															<span class="editable-text"></span>
+														</div>
+														<div class="portion portion-english">
+															<label class="lan">Ingl&eacute;s</label>
+															<span class="editable-text"></span>
+														</div>
 													</div>
-
-												</div>
-												<div class="col-md-6 col-sm-12">
-													<div class="form-group col-md-6 box-section col-sm-12">
-														<span>bot&oacute;n</span>
-														<input class="form-control" placeholder="Bot&oacute;n espa&ntilde;ol">
-														<input class="form-control" placeholder="Bot&oacute;n ingl&eacute;s">
-													</div>
-													<div class="form-group col-md-6 col-sm-12">
-														<span>imagen de fondo</span>
+													<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
+														<div class="title-box">
+															<span class="global-title">imagen de fondo</span>
+														</div>
 														<!-- <input type="file"> -->
 														<p class="help-block"></p>
 													</div>
 												</div>
-												<button type="submit" class="btn btn-primary edit-section" id="edit-section-1">Editar secci&oacute;n 1</button>
-												<button type="submit" class="btn btn-danger edit-section" id="delete-section-1">Eliminar secci&oacute;n 1</button>
+												<div class="abm-buttons">
+													<button type="submit" class="btn btn-primary edit-section" id="edit-section-1">Editar secci&oacute;n 1</button>
+													<button type="submit" class="btn btn-danger edit-section" id="delete-section-1">Eliminar secci&oacute;n 1</button>
+												</div>
 											</form>	
 
 										</div>

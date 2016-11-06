@@ -5,10 +5,10 @@
 	height:20px
 }
 .main-admin-dashboard{
+	padding-top: 20px;
 	li.active a:focus, li.active a:hover{
 		border: 0;
 	}
-	padding-top: 20px;
 	button{
 		border-radius: 0;
 	}
@@ -59,6 +59,7 @@
 						display: inline-block;
 						text-transform: uppercase;
 						font-size: 12px;
+						letter-spacing: 0.5px;
 					}
 					.editable-text{
 						border: 1px solid #eee;
@@ -71,6 +72,7 @@
 					    line-height: 1.42857143;
 					    word-wrap: break-word;
 					    float: right;
+					    cursor: pointer;
 					}
 				}
 			}
@@ -79,14 +81,50 @@
 }
 @media (min-width: 1px) and (max-width:767px) {
 	.main-admin-dashboard{
+		.tabs-page-blink .nav-tabs li a{
+			padding: 8px;
+			font-size: 14px;
+		}
 		.tab-admin-page{
 			.form-section{
+				.line-sections{
+					padding-left: 0;
+					padding-right: 0;
+				}
 				.box-section{
 					/* USAR EL NOT LAST CHILD :not(:last-child)*/
 					border-bottom: 1px solid #ccc;
+					overflow: hidden;
+					padding: 0 0px 20px 0px;
+				}
+				.abm-buttons{
+					overflow: hidden;
+					.edit-section{
+						float: right;
+						margin: 0 auto;
+					    width: 100%;
+					    margin-top: 10px;
+					}
 				}
 			}
+			.panel-body{
+				padding-left: 0;
+				padding-right: 0;
+			}
 		}
+	}
+	.navbar {
+		.navbar-toggle{
+			display: none;
+		}
+		.navbar-brand{
+			padding-left: 10px;
+		}
+		.user-menu .glyph{
+			margin-right: 0;
+			margin-top: -4px;
+		}
+
 	}
 }
 

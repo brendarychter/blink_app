@@ -497,7 +497,8 @@ h2 {
         top: 0;
         display: inline-block;
         text-transform: uppercase;
-        font-size: 12px; }
+        font-size: 12px;
+        letter-spacing: 0.5px; }
       .main-admin-dashboard .tab-admin-page .form-section .box-section .portion .editable-text {
         border: 1px solid #eee;
         box-shadow: none;
@@ -508,12 +509,39 @@ h2 {
         font-size: 14px;
         line-height: 1.42857143;
         word-wrap: break-word;
-        float: right; }
+        float: right;
+        cursor: pointer; }
 
 @media (min-width: 1px) and (max-width: 767px) {
+  .main-admin-dashboard .tabs-page-blink .nav-tabs li a {
+    padding: 8px;
+    font-size: 14px; }
+  .main-admin-dashboard .tab-admin-page .form-section .line-sections {
+    padding-left: 0;
+    padding-right: 0; }
   .main-admin-dashboard .tab-admin-page .form-section .box-section {
     /* USAR EL NOT LAST CHILD :not(:last-child)*/
-    border-bottom: 1px solid #ccc; } }
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    padding: 0 0px 20px 0px; }
+  .main-admin-dashboard .tab-admin-page .form-section .abm-buttons {
+    overflow: hidden; }
+    .main-admin-dashboard .tab-admin-page .form-section .abm-buttons .edit-section {
+      float: right;
+      margin: 0 auto;
+      width: 100%;
+      margin-top: 10px; }
+  .main-admin-dashboard .tab-admin-page .panel-body {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .navbar .navbar-toggle {
+    display: none; }
+  .navbar .navbar-brand {
+    padding-left: 10px; }
+  .navbar .user-menu .glyph {
+    margin-right: 0;
+    margin-top: -4px; } }
 @media (min-width: 768px) {
   .main-admin-dashboard .tab-admin-page .form-section .box-section {
     border-right: 1px solid #ccc; } }
