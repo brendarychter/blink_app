@@ -481,14 +481,17 @@ h2 {
     .main-admin-dashboard .tab-admin-page .form-group span {
       float: right;
       font-weight: bold; }
-    .main-admin-dashboard .tab-admin-page .form-section {
-      /* USAR EL NOT LAST CHILD :not(:last-child)*/ }
-      .main-admin-dashboard .tab-admin-page .form-section .edit-section {
-        float: right;
-        margin-right: 10px; }
-      .main-admin-dashboard .tab-admin-page .form-section .box-section {
-        border-right: 1px solid #ccc; }
+    .main-admin-dashboard .tab-admin-page .form-section .edit-section {
+      float: right;
+      margin-right: 10px; }
 
+@media (min-width: 1px) and (max-width: 767px) {
+  .main-admin-dashboard .tab-admin-page .form-section .box-section {
+    /* USAR EL NOT LAST CHILD :not(:last-child)*/
+    border-bottom: 1px solid #ccc; } }
+@media (min-width: 768px) {
+  .main-admin-dashboard .tab-admin-page .form-section .box-section {
+    border-right: 1px solid #ccc; } }
 .footer-distributed {
   background-color: #292c2f;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);

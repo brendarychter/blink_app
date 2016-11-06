@@ -44,9 +44,29 @@
 				float: right;
 				margin-right: 10px;
 			}
-			/* USAR EL NOT LAST CHILD :not(:last-child)*/
-			.box-section{
-			    border-right: 1px solid #ccc;
+		}
+	}
+}
+@media (min-width: 1px) and (max-width:767px) {
+	.main-admin-dashboard{
+		.tab-admin-page{
+			.form-section{
+				.box-section{
+					/* USAR EL NOT LAST CHILD :not(:last-child)*/
+					border-bottom: 1px solid #ccc;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.main-admin-dashboard{
+		.tab-admin-page{
+			.form-section{
+				.box-section{
+					border-right: 1px solid #ccc;
+				}
 			}
 		}
 	}

@@ -43,9 +43,9 @@
 		</div>
 	</nav>
 	<!-- HOME ADMIN -->
-	<div class="col-sm-12 col-lg-12 main-admin-dashboard">			
+	<div class="col-lg-12 col-sm-12 col-md-12 main-admin-dashboard">			
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12 col-sm-12 col-md-12">
 				<div class="panel panel-default">
 					<!-- Navs for each page in the website -->
 					<div class="tabs-page-blink">
@@ -58,15 +58,15 @@
 						</ul>
 					</div>
 					<!-- QUIENES SOMOS ADMIN -->
-				    <div class="col-sm-12 col-lg-12 tab-admin-page">			
+				    <div class="col-lg-12 col-sm-12 col-md-12 tab-admin-page">			
 						<div class="row home-admin admin-nav active">
-							<div class="col-lg-12">
+							<div class="col-lg-12 col-sm-12 col-md-12">
 								<div class="panel panel-default">
 									<div class="panel-heading"></div>
 										<div class="panel-body">
 											<form role="form" class="form-section" id="form-section-1">
 												<label class="section-name">Secci&oacute;n 1</label>
-												<div class="col-md-6">
+												<div class="col-md-6 col-sm-12">
 													<div class="form-group col-md-6 box-section col-sm-12">
 														<span>t&iacute;tulo</span>
 														<input class="form-control" placeholder="T&iacute;tulo espa&ntilde;ol">
@@ -80,15 +80,15 @@
 													</div>
 
 												</div>
-												<div class="col-md-6">
+												<div class="col-md-6 col-sm-12">
 													<div class="form-group col-md-6 box-section col-sm-12">
 														<span>bot&oacute;n</span>
 														<input class="form-control" placeholder="Bot&oacute;n espa&ntilde;ol">
 														<input class="form-control" placeholder="Bot&oacute;n ingl&eacute;s">
 													</div>
-													<div class="form-group col-md-6">
+													<div class="form-group col-md-6 col-sm-12">
 														<span>imagen de fondo</span>
-														<input type="file">
+														<!-- <input type="file"> -->
 														<p class="help-block"></p>
 													</div>
 												</div>
@@ -101,7 +101,7 @@
 									<div class="panel-body">
 										<form role="form" class="form-section" id="form-section-1">
 											<label class="section-name">Secci&oacute;n 2</label>
-											<div class="col-md-6">
+											<div class="col-md-6 col-sm-12">
 												<div class="form-group col-md-6 box-section col-sm-12">
 													<span>t&iacute;tulo</span>
 													<input class="form-control" placeholder="T&iacute;tulo espa&ntilde;ol">
@@ -115,8 +115,8 @@
 												</div>
 
 											</div>
-											<div class="col-md-6">
-												<div class="form-group col-md-6">
+											<div class="col-md-6 col-sm-12">
+												<div class="form-group col-md-6 col-sm-12">
 													<span>texto</span>
 													<input class="form-control" placeholder="Texto espa&ntilde;ol">
 													<input class="form-control" placeholder="Texto ingl&eacute;s">
@@ -125,35 +125,35 @@
 												</div>
 											</div>
 											<div class="panel-heading" style="overflow: hidden; margin-bottom: 30px;"></div>
-											<div class="col-md-6">
+											<div class="col-md-6 col-sm-12">
 												<div class="form-group col-md-6 box-section col-sm-12">
 													<span>&iacute;cono 1</span>
 													<input class="form-control" placeholder="Texto espa&ntilde;ol">
 													<input class="form-control" placeholder="Texto ingl&eacute;s">
-													<input type="file">
+													<!-- <input type="file"> -->
 													<p class="help-block"></p>
 												</div>
 												<div class="form-group col-md-6 box-section col-sm-12">
 													<span>&iacute;cono 2</span>
 													<input class="form-control" placeholder="Texto espa&ntilde;ol">
 													<input class="form-control" placeholder="Texto ingl&eacute;s">
-													<input type="file">
+													<!-- <input type="file"> -->
 													<p class="help-block"></p>
 												</div>
 											</div>
-											<div class="col-md-6">
+											<div class="col-md-6 col-sm-12">
 												<div class="form-group col-md-6 box-section col-sm-12">
 													<span>&iacute;cono 3</span>
 													<input class="form-control" placeholder="Texto espa&ntilde;ol">
 													<input class="form-control" placeholder="Texto ingl&eacute;s">
-													<input type="file">
+													<!-- <input type="file"> -->
 													<p class="help-block"></p>
 												</div>
 												<div class="form-group col-md-6 col-sm-12">
 													<span>&iacute;cono 4</span>
 													<input class="form-control" placeholder="Texto espa&ntilde;ol">
 													<input class="form-control" placeholder="Texto ingl&eacute;s">
-													<input type="file">
+													<!-- <input type="file"> -->
 													<p class="help-block"></p>
 												</div>
 											</div>
