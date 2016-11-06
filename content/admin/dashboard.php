@@ -68,9 +68,17 @@
 												<label class="section-name">Secci&oacute;n 1</label>
 												<div class="col-md-6 col-sm-12">
 													<div class="form-group col-md-6 box-section col-sm-12">
-														<span>t&iacute;tulo</span>
-														<input class="form-control" placeholder="T&iacute;tulo espa&ntilde;ol">
-														<input class="form-control" placeholder="T&iacute;tulo ingl&eacute;s">
+														<div class="title-box">
+															<span class="global-title">t&iacute;tulo</span>
+														</div>
+														<div class="portion portion-spanish">
+															<label class="lan">Espa&ntilde;ol</label>
+															<span class="editable-text"></span>
+														</div>
+														<div class="portion portion-english">
+															<label class="lan">Ingl&eacute;s</label>
+															<span class="editable-text"></span>
+														</div>
 													</div>
 																					
 													<div class="form-group col-md-6 box-section col-sm-12">
@@ -92,8 +100,8 @@
 														<p class="help-block"></p>
 													</div>
 												</div>
-												<button type="submit" class="btn btn-primary edit-section" id="section-1">Editar secci&oacute;n 1</button>
-												<button type="submit" class="btn btn-danger edit-section" id="section-1">Eliminar secci&oacute;n 1</button>
+												<button type="submit" class="btn btn-primary edit-section" id="edit-section-1">Editar secci&oacute;n 1</button>
+												<button type="submit" class="btn btn-danger edit-section" id="delete-section-1">Eliminar secci&oacute;n 1</button>
 											</form>	
 
 										</div>
@@ -157,8 +165,8 @@
 													<p class="help-block"></p>
 												</div>
 											</div>
-											<button type="submit" class="btn btn-primary edit-section" id="section-1">Editar secci&oacute;n 2</button>
-											<button type="submit" class="btn btn-primary edit-section" id="section-1">Editar secci&oacute;n 2</button>
+											<button type="submit" class="btn btn-primary edit-section" id="edit-section-1">Editar secci&oacute;n 2</button>
+											<button type="submit" class="btn btn-danger edit-section" id="delete-section-2">Eliminar secci&oacute;n 2</button>
 										</form>	
 									</div>
 								</div>
@@ -214,8 +222,8 @@
 
     <!-- Plugin JavaScript -->
     <script src="../../public/js/global/jqueryeasing.js"></script>
-    <script src="../../public/js/global/classie.js"></script>
-    <script src="../../public/js/global/cbpAnimatedHeader.js"></script>
+    <!--<script src="../../public/js/global/classie.js"></script>
+    <script src="../../public/js/global/cbpAnimatedHeader.js"></script>-->
 
     <!-- Contact Form JavaScript -->
     <script src="../../public/js/global/jqBootstrapValidation.js"></script>

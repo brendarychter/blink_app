@@ -56,6 +56,8 @@
 			echo $datos;
 		}
 		/*envio de form*/
-		public function setContent()
+		public function setContent(){
+			
+		}
 	}
 ?>

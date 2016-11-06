@@ -19,6 +19,6 @@ $(document).ready(function(){
     		$('.intro-lead-in').val(data["subtitle"].english);
     	}
     }).error(function(error, textStatus){
-        console.log(error);
+        console.log(textStatus);
     });
 })

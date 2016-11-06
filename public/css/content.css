@@ -478,12 +478,37 @@ h2 {
       text-transform: uppercase;
       font-size: 18px;
       letter-spacing: 2px; }
-    .main-admin-dashboard .tab-admin-page .form-group span {
-      float: right;
-      font-weight: bold; }
     .main-admin-dashboard .tab-admin-page .form-section .edit-section {
       float: right;
       margin-right: 10px; }
+    .main-admin-dashboard .tab-admin-page .form-section .box-section .title-box {
+      overflow: hidden; }
+      .main-admin-dashboard .tab-admin-page .form-section .box-section .title-box .global-title {
+        display: block;
+        float: right;
+        font-weight: bold; }
+    .main-admin-dashboard .tab-admin-page .form-section .box-section .portion {
+      position: relative;
+      float: left;
+      overflow: hidden;
+      width: 100%; }
+      .main-admin-dashboard .tab-admin-page .form-section .box-section .portion .lan {
+        position: absolute;
+        top: 0;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 12px; }
+      .main-admin-dashboard .tab-admin-page .form-section .box-section .portion .editable-text {
+        border: 1px solid #eee;
+        box-shadow: none;
+        display: inline-block;
+        width: 75%;
+        height: 55px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        word-wrap: break-word;
+        float: right; }
 
 @media (min-width: 1px) and (max-width: 767px) {
   .main-admin-dashboard .tab-admin-page .form-section .box-section {
