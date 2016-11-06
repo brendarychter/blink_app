@@ -1,15 +1,13 @@
 $(document).ready(function(){
 
-    var userAdmin = {};
+  var userAdmin = {};
 
-    $.ajaxSetup({cache: false})
-    getSessionAdminUser();
+  $.ajaxSetup({cache: false})
+  getSessionAdminUser();
 
-    
-    toggleTabs();
-    populateLabels();
-    
-
+  
+  toggleTabs();
+  populateLabels();
 
   function getSessionAdminUser(){
   	console.log("entro")
@@ -33,8 +31,8 @@ $(document).ready(function(){
         cache: false,
         dataType: "json"
     }).done(function( data ) {
-      console.log(data);
-      $('.editable-text').append(data["title"].spanish);
+      $('.titulo-spanish').append(data["title"].spanish);
+      $('.titulo-english').append(data["title"].english);
     }).error(function(error, textStatus){
         console.log(error);
     });
@@ -52,4 +50,27 @@ $(document).ready(function(){
       $(".tab-admin-page ." + $(this).attr('id')).show();
     });
   }
+
+
+  var switchToInput = function () {
+      var $input = $("<textarea>", {
+          val: $(this).text(),
+          type: "text"
+      });
+      $input.addClass("editable-text");
+      $(this).replaceWith($input);
+      $input.on("blur", switchToSpan);
+      $input.select();
+      $input.css("cursor", "text");
+      $input.css("resize", "none");
+  };
+  var switchToSpan = function () {
+      var $span = $("<span>", {
+          text: $(this).val()
+      });
+      $span.addClass("editable-text");
+      $(this).replaceWith($span);
+      $span.on("click", switchToInput);
+  }
+  $(".editable-text").on("click", switchToInput);
 })

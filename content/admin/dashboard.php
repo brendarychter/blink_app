@@ -73,11 +73,11 @@
 														</div>
 														<div class="portion portion-spanish">
 															<label class="lan">Espa&ntilde;ol</label>
-															<span class="editable-text"></span>
+															<span class="editable-text titulo-spanish"></span>
 														</div>
 														<div class="portion portion-english">
 															<label class="lan">Ingl&eacute;s</label>
-															<span class="editable-text"></span>
+															<span class="editable-text titulo-english"></span>
 														</div>
 													</div>						
 													<div class="form-group col-md-3 box-section col-sm-12">
