@@ -65,7 +65,7 @@
 									<div class="panel-heading"></div>
 										<div class="panel-body">
 											<label class="section-name">Secci&oacute;n 1</label>
-											<form role="form" class="form-section" id="form-section-1">
+											<form role="form" class="form-section" id="form-section-1" method="post" enctype="multipart/form-data" data-toggle="validator">
 												<div class="col-md-12 col-sm-12 line-sections">
 													<div class="form-group col-md-3 box-section col-sm-12">
 														<div class="title-box">
@@ -110,7 +110,7 @@
 														<div class="title-box">
 															<span class="global-title">imagen de fondo</span>
 														</div>
-														<!-- <input type="file"> -->
+														<input type="file">
 														<p class="help-block"></p>
 													</div>
 												</div>
@@ -249,6 +249,7 @@
     <script src="../../public/js/global/agency.js"></script>
 
     <!-- Actions -->
+    <script src="../../public/js/global/jquery.validate.min.js"></script>
     <script src="../../public/js/actions/dashboard.js"></script>
 </body>
 

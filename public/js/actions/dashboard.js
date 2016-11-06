@@ -4,8 +4,33 @@ $(document).ready(function(){
 
   $.ajaxSetup({cache: false})
   getSessionAdminUser();
-
   
+  $('#edit-section-1').on("click", function(){
+    params= {};
+    params.action = "modifyContent";
+    params.spanish = $('#username-login').val();
+    params.password = $('#password-login').val();
+    $('#form-section-1').validate({
+      submitHandler: function(form) {
+        $.ajax({
+            url: "../../back/admin/content/Content.php",
+            type: form.method,
+            data: $(form).serialize(),
+            success: function(response) {
+                $('#answers').html(response);
+            },
+            error: function(status, error){
+              console.log(error)
+            }  
+        }).done(function( data ) {
+          console.log(data)
+        }).error(function(error, textStatus){
+            console.log(error);
+        });
+      }
+    })    
+  })
+
   toggleTabs();
   populateLabels();
 
@@ -16,11 +41,6 @@ $(document).ready(function(){
           userAdmin = JSON.parse(data);
           $("#admin-logged").append(userAdmin.username);
       });
-  }
-
-
-  function editIndex(){
-  	
   }
 
   function populateLabels(){
