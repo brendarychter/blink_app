@@ -12,12 +12,13 @@ $(document).ready(function(){
         cache: false,
         dataType: "json"
     }).done(function( data ) {
+        console.log(data)
     	if (language == "es"){
-    		$('.intro-heading').val(data["title"].spanish);
-    		$('.intro-lead-in').val(data["subtitle"].spanish);
+    		$('.intro-heading').text(data["title"].spanish);
+    		$('.intro-lead-in').text(data["subtitle"].spanish);
     	}else{
-    		$('.intro-heading').val(data["title"].english);
-    		$('.intro-lead-in').val(data["subtitle"].english);
+    		$('.intro-heading').text(data["title"].english);
+    		$('.intro-lead-in').text(data["subtitle"].english);
     	}
     }).error(function(error, textStatus){
         console.log(textStatus);

@@ -115,8 +115,9 @@
 													</div>
 												</div>
 												<div class="abm-buttons">
-													<button type="submit" class="btn btn-primary edit-section" id="edit-section-1">Editar secci&oacute;n 1</button>
+													<!-- <button type="submit" class="btn btn-primary edit-section" id="edit-section-1">Editar secci&oacute;n 1</button> -->
 													<button type="submit" class="btn btn-danger edit-section" id="delete-section-1">Eliminar secci&oacute;n 1</button>
+													<!-- tiene que borrar el div del sitio -->
 												</div>
 											</form>	
 
