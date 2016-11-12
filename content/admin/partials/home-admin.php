@@ -11,11 +11,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text titulo-spanish"></span>
+							<span class="editable-text titulo-spanish-1"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text titulo-english"></span>
+							<span class="editable-text titulo-english-1"></span>
 						</div>
 					</div>						
 					<div class="form-group col-md-3 box-section col-sm-12">
@@ -24,11 +24,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text"></span>
+							<span class="editable-text subtitle-spanish-1"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text"></span>
+							<span class="editable-text subtitle-english-1"></span>
 						</div>
 					</div>
 					<div class="form-group col-md-3 box-section col-sm-12">
@@ -37,11 +37,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text"></span>
+							<span class="editable-text button-spanish-1"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text"></span>
+							<span class="editable-text button-english-1"></span>
 						</div>
 					</div>
 					<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
@@ -71,11 +71,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text"></span>
+							<span class="editable-text title-spanish-2"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text"></span>
+							<span class="editable-text title-english-2"></span>
 						</div>
 					</div>						
 					<div class="form-group col-md-3 box-section col-sm-12">
@@ -84,11 +84,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text"></span>
+							<span class="editable-text subtitle-spanish-2"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text"></span>
+							<span class="editable-text subtitle-english-2"></span>
 						</div>
 					</div>
 					<div class="form-group col-md-3 box-section col-sm-12">
@@ -97,11 +97,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text"></span>
+							<span class="editable-text text-spanish-2"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text"></span>
+							<span class="editable-text text-english-2"></span>
 						</div>
 					</div>
 					<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
@@ -110,11 +110,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text"></span>
+							<span class="editable-text button-spanish-2"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text"></span>
+							<span class="editable-text button-english-2"></span>
 						</div>
 					</div>
 				</div>

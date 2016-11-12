@@ -27,8 +27,23 @@ $(document).ready(function(){
         data: params,
         dataType: "json"
     }).done(function( data ) {
-        $('.titulo-spanish').append(data["title"].spanish);
-        $('.titulo-english').append(data["title"].english);
+        // SECTION 1
+        $('.titulo-spanish-1').append(data["title_section_1"].spanish);
+        $('.titulo-english-1').append(data["title_section_1"].english);
+        $('.subtitle-spanish-1').append(data["subtitle_section_1"].spanish);
+        $('.subtitle-english-1').append(data["subtitle_section_1"].english);
+        $('.button-spanish-1').append(data["button_section_1"].spanish);
+        $('.button-english-1').append(data["button_section_1"].english);
+
+        //SECTION 2
+        $('.title-spanish-2').append(data["title_section_2"].spanish);
+        $('.title-english-2').append(data["title_section_2"].english);
+        $('.subtitle-spanish-2').append(data["subtitle_section_2"].spanish);
+        $('.subtitle-english-2').append(data["subtitle_section_2"].english);
+        $('.text-spanish-2').append(data["text_section_2"].spanish);
+        $('.text-english-2').append(data["text_section_2"].english);
+        $('.button-spanish-2').append(data["button_section_2"].spanish);
+        $('.button-english-2').append(data["button_section_2"].english);
     }).error(function(error, textStatus){
         console.log(error);
     });
@@ -84,7 +99,7 @@ $(document).ready(function(){
                 data: params
             }).done(function( data ) {
               console.log(data)
-              $span.css({border: '0 solid #f37736'}).animate({
+              $span.css({border: '0 solid #29BF29'}).animate({
                     borderWidth: 1
                 }, 200);
             }).error(function(error, textStatus){

@@ -53,7 +53,7 @@
 
 		public function modifyHomeContent($connection, $newValue){
 			//VALIDAR QUE DEVUELVA TRUE
-			$query = "UPDATE home SET spanish='$newValue' WHERE value='title'";
+			$query = "UPDATE home SET spanish='$newValue' WHERE value='title_section_1'";
 			echo $query;
 			if (mysqli_query ($connection->connected, $query)) {
 			    echo "Escribio.";
