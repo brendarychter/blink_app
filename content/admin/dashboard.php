@@ -16,6 +16,7 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+
 </head>
 
 <body>
@@ -49,12 +50,21 @@
 				<div class="panel panel-default">
 					<!-- Navs for each page in the website -->
 					<div class="tabs-page-blink">
-						<ul class="nav nav-tabs">
+						<!-- <ul class="nav nav-tabs">
 						  	<li role="presentation" class="active toggle-nav-admin" id="home-admin"><a href="#">Home - Landing page</a></li>
-						  	<!-- <div class="panel-heading"><a href=""><svg class="glyph stroked pencil edit-icon"><use xlink:href="#stroked-pencil"></use></svg></a>Qui&eacute;nes somos</div> -->
+						  	<div class="panel-heading"><a href=""><svg class="glyph stroked pencil edit-icon"><use xlink:href="#stroked-pencil"></use></svg></a>Qui&eacute;nes somos</div>
 						 	<li role="presentation" class="toggle-nav-admin" id="team-admin"><a href="#">Qui&eacute;nes somos</a></li>
 						  	<li role="presentation" class="toggle-nav-admin"><a href="#">FAQ</a></li>
 						  	<li role="presentation" class="toggle-nav-admin"><a href="#">Demo</a></li>
+						</ul> -->
+						<ul class="topnav" id="myTopnav">
+							<li class="toggle-nav-admin" id="home-admin"><a href="#home">Home - Landing page</a></li>
+							<li class="toggle-nav-admin" id="team-admin"><a href="#team">Qui&eacute;nes somos</a></li>
+							<li class="toggle-nav-admin" ><a href="#how-it-works">C&oacute;mo funciona</a></li>
+							<li class="toggle-nav-admin" ><a href="#faq">FAQ</a></li>
+							<li class="icon">
+						    	<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+						  	</li>
 						</ul>
 					</div>
 					<!-- QUIENES SOMOS ADMIN -->
@@ -252,6 +262,17 @@
     <!-- Actions -->
     <script src="../../public/js/global/jquery.validate.min.js"></script>
     <script src="../../public/js/actions/dashboard.js"></script>
+    <script type="text/javascript">
+	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "topnav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "topnav";
+	    }
+	}
+    </script>
 </body>
 
 </html>

@@ -65,21 +65,22 @@
 						border: 1px solid #eee;
 						box-shadow: none;
 						display: inline-block;
-					    width: 75%;
+					    width: 70%;
 					    height: 55px;
 					    padding: 6px 12px;
 					    font-size: 14px;
-					    line-height: 1.42857143;
+					    line-height: 1.62857143;
 					    word-wrap: break-word;
 					    float: right;
 					    cursor: pointer;
+					    overflow: hidden;
 					}
 				}
 			}
 		}
 	}
 }
-@media (min-width: 1px) and (max-width:767px) {
+@media (min-width: 1px) and (max-width:768px) {
 	.main-admin-dashboard{
 		.tabs-page-blink .nav-tabs li a{
 			padding: 8px;
@@ -128,12 +129,20 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 	.main-admin-dashboard{
 		.tab-admin-page{
+			.panel-body{
+				padding-right: 0;
+				padding-left: 0;
+			}
 			.form-section{
 				.box-section{
 					border-right: 1px solid #ccc;
+				}
+				.line-sections{
+					padding-right: 0;
+					padding-left: 0;
 				}
 			}
 		}
