@@ -16,6 +16,7 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+
 </head>
 
 <body>
@@ -49,123 +50,34 @@
 				<div class="panel panel-default">
 					<!-- Navs for each page in the website -->
 					<div class="tabs-page-blink">
-						<ul class="nav nav-tabs">
+						<!-- <ul class="nav nav-tabs">
 						  	<li role="presentation" class="active toggle-nav-admin" id="home-admin"><a href="#">Home - Landing page</a></li>
-						  	<!-- <div class="panel-heading"><a href=""><svg class="glyph stroked pencil edit-icon"><use xlink:href="#stroked-pencil"></use></svg></a>Qui&eacute;nes somos</div> -->
+						  	<div class="panel-heading"><a href=""><svg class="glyph stroked pencil edit-icon"><use xlink:href="#stroked-pencil"></use></svg></a>Qui&eacute;nes somos</div>
 						 	<li role="presentation" class="toggle-nav-admin" id="team-admin"><a href="#">Qui&eacute;nes somos</a></li>
 						  	<li role="presentation" class="toggle-nav-admin"><a href="#">FAQ</a></li>
 						  	<li role="presentation" class="toggle-nav-admin"><a href="#">Demo</a></li>
+						</ul> -->
+						<ul class="topnav" id="myTopnav">
+							<li class="toggle-nav-admin" id="home-admin"><a href="#home">Home - Landing page</a></li>
+							<li class="toggle-nav-admin" id="team-admin"><a href="#team">Qui&eacute;nes somos</a></li>
+							<li class="toggle-nav-admin" ><a href="#how-it-works">C&oacute;mo funciona</a></li>
+							<li class="toggle-nav-admin" ><a href="#faq">FAQ</a></li>
+							<li class="icon">
+						    	<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+						  	</li>
 						</ul>
 					</div>
 					<!-- QUIENES SOMOS ADMIN -->
 				    <div class="col-lg-12 col-sm-12 col-md-12 tab-admin-page">			
 						<div class="row home-admin admin-nav active">
-							<div class="col-lg-12 col-sm-12 col-md-12">
-								<div class="panel panel-default">
-									<div class="panel-heading"></div>
-										<div class="panel-body">
-											<form role="form" class="form-section" id="form-section-1">
-												<label class="section-name">Secci&oacute;n 1</label>
-												<div class="col-md-6 col-sm-12">
-													<div class="form-group col-md-6 box-section col-sm-12">
-														<span>t&iacute;tulo</span>
-														<input class="form-control" placeholder="T&iacute;tulo espa&ntilde;ol">
-														<input class="form-control" placeholder="T&iacute;tulo ingl&eacute;s">
-													</div>
-																					
-													<div class="form-group col-md-6 box-section col-sm-12">
-														<span>subt&iacute;tulo</span>
-														<input class="form-control" placeholder="Subt&iacute;tulo espa&ntilde;ol">
-														<input class="form-control" placeholder="Subt&iacute;tulo ingl&eacute;s">
-													</div>
-
-												</div>
-												<div class="col-md-6 col-sm-12">
-													<div class="form-group col-md-6 box-section col-sm-12">
-														<span>bot&oacute;n</span>
-														<input class="form-control" placeholder="Bot&oacute;n espa&ntilde;ol">
-														<input class="form-control" placeholder="Bot&oacute;n ingl&eacute;s">
-													</div>
-													<div class="form-group col-md-6 col-sm-12">
-														<span>imagen de fondo</span>
-														<!-- <input type="file"> -->
-														<p class="help-block"></p>
-													</div>
-												</div>
-												<button type="submit" class="btn btn-primary edit-section" id="section-1">Editar secci&oacute;n 1</button>
-												<button type="submit" class="btn btn-danger edit-section" id="section-1">Eliminar secci&oacute;n 1</button>
-											</form>	
-
-										</div>
-									<div class="panel-heading" style="padding-top: 0;"></div>
-									<div class="panel-body">
-										<form role="form" class="form-section" id="form-section-1">
-											<label class="section-name">Secci&oacute;n 2</label>
-											<div class="col-md-6 col-sm-12">
-												<div class="form-group col-md-6 box-section col-sm-12">
-													<span>t&iacute;tulo</span>
-													<input class="form-control" placeholder="T&iacute;tulo espa&ntilde;ol">
-													<input class="form-control" placeholder="T&iacute;tulo ingl&eacute;s">
-												</div>
-																				
-												<div class="form-group col-md-6 box-section col-sm-12">
-													<span>subt&iacute;tulo</span>
-													<input class="form-control" placeholder="Subt&iacute;tulo espa&ntilde;ol">
-													<input class="form-control" placeholder="Subt&iacute;tulo ingl&eacute;s">
-												</div>
-
-											</div>
-											<div class="col-md-6 col-sm-12">
-												<div class="form-group col-md-6 col-sm-12">
-													<span>texto</span>
-													<input class="form-control" placeholder="Texto espa&ntilde;ol">
-													<input class="form-control" placeholder="Texto ingl&eacute;s">
-												</div>
-												<div class="form-group col-md-6 col-sm-12">
-												</div>
-											</div>
-											<div class="panel-heading" style="overflow: hidden; margin-bottom: 30px;"></div>
-											<div class="col-md-6 col-sm-12">
-												<div class="form-group col-md-6 box-section col-sm-12">
-													<span>&iacute;cono 1</span>
-													<input class="form-control" placeholder="Texto espa&ntilde;ol">
-													<input class="form-control" placeholder="Texto ingl&eacute;s">
-													<!-- <input type="file"> -->
-													<p class="help-block"></p>
-												</div>
-												<div class="form-group col-md-6 box-section col-sm-12">
-													<span>&iacute;cono 2</span>
-													<input class="form-control" placeholder="Texto espa&ntilde;ol">
-													<input class="form-control" placeholder="Texto ingl&eacute;s">
-													<!-- <input type="file"> -->
-													<p class="help-block"></p>
-												</div>
-											</div>
-											<div class="col-md-6 col-sm-12">
-												<div class="form-group col-md-6 box-section col-sm-12">
-													<span>&iacute;cono 3</span>
-													<input class="form-control" placeholder="Texto espa&ntilde;ol">
-													<input class="form-control" placeholder="Texto ingl&eacute;s">
-													<!-- <input type="file"> -->
-													<p class="help-block"></p>
-												</div>
-												<div class="form-group col-md-6 col-sm-12">
-													<span>&iacute;cono 4</span>
-													<input class="form-control" placeholder="Texto espa&ntilde;ol">
-													<input class="form-control" placeholder="Texto ingl&eacute;s">
-													<!-- <input type="file"> -->
-													<p class="help-block"></p>
-												</div>
-											</div>
-											<button type="submit" class="btn btn-primary edit-section" id="section-1">Editar secci&oacute;n 2</button>
-											<button type="submit" class="btn btn-primary edit-section" id="section-1">Editar secci&oacute;n 2</button>
-										</form>	
-									</div>
-								</div>
-							</div>
+							<?php
+						        include 'partials/home-admin.php';
+						    ?>
 						</div>
 						<div class="row team-admin admin-nav">
-							alalalal
+							<?php
+						        include 'partials/team-admin.php';
+						    ?>
 						</div>
 					</div>
 				</div>
@@ -214,8 +126,8 @@
 
     <!-- Plugin JavaScript -->
     <script src="../../public/js/global/jqueryeasing.js"></script>
-    <script src="../../public/js/global/classie.js"></script>
-    <script src="../../public/js/global/cbpAnimatedHeader.js"></script>
+    <!--<script src="../../public/js/global/classie.js"></script>
+    <script src="../../public/js/global/cbpAnimatedHeader.js"></script>-->
 
     <!-- Contact Form JavaScript -->
     <script src="../../public/js/global/jqBootstrapValidation.js"></script>
@@ -225,7 +137,19 @@
     <script src="../../public/js/global/agency.js"></script>
 
     <!-- Actions -->
+    <script src="../../public/js/global/jquery.validate.min.js"></script>
     <script src="../../public/js/actions/dashboard.js"></script>
+    <script type="text/javascript">
+	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "topnav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "topnav";
+	    }
+	}
+    </script>
 </body>
 
 </html>

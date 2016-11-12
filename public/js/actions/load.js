@@ -1,24 +1,29 @@
 $(document).ready(function(){
-	console.log("load first");
 	var language = "es";
 	//Configurar lenguaje html
-
+    params = {};
+    params.action = "getContent";
 	//if()spanish if english
 	$.ajax({
     //     //http://blinkapp.com.ar/back/user/adminUser.php
-        url: "back/admin/content/Content.php",
+        url: "back/admin/content/adminContent.php",
         type: "POST",
+        data: params,
         cache: false,
         dataType: "json"
     }).done(function( data ) {
+        console.log(data)
+        language="en";
     	if (language == "es"){
-    		$('.intro-heading').val(data["title"].spanish);
-    		$('.intro-lead-in').val(data["subtitle"].spanish);
+    		$('.title_section_1').text(data["title_section_1"].spanish);
+            $('.subtitle_section_1').text(data["subtitle_section_1"].spanish);
+    		$('.button_section_1').text(data["button_section_1"].spanish);
     	}else{
-    		$('.intro-heading').val(data["title"].english);
-    		$('.intro-lead-in').val(data["subtitle"].english);
+    		$('.title_section_1').text(data["title_section_1"].english);
+            $('.subtitle_section_1').text(data["subtitle_section_1"].english);
+            $('.button_section_1').text(data["button_section_1"].english);
     	}
     }).error(function(error, textStatus){
-        console.log(error);
+        console.log(textStatus);
     });
 })

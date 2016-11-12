@@ -5,10 +5,10 @@
 	height:20px
 }
 .main-admin-dashboard{
+	padding-top: 20px;
 	li.active a:focus, li.active a:hover{
 		border: 0;
 	}
-	padding-top: 20px;
 	button{
 		border-radius: 0;
 	}
@@ -33,39 +33,116 @@
 		    font-size: 18px;
 		    letter-spacing: 2px;
 		}
-		.form-group {
-			span{
-				float: right;
-				font-weight: bold;
-			}
-		}
 		.form-section{
 			.edit-section{
 				float: right;
 				margin-right: 10px;
 			}
-		}
-	}
-}
-@media (min-width: 1px) and (max-width:767px) {
-	.main-admin-dashboard{
-		.tab-admin-page{
-			.form-section{
-				.box-section{
-					/* USAR EL NOT LAST CHILD :not(:last-child)*/
-					border-bottom: 1px solid #ccc;
+
+			.box-section{
+				.title-box{
+					overflow: hidden;
+					.global-title{
+						display: block;
+						float: right;
+						font-weight: bold;
+					}
+				}
+				.portion{
+					position: relative;
+					float: left;
+					overflow: hidden;
+    				width: 100%;
+					.lan{
+						position: absolute;
+						top: 0;
+						display: inline-block;
+						text-transform: uppercase;
+						font-size: 12px;
+						letter-spacing: 0.5px;
+					}
+					.editable-text{
+						border: 1px solid #eee;
+						box-shadow: none;
+						display: inline-block;
+					    width: 70%;
+					    height: 55px;
+					    padding: 6px 12px;
+					    font-size: 14px;
+					    line-height: 1.62857143;
+					    word-wrap: break-word;
+					    float: right;
+					    cursor: pointer;
+					    overflow: hidden;
+					}
 				}
 			}
 		}
 	}
 }
+@media (min-width: 1px) and (max-width:768px) {
+	.main-admin-dashboard{
+		.tabs-page-blink .nav-tabs li a{
+			padding: 8px;
+			font-size: 14px;
+		}
+		.tab-admin-page{
+			.form-section{
+				.line-sections{
+					padding-left: 0;
+					padding-right: 0;
+				}
+				.box-section{
+					/* USAR EL NOT LAST CHILD :not(:last-child)*/
+					border-bottom: 1px solid #ccc;
+					overflow: hidden;
+					padding: 0 0px 20px 0px;
+				}
+				.abm-buttons{
+					overflow: hidden;
+					.edit-section{
+						float: right;
+						margin: 0 auto;
+					    width: 100%;
+					    margin-top: 10px;
+					}
+				}
+			}
+			.panel-body{
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+	.navbar {
+		.navbar-toggle{
+			display: none;
+		}
+		.navbar-brand{
+			padding-left: 10px;
+		}
+		.user-menu .glyph{
+			margin-right: 0;
+			margin-top: -4px;
+		}
 
-@media (min-width: 768px) {
+	}
+}
+
+@media (min-width: 769px) {
 	.main-admin-dashboard{
 		.tab-admin-page{
+			.panel-body{
+				padding-right: 0;
+				padding-left: 0;
+			}
 			.form-section{
 				.box-section{
 					border-right: 1px solid #ccc;
+				}
+				.line-sections{
+					padding-right: 0;
+					padding-left: 0;
 				}
 			}
 		}

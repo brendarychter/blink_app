@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 31-10-2016 a las 04:15:30
+-- Tiempo de generación: 12-11-2016 a las 18:53:05
 -- Versión del servidor: 10.1.13-MariaDB
 -- Versión de PHP: 5.5.35
 
@@ -80,8 +80,7 @@ CREATE TABLE `headers` (
 --
 
 CREATE TABLE `home` (
-  `value_id` int(11) NOT NULL,
-  `value` text NOT NULL,
+  `value` varchar(30) NOT NULL,
   `spanish` text NOT NULL,
   `english` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Landing page en español';
@@ -90,10 +89,21 @@ CREATE TABLE `home` (
 -- Volcado de datos para la tabla `home`
 --
 
-INSERT INTO `home` (`value_id`, `value`, `spanish`, `english`) VALUES
-(5, 'title', 'Tus grupos en un mismo lugar', 'Your groups in one place'),
-(7, 'subtitle', 'Una &uacute;nica aplicaci&oacute;n. Todo lo que necesitas.', 'A single application. Everything you need.'),
-(8, 'download_app', 'Descarg&aacute; la app', 'Download the app');
+INSERT INTO `home` (`value`, `spanish`, `english`) VALUES
+('button_section_1', 'Descarga la app', 'Download the app'),
+('button_section_2', 'Todavia quiero saber mas', 'I still want to know more'),
+('button_section_5', 'Enviar mensaje', 'Send message'),
+('image_section_4', '', ''),
+('subtitle_section_1', 'Una unica aplicacion. Todo lo que necesitas.', 'A single application. Everything you need.'),
+('subtitle_section_2', 'Tenes un grupo de amigos de la facultad Otro de la oficina De futbol o baile', 'Do you have a group of friends from the university Another from the office Football or dance'),
+('subtitle_section_5', 'Contactate', 'Contact'),
+('text_section_2', 'Es una herramienta, un aliado en tu dia a dia. Es la mejor manera de mantenerte informado todo el tiempo de todo lo que pasa en tus grupos al recibir notificaciones en el momento en que tus amigos publican contenidos.', 'It is a tool, an ally in your daily life. It''s the best way to stay informed of all that''s going on in your groups when you receive notifications when your friends post content.'),
+('text_section_4', 'Vas a poder acceder a las novedades mas rapidamente y usar la aplicacion de forma mas comoda y eficiente', 'You will be able to access the latest news faster and use the application in a more comfortable and efficient way'),
+('title_section_1', 'Todos tus grupos en el mismo lugarr', 'All your groups in the same place'),
+('title_section_2', 'Que es blink', 'What is blink'),
+('title_section_4', 'Descargate la aplicacion para el celular', 'Download the app mobile'),
+('title_section_5', 'Queremos saber tu opinion', 'We want to know your opinion'),
+('video_section_3', '', '');
 
 -- --------------------------------------------------------
 
@@ -202,8 +212,7 @@ ALTER TABLE `headers`
 -- Indices de la tabla `home`
 --
 ALTER TABLE `home`
-  ADD PRIMARY KEY (`value_id`),
-  ADD KEY `value_id` (`value_id`);
+  ADD PRIMARY KEY (`value`);
 
 --
 -- Indices de la tabla `modules`
@@ -252,11 +261,6 @@ ALTER TABLE `groups`
 --
 ALTER TABLE `headers`
   MODIFY `id_header` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT de la tabla `home`
---
-ALTER TABLE `home`
-  MODIFY `value_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT de la tabla `modules`
 --
