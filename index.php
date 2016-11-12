@@ -30,10 +30,10 @@
     <header id="main-page">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Una &uacute;nica aplicaci&oacute;n. Todo lo que necesitas.</div>
-                <div class="intro-heading">Tus grupos en un mismo lugar</div>
+                <div class="intro-lead-in subtitle_section_1">Una &uacute;nica aplicaci&oacute;n. Todo lo que necesitas.</div>
+                <div class="intro-heading title_section_1">Tus grupos en un mismo lugar</div>
                 <!--<a href="#conoce" class="page-scroll btn btn-xl" style="margin-right:5px">Conoc&eacute; m&aacute;s</a>-->
-                <a href="#download-app" class="page-scroll btn btn-xl">Descarg&aacute; la app</a>
+                <a href="#download-app" class="page-scroll btn btn-xl button_section_1">Descarg&aacute; la app</a>
             </div>
         </div>
     </header>

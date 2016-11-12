@@ -13,12 +13,15 @@ $(document).ready(function(){
         dataType: "json"
     }).done(function( data ) {
         console.log(data)
+        language="en";
     	if (language == "es"){
-    		$('.intro-heading').text(data["title"].spanish);
-    		$('.intro-lead-in').text(data["subtitle"].spanish);
+    		$('.title_section_1').text(data["title_section_1"].spanish);
+            $('.subtitle_section_1').text(data["subtitle_section_1"].spanish);
+    		$('.button_section_1').text(data["button_section_1"].spanish);
     	}else{
-    		$('.intro-heading').text(data["title"].english);
-    		$('.intro-lead-in').text(data["subtitle"].english);
+    		$('.title_section_1').text(data["title_section_1"].english);
+            $('.subtitle_section_1').text(data["subtitle_section_1"].english);
+            $('.button_section_1').text(data["button_section_1"].english);
     	}
     }).error(function(error, textStatus){
         console.log(textStatus);

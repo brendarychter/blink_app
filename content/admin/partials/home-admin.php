@@ -226,11 +226,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text"></span>
+							<span class="editable-text title-spanish-4"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text"></span>
+							<span class="editable-text title-english-4"></span>
 						</div>
 					</div>						
 					<div class="form-group col-md-3 box-section col-sm-12">
@@ -239,11 +239,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text"></span>
+							<span class="editable-text text-spanish-4"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text"></span>
+							<span class="editable-text text-english-4"></span>
 						</div>
 					</div>
 					<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
@@ -256,6 +256,127 @@
 				</div>
 				<div class="abm-buttons">
 					<button type="submit" class="btn btn-danger edit-section" id="delete-section-1">Eliminar secci&oacute;n 4</button>
+				</div>
+			</form>	
+
+		</div>
+		<div class="panel-heading"></div>
+		<div class="panel-body">
+			<label class="section-name">Secci&oacute;n 5</label>
+			<form role="form" class="form-section" id="form-section-4" method="post" enctype="multipart/form-data" data-toggle="validator">
+				<div class="col-md-12 col-sm-12 line-sections">
+					
+					<div class="form-group col-md-4 box-section col-sm-12">
+						<div class="title-box">
+							<span class="global-title">t&iacute;tulo</span>
+						</div>
+						<div class="portion portion-spanish">
+							<label class="lan">Espa&ntilde;ol</label>
+							<span class="editable-text title-spanish-5"></span>
+						</div>
+						<div class="portion portion-english">
+							<label class="lan">Ingl&eacute;s</label>
+							<span class="editable-text title-english-5"></span>
+						</div>
+					</div>						
+					<div class="form-group col-md-4 box-section col-sm-12">
+						<div class="title-box">
+							<span class="global-title">subt&iacute;tulo</span>
+						</div>
+						<div class="portion portion-spanish">
+							<label class="lan">Espa&ntilde;ol</label>
+							<span class="editable-text subtitle-spanish-5"></span>
+						</div>
+						<div class="portion portion-english">
+							<label class="lan">Ingl&eacute;s</label>
+							<span class="editable-text subtitle-english-5"></span>
+						</div>
+					</div>
+					<div class="form-group col-md-4 box-section col-sm-12" style="border-right: none">
+						<div class="title-box">
+							<span class="global-title">bot&oacute;n</span>
+						</div>
+						<div class="portion portion-spanish">
+							<label class="lan">Espa&ntilde;ol</label>
+							<span class="editable-text button-spanish-5"></span>
+						</div>
+						<div class="portion portion-english">
+							<label class="lan">Ingl&eacute;s</label>
+							<span class="editable-text button-english-5"></span>
+						</div>
+					</div>
+					<div class="panel-heading" style="overflow: hidden; margin-bottom: 30px;"></div>
+					<div class="form-group col-md-3 box-section col-sm-12">
+						<div class="title-box">
+							<span class="global-title">dato 1</span>
+						</div>
+						<div class="portion portion-spanish">
+							<label class="lan">Espa&ntilde;ol</label>
+							<span class="editable-text "></span>
+						</div>
+						<div class="portion portion-english">
+							<label class="lan">Ingl&eacute;s</label>
+							<span class="editable-text "></span>
+						</div>
+						<div class="portion">
+							<input type="file">
+							<p class="help-block"></p>
+						</div>
+					</div>
+					<div class="form-group col-md-3 box-section col-sm-12">
+						<div class="title-box">
+							<span class="global-title">dato 2</span>
+						</div>
+						<div class="portion portion-spanish">
+							<label class="lan">Espa&ntilde;ol</label>
+							<span class="editable-text "></span>
+						</div>
+						<div class="portion portion-english">
+							<label class="lan">Ingl&eacute;s</label>
+							<span class="editable-text "></span>
+						</div>
+						<div class="portion">
+							<input type="file">
+							<p class="help-block"></p>
+						</div>
+					</div>
+					<div class="form-group col-md-3 box-section col-sm-12">
+						<div class="title-box">
+							<span class="global-title">dato 3</span>
+						</div>
+						<div class="portion portion-spanish">
+							<label class="lan">Espa&ntilde;ol</label>
+							<span class="editable-text "></span>
+						</div>
+						<div class="portion portion-english">
+							<label class="lan">Ingl&eacute;s</label>
+							<span class="editable-text "></span>
+						</div>
+						<div class="portion">
+							<input type="file">
+							<p class="help-block"></p>
+						</div>
+					</div>
+					<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
+						<div class="title-box">
+							<span class="global-title">dato 4</span>
+						</div>
+						<div class="portion portion-spanish">
+							<label class="lan">Espa&ntilde;ol</label>
+							<span class="editable-text "></span>
+						</div>
+						<div class="portion portion-english">
+							<label class="lan">Ingl&eacute;s</label>
+							<span class="editable-text "></span>
+						</div>
+						<div class="portion">
+							<input type="file">
+							<p class="help-block"></p>
+						</div>
+					</div>
+				</div>
+				<div class="abm-buttons">
+					<button type="submit" class="btn btn-danger edit-section" id="delete-section-1">Eliminar secci&oacute;n 5</button>
 				</div>
 			</form>	
 

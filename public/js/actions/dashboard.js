@@ -44,6 +44,20 @@ $(document).ready(function(){
         $('.text-english-2').append(data["text_section_2"].english);
         $('.button-spanish-2').append(data["button_section_2"].spanish);
         $('.button-english-2').append(data["button_section_2"].english);
+
+        //SECTION 4
+        $('.title-spanish-4').append(data["title_section_4"].spanish);
+        $('.title-english-4').append(data["title_section_4"].english);
+        $('.text-spanish-4').append(data["text_section_4"].spanish);
+        $('.text-english-4').append(data["text_section_4"].english);
+
+        //SECTION 5
+        $('.button-spanish-5').append(data["button_section_5"].spanish);
+        $('.button-english-5').append(data["button_section_5"].english);
+        $('.title-spanish-5').append(data["title_section_5"].spanish);
+        $('.title-english-5').append(data["title_section_5"].english);
+        $('.subtitle-spanish-5').append(data["subtitle_section_5"].spanish);
+        $('.subtitle-english-5').append(data["subtitle_section_5"].english);
     }).error(function(error, textStatus){
         console.log(error);
     });
