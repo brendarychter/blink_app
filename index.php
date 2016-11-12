@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Blink App - Home</title>
+    <!-- CAMBIAR ACÁ TAMBIÉN EL TITLE POR IDIOMA -->
+    <title>Home - Blink App</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
