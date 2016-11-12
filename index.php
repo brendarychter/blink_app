@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--CSS-->
-	<link rel="stylesheet" type="text/css" href="public/css/content.css">
-	<link rel="stylesheet" href="public/css/bootstrap.css" >
+    <link rel="stylesheet" type="text/css" href="public/css/content.css">
+    <link rel="stylesheet" href="public/css/bootstrap.css" >
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="public/css/styles_default.css">

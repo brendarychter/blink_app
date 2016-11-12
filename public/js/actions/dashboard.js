@@ -84,6 +84,9 @@ $(document).ready(function(){
                 data: params
             }).done(function( data ) {
               console.log(data)
+              $span.css({border: '0 solid #f37736'}).animate({
+                    borderWidth: 1
+                }, 200);
             }).error(function(error, textStatus){
                 console.log(error);
             });
