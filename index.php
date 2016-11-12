@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="know-more">
-                <a href="#conoce-mas" class="page-scroll btn btn-xl"id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
+                <a href="content/how_it_works.php" target="_blank" class="page-scroll btn btn-xl" id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
             </div>
         </div>
     </section>

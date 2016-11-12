@@ -13,7 +13,7 @@ $(document).ready(function(){
         dataType: "json"
     }).done(function( data ) {
         console.log(data)
-        language="en";
+        language = "es";
     	if (language == "es"){
     		$('.title_section_1').text(data["title_section_1"].spanish);
             $('.subtitle_section_1').text(data["subtitle_section_1"].spanish);
