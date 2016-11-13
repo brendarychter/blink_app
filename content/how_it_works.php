@@ -29,8 +29,7 @@
     <link rel="stylesheet" href="../public/css/fonts.css">
 </head>
 <body id="page-top" class="index landing-main-page">
-    <!--burger button animation https://envato.com/blog/pure-css-animation-snippets/-->
-    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #222; font-size: 14px">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -51,7 +50,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="../index.php#conoce" target="_blank">blink!</a>
+                        <a class="page-scroll" href="#main-page">blink!</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#conoce">Conoc&eacute; m&aacute;s</a>
@@ -74,7 +73,7 @@
                     <li>
                         <a class="button" href="content/log_in.php#login-box-link">Inici&aacute; sesi&oacute;n</a>
                     </li>
-                    <li class="" style="border-left: 1px solid #CCC;">
+                    <li class="last-item-header">
                         <a class="button" href="content/log_in.php#signup-box-link"><b>Registrate</b></a>
                     </li>
                 </ul>
@@ -82,7 +81,7 @@
         </div>
     </nav>
     <header>
-        <h1>&#191;C&oacute;mo puedo usar la aplicaci&oacute;n?</h1>
+        <h1>&#191;C&oacute;mo empezar a usar la aplicaci&oacute;n?</h1>
         <h2>Te presentamos una gu&iacute;a pr&aacute;ctica de pasos a seguir para descargarla y utilizarla</h2>
     </header>
 

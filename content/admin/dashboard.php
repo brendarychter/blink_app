@@ -8,7 +8,7 @@
 	<link href="../../public/css/bootstrap.css" rel="stylesheet">
 	<link href="../../public/css/datepicker3.css" rel="stylesheet">
 	<link href="../../public/css/styles_dashboard.css" rel="stylesheet">
-	<link href="../../public/css/content.css" rel="stylesheet">
+	<link href="../../public/css/_admin.css" rel="stylesheet">
 
 	<link rel="shortcut icon" type="image/png" href="../../public/img/icon_tab.png"/>
 	<!--[if lt IE 9]>
@@ -50,21 +50,12 @@
 				<div class="panel panel-default">
 					<!-- Navs for each page in the website -->
 					<div class="tabs-page-blink">
-						<!-- <ul class="nav nav-tabs">
+						<ul class="nav nav-tabs">
 						  	<li role="presentation" class="active toggle-nav-admin" id="home-admin"><a href="#">Home - Landing page</a></li>
-						  	<div class="panel-heading"><a href=""><svg class="glyph stroked pencil edit-icon"><use xlink:href="#stroked-pencil"></use></svg></a>Qui&eacute;nes somos</div>
-						 	<li role="presentation" class="toggle-nav-admin" id="team-admin"><a href="#">Qui&eacute;nes somos</a></li>
+						  	<!-- <div class="panel-heading"><a href=""><svg class="glyph stroked pencil edit-icon"><use xlink:href="#stroked-pencil"></use></svg></a>Qui&eacute;nes somos</div>
+						 	 --><li role="presentation" class="toggle-nav-admin" id="team-admin"><a href="#">Qui&eacute;nes somos</a></li>
 						  	<li role="presentation" class="toggle-nav-admin"><a href="#">FAQ</a></li>
 						  	<li role="presentation" class="toggle-nav-admin"><a href="#">Demo</a></li>
-						</ul> -->
-						<ul class="topnav" id="myTopnav">
-							<li class="toggle-nav-admin" id="home-admin"><a href="#home">Home - Landing page</a></li>
-							<li class="toggle-nav-admin" id="team-admin"><a href="#team">Qui&eacute;nes somos</a></li>
-							<li class="toggle-nav-admin" ><a href="#how-it-works">C&oacute;mo funciona</a></li>
-							<li class="toggle-nav-admin" ><a href="#faq">FAQ</a></li>
-							<li class="icon">
-						    	<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-						  	</li>
 						</ul>
 					</div>
 					<!-- QUIENES SOMOS ADMIN -->

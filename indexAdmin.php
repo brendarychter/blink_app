@@ -16,12 +16,19 @@
 	<script src="js/html5shiv.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+	<style type="text/css">
+        input, .btn {
+            border-radius: 0;
+        }
+        h2, h3{
+        	padding: 0 9px;
+        }
+    </style>
 	</head>
 <body>
 	<div class="row">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-			<div class="login-panel panel panel-default">
+			<div class="login-panel panel panel-default" style="border-radius: 0; margin-top: 120px">
 				<h2>Panel de Administraci&oacute;n</h2>
 				<h3>Blink App</h3>
 				<div class="panel-heading">Log in</div>
@@ -29,10 +36,10 @@
 					<form role="form">
 						<fieldset>
 							<div class="form-group">
-								<input class="form-control" placeholder="Usuario" name="email" type="input" autofocus="" id="username-admin">
+								<input class="form-control" placeholder="Usuario" name="email" type="input" autofocus="" id="username-admin" style="border-radius: 0">
 							</div>
 							<div class="form-group">
-								<input class="form-control" placeholder="Contrase&ntilde;a" name="password" type="password" value="" id="pass-admin">
+								<input class="form-control" placeholder="Contrase&ntilde;a" name="password" type="password" value="" id="pass-admin" style="border-radius: 0">
 							</div>
 							<div class="checkbox">
 								<label>

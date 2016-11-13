@@ -3,19 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- CAMBIAR ACÁ TAMBIÉN EL TITLE POR IDIOMA -->
-    <title>Home - Blink App</title>
+    <title>Blink App - Home</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="public/css/content.css">
+    
+    <link rel="stylesheet" type="text/css" href="public/css/main.css">
     <link rel="stylesheet" href="public/css/bootstrap.css" >
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="public/css/styles_default.css">
     <link rel="shortcut icon" type="image/png" href="public/img/icon_tab.png"/>
-    
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -31,10 +32,10 @@
     <header id="main-page">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in subtitle_section_1">Una &uacute;nica aplicaci&oacute;n. Todo lo que necesitas.</div>
-                <div class="intro-heading title_section_1">Tus grupos en un mismo lugar</div>
+                <div class="intro-lead-in">Una &uacute;nica aplicaci&oacute;n. Todo lo que necesit&aacute;s.</div>
+                <div class="intro-heading">Tus grupos en un mismo lugar</div>
                 <!--<a href="#conoce" class="page-scroll btn btn-xl" style="margin-right:5px">Conoc&eacute; m&aacute;s</a>-->
-                <a href="#download-app" class="page-scroll btn btn-xl button_section_1">Descarg&aacute; la app</a>
+                <a href="#download-app" class="page-scroll btn btn-xl">Descarg&aacute; la app</a>
             </div>
         </div>
     </header>
@@ -45,8 +46,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">&#191;Qu&eacute; es blink?</h2>
-                    <h3 class="section-subheading text-muted"> &#191;Ten&eacute;s un grupo de amigos de la facultad? &#191;Otro de la oficina? &#191;De f&uacute;tbol o baile?</br><span >Blink te permite comunicarte con todos ellos desde un mismo lugar.</span> </br>
-                    <span class="description-conoce">Es una herramienta, un aliado en tu d&iacute;a a d&iacute;a. Es la mejor manera de mantenerte informado todo el tiempo de todo lo que pasa en tus grupos al recibir notificaciones en el momento en que tus amigos publican contenidos.</span></h3>
+                    <h3 class="section-subheading text-muted" style="line-height: 28px;"> &#191;Ten&eacute;s un grupo de amigos de la facultad? &#191;Otro de la oficina? &#191;De f&uacute;tbol o baile?</br><span style="font-style: normal;">Blink te permite comunicarte con todos ellos desde un mismo lugar.</span> </br>
+                    <span style="margin-top:16px; display: block; font-weight: bold; font-style: normal;">Es una herramienta, un aliado en tu d&iacute;a a d&iacute;a. Es la mejor manera de mantenerte informado todo el tiempo de todo lo que pasa en tus grupos al recibir notificaciones en el momento en que tus amigos publican contenidos.</span></h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -67,8 +68,8 @@
                     <p class="text-muted">Enterate de las &uacute;ltimas novedades</p>
                 </div>
             </div>
-            <div class="know-more">
-                <a href="content/how_it_works.php" target="_blank" class="page-scroll btn btn-xl" id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
+            <div style="text-align: center;">
+                <a href="#conoce-mas" class="page-scroll btn btn-xl"id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
             </div>
         </div>
     </section>
@@ -139,12 +140,11 @@
         include 'content/footer.php';
     ?>
 
+
     <!-- Scripts -->
     
     <!-- jQuery -->
     <script src="public/js/global/jquery.js"></script>
-    
-    <script src="public/js/actions/load.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="public/js/global/bootstrap.min.js"></script>
@@ -160,7 +160,6 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="public/js/global/agency.js"></script>
-
 
 </body>
 </html>

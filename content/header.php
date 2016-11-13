@@ -1,4 +1,3 @@
-<!--burger button animation https://envato.com/blog/pure-css-animation-snippets/-->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -43,7 +42,7 @@
                 <li>
                     <a class="button" href="content/log_in.php#login-box-link">Inici&aacute; sesi&oacute;n</a>
                 </li>
-                <li class="" style="border-left: 1px solid #CCC;">
+                <li class="last-item-header">
                     <a class="button" href="content/log_in.php#signup-box-link"><b>Registrate</b></a>
                 </li>
             </ul>

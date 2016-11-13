@@ -63,11 +63,13 @@ Main components
 
 -------------------------------- */
 header {
-  height: 200px;
+  height: 210px;
   line-height: 65px;
   text-align: center;
   background: #222;
   padding-top: 55px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 header h1 {
   color: #ffffff;
@@ -249,9 +251,7 @@ header h2{
   position: relative;
   margin-left: 95px;
   background: #ffffff;
-  border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #d7e4ed;
 }
 .cd-timeline-content::after {
   clear: both;
@@ -264,6 +264,7 @@ header h2{
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;
+  text-decoration: none;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
@@ -275,11 +276,16 @@ header h2{
 .cd-timeline-content .cd-read-more {
   float: right;
   padding: .8em 1em;
-  background: #acb7c0;
-  color: #ffffff;
-  border-radius: 0.25em;
+  background: #222;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .no-touch .cd-timeline-content .cd-read-more:hover {
+  text-decoration: none;
   background-color: #bac4cb;
 }
 .cd-timeline-content .cd-date {
