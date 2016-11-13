@@ -12,7 +12,7 @@ body{
 a, a:hover, a:focus{
 	color: rgba(191, 52, 30, 0.59)
 }
-.sidebar ul.nav .active a, .sidebar ul.nav .active > a:hover{
+.sidebar ul.nav .active a, .sidebar ul.nav .active > a:hover, .sidebar ul.nav .active > a:focus{
 	background-color: rgba(191, 52, 30, 0.59)
 }
 
@@ -35,9 +35,10 @@ a, a:hover, a:focus{
 					.icon{
 						width: 40px;
 						height: 40px;
-						color: #1ebfae;
-						background-color: #fff;
+						color: #fff;
+						// background-color: #1ebfae;
 						padding: 5px;
+						cursor: pointer;
 					}
 				}
 				.group-name{

@@ -30,9 +30,9 @@ a, a:hover, a:focus {
         .groups-list .panel-default .group-box .group-actions .icons .icon {
           width: 40px;
           height: 40px;
-          color: #1ebfae;
-          background-color: #fff;
-          padding: 5px; }
+          color: #fff;
+          padding: 5px;
+          cursor: pointer; }
       .groups-list .panel-default .group-box .group-actions .group-name {
         font-weight: 500;
         padding: 10px;

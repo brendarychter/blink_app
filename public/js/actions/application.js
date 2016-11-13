@@ -6,6 +6,13 @@ $(document).ready(function(){
     $.ajaxSetup({cache: false})
     getSessionUser();
 
+    $('#group-selection').on('click', function(){
+        $('.main').fadeOut(function(){
+            $('.selected-group').fadeIn();
+        });
+        
+
+    })
 
     $("#log-out").on("click", function(){
         console.log("logged out")
