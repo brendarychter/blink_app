@@ -65,7 +65,7 @@
                         <a class="page-scroll" href="#nosotros">Qui&eacute;nes somos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contactate</a>
+                        <a class="page-scroll" href="../index.php#contact">Contactate</a>
                     </li>
                     
                 </ul>

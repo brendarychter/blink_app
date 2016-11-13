@@ -131,34 +131,121 @@
             </div>
         </div><!--/.row-->
         
-        
-        <div class="row groups-list">
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-body easypiechart-panel">
-                        <h4>NEFETZ</h4>
-                        <div class="easypiechart" id="easypiechart-blue" data-percent="92" ><span class="percent">92%</span>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default chat">
+                    <div class="panel-heading title-heading" id="accordion" style="background-color:"><svg class="glyph stroked two-messages"><use xlink:href="#stroked-two-messages"></use></svg> Muro</div>
+                    <div class="panel-body">
+                        <ul>
+                            <li class="left clearfix">
+                                <span class="chat-img pull-left">
+                                    <img src="http://placehold.it/80/30a5ff/fff" alt="User Avatar" class="img-circle" />
+                                </span>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <strong class="primary-font">Pame</strong> <small class="text-muted">Hace 32 min</small>
+                                    </div>
+                                    <p>
+                                        El ensayo es en la sede. Cesar D&iacute;az 1441.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="right clearfix">
+                                <span class="chat-img pull-right">
+                                    <img src="http://placehold.it/80/dde0e6/5f6468" alt="User Avatar" class="img-circle" />
+                                </span>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <strong class="pull-left primary-font">Brenda</strong> <small class="text-muted">20 mins ago</small>
+                                    </div>
+                                    <p>
+                                        No olvidar comprar luces para llevar al teatro.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="left clearfix">
+                                <span class="chat-img pull-left">
+                                    <img src="http://placehold.it/80/30a5ff/fff" alt="User Avatar" class="img-circle" />
+                                </span>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <strong class="primary-font">Pame</strong> <small class="text-muted">Hace 6 min</small>
+                                    </div>
+                                    <p>
+                                        El ensayo con vestuario es el mi&eacute;rcoles.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-body easypiechart-panel">
-                        <h4>P13N</h4>
-                        <div class="easypiechart" id="easypiechart-orange" data-percent="65" ><span class="percent">65%</span>
+                    
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <input id="btn-input" type="text" class="form-control input-md" placeholder="Escribe el mensaje aqu&iacute;..." />
+                            <span class="input-group-btn">
+                                <button class="btn btn-success btn-md" id="btn-chat">Enviar</button>
+                            </span>
                         </div>
                     </div>
                 </div>
-            </div>
+                
+            </div><!--/.col-->
+            
             <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-body easypiechart-panel">
-                        <h4>FACU</h4>
-                        <div class="easypiechart" id="easypiechart-teal" data-percent="56" ><span class="percent">56%</span>
+                <div class="panel">
+                    <div class="panel-heading dark-overlay title-heading"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg>Calendario</div>
+                    <div class="panel-body">
+                        <div id="calendar"></div>
+                    </div>
+                </div>
+                
+                <div class="panel panel-blue">
+                    <div class="panel-heading dark-overlay title-heading"><svg class="glyph stroked clipboard-with-paper"><use xlink:href="#stroked-clipboard-with-paper"></use></svg>Registro del mes</div>
+                    <div class="panel-body">
+                        <ul class="todo-list">
+                        <li class="todo-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="checkbox" checked/>
+                                    <label for="checkbox">Mile - $150</label>
+                                </div>
+                                <div class="pull-right action-buttons">
+                                    <a href="#"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg></a>
+                                    <a href="#" class="trash"><svg class="glyph stroked trash"><use xlink:href="#stroked-trash"></use></svg></a>
+                                </div>
+                            </li>
+                            <li class="todo-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="checkbox" checked/>
+                                    <label for="checkbox">Yani - $150</label>
+                                </div>
+                                <div class="pull-right action-buttons">
+                                    <a href="#"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg></a>
+                                    <a href="#" class="trash"><svg class="glyph stroked trash"><use xlink:href="#stroked-trash"></use></svg></a>
+                                </div>
+                            </li>
+                            <li class="todo-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="checkbox" />
+                                    <label for="checkbox">Stefi - $150</label>
+                                </div>
+                                <div class="pull-right action-buttons">
+                                    <a href="#"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg></a>
+                                    <a href="#" class="trash"><svg class="glyph stroked trash"><use xlink:href="#stroked-trash"></use></svg></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <input id="btn-input" type="text" class="form-control input-md" placeholder="Agregar registro" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary btn-md" id="btn-todo">Agregar</button>
+                            </span>
                         </div>
                     </div>
                 </div>
-            </div>
+                                
+            </div><!--/.col-->
         </div><!--/.row-->
                              
     </div>  <!--/.main-->

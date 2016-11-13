@@ -9,8 +9,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="public/css/content.css">
-    
-    <link rel="stylesheet" type="text/css" href="public/css/main.css">
+
     <link rel="stylesheet" href="public/css/bootstrap.css" >
 
     <!-- Custom CSS -->
@@ -32,10 +31,10 @@
     <header id="main-page">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Una &uacute;nica aplicaci&oacute;n. Todo lo que necesit&aacute;s.</div>
-                <div class="intro-heading">Tus grupos en un mismo lugar</div>
+                <div class="intro-lead-in subtitle_section_1">Una &uacute;nica aplicaci&oacute;n. Todo lo que necesit&aacute;s.</div>
+                <div class="intro-heading title_section_1">Tus grupos en un mismo lugar</div>
                 <!--<a href="#conoce" class="page-scroll btn btn-xl" style="margin-right:5px">Conoc&eacute; m&aacute;s</a>-->
-                <a href="#download-app" class="page-scroll btn btn-xl">Descarg&aacute; la app</a>
+                <a href="#download-app" class="page-scroll btn btn-xl button_section_1">Descarg&aacute; la app</a>
             </div>
         </div>
     </header>
@@ -69,7 +68,7 @@
                 </div>
             </div>
             <div style="text-align: center;">
-                <a href="#conoce-mas" class="page-scroll btn btn-xl"id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
+                <a href="content/how_it_works.php" class="page-scroll btn btn-xl" id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
             </div>
         </div>
     </section>
@@ -161,5 +160,12 @@
     <!-- Custom Theme JavaScript -->
     <script src="public/js/global/agency.js"></script>
 
+    <!-- My scripts -->
+    <script src="public/js/actions/load.js"></script>
+    <script type="text/javascript">
+        $('#english-lan').on("click", function(){
+            console.log("hola")
+        })
+    </script>
 </body>
 </html>

@@ -10,14 +10,14 @@ body{
 	}
 }
 a, a:hover, a:focus{
-	color: rgba(191, 52, 30, 0.59)
+	color: #cc6565;
 }
 .sidebar ul.nav .active a, .sidebar ul.nav .active > a:hover, .sidebar ul.nav .active > a:focus{
-	background-color: rgba(191, 52, 30, 0.59)
+	background-color: #cc6565;
 }
 
 
-.selected-group{
+.main{
 	display: none;
 }
 .groups-list{
@@ -68,5 +68,27 @@ a, a:hover, a:focus{
 		float: right;
     	text-transform: uppercase;
     	font-weight: 500;
+	}
+	.title-heading{
+		background-color: #1ebfae;
+		color: #fff;
+		font-weight: 400;
+		border-radius: 0;
+	    height: 46px;
+	    padding-top: 1px;
+	    text-align: left;
+	    font-size: 15px;
+	}
+	#btn-input{
+		border-radius: 0;
+	}
+	#btn-chat, #btn-todo{
+	    border-radius: 0;
+	    background-color: #000;
+	    border-color: #000;
+	    text-transform: uppercase;
+	}
+	.panel-footer{
+		border-radius: 0;
 	}
 }

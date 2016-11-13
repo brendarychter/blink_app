@@ -8,12 +8,12 @@ body {
   border-radius: 0; }
 
 a, a:hover, a:focus {
-  color: rgba(191, 52, 30, 0.59); }
+  color: #cc6565; }
 
-.sidebar ul.nav .active a, .sidebar ul.nav .active > a:hover {
-  background-color: rgba(191, 52, 30, 0.59); }
+.sidebar ul.nav .active a, .sidebar ul.nav .active > a:hover, .sidebar ul.nav .active > a:focus {
+  background-color: #cc6565; }
 
-.selected-group {
+.main {
   display: none; }
 
 .groups-list .panel-default {
@@ -51,5 +51,23 @@ a, a:hover, a:focus {
   float: right;
   text-transform: uppercase;
   font-weight: 500; }
+.block-content .title-heading {
+  background-color: #1ebfae;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 0;
+  height: 46px;
+  padding-top: 1px;
+  text-align: left;
+  font-size: 15px; }
+.block-content #btn-input {
+  border-radius: 0; }
+.block-content #btn-chat, .block-content #btn-todo {
+  border-radius: 0;
+  background-color: #000;
+  border-color: #000;
+  text-transform: uppercase; }
+.block-content .panel-footer {
+  border-radius: 0; }
 
 /*# sourceMappingURL=newAppStyles.css.map */

@@ -4,9 +4,9 @@
         <p class="footer-company-about">
             <span>BLINK APP</span>
             <p class="footer-links">
-                <a href="#">Espa&ntilde;ol</a>
+                <a href="#" id="spanish" class="language-selection">Espa&ntilde;ol</a>
                 ·
-                <a href="#">Ingl&eacute;s</a>
+                <a href="#" id="english" class="language-selection">Ingl&eacute;s</a>
                 </br>
                 <a href="#">Pol&iacute;ticas de Privacidad</a>
                 ·
