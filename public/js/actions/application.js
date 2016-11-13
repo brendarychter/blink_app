@@ -97,7 +97,7 @@ $(document).ready(function(){
         $.get('../back/user/getUserSession.php', function (data) {
             var user = JSON.parse(data);
             user.userID = user.userID;
-            $("#logo").append(user.username);
+            $("#userName").append(user.username);
             $("#username-logged").val(user.username);
             $("#password-logged").val(user.password);
             $("#mail-logged").val(user.mail);
@@ -139,7 +139,6 @@ $(document).ready(function(){
                 console.log(elem);
 
                 elem.appendTo($('.my-groups'));
-                console.log($('#'+group.groupName, $('.group-name')));
             }
                 $('#P13N.group-name').append("holas");
 
