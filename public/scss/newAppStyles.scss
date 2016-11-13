@@ -17,7 +17,7 @@ a, a:hover, a:focus{
 }
 
 
-.main{
+.selected-group{
 	display: none;
 }
 .groups-list{
@@ -91,4 +91,8 @@ a, a:hover, a:focus{
 	.panel-footer{
 		border-radius: 0;
 	}
+}
+
+.chat .panel-body{
+	height: 472px;
 }

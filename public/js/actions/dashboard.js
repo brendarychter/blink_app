@@ -18,49 +18,49 @@ $(document).ready(function(){
     }
 
     function populateLabels(){
-    params= {};
-    params.action = "getContent";
-    $.ajax({
-        url: "../../back/admin/content/adminContent.php",
-        type: "POST",
-        cache: false,
-        data: params,
-        dataType: "json"
-    }).done(function( data ) {
-        // SECTION 1
-        $('.titulo-spanish-1').append(data["title_section_1"].spanish);
-        $('.titulo-english-1').append(data["title_section_1"].english);
-        $('.subtitle-spanish-1').append(data["subtitle_section_1"].spanish);
-        $('.subtitle-english-1').append(data["subtitle_section_1"].english);
-        $('.button-spanish-1').append(data["button_section_1"].spanish);
-        $('.button-english-1').append(data["button_section_1"].english);
+        params= {};
+        params.action = "getContent";
+        $.ajax({
+            url: "../../back/admin/content/adminContent.php",
+            type: "POST",
+            cache: false,
+            data: params,
+            dataType: "json"
+        }).done(function( data ) {
+            // SECTION 1
+            $('.titulo-spanish-1').append(data["title_section_1"].spanish);
+            $('.titulo-english-1').append(data["title_section_1"].english);
+            $('.subtitle-spanish-1').append(data["subtitle_section_1"].spanish);
+            $('.subtitle-english-1').append(data["subtitle_section_1"].english);
+            $('.button-spanish-1').append(data["button_section_1"].spanish);
+            $('.button-english-1').append(data["button_section_1"].english);
 
-        //SECTION 2
-        $('.title-spanish-2').append(data["title_section_2"].spanish);
-        $('.title-english-2').append(data["title_section_2"].english);
-        $('.subtitle-spanish-2').append(data["subtitle_section_2"].spanish);
-        $('.subtitle-english-2').append(data["subtitle_section_2"].english);
-        $('.text-spanish-2').append(data["text_section_2"].spanish);
-        $('.text-english-2').append(data["text_section_2"].english);
-        $('.button-spanish-2').append(data["button_section_2"].spanish);
-        $('.button-english-2').append(data["button_section_2"].english);
+            //SECTION 2
+            $('.title-spanish-2').append(data["title_section_2"].spanish);
+            $('.title-english-2').append(data["title_section_2"].english);
+            $('.subtitle-spanish-2').append(data["subtitle_section_2"].spanish);
+            $('.subtitle-english-2').append(data["subtitle_section_2"].english);
+            $('.text-spanish-2').append(data["text_section_2"].spanish);
+            $('.text-english-2').append(data["text_section_2"].english);
+            $('.button-spanish-2').append(data["button_section_2"].spanish);
+            $('.button-english-2').append(data["button_section_2"].english);
 
-        //SECTION 4
-        $('.title-spanish-4').append(data["title_section_4"].spanish);
-        $('.title-english-4').append(data["title_section_4"].english);
-        $('.text-spanish-4').append(data["text_section_4"].spanish);
-        $('.text-english-4').append(data["text_section_4"].english);
+            //SECTION 4
+            $('.title-spanish-4').append(data["title_section_4"].spanish);
+            $('.title-english-4').append(data["title_section_4"].english);
+            $('.text-spanish-4').append(data["text_section_4"].spanish);
+            $('.text-english-4').append(data["text_section_4"].english);
 
-        //SECTION 5
-        $('.button-spanish-5').append(data["button_section_5"].spanish);
-        $('.button-english-5').append(data["button_section_5"].english);
-        $('.title-spanish-5').append(data["title_section_5"].spanish);
-        $('.title-english-5').append(data["title_section_5"].english);
-        $('.subtitle-spanish-5').append(data["subtitle_section_5"].spanish);
-        $('.subtitle-english-5').append(data["subtitle_section_5"].english);
-    }).error(function(error, textStatus){
-        console.log(error);
-    });
+            //SECTION 5
+            $('.button-spanish-5').append(data["button_section_5"].spanish);
+            $('.button-english-5').append(data["button_section_5"].english);
+            $('.title-spanish-5').append(data["title_section_5"].spanish);
+            $('.title-english-5').append(data["title_section_5"].english);
+            $('.subtitle-spanish-5').append(data["subtitle_section_5"].spanish);
+            $('.subtitle-english-5').append(data["subtitle_section_5"].english);
+        }).error(function(error, textStatus){
+            console.log(error);
+        });
     }
 
     function toggleTabs(){
@@ -78,7 +78,7 @@ $(document).ready(function(){
         });
     }
 
-
+    params2 = {};
     var switchToInput = function () {
         var $input = $("<textarea>", {
             val: $(this).text(),
@@ -86,25 +86,32 @@ $(document).ready(function(){
         });
         $input.addClass("editable-text");
         $(this).replaceWith($input);
+
+        params2.realvalue =  $(this).attr("realvalue")
+        params2.language =  $(this).attr("language")
+
         $input.on("blur", switchToSpan);
         $input.attr("old-value", $(this).text());
-        console.log($input);
-        //console.log($(this).text());
         $input.select();
         $input.css("cursor", "text");
         $input.css("resize", "none");
     };
     var switchToSpan = function () {
         var $span = $("<span>", {
-            text: $(this).val()
+            text: $(this).val(),
+            language: params2.language,
+            realvalue: params2.realvalue,
         });
         $span.addClass("editable-text");
         var newValue = $(this).val();
         var oldValue = $(this).attr('old-value')
-        params= {};
+        params = {};
         params.action = "modifyContent";
         params.newValue = newValue;
         params.oldValue = oldValue;
+        params.realValue = params2.realvalue;
+        params.language = params2.language;
+        
         if (newValue !== oldValue){
             console.log("insert");
             $.ajax({
@@ -118,6 +125,9 @@ $(document).ready(function(){
                 }, 200);
             }).error(function(error, textStatus){
                 console.log(error);
+                $span.css({border: '0 solid #ff0000'}).animate({
+                    borderWidth: 1
+                }, 200);
             });
         }
         $(this).replaceWith($span);

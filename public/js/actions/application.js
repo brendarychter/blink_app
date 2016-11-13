@@ -10,8 +10,6 @@ $(document).ready(function(){
         $('.main').fadeOut(function(){
             $('.selected-group').fadeIn();
         });
-        
-
     })
 
     $("#log-out").on("click", function(){

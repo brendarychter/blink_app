@@ -51,9 +51,10 @@
 		}
 		/*envio de form*/
 
-		public function modifyHomeContent($connection, $newValue){
+		//CADA ROW TIENE QUE SER UNA INSTANCIA DE LA CLASE CONTENT
+		public function modifyHomeContent($connection, $newValue, $realValue, $language){
 			//VALIDAR QUE DEVUELVA TRUE
-			$query = "UPDATE home SET spanish='$newValue' WHERE value='title_section_1'";
+			$query = "UPDATE home SET $language='$newValue' WHERE value='$realValue'";
 			echo $query;
 			if (mysqli_query ($connection->connected, $query)) {
 			    echo "Escribio.";

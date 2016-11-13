@@ -13,7 +13,7 @@ a, a:hover, a:focus {
 .sidebar ul.nav .active a, .sidebar ul.nav .active > a:hover, .sidebar ul.nav .active > a:focus {
   background-color: #cc6565; }
 
-.main {
+.selected-group {
   display: none; }
 
 .groups-list .panel-default {
@@ -69,5 +69,8 @@ a, a:hover, a:focus {
   text-transform: uppercase; }
 .block-content .panel-footer {
   border-radius: 0; }
+
+.chat .panel-body {
+  height: 472px; }
 
 /*# sourceMappingURL=newAppStyles.css.map */

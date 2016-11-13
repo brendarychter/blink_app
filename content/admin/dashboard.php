@@ -75,37 +75,6 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- QUIENES SOMOS ADMIN -->
-<!--     <div class="col-sm-12 col-lg-12 main-admin-dashboard">			
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="panel panel-default">
-					<div class="panel-heading"><a href=""><svg class="glyph stroked pencil edit-icon"><use xlink:href="#stroked-pencil"></use></svg></a>Qui&eacute;nes somos</div>
-						<div class="panel-body">
-							<form role="form" class="form-seccion-1">
-								<div class="col-md-6">
-									<div class="form-group col-md-6">
-										<label>Secci&oacute;n 1</label> <span>espa&ntilde;ol</span>
-										<input class="form-control" placeholder="T&iacute;tulo">
-										<input class="form-control" placeholder="Subt&iacute;tulo">
-									</div>
-																	
-									<div class="form-group col-md-6">
-										<span>ingl&eacute;s</span>
-										<input class="form-control" placeholder="T&iacute;tulo">
-										<input class="form-control" placeholder="Subt&iacute;tulo">
-									</div>
-									<button type="submit" class="btn btn-primary">Editar</button>
-								</div>
-							</form>		
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-    <!-- Scripts -->
     
     <script src="../../public/js/global/lumino.glyphs.js"></script>
 
