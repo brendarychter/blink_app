@@ -38,6 +38,7 @@ $(document).ready(function(){
         params.phoneNumberUpdate = $("#mobile-logged").val();
         params.action = "updateUser";
         $.ajax({
+            //url: "http://blinkapp.com.ar/back/user/adminUser.php",
             url: "../back/user/adminUser.php",
             type: "POST",
             data: params,
@@ -57,6 +58,7 @@ $(document).ready(function(){
         params.userID = id;
         params.action = "deleteUser";
         $.ajax({
+            //url: "http://blinkapp.com.ar/back/user/adminUser.php",
             url: "../back/user/adminUser.php",
             type: "POST",
             data: params,
@@ -98,7 +100,9 @@ $(document).ready(function(){
             - ONE FILE FOR GET AND DESTROY USER SESSION
         
          */
+                //url: "http://blinkapp.com.ar/back/user/adminUser.php",
         
+        //$.get('http://blinkapp.com.ar/back/user/getUserSession.php', function (data) {
         $.get('../back/user/getUserSession.php', function (data) {
             var user = JSON.parse(data);
             user.userID = user.userID;
@@ -118,7 +122,7 @@ $(document).ready(function(){
         params.userID = user.userID;
         console.log(user);
         $.ajax({
-            //http://blinkapp.com.ar/back/user/adminUser.php
+            //url: "http://blinkapp.com.ar/back/user/adminUser.php",
             url: "../back/groups/adminUserGroups.php",
             type: "POST",
             data: params,

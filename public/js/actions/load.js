@@ -5,7 +5,7 @@ $(document).ready(function(){
     params.action = "getContent";
 	//if()spanish if english
 	$.ajax({
-    //     //http://blinkapp.com.ar/back/user/adminUser.php
+        //url: "http://blinkapp.com.ar/back/user/adminUser.php",
         url: "back/admin/content/adminContent.php",
         type: "POST",
         data: params,

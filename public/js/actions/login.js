@@ -21,7 +21,7 @@ $(document).ready(function(){
         params.password = $('#password-login').val();
 
         $.ajax({
-            //http://blinkapp.com.ar/back/user/adminUser.php
+            //url: "http://blinkapp.com.ar/back/user/adminUser.php",
             url: "../back/user/adminUser.php",
             type: "POST",
             data: params,
@@ -44,7 +44,7 @@ $(document).ready(function(){
             params.phoneNumber = $('#mobile-signin').val();
             params.mail = $('#mail-signin').val();
 	        $.ajax({
-	        	//http://blinkapp.com.ar/
+                //url: "http://blinkapp.com.ar/back/user/adminUser.php",
                 url: "../back/user/adminUser.php",
 	            type: "POST",
                 data: params,

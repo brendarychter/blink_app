@@ -8,7 +8,7 @@ $(document).ready(function(){
         params.password = $('#pass-admin').val();
 
         $.ajax({
-        //     //http://blinkapp.com.ar/back/user/adminUser.php
+            //url: "http://blinkapp.com.ar/back/user/adminUser.php",
             url: "back/admin/users/admin_user.php",
             type: "POST",
             data: params,

@@ -11,16 +11,18 @@ $(document).ready(function(){
     function getSessionAdminUser(){
     	console.log("entro")
 
-      $.get('../../back/admin/users/getUserAdminSession.php', function (data) {
+        //$.get('http://blinkapp.com.ar/back/admin/users/getUserAdminSession.php', function (data) {
+        $.get('../../back/admin/users/getUserAdminSession.php', function (data) {
           userAdmin = JSON.parse(data);
           $("#admin-logged").append(userAdmin.username);
-      });
+        });
     }
 
     function populateLabels(){
         params= {};
         params.action = "getContent";
         $.ajax({
+            //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
             url: "../../back/admin/content/adminContent.php",
             type: "POST",
             cache: false,
@@ -111,10 +113,11 @@ $(document).ready(function(){
         params.oldValue = oldValue;
         params.realValue = params2.realvalue;
         params.language = params2.language;
-        
+
         if (newValue !== oldValue){
             console.log("insert");
             $.ajax({
+                //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
                 url: "../../back/admin/content/adminContent.php",
                 type: "POST",
                 data: params
