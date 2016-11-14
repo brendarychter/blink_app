@@ -20,6 +20,9 @@
             <a href="#"><i class="fa fa-twitter"></i></a>
 
         </div>
+        <div class="newsletter">
+            <script type="text/javascript" src="http://v2.envialosimple.com/form/show/AdministratorID/93288/FormID/1/format/widget"></script>
+        </div>
     </div>
     <div class="footer-right">
 
