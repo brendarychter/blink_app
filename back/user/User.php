@@ -96,8 +96,19 @@
 				}
            	}
          
-			
 		}
+
+		public function getAllUsers($connection, $userID){
+			$consulta = "SELECT * FROM users WHERE userID != '$userID'";
+			$response = mysqli_query($connection->connected,$consulta);
+
+			while($obj = mysqli_fetch_object($response)){
+				$matriz = array('username' => $obj->username, 'password' => $obj->password,'userID' => $obj->userID);
+			}
+			$datos = json_encode($matriz);
+			echo $datos;
+		}
+
 
 		public function updateUser($connection){
 			$query ="UPDATE users SET mail='$this->mail', phoneNumber='$this->phoneNumber' WHERE userID='$this->userID'";

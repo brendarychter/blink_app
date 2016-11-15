@@ -135,6 +135,7 @@ $(document).ready(function(){
             if(data.length == 0){
                 //No tiene grupos asociados
                 $('.no-groups').show();
+                $('.action-todo-groups').text("Todav&iacute;a no ten&eacute;s grupos");
             }else{
                 //Tiene grupos asociados
                 $('.no-groups').hide();
@@ -161,6 +162,17 @@ $(document).ready(function(){
     $(".mis-grupos").on('click', function(){
         $('.menu-side').removeClass("active");
         $(this).addClass("active");
+        $('.no-groups').fadeOut("slow", function(){
+            $('.main').fadeIn("slow");
+        });
+    })
+    $('.crear-grupo').on('click', function(){
+        $('.menu-side').removeClass("active");
+        $(this).addClass("active");
+        
+        $('.main').fadeOut("slow", function(){
+            $('.no-groups').fadeIn("slow");
+        });
     })
 
     $('#create-group').on('click', function(){
@@ -168,6 +180,21 @@ $(document).ready(function(){
             $('.form-create-group').fadeIn("slow");
             $('.mis-grupos').removeClass("active", 400);
             $('.crear-grupo').addClass("active", 400);
+            paramsUsers = {};
+            paramsUsers.action = "getAllUsers";
+
+            $.ajax({
+                //url: "http://blinkapp.com.ar/back/user/adminUser.php",
+                url: "../back/user/adminUser.php",
+                type: "POST",
+                data: paramsUsers,
+                cache: false,
+                dataType: "json"
+            }).done(function( data ) {
+                console.log(data);
+            }).error(function(error, textStatus){
+                console.log(error);
+            });
         });
     })
 

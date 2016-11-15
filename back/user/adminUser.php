@@ -53,7 +53,11 @@
 			        case "deleteUser":
 			        	$user->setUserID($_SESSION["userID"]);
 			        	$user->deleteUser($connection);
-			        break;	
+			        break;
+
+			        case "getAllUsers":
+			        	$user->getAllUsers($connection, $userID);
+			        break;
 	    		}
 	    		//VALIDAR ESTO
 	    		$_SESSION["username"] = $user->getUsername();

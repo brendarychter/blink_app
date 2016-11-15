@@ -72,7 +72,7 @@
         </div>
         <div class="row no-group">
             <div class="col-lg-12 col-sm-12 info-no-groups">
-                <h4 class="" style="display: inline-block">Todav&iacute;a no ten&eacute;s grupos</h4>
+                <h4 class="action-todo-groups" style="display: inline-block"></h4>
                 <button type="submit" class="btn btn-primary" id="create-group">Crear</button>
             </div>
 
