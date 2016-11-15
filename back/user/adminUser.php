@@ -32,7 +32,7 @@
 			        	$user->setPhoneNumber($_POST['phoneNumber']);
 	        			$user->setMail($_POST['mail']);
 			        	$user->createUser($connection);
-			        	
+			        	$_SESSION["userID"] = $user->getUserID();
 			        break;
 
 			        case "updateUser":

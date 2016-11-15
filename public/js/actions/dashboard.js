@@ -110,6 +110,7 @@ $(document).ready(function(){
         params = {};
         params.action = "modifyContent";
         newValue = escape(newValue);
+        oldValue = escape(oldValue);
         params.newValue = newValue;
         params.oldValue = oldValue;
         params.realValue = params2.realvalue;

@@ -15,12 +15,12 @@
 
 				$group = new Module($connection, $userID);
 
-	    		// switch($action){
-	    		// 	//asignar mobile y telefono acá
-	    		// 	case "getGroups":
-			    //     	$group->getGroupsByUser($connection, $userID);
-			    //     break;
-	    		// }
+	    		switch($action){
+	    			//asignar mobile y telefono acá
+	    			case "getGroups":
+			        	$group->getGroupsByUser($connection, $userID);
+			        break;
+	    		}
 	    	}else{
 	    		echo "userID not setted";
 	    	}

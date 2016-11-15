@@ -38,7 +38,7 @@
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Mi perfil</a></li>
                             <li><a href="#"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> Configuraci&oacute;n</a></li>
-                            <li><a href="#"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Cerrar sesi&oacute;n</a></li>
+                            <li><a id="log-out" href="log_in.php"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Cerrar sesi&oacute;n</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -65,10 +65,31 @@
     <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main block-content">           
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Mis grupos</h1>
+                <h1 class="page-header my-groups">Mis grupos</h1>
             </div>
         </div><!--/.row-->
-        
+        <div class="row no-group">
+            <span>Todav&iacute;a no ten&eacute;s grupos</span>
+            <button>CREAR GRUPO</button>
+        </div>
+        <div class="row create-group">
+            <!-- Chequear que sea uno que no exista -->
+            <input type="text" placeholder="Nombre"/>
+            <span>Agregar contactos</span>
+
+            <button>Crear</button>
+            <div class="panel-body col-md-4">
+                <ul class="todo-list">
+                    <li class="todo-list-item">
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox"/>
+                            <label for="checkbox"></label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button>Agregar contacto</button>
+        </div>
         <div class="row groups-list">
             <div class="col-md-4">
                 <div class="panel panel-default">
@@ -203,7 +224,7 @@
                     <div class="panel-heading dark-overlay title-heading"><svg class="glyph stroked clipboard-with-paper"><use xlink:href="#stroked-clipboard-with-paper"></use></svg>Registro del mes</div>
                     <div class="panel-body">
                         <ul class="todo-list">
-                        <li class="todo-list-item">
+                            <li class="todo-list-item">
                                 <div class="checkbox">
                                     <input type="checkbox" id="checkbox" checked/>
                                     <label for="checkbox">Mile - $150</label>

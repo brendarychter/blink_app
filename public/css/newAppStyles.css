@@ -16,36 +16,38 @@ a, a:hover, a:focus {
 .selected-group {
   display: none; }
 
-.groups-list .panel-default {
-  border-radius: 0; }
-  .groups-list .panel-default .group-box {
-    background-color: #1ebfae;
-    cursor: pointer; }
-    .groups-list .panel-default .group-box .group-actions {
-      display: inline-block;
-      float: right;
-      padding: 6px; }
-      .groups-list .panel-default .group-box .group-actions .icons {
-        float: left; }
-        .groups-list .panel-default .group-box .group-actions .icons .icon {
-          width: 40px;
-          height: 40px;
-          color: #fff;
-          padding: 5px;
-          cursor: pointer; }
-      .groups-list .panel-default .group-box .group-actions .group-name {
-        font-weight: 500;
-        padding: 10px;
-        color: #fff;
-        letter-spacing: 1px;
-        text-align: right;
-        font-size: 30px;
+.groups-list {
+  display: none; }
+  .groups-list .panel-default {
+    border-radius: 0; }
+    .groups-list .panel-default .group-box {
+      background-color: #1ebfae;
+      cursor: pointer; }
+      .groups-list .panel-default .group-box .group-actions {
         display: inline-block;
-        float: left;
-        padding: 0;
-        margin: 5px 4px 5px 12px; }
-    .groups-list .panel-default .group-box .group-image {
-      height: 160px; }
+        float: right;
+        padding: 6px; }
+        .groups-list .panel-default .group-box .group-actions .icons {
+          float: left; }
+          .groups-list .panel-default .group-box .group-actions .icons .icon {
+            width: 40px;
+            height: 40px;
+            color: #fff;
+            padding: 5px;
+            cursor: pointer; }
+        .groups-list .panel-default .group-box .group-actions .group-name {
+          font-weight: 500;
+          padding: 10px;
+          color: #fff;
+          letter-spacing: 1px;
+          text-align: right;
+          font-size: 30px;
+          display: inline-block;
+          float: left;
+          padding: 0;
+          margin: 5px 4px 5px 12px; }
+      .groups-list .panel-default .group-box .group-image {
+        height: 160px; }
 
 .block-content .page-header {
   float: right;

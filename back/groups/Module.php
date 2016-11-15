@@ -18,32 +18,26 @@
 			$this->idGroup = $id;
 		}
 
-		function __construct($connection, $userID){
-			$query = "select * from modules inner join groups on groups.idGroup = modules.idGroup where modules.idUser = $userID";
-			$response = mysqli_query($connection->connected,$query);
-
-			while($obj = mysqli_fetch_object($response)){
-				$matriz[] = array('idModule' => $obj->idModule, 'idGroup' => $obj->idGroup, 'groupName' => $obj->groupName);
-			}
-			$datos = json_encode($matriz);
-			echo $datos;
-		}
 
 		//Crear nuevo grupo vacío???
 		// function __construct(){
 		// }
 
 		//Esto o el constructor
-		// public function getGroupsByUser($connection, $userID){
-		// 	$query = "select * from modules inner join groups on groups.idGroup = modules.idGroup where modules.idUser = $userID";
-		// 	$response = mysqli_query($connection->connected,$query);
+		public function getGroupsByUser($connection, $userID){
+			$query = "select * from modules inner join groups on groups.idGroup = modules.idGroup where modules.idUser = $userID";
+			$response = mysqli_query($connection->connected,$query);
 
-		// 	while($obj = mysqli_fetch_object($response)){
-		// 		$matriz[] = array('idModule' => $obj->idModule, 'idGroup' => $obj->idGroup, 'groupName' => $obj->groupName);
-		// 	}
-		// 	$datos = json_encode($matriz);
-		// 	echo $datos;
-		// }
+			while($obj = mysqli_fetch_object($response)){
+				$matriz[] = array('idModule' => $obj->idModule, 'idGroup' => $obj->idGroup, 'groupName' => $obj->groupName);
+			}
+			if(!empty($matriz)){
+				$datos = json_encode($matriz);
+				echo $datos;
+			}else{
+				echo json_encode([]);
+			}
+		}
 
 		public function deleteGroup($connection){
 

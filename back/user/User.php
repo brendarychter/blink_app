@@ -69,7 +69,6 @@
 				$matriz = array('username' => $obj->username, 'password' => $obj->password, 'mail' => utf8_encode($obj->mail), 'phoneNumber' => $obj->phoneNumber, 'userID' => $obj->userID);
 				$this->setUserID($obj->userID);
 			}
-			//, 'userID' => $obj->userID
 			$datos = json_encode($matriz);
 			echo $datos;
 		}
@@ -81,13 +80,23 @@
 
 			// destroy the session 
 			session_destroy(); 
-			$query = "INSERT INTO users (username, password, mail, phoneNumber) VALUES ('$this->username', '$this->password', '$this->mail', '$this->phoneNumber')";
-			if (mysqli_query ($connection->connected, $query)) {
-				session_start();
-			    $this->getUser($connection);
-			} else {
-			    echo "Error en la creacion del usuario.";
-			}
+			//Chequear que no exista un usuario con ese mail y nombre de usuario
+			$query1 = "SELECT username FROM users WHERE username='$this->username'";
+			$result = mysqli_query($connection->connected,$query1);
+			if(mysqli_num_rows($result)>=1){
+           		return false;
+            	
+           	}else{
+           		$query = "INSERT INTO users (username, password, mail, phoneNumber) VALUES ('$this->username', '$this->password', '$this->mail', '$this->phoneNumber')";
+				if (mysqli_query ($connection->connected, $query)) {
+					session_start();
+				    $this->getUser($connection);
+				} else {
+				    echo "Error en la creacion del usuario.";
+				}
+           	}
+         
+			
 		}
 
 		public function updateUser($connection){

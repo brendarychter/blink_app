@@ -105,6 +105,7 @@ $(document).ready(function(){
         //$.get('http://blinkapp.com.ar/back/user/getUserSession.php', function (data) {
         $.get('../back/user/getUserSession.php', function (data) {
             var user = JSON.parse(data);
+            console.log(data);
             user.userID = user.userID;
             $("#userName").append(user.username);
             $("#username-logged").val(user.username);
@@ -129,7 +130,12 @@ $(document).ready(function(){
             cache: false,
             dataType: "json"
         }).done(function( data ) {
-            console.log(data);
+            console.log(typeof data);
+            if(data.length == 0){
+                console.log("mostrar boton de crear grupo")
+            }else{
+                $('.groups-list').show();
+            }
             //LISTA DE GRUPOS EN LA VISTA
             // var myGroups = $('.my-groups');
             // console.log(data.length)
@@ -138,23 +144,23 @@ $(document).ready(function(){
                 
             //     console.log(data[i].groupName)
             // }
-            for (var i in data){
-                var group = data[i];
-                console.log(group.groupName);
+            // for (var i in data){
+            //     var group = data[i];
+            //     console.log(group.groupName);
 
-                var elem = $('#module-by-group').clone();
-                elem.attr("id", group.groupName);
+            //     var elem = $('#module-by-group').clone();
+            //     elem.attr("id", group.groupName);
 
-                console.log(elem);
+            //     console.log(elem);
 
-                elem.appendTo($('.my-groups'));
-            }
-                $('#P13N.group-name').append("holas");
+            //     elem.appendTo($('.my-groups'));
+            // }
+            // $('#P13N.group-name').append("holas");
 
 
-            var nuevogrupo = $('.my-groups').clone();
-            $(".group-name",nuevogrupo).append(data.groupName);
-            $("#last-edit").append(data.text);
+            // var nuevogrupo = $('.my-groups').clone();
+            // $(".group-name",nuevogrupo).append(data.groupName);
+            // $("#last-edit").append(data.text);
         }).error(function(error, textStatus){
             console.log(error);
         });
