@@ -30,36 +30,36 @@ $(document).ready(function(){
             dataType: "json"
         }).done(function( data ) {
             // SECTION 1
-            $('.titulo-spanish-1').append(data["title_section_1"].spanish);
-            $('.titulo-english-1').append(data["title_section_1"].english);
-            $('.subtitle-spanish-1').append(data["subtitle_section_1"].spanish);
-            $('.subtitle-english-1').append(data["subtitle_section_1"].english);
-            $('.button-spanish-1').append(data["button_section_1"].spanish);
-            $('.button-english-1').append(data["button_section_1"].english);
+            $('.titulo-spanish-1').append(unescape(data["title_section_1"].spanish));
+            $('.titulo-english-1').append(unescape(data["title_section_1"].english));
+            $('.subtitle-spanish-1').append(unescape(data["subtitle_section_1"].spanish));
+            $('.subtitle-english-1').append(unescape(data["subtitle_section_1"].english));
+            $('.button-spanish-1').append(unescape(data["button_section_1"].spanish));
+            $('.button-english-1').append(unescape(data["button_section_1"].english));
 
             //SECTION 2
-            $('.title-spanish-2').append(data["title_section_2"].spanish);
-            $('.title-english-2').append(data["title_section_2"].english);
-            $('.subtitle-spanish-2').append(data["subtitle_section_2"].spanish);
-            $('.subtitle-english-2').append(data["subtitle_section_2"].english);
-            $('.text-spanish-2').append(data["text_section_2"].spanish);
-            $('.text-english-2').append(data["text_section_2"].english);
-            $('.button-spanish-2').append(data["button_section_2"].spanish);
-            $('.button-english-2').append(data["button_section_2"].english);
+            $('.title-spanish-2').append(unescape(data["title_section_2"].spanish));
+            $('.title-english-2').append(unescape(data["title_section_2"].english));
+            $('.subtitle-spanish-2').append(unescape(data["subtitle_section_2"].spanish));
+            $('.subtitle-english-2').append(unescape(data["subtitle_section_2"].english));
+            $('.text-spanish-2').append(unescape(data["text_section_2"].spanish));
+            $('.text-english-2').append(unescape(data["text_section_2"].english));
+            $('.button-spanish-2').append(unescape(data["button_section_2"].spanish));
+            $('.button-english-2').append(unescape(data["button_section_2"].english));
 
             //SECTION 4
-            $('.title-spanish-4').append(data["title_section_4"].spanish);
-            $('.title-english-4').append(data["title_section_4"].english);
-            $('.text-spanish-4').append(data["text_section_4"].spanish);
-            $('.text-english-4').append(data["text_section_4"].english);
+            $('.title-spanish-4').append(unescape(data["title_section_4"].spanish));
+            $('.title-english-4').append(unescape(data["title_section_4"].english));
+            $('.text-spanish-4').append(unescape(data["text_section_4"].spanish));
+            $('.text-english-4').append(unescape(data["text_section_4"].english));
 
             //SECTION 5
-            $('.button-spanish-5').append(data["button_section_5"].spanish);
-            $('.button-english-5').append(data["button_section_5"].english);
-            $('.title-spanish-5').append(data["title_section_5"].spanish);
-            $('.title-english-5').append(data["title_section_5"].english);
-            $('.subtitle-spanish-5').append(data["subtitle_section_5"].spanish);
-            $('.subtitle-english-5').append(data["subtitle_section_5"].english);
+            $('.button-spanish-5').append(unescape(data["button_section_5"].spanish));
+            $('.button-english-5').append(unescape(data["button_section_5"].english));
+            $('.title-spanish-5').append(unescape(data["title_section_5"].spanish));
+            $('.title-english-5').append(unescape(data["title_section_5"].english));
+            $('.subtitle-spanish-5').append(unescape(data["subtitle_section_5"].spanish));
+            $('.subtitle-english-5').append(unescape(data["subtitle_section_5"].english));
         }).error(function(error, textStatus){
             console.log(error);
         });
@@ -109,11 +109,11 @@ $(document).ready(function(){
         var oldValue = $(this).attr('old-value')
         params = {};
         params.action = "modifyContent";
+        newValue = escape(newValue);
         params.newValue = newValue;
         params.oldValue = oldValue;
         params.realValue = params2.realvalue;
         params.language = params2.language;
-
         if (newValue !== oldValue){
             console.log("insert");
             $.ajax({

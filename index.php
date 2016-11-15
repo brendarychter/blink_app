@@ -44,9 +44,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">&#191;Qu&eacute; es blink?</h2>
-                    <h3 class="section-subheading text-muted" style="line-height: 28px;"> &#191;Ten&eacute;s un grupo de amigos de la facultad? &#191;Otro de la oficina? &#191;De f&uacute;tbol o baile?</br><span style="font-style: normal;">Blink te permite comunicarte con todos ellos desde un mismo lugar.</span> </br>
-                    <span style="margin-top:16px; display: block; font-weight: bold; font-style: normal;">Es una herramienta, un aliado en tu d&iacute;a a d&iacute;a. Es la mejor manera de mantenerte informado todo el tiempo de todo lo que pasa en tus grupos al recibir notificaciones en el momento en que tus amigos publican contenidos.</span></h3>
+                    <h2 class="section-heading title_section_2">&#191;Qu&eacute; es blink?</h2>
+                    <h3 class="section-subheading text-muted subtitle_section_2" style="line-height: 28px;margin-bottom:0"> &#191;Ten&eacute;s un grupo de amigos de la facultad? &#191;Otro de la oficina? &#191;De f&uacute;tbol o baile?</br><span style="font-style: normal;">Blink te permite comunicarte con todos ellos desde un mismo lugar.</span> </br></h3>
+                    <span class="text_section_2" style="margin-top:16px; display: block; font-weight: bold; font-style: normal;">Es una herramienta, un aliado en tu d&iacute;a a d&iacute;a. Es la mejor manera de mantenerte informado todo el tiempo de todo lo que pasa en tus grupos al recibir notificaciones en el momento en que tus amigos publican contenidos.</span>
                 </div>
             </div>
             <div class="row text-center">
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div style="text-align: center;">
-                <a href="content/how_it_works.php" class="page-scroll btn btn-xl" id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
+                <a href="content/how_it_works.php" class="page-scroll btn btn-xl button_section_2" id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
             </div>
         </div>
     </section>
