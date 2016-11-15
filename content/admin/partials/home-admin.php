@@ -54,7 +54,7 @@
 				</div>
 				<div class="abm-buttons">
 					<!-- <button type="submit" class="btn btn-primary edit-section" id="edit-section-1">Editar secci&oacute;n 1</button> -->
-					<button type="submit" class="btn btn-danger edit-section" id="delete-section-1">Eliminar secci&oacute;n 1</button>
+					<button type="submit" class="btn btn-danger edit-section" id="delete-section-1">Ocultar secci&oacute;n 1</button>
 					<!-- tiene que borrar el div del sitio -->
 				</div>
 			</form>	
@@ -190,7 +190,7 @@
 					</div>	
 				</div>
 				<div class="abm-buttons">
-					<button type="submit" class="btn btn-danger edit-section" id="delete-section-1">Eliminar secci&oacute;n 2</button>
+					<button type="submit" class="btn btn-danger edit-section" id="delete-section-2">Ocultar secci&oacute;n 2</button>
 				</div>
 			</form>	
 		</div>
@@ -210,7 +210,7 @@
 					</div>	
 				</div>
 				<div class="abm-buttons">
-					<button type="submit" class="btn btn-danger edit-section" id="delete-section-1">Eliminar secci&oacute;n 3</button>
+					<button type="submit" class="btn btn-danger edit-section" id="delete-section-3">Ocultar secci&oacute;n 3</button>
 				</div>
 			</form>	
 		</div>
@@ -255,7 +255,7 @@
 					</div>
 				</div>
 				<div class="abm-buttons">
-					<button type="submit" class="btn btn-danger edit-section" id="delete-section-1">Eliminar secci&oacute;n 4</button>
+					<button type="submit" class="btn btn-danger edit-section" id="delete-section-4">Ocultar secci&oacute;n 4</button>
 				</div>
 			</form>	
 
@@ -376,7 +376,7 @@
 					</div>
 				</div>
 				<div class="abm-buttons">
-					<button type="submit" class="btn btn-danger edit-section" id="delete-section-1">Eliminar secci&oacute;n 5</button>
+					<button type="submit" class="btn btn-danger edit-section" id="delete-section-5">Ocultar secci&oacute;n 5</button>
 				</div>
 			</form>	
 
