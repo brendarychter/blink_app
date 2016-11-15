@@ -182,7 +182,8 @@ $(document).ready(function(){
             $('.crear-grupo').addClass("active", 400);
             paramsUsers = {};
             paramsUsers.action = "getAllUsers";
-
+            paramsUsers.username = "brenda";
+            paramsUsers.password = "1234";
             $.ajax({
                 //url: "http://blinkapp.com.ar/back/user/adminUser.php",
                 url: "../back/user/adminUser.php",

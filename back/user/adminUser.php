@@ -56,7 +56,7 @@
 			        break;
 
 			        case "getAllUsers":
-			        	$user->getAllUsers($connection, $userID);
+			        	$user->getAllUsers($connection, $user->getUserID());
 			        break;
 	    		}
 	    		//VALIDAR ESTO
