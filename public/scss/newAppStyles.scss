@@ -17,11 +17,18 @@ a, a:hover, a:focus{
 }
 
 
-.selected-group{
+.selected-group, .no-groups, .main{
 	display: none;
 }
+.no-groups{
+	.form-create-group{
+		display: none;
+	}
+}
 .groups-list{
-	display: none;
+	.each-group{
+		display: none;
+	}
 	.panel-default{
 		border-radius: 0;
 		.group-box{
@@ -53,6 +60,7 @@ a, a:hover, a:focus{
 				    float: left;
 				    padding: 0;
 				    margin: 5px 4px 5px 12px;
+				    text-transform: uppercase;
 				}
 			}
 			

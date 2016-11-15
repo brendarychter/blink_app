@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var user = {};
+    var USUARIO = {};
     var id;
 
     $.ajaxSetup({cache: false})
@@ -113,6 +113,7 @@ $(document).ready(function(){
             $("#mail-logged").val(user.mail);
             $("#mobile-logged").val(user.phoneNumber);
             getUserGroups(user);
+            USUARIO.userID = user.userID;
         });
     }
 
@@ -132,37 +133,60 @@ $(document).ready(function(){
         }).done(function( data ) {
             console.log(typeof data);
             if(data.length == 0){
-                console.log("mostrar boton de crear grupo")
+                //No tiene grupos asociados
+                $('.no-groups').show();
             }else{
-                $('.groups-list').show();
+                //Tiene grupos asociados
+                $('.no-groups').hide();
+                $('.main').show();
+                var groupList = $('.groups-list');
+                var eachGroup = $('#each-group');
+                console.log(data.length)
+                for (var i = 0; i < data.length; i++){
+                    var group = data[i];
+                    var elem = eachGroup.clone();
+                    elem.attr("id", "group-"+group.idGroup);
+                    elem.addClass("group-"+group.groupName);
+                    elem.appendTo(groupList);
+                    $("#group-"+group.idGroup+" .group-name").append(group.groupName);
+                }
+                //Oculto el base
+                $('#each-group').hide();
             }
-            //LISTA DE GRUPOS EN LA VISTA
-            // var myGroups = $('.my-groups');
-            // console.log(data.length)
-            // for (var i = 0; i < data.length; i++){
-            //     $(".module-by-group").clone().appendTo(myGroups);
-                
-            //     console.log(data[i].groupName)
-            // }
-            // for (var i in data){
-            //     var group = data[i];
-            //     console.log(group.groupName);
-
-            //     var elem = $('#module-by-group').clone();
-            //     elem.attr("id", group.groupName);
-
-            //     console.log(elem);
-
-            //     elem.appendTo($('.my-groups'));
-            // }
-            // $('#P13N.group-name').append("holas");
-
-
-            // var nuevogrupo = $('.my-groups').clone();
-            // $(".group-name",nuevogrupo).append(data.groupName);
-            // $("#last-edit").append(data.text);
         }).error(function(error, textStatus){
             console.log(error);
         });
     }
+
+    $(".mis-grupos").on('click', function(){
+        $('.menu-side').removeClass("active");
+        $(this).addClass("active");
+    })
+
+    $('#create-group').on('click', function(){
+        $('.info-no-groups').fadeOut("slow", function(){
+            $('.form-create-group').fadeIn("slow");
+            $('.mis-grupos').removeClass("active", 400);
+            $('.crear-grupo').addClass("active", 400);
+        });
+    })
+
+    $('#add-group').on('click', function(){
+        params = {};
+        params.action = "createGroup";
+        params.groupName = $('#group-name').val();
+        params.userID = USUARIO.userID;
+        $.ajax({
+            //url: "http://blinkapp.com.ar/back/user/adminUser.php",
+            url: "../back/groups/adminUserGroups.php",
+            type: "POST",
+            data: params,
+            cache: false,
+            dataType: "json"
+        }).done(function( data ) {
+            console.log(data);
+        }).error(function(error, textStatus){
+            console.log(textStatus);
+        });
+    })
 })

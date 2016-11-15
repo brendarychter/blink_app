@@ -13,12 +13,16 @@
     		if(isset($_POST['userID'])){
 				$userID = $_POST['userID'];
 
-				$group = new Module($connection, $userID);
+				$group = new Module;
 
 	    		switch($action){
 	    			//asignar mobile y telefono acá
 	    			case "getGroups":
 			        	$group->getGroupsByUser($connection, $userID);
+			        break;
+			        case "createGroup":
+			        	$group->setGroupName($_POST['groupName']);
+			        	$group->createGroup($connection, $userID);
 			        break;
 	    		}
 	    	}else{

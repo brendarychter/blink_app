@@ -13,41 +13,45 @@ a, a:hover, a:focus {
 .sidebar ul.nav .active a, .sidebar ul.nav .active > a:hover, .sidebar ul.nav .active > a:focus {
   background-color: #cc6565; }
 
-.selected-group {
+.selected-group, .no-groups, .main {
   display: none; }
 
-.groups-list {
+.no-groups .form-create-group {
   display: none; }
-  .groups-list .panel-default {
-    border-radius: 0; }
-    .groups-list .panel-default .group-box {
-      background-color: #1ebfae;
-      cursor: pointer; }
-      .groups-list .panel-default .group-box .group-actions {
-        display: inline-block;
-        float: right;
-        padding: 6px; }
-        .groups-list .panel-default .group-box .group-actions .icons {
-          float: left; }
-          .groups-list .panel-default .group-box .group-actions .icons .icon {
-            width: 40px;
-            height: 40px;
-            color: #fff;
-            padding: 5px;
-            cursor: pointer; }
-        .groups-list .panel-default .group-box .group-actions .group-name {
-          font-weight: 500;
-          padding: 10px;
+
+.groups-list .each-group {
+  display: none; }
+.groups-list .panel-default {
+  border-radius: 0; }
+  .groups-list .panel-default .group-box {
+    background-color: #1ebfae;
+    cursor: pointer; }
+    .groups-list .panel-default .group-box .group-actions {
+      display: inline-block;
+      float: right;
+      padding: 6px; }
+      .groups-list .panel-default .group-box .group-actions .icons {
+        float: left; }
+        .groups-list .panel-default .group-box .group-actions .icons .icon {
+          width: 40px;
+          height: 40px;
           color: #fff;
-          letter-spacing: 1px;
-          text-align: right;
-          font-size: 30px;
-          display: inline-block;
-          float: left;
-          padding: 0;
-          margin: 5px 4px 5px 12px; }
-      .groups-list .panel-default .group-box .group-image {
-        height: 160px; }
+          padding: 5px;
+          cursor: pointer; }
+      .groups-list .panel-default .group-box .group-actions .group-name {
+        font-weight: 500;
+        padding: 10px;
+        color: #fff;
+        letter-spacing: 1px;
+        text-align: right;
+        font-size: 30px;
+        display: inline-block;
+        float: left;
+        padding: 0;
+        margin: 5px 4px 5px 12px;
+        text-transform: uppercase; }
+    .groups-list .panel-default .group-box .group-image {
+      height: 160px; }
 
 .block-content .page-header {
   float: right;

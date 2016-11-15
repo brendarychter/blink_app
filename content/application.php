@@ -54,44 +54,77 @@
             </div>
         </form>
         <ul class="nav menu">
-            <li class="active"><a href="#"><svg class="glyph stroked app-window-with-content"><use xlink:href="#stroked-app-window-with-content"></use></svg> Mis grupos</a></li>
-            <li><a href="#"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Crear grupo</a></li>
+            <li class="active mis-grupos menu-side"><a href="#"><svg class="glyph stroked app-window-with-content"><use xlink:href="#stroked-app-window-with-content"></use></svg> Mis grupos</a></li>
+            <li class="crear-grupo menu-side"><a href="#"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Crear grupo</a></li>
             <li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Contactos</a></li>
             <li role="presentation" class="divider"></li>
         </ul>
 
     </div><!--/.sidebar-->
-        
-    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main block-content">           
+    
+
+
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 no-groups block-content">           
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header my-groups">Mi panel</h1>
+            </div>
+        </div>
+        <div class="row no-group">
+            <div class="col-lg-12 col-sm-12 info-no-groups">
+                <h4 class="" style="display: inline-block">Todav&iacute;a no ten&eacute;s grupos</h4>
+                <button type="submit" class="btn btn-primary" id="create-group">Crear</button>
+            </div>
+
+            <div class="col-sm-12 col-md-16 form-create-group">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Nuevo grupo</div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="margin-bottom: 20px;">Informaci&oacute;n principal</label>
+                                        <div class="form-group">
+                                            <input class="form-control" id="group-name" placeholder="Nombre">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Foto">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Esto carga todos los usuarios menos el mio -->
+                                    <div class="form-group">
+                                        <label style="margin-bottom: 20px;">Lista de contactos</label>
+                                        <div class="panel panel-blue">
+                                            <ul class="todo-list">
+                                                <li class="todo-list-item">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="checkbox"/>
+                                                        <label for="checkbox">Mile</label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary" id="add-group">Crear y agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main block-content" id="main">           
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header my-groups">Mis grupos</h1>
             </div>
         </div><!--/.row-->
-        <div class="row no-group">
-            <span>Todav&iacute;a no ten&eacute;s grupos</span>
-            <button>CREAR GRUPO</button>
-        </div>
-        <div class="row create-group">
-            <!-- Chequear que sea uno que no exista -->
-            <input type="text" placeholder="Nombre"/>
-            <span>Agregar contactos</span>
-
-            <button>Crear</button>
-            <div class="panel-body col-md-4">
-                <ul class="todo-list">
-                    <li class="todo-list-item">
-                        <div class="checkbox">
-                            <input type="checkbox" id="checkbox"/>
-                            <label for="checkbox"></label>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <button>Agregar contacto</button>
-        </div>
         <div class="row groups-list">
-            <div class="col-md-4">
+            <div class="col-md-4 " id="each-group">
                 <div class="panel panel-default">
                     <div class="panel-body easypiechart-panel group-box" id="group-selection">
                         <div class="group-image">
@@ -99,42 +132,11 @@
                         </div>
                         <div class="group-actions">
                             <div class="icons">
-                                <a href="#"><svg class="glyph stroked calendar icon" ><use xlink:href="#stroked-calendar"></use></svg></a>
+                           <!--      <a href="#"><svg class="glyph stroked calendar icon" ><use xlink:href="#stroked-calendar"></use></svg></a>
                                 <a href="#"><svg class="glyph stroked clipboard-with-paper icon"><use xlink:href="#stroked-clipboard-with-paper"></use></svg></a>
                                 <a href="#"><svg class="glyph stroked two-messages icon"><use xlink:href="#stroked-two-messages"></use></svg></a>
-                            </div>
-                            <h4 class="group-name">NEFETZ</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-body easypiechart-panel group-box">
-                        <div class="group-image">
-                            <!-- <img src="" alt="P13N" title="P13N" /> -->
-                        </div>
-                        <div class="group-actions">
-                            <div class="icons">
-                                <a href="#"><svg class="glyph stroked two-messages icon"><use xlink:href="#stroked-two-messages"></use></svg></a>
-                            </div>
-                            <h4 class="group-name">P13N</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-body easypiechart-panel group-box">
-                        <div class="group-image">
-                            <!-- <img src="" alt="Facu" title="Facu" /> -->
-                        </div>
-                        <div class="group-actions">
-                            <div class="icons">
-                                <a href="#"><svg class="glyph stroked calendar icon" ><use xlink:href="#stroked-calendar"></use></svg></a>
-                                <a href="#"><svg class="glyph stroked two-messages icon"><use xlink:href="#stroked-two-messages"></use></svg></a>
-                            </div>
-                            <h4 class="group-name">FACU</h4>
+                            --> </div>
+                            <h4 class="group-name"></h4>
                         </div>
                     </div>
                 </div>
