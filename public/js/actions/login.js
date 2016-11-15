@@ -43,19 +43,42 @@ $(document).ready(function(){
             params.password = $('#password-signin').val();
             params.phoneNumber = $('#mobile-signin').val();
             params.mail = $('#mail-signin').val();
-	        $.ajax({
+            //VALIDAR CAMPOS VACIOS
+
+            par = {};
+            par.mail = $('#mail-signin').val();
+            par.username = $('#username-signin').val();
+            par.password = $('#password-signin').val();
+            par.action = "userExists"; 
+            $.ajax({
                 //url: "http://blinkapp.com.ar/back/user/adminUser.php",
                 url: "../back/user/adminUser.php",
-	            type: "POST",
-                data: params,
+                type: "POST",
+                data: par,
                 cache: false,
-                dataType: "json"
-	        }).done(function( data ) {
-                console.log(data);
-	            window.location.href = "application.php";
-	        }).error(function(error, textStatus){
-	        	console.log("No pudo conectarse: " + textStatus);
-	        });
+                dataType: "text"
+            }).done(function( data ) {
+                console.log(data)
+                //window.location.href = "application.php";
+            }).error(function(error, textStatus){
+                console.log("No pudo conectarse: " + textStatus);
+            });
+
+
+
+	        // $.ajax({
+         //        //url: "http://blinkapp.com.ar/back/user/adminUser.php",
+         //        url: "../back/user/adminUser.php",
+	        //     type: "POST",
+         //        data: params,
+         //        cache: false,
+         //        dataType: "json"
+	        // }).done(function( data ) {
+         //        console.log(data);
+	        //     window.location.href = "application.php";
+	        // }).error(function(error, textStatus){
+	        // 	console.log("No pudo conectarse: " + textStatus);
+	        // });
     	}else{
     		console.log("error en los campos");
     	}

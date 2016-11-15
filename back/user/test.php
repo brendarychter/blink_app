@@ -5,10 +5,13 @@
 	//Falta el timestamp y el GMT
 	// remove all session variables
 
-	$query = "INSERT INTO groups (groupName) VALUES ('lala')";
-				if (mysqli_query ($connection->connected, $query)) {
-				    echo "Escribio";
-				} else {
-				    echo "Error en la creacion del grupo.";
-				}
+	$consulta = "SELECT * FROM users WHERE mail = 'brenda111@gmail.com'";
+	$response = mysqli_query($connection->connected,$consulta);
+
+			if(mysqli_num_rows($response)>=1){
+           		$datos = json_encode(true);
+           	}else{
+           		$datos = json_encode(false);
+           	}
+           	echo $datos;
 ?>

@@ -12,12 +12,17 @@
     		
     		if(isset($_POST['username']) && isset($_POST['password'])){
     			$user = new User;
-	        	$user->setUsername($_POST['username']);
-	        	$user->setPassword($_POST['password']);
+	        	
 	        	
 	    		switch($action){
+	    			case "userExists":
+	    				$user->setMail($_POST['mail']);
+	    				$user->checkUser($connection);
+	    			break;
 	    			//asignar mobile y telefono acá
 	    			case "getUser":
+	    				$user->setUsername($_POST['username']);
+	        			$user->setPassword($_POST['password']);
 			        	$user->getUser($connection);
 			        	//me trae nulos el mail y el telefono
 	        			$_SESSION["userID"] = $user->getUserID();
@@ -29,6 +34,8 @@
 			        break;
 
 			        case "createUser":
+			        	$user->setUsername($_POST['username']);
+	        			$user->setPassword($_POST['password']);
 			        	$user->setPhoneNumber($_POST['phoneNumber']);
 	        			$user->setMail($_POST['mail']);
 			        	$user->createUser($connection);
@@ -38,7 +45,8 @@
 			        case "updateUser":
 			        	//$user->setPhoneNumber($_POST['phoneNumber']);
 			        	$user->setUserID($_SESSION["userID"]);
-
+			        	$user->setUsername($_POST['username']);
+	        			$user->setPassword($_POST['password']);
 	        			$user->setMail($_POST['mailUpdate']);
 	        			$user->setPhoneNumber($_POST['phoneNumberUpdate']);
 
@@ -51,11 +59,15 @@
 			        break;	
 
 			        case "deleteUser":
+			        	$user->setUsername($_POST['username']);
+	        			$user->setPassword($_POST['password']);
 			        	$user->setUserID($_SESSION["userID"]);
 			        	$user->deleteUser($connection);
 			        break;
 
 			        case "getAllUsers":
+			        	$user->setUsername($_POST['username']);
+	        			$user->setPassword($_POST['password']);
 			        	$user->getAllUsers($connection, $user->getUserID());
 			        break;
 	    		}

@@ -73,6 +73,20 @@
 			echo $datos;
 		}
 
+		public function checkUser($connection){
+			//VALIDAR QUE DEVUELVA TRUE
+			$consulta = "SELECT * FROM users WHERE mail = '$this->mail'";
+
+			$response = mysqli_query($connection->connected,$consulta);
+
+			if(mysqli_num_rows($response)>=1){
+           		$datos = json_encode(true);
+           	}else{
+           		$datos = json_encode(false);
+           	}
+           	echo $datos;
+		}
+
 		public function createUser($connection){
 			//Falta el timestamp y el GMT
 			// remove all session variables
