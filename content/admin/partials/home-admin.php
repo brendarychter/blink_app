@@ -189,7 +189,7 @@
 						</div>
 					</div>	
 				</div>
-				<div class="abm-buttons">
+				<div class="abm-buttons col-md-12 col-sm-12 form-section-2">
 					<button type="submit" class="btn btn-danger edit-section" id="delete-section-2">Ocultar secci&oacute;n 2</button>
 				</div>
 			</form>	
@@ -209,7 +209,7 @@
 						</div>
 					</div>	
 				</div>
-				<div class="abm-buttons">
+				<div class="abm-buttons col-md-12 col-sm-12 form-section-3">
 					<button type="submit" class="btn btn-danger edit-section" id="delete-section-3">Ocultar secci&oacute;n 3</button>
 				</div>
 			</form>	
@@ -267,7 +267,7 @@
 						<p class="help-block"></p>
 					</div>
 				</div>
-				<div class="abm-buttons">
+				<div class="abm-buttons col-md-12 col-sm-12 form-section-4">
 					<button type="submit" class="btn btn-danger edit-section" id="delete-section-4">Ocultar secci&oacute;n 4</button>
 				</div>
 			</form>	
@@ -388,7 +388,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="abm-buttons">
+				<div class="abm-buttons col-md-12 col-sm-12 form-section-5">
 					<button type="submit" class="btn btn-danger edit-section" id="delete-section-5">Ocultar secci&oacute;n 5</button>
 				</div>
 			</form>	

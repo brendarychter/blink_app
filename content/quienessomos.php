@@ -25,6 +25,7 @@
 </head>
 <body id="page-top" class="index landing-main-page">
     <?php include('partials/header.php');?> 
+        TEAM
     <?php include('partials/footer.php');?>
 
     <!-- Scripts -->
@@ -50,6 +51,9 @@
     <!-- TIMELINE -->
     <script src="../public/js/global/index_timeline.js"></script>
 
+    <script type="text/javascript">
+        $('#page-team').closest('li').addClass("active");
+    </script>
 
 </body>
 </html>

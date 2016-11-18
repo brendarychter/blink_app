@@ -122,6 +122,8 @@
     <!-- TIMELINE -->
     <script src="../public/js/global/index_timeline.js"></script>
 
-
+    <script type="text/javascript">
+        $('#page-works').closest('li').addClass("active");
+    </script>
 </body>
 </html>

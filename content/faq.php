@@ -19,6 +19,7 @@
 </head>
 <body id="page-top" class="index landing-main-page">
     <?php include('partials/header.php');?> 
+        FREQUENTLY ASKED QUESTIONS
     <?php include('partials/footer.php');?>
 
     <!-- Scripts -->
@@ -45,5 +46,8 @@
     <script src="../public/js/global/index_timeline.js"></script>
 
 
+    <script type="text/javascript">
+        $('#page-faq').closest('li').addClass("active");
+    </script>
 </body>
 </html>

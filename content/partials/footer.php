@@ -8,9 +8,9 @@
                 ·
                 <a href="#" id="english" class="language-selection">Ingl&eacute;s</a>
                 </br>
-                <a href="#" target="_blank">Pol&iacute;ticas de Privacidad</a>
+                <a href="../polytics.php" target="_blank">Pol&iacute;ticas de Privacidad</a>
                 ·
-                <a href="#" target="_blank">T&eacute;rminos de uso</a>
+                <a href="../terms.php" target="_blank">T&eacute;rminos de uso</a>
             </p>
         </p>
 

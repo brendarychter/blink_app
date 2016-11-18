@@ -22,16 +22,16 @@
                     <a class="page-scroll" href="../index.php#main-page">blink!</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="how_it_works.php">Conoc&eacute; m&aacute;s</a>
+                    <a class="page-scroll" id="page-works" href="how_it_works.php">Conoc&eacute; m&aacute;s</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="../index.php#demo">Demo</a>
+                    <a class="page-scroll" id="page-demo" href="demo.php">Demo</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="faq.php">FAQ</a>
+                    <a class="page-scroll" id="page-faq" href="faq.php">FAQ</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="quienessomos.php">Qui&eacute;nes somos</a>
+                    <a class="page-scroll" id="page-team" href="quienessomos.php">Qui&eacute;nes somos</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="../index.php#contact">Contactate</a>

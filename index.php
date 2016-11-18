@@ -52,7 +52,7 @@
                         <a class="page-scroll" href="#conoce">Conoc&eacute; m&aacute;s</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#demo">Demo</a>
+                        <a class="page-scroll" href="content/demo.php">Demo</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="content/faq.php">FAQ</a>
@@ -118,7 +118,7 @@
                 </div>
             </div>
             <div style="text-align: center;">
-                <a href="content/how_it_works.php" class="page-scroll btn btn-xl button_section_2" id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
+                <a href="content/demo.php" class="page-scroll btn btn-xl button_section_2" id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
             </div>
         </div>
     </section>
@@ -136,6 +136,9 @@
                     <img src="public/img/qr_app_example.png">
                     <h2 class="section-heading text-app">Descargate la aplicaci&oacute;n para el celular</h2>
                     <h3 class="section-subheading text-muted">Vas a poder acceder a las novedades m&aacute;s r&aacute;pidamente y usar la aplicaci&oacute;n de forma m&aacute;s c&oacute;moda y eficiente</h3>
+                    <div style="text-align: center;">
+                        <a href="content/how_it_works.php" class="page-scroll btn btn-xl button_section_2" id="more-info">Todavía quiero saber más</a>
+                    </div>
                 </div>
             </div>
         </div>
