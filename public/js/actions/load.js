@@ -15,14 +15,23 @@ $(document).ready(function(){
         console.log(data)
         language = "es";
     	if (language == "es"){
+            /* SECTION 1 SPANISH */
     		$('.title_section_1').text(unescape(data["title_section_1"].spanish));
             $('.subtitle_section_1').text(unescape(data["subtitle_section_1"].spanish));
     		$('.button_section_1').text(unescape(data["button_section_1"].spanish));
 
+            /* SECTION 2 SPANISH */
+            
             $('.title_section_2').text(unescape(data["title_section_2"].spanish));
             $('.subtitle_section_2').text(unescape(data["subtitle_section_2"].spanish));
             $('.text_section_2').text(unescape(data["text_section_2"].spanish));
             $('.button_section_2').text(unescape(data["button_section_2"].spanish));
+
+            $('.text_1_section_2').text(unescape(data["text_1_section_2"].spanish))
+            $('.text_2_section_2').text(unescape(data["text_2_section_2"].spanish))
+            $('.text_3_section_2').text(unescape(data["text_3_section_2"].spanish))
+            $('.text_4_section_2').text(unescape(data["text_4_section_2"].spanish))
+
     	}else{
     		$('.title_section_1').text(unescape(data["title_section_1"].english));
             $('.subtitle_section_1').text(unescape(data["subtitle_section_1"].english));
@@ -32,9 +41,26 @@ $(document).ready(function(){
             $('.subtitle_section_2').text(unescape(data["subtitle_section_2"].english));
             $('.text_section_2').text(unescape(data["text_section_2"].english));
             $('.button_section_2').text(unescape(data["button_section_2"].english));
+
+            $('.text_1_section_2').text(unescape(data["text_1_section_2"].english))
+            $('.text_2_section_2').text(unescape(data["text_2_section_2"].english))
+            $('.text_3_section_2').text(unescape(data["text_3_section_2"].english))
+            $('.text_4_section_2').text(unescape(data["text_4_section_2"].english))
             
     	}
     }).error(function(error, textStatus){
         console.log(textStatus);
     });
+
+
+    //FIX SCROLL DOWNLOAD APP
+    $('.button_section_1').on("click", function(){
+        console.log("hola")
+        setTimeout(function(){
+            $('.page-scroll').closest('li.active').removeClass("active")
+        }, 800)
+    })
+
+
+    
 })

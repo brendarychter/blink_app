@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--CSS-->
+    <link rel="stylesheet" href="public/css/bootstrap.css" >
     <link rel="stylesheet" type="text/css" href="public/css/content.css">
 
-    <link rel="stylesheet" href="public/css/bootstrap.css" >
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="public/css/styles_default.css">
@@ -25,7 +25,51 @@
 </head>
 <body id="page-top" class="index landing-main-page">
     <!-- Navigation -->
-    <?php include('content/header.php');?> 
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <!-- href="#page-top"-->
+                <a class="navbar-brand page-scroll" href="#page-top" style="margin-top: -4px; padding: 0;"><img alt="Blink app" title="Blink app" src="public/img/logo.svg" id="icon-top"></img></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-home" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-middle central-nav">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#main-page">blink!</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#conoce">Conoc&eacute; m&aacute;s</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#demo">Demo</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#faq">FAQ</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#nosotros">Qui&eacute;nes somos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contactate</a>
+                    </li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right logandsign" id="logandsign">
+                    <li>
+                        <a class="button" href="content/log_in.php#login-box-link">Inici&aacute; sesi&oacute;n</a>
+                    </li>
+                    <li class="last-item-header">
+                        <a class="button" href="content/log_in.php#signup-box-link"><b>Registrate</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     
     <!-- Header -->
     <header id="main-page">
@@ -52,19 +96,19 @@
             <div class="row text-center">
                 <div class="col-md-3">
                     <h4 class="service-heading"><img src="public/img/group.svg" /></h4>
-                    <p class="text-muted">Cre&aacute; todos los grupos que necesites</p>
+                    <p class="text-muted text_1_section_2">Cre&aacute; todos los grupos que necesites</p>
                 </div>
                 <div class="col-md-3">
                     <h4 class="service-heading"><img src="public/img/hour.svg" /></h4>
-                    <p class="text-muted">Llev&aacute; un registro de los gastos grupales</p>
+                    <p class="text-muted text_2_section_2">Llev&aacute; un registro de los gastos grupales</p>
                 </div>
                 <div class="col-md-3">
                     <h4 class="service-heading"><img src="public/img/calendar.svg" /></h4>
-                    <p class="text-muted">No te olvides de ning&uacute;n evento</p>
+                    <p class="text-muted text_3_section_2">No te olvides de ning&uacute;n evento</p>
                 </div>
                 <div class="col-md-3">
                     <h4 class="service-heading"><img src="public/img/chat.svg" /></h4>
-                    <p class="text-muted">Enterate de las &uacute;ltimas novedades</p>
+                    <p class="text-muted text_4_section_2">Enterate de las &uacute;ltimas novedades</p>
                 </div>
             </div>
             <div style="text-align: center;">

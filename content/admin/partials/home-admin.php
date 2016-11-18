@@ -5,7 +5,7 @@
 			<label class="section-name">Secci&oacute;n 1</label>
 			<form role="form" class="form-section" id="form-section-1" method="post" enctype="multipart/form-data" data-toggle="validator">
 				<div class="col-md-12 col-sm-12 line-sections">
-					<div class="form-group col-md-3 box-section col-sm-12">
+					<div class="form-group col-md-3 box-section first-section col-sm-12 ">
 						<div class="title-box">
 							<span class="global-title">t&iacute;tulo</span>
 						</div>
@@ -52,7 +52,7 @@
 						<p class="help-block"></p>
 					</div>
 				</div>
-				<div class="abm-buttons">
+				<div class="abm-buttons-1 col-md-12 col-sm-12">
 					<!-- <button type="submit" class="btn btn-primary edit-section" id="edit-section-1">Editar secci&oacute;n 1</button> -->
 					<button type="submit" class="btn btn-danger edit-section" id="delete-section-1">Ocultar secci&oacute;n 1</button>
 					<!-- tiene que borrar el div del sitio -->
@@ -126,11 +126,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text "></span>
+							<span class="editable-text text_1_section_2-spanish" realvalue="text_1_section_2" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text "></span>
+							<span class="editable-text text_1_section_2-english" realvalue="text_1_section_2" language="english"></span>
 						</div>
 						<div class="portion">
 							<input type="file">
@@ -143,11 +143,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text "></span>
+							<span class="editable-text text_2_section_2-spanish" realvalue="text_2_section_2" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text "></span>
+							<span class="editable-text text_2_section_2-english" realvalue="text_2_section_2" language="english"></span>
 						</div>
 						<div class="portion">
 							<input type="file">
@@ -160,11 +160,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text "></span>
+							<span class="editable-text text_3_section_2-spanish" realvalue="text3_section_2" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text "></span>
+							<span class="editable-text text_3_section_2-english" realvalue="text_3_section_2" language="english"></span>
 						</div>
 						<div class="portion">
 							<input type="file">
@@ -177,11 +177,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text "></span>
+							<span class="editable-text text_4_section_2-spanish" realvalue="text_4_section_2" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text "></span>
+							<span class="editable-text  text_4_section_2-english" realvalue="text_4_section_2" language="english"></span>
 						</div>
 						<div class="portion">
 							<input type="file">

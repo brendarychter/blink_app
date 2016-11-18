@@ -47,6 +47,15 @@ $(document).ready(function(){
             $('.button-spanish-2').append(unescape(data["button_section_2"].spanish));
             $('.button-english-2').append(unescape(data["button_section_2"].english));
 
+            $('.text_1_section_2-spanish').text(unescape(data["text_1_section_2"].spanish))
+            $('.text_1_section_2-english').text(unescape(data["text_1_section_2"].english))
+            $('.text_2_section_2-spanish').text(unescape(data["text_2_section_2"].spanish))
+            $('.text_2_section_2-english').text(unescape(data["text_2_section_2"].english))
+            $('.text_3_section_2-spanish').text(unescape(data["text_3_section_2"].spanish))
+            $('.text_3_section_2-english').text(unescape(data["text_3_section_2"].english))
+            $('.text_4_section_2-spanish').text(unescape(data["text_4_section_2"].spanish))
+            $('.text_4_section_2-english').text(unescape(data["text_4_section_2"].english))
+
             //SECTION 4
             $('.title-spanish-4').append(unescape(data["title_section_4"].spanish));
             $('.title-english-4').append(unescape(data["title_section_4"].english));
@@ -107,36 +116,61 @@ $(document).ready(function(){
         $span.addClass("editable-text");
         var newValue = $(this).val();
         var oldValue = $(this).attr('old-value')
-        params = {};
-        params.action = "modifyContent";
-        newValue = escape(newValue);
-        oldValue = escape(oldValue);
-        params.newValue = newValue;
-        params.oldValue = oldValue;
-        params.realValue = params2.realvalue;
-        params.language = params2.language;
-        if (newValue !== oldValue){
-            console.log("insert");
-            $.ajax({
-                //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
-                url: "../../back/admin/content/adminContent.php",
-                type: "POST",
-                data: params
-            }).done(function( data ) {
-              console.log(data)
-              $span.css({border: '0 solid #29BF29'}).animate({
-                    borderWidth: 1
-                }, 200);
-            }).error(function(error, textStatus){
-                console.log(error);
-                $span.css({border: '0 solid #ff0000'}).animate({
-                    borderWidth: 1
-                }, 200);
-            });
+        //Si está vacío, no lo dejo escribir
+        if(newValue == ""){
+            console.log("is empty");
+            console.log($span.closest('.abm-buttons'))
+            $('.abm-buttons-1').append(divAlert);
+            $(this).css({border: '0 solid #ff0000'}).animate({
+                borderWidth: 1
+            }, 200);
+        }else{
+            params = {};
+            params.action = "modifyContent";
+            newValue = escape(newValue);
+            oldValue = escape(oldValue);
+            params.newValue = newValue;
+            params.oldValue = oldValue;
+            params.realValue = params2.realvalue;
+            params.language = params2.language;
+            if (newValue !== oldValue){
+                console.log("insert");
+                $.ajax({
+                    //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
+                    url: "../../back/admin/content/adminContent.php",
+                    type: "POST",
+                    data: params
+                }).done(function( data ) {
+                    console.log(data)
+                    $span.css({border: '0 solid #29BF29'}).animate({
+                        borderWidth: 1
+                    }, 200);
+                    setTimeout(function(){
+
+                        var div = $span;
+                        $({alpha:1}).animate({alpha:1}, {
+                            duration: 1000,
+                            step: function(){
+                                div.css('border-color','#eee');
+                            }
+                        });
+
+                    }, 2000);
+                }).error(function(error, textStatus){
+                    console.log(error);
+                    $span.css({border: '0 solid #ff0000'}).animate({
+                        borderWidth: 1
+                    }, 200);
+                });
+            }
+            $(this).replaceWith($span);
+            //agregar un atributo al input y comparar. si son distintos, escribo en la base. validacion desde javascript. green border
+            $span.on("click", switchToInput);    
+            $('.alert-danger').fadeOut();
         }
-        $(this).replaceWith($span);
-        //agregar un atributo al input y comparar. si son distintos, escribo en la base. validacion desde javascript. green border
-        $span.on("click", switchToInput);
+        
     }
     $(".editable-text").on("click", switchToInput);
+
+    var divAlert = "<div class='alert alert-danger fade in alert-dismissable col-md-10 col-sm-12' style='border-radius: 0; margin-bottom: 0'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Error.</strong> Debe ingresar un valor</div>"
 })

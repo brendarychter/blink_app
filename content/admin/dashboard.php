@@ -52,10 +52,11 @@
 					<div class="tabs-page-blink">
 						<ul class="nav nav-tabs">
 						  	<li role="presentation" class="active toggle-nav-admin" id="home-admin"><a href="#">Home - Landing page</a></li>
-						  	<!-- <div class="panel-heading"><a href=""><svg class="glyph stroked pencil edit-icon"><use xlink:href="#stroked-pencil"></use></svg></a>Qui&eacute;nes somos</div>
-						 	 --><li role="presentation" class="toggle-nav-admin" id="team-admin"><a href="#">Qui&eacute;nes somos</a></li>
-						  	<li role="presentation" class="toggle-nav-admin"><a href="#">FAQ</a></li>
-						  	<li role="presentation" class="toggle-nav-admin"><a href="#">Demo</a></li>
+						  	<!-- <div class="panel-heading"><a href=""><svg class="glyph stroked pencil edit-icon"><use xlink:href="#stroked-pencil"></use></svg></a>Qui&eacute;nes somos</div>-->
+						 	<li role="presentation" class="toggle-nav-admin" id="conoce-admin"><a href="#">Conoc&eacute; m&aacute;s</a></li>
+						 	<li role="presentation" class="toggle-nav-admin" id="team-admin"><a href="#">Qui&eacute;nes somos</a></li>
+						 	<li role="presentation" class="toggle-nav-admin" id="use-admin"><a href="#">Qui&eacute;nes la usan</a></li>
+						  	<li role="presentation" class="toggle-nav-admin" id="faq-admin"><a href="#">FAQ</a></li>
 						</ul>
 					</div>
 					<!-- QUIENES SOMOS ADMIN -->
@@ -65,9 +66,24 @@
 						        include 'partials/home-admin.php';
 						    ?>
 						</div>
+						<div class="row conoce-admin admin-nav">
+							<?php
+						        include 'partials/conoce-admin.php';
+						    ?>
+						</div>
 						<div class="row team-admin admin-nav">
 							<?php
 						        include 'partials/team-admin.php';
+						    ?>
+						</div>
+						<div class="row use-admin admin-nav">
+							<?php
+						        include 'partials/use-admin.php';
+						    ?>
+						</div>
+						<div class="row faq-admin admin-nav">
+							<?php
+						        include 'partials/faq-admin.php';
 						    ?>
 						</div>
 					</div>
