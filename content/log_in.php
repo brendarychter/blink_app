@@ -37,22 +37,22 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                    <a href="#page-top"></a>
+                    </li>
+                    <li class="section_1">
+                        <a class="page-scroll" href="../index.php#main-page">blink!</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="../index.php">blink!</a>
-                    </li>
-                     <li>
-                        <a class="page-scroll" href="#">Conoc&eacute; m&aacute;s</a>
+                        <a class="page-scroll" id="page-works" href="how_it_works.php">Conoc&eacute; m&aacute;s</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">Demo</a>
+                        <a class="page-scroll" id="page-demo" href="demo.php">Demo</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">FAQ</a>
+                        <a class="page-scroll" id="page-faq" href="faq.php">FAQ</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">Qui&eacute;nes somos</a>
+                        <a class="page-scroll" id="page-team" href="quienessomos.php">Qui&eacute;nes somos</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="../index.php#contact">Contactate</a>
@@ -139,6 +139,7 @@
 
     <!-- Actions -->
     <script src="../public/js/actions/login.js"></script>
+    <script src="../public/js/actions/show.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $(".central-nav").removeClass("navbar-middle");

@@ -462,5 +462,7 @@ header {
 @media (min-width: 768px) {
   .last-item-header {
     border-left: 1px solid #CCC; } }
+body {
+  display: none; }
 
 /*# sourceMappingURL=content.css.map */

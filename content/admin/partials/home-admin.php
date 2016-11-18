@@ -2,9 +2,21 @@
 	<div class="panel panel-default">
 		<div class="panel-heading"></div>
 		<div class="panel-body">
-			<label class="section-name">Secci&oacute;n 1</label>
+
 			<form role="form" class="form-section" id="form-section-1" method="post" enctype="multipart/form-data" data-toggle="validator">
 				<div class="col-md-12 col-sm-12 line-sections">
+					<div class="form-group col-md-12 box-section col-sm-12 " style="border-right: none;">
+						<label class="section-name">Secci&oacute;n 1</label> 
+						<div class="portion portion-spanish">
+							<label class="lan">Espa&ntilde;ol</label>
+							<span class="editable-text section-spanish-1" realvalue="section_section_1" language="spanish"></span>
+						</div>
+						<div class="portion portion-english col-md-2">
+							<label class="lan">Ingl&eacute;s</label>
+							<span class="editable-text section-english-1" realvalue="section_section_1" language="english"></span>
+						</div>
+					</div>						
+					<div class="panel-heading" style="overflow: hidden; margin-bottom: 10px;"></div>
 					<div class="form-group col-md-3 box-section first-section col-sm-12 ">
 						<div class="title-box">
 							<span class="global-title">t&iacute;tulo</span>
@@ -53,9 +65,8 @@
 					</div>
 				</div>
 				<div class="abm-buttons col-md-12 col-sm-12 form-section-1">
-					<!-- <button type="submit" class="btn btn-primary edit-section" id="edit-section-1">Editar secci&oacute;n 1</button> -->
-					<button type="submit" class="btn btn-danger edit-section" id="delete-section-1">Ocultar secci&oacute;n 1</button>
-					<!-- tiene que borrar el div del sitio -->
+					<button type="submit" class="btn btn-danger edit-section" id="delete-section-1" data-section="1">Ocultar secci&oacute;n 1</button>
+					<!-- tiene que ocultar el div del sitio -->
 				</div>
 			</form>	
 

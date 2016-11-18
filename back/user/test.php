@@ -5,13 +5,12 @@
 	//Falta el timestamp y el GMT
 	// remove all session variables
 
-	$consulta = "SELECT * FROM users WHERE mail = 'brenda111@gmail.com'";
-	$response = mysqli_query($connection->connected,$consulta);
-
-			if(mysqli_num_rows($response)>=1){
-           		$datos = json_encode(true);
-           	}else{
-           		$datos = json_encode(false);
-           	}
-           	echo $datos;
+	//VALIDAR QUE DEVUELVA TRUE
+	$query = "UPDATE home SET visible='0' WHERE section='1'";
+	echo $query;
+	if (mysqli_query ($connection->connected, $query)) {
+	    echo "Escribio.";
+	} else {
+	    echo "Error updating";
+	}
 ?>

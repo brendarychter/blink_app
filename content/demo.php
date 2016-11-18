@@ -20,7 +20,10 @@
 </head>
 <body id="page-top" class="index landing-main-page">
     <?php include('partials/header.php');?> 
-        FREQUENTLY ASKED QUESTIONS
+    <header>
+        <h1>&#191;C&oacute;mo empezar a usar la aplicaci&oacute;n?</h1>
+        <h2>Te presentamos una gu&iacute;a pr&aacute;ctica de pasos a seguir para descargarla y utilizarla</h2>
+    </header>
     <?php include('partials/footer.php');?>
 
     <!-- Scripts -->
@@ -45,11 +48,10 @@
 
     <!-- TIMELINE -->
     <script src="../public/js/global/index_timeline.js"></script>
-    <script src="../public/js/actions/show.js"></script>
 
 
     <script type="text/javascript">
-        $('#page-faq').closest('li').addClass("active");
+        $('#page-demo').closest('li').addClass("active");
     </script>
 </body>
 </html>

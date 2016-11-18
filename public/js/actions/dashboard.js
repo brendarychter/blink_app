@@ -30,12 +30,22 @@ $(document).ready(function(){
             dataType: "json"
         }).done(function( data ) {
             // SECTION 1
+            $('.section-spanish-1').append(unescape(data["section_section_1"].spanish));
+            $('.section-english-1').append(unescape(data["section_section_1"].english));
+            
+            if(data["section_section_1"].visible == 0){
+                //boton tiene que ir en verde
+            }
+            
+            $('.button-spanish-1').append(unescape(data["button_section_1"].spanish));
+            $('.button-english-1').append(unescape(data["button_section_1"].english));
             $('.titulo-spanish-1').append(unescape(data["title_section_1"].spanish));
             $('.titulo-english-1').append(unescape(data["title_section_1"].english));
             $('.subtitle-spanish-1').append(unescape(data["subtitle_section_1"].spanish));
             $('.subtitle-english-1').append(unescape(data["subtitle_section_1"].english));
             $('.button-spanish-1').append(unescape(data["button_section_1"].spanish));
             $('.button-english-1').append(unescape(data["button_section_1"].english));
+
 
             //SECTION 2
             $('.title-spanish-2').append(unescape(data["title_section_2"].spanish));
@@ -61,6 +71,8 @@ $(document).ready(function(){
             $('.title-english-4').append(unescape(data["title_section_4"].english));
             $('.text-spanish-4').append(unescape(data["text_section_4"].spanish));
             $('.text-english-4').append(unescape(data["text_section_4"].english));
+            $('.button-spanish-4').append(unescape(data["button_section_4"].spanish));
+            $('.button-english-4').append(unescape(data["button_section_4"].english));
 
             //SECTION 5
             $('.button-spanish-5').append(unescape(data["button_section_5"].spanish));
@@ -180,4 +192,29 @@ $(document).ready(function(){
 
     var divAlert = "<div class='alert alert-danger fade in alert-dismissable col-md-10 col-sm-12' style='border-radius: 0; margin-bottom: 0'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Error.</strong> Debe ingresar un valor</div>"
     var divSuccess = "<div class='alert alert-success fade in alert-dismissable col-md-10 col-sm-12' style='border-radius: 0; margin-bottom: 0'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Listo!</strong> La base de datos se ha modificado exitosamente."
+
+
+
+
+    $('.edit-section').on("click", function(){
+        console.log($(this).attr("data-section"));
+        params= {};
+        params.action = "showContent";
+        params.section = "1";
+        params.show = "0";
+        $.ajax({
+            //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
+            url: "../../back/admin/content/adminContent.php",
+            type: "POST",
+            cache: false,
+            data: params,
+            dataType: "json"
+        }).done(function( data ) {
+            console.log(data);
+        }).error(function(error, textStatus){
+            
+        });
+
+    })
+
 })

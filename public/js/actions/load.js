@@ -16,9 +16,13 @@ $(document).ready(function(){
         language = "es";
     	if (language == "es"){
             /* SECTION 1 SPANISH */
-    		$('.title_section_1').text(unescape(data["title_section_1"].spanish));
+            //Pregunto por uno de los items
+            $('.section_1 a').text(unescape(data["section_section_1"].spanish));
+            $('.title_section_1').text(unescape(data["title_section_1"].spanish));
             $('.subtitle_section_1').text(unescape(data["subtitle_section_1"].spanish));
-    		$('.button_section_1').text(unescape(data["button_section_1"].spanish));
+            $('.button_section_1').text(unescape(data["button_section_1"].spanish));
+
+    		
 
             /* SECTION 2 SPANISH */
             
@@ -51,15 +55,6 @@ $(document).ready(function(){
     }).error(function(error, textStatus){
         console.log(textStatus);
     });
-
-
-    //FIX SCROLL DOWNLOAD APP
-    $('.button_section_1').on("click", function(){
-        console.log("hola")
-        setTimeout(function(){
-            $('.page-scroll').closest('li.active').removeClass("active")
-        }, 800)
-    })
 
 
     

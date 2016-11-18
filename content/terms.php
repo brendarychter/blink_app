@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- CAMBIAR ACÁ TAMBIÉN EL TITLE POR IDIOMA -->
-    <title class="title-section-3">FAQ - Blink App</title>
+    <title class="title-section-3">T&eacute;rminos de uso</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,12 +15,10 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../public/css/styles_default.css">
     <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png"/>
-    <link rel="stylesheet" href="../public/css/style.css">
-    <link rel="stylesheet" href="../public/css/fonts.css">
+    
 </head>
 <body id="page-top" class="index landing-main-page">
     <?php include('partials/header.php');?> 
-        FREQUENTLY ASKED QUESTIONS
     <?php include('partials/footer.php');?>
 
     <!-- Scripts -->
@@ -45,11 +43,7 @@
 
     <!-- TIMELINE -->
     <script src="../public/js/global/index_timeline.js"></script>
-    <script src="../public/js/actions/show.js"></script>
 
 
-    <script type="text/javascript">
-        $('#page-faq').closest('li').addClass("active");
-    </script>
 </body>
 </html>

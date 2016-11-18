@@ -43,7 +43,7 @@
 			$response = mysqli_query($connection->connected,$query);
 
 			while($obj = mysqli_fetch_object($response)){
-				$matriz[$obj->value] = array('spanish' => $obj->spanish, 'english' => $obj->english);
+				$matriz[$obj->value] = array('spanish' => $obj->spanish, 'english' => $obj->english, 'visible' => $obj->visible);
 			}
 			//, 'value_id' => $obj->value_id
 			$datos = json_encode($matriz);
@@ -63,9 +63,16 @@
 			}
 		}
 
-		public function deleteHomeSection($connection){
-			//Agregar a la tabla un campo foraneo a la tabla secciones con el id y el nombre.
-			//delete * from homer where id = id_section
+
+		public function showContent($connection, $val, $flag){
+			//VALIDAR QUE DEVUELVA TRUE
+			$query = "UPDATE home SET visible='$flag' WHERE section='$val'";
+			echo $query;
+			if (mysqli_query ($connection->connected, $query)) {
+			    echo "Escribio.";
+			} else {
+			    echo "Error updating";
+			}
 		}
 	}
 ?>

@@ -18,7 +18,7 @@
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
-                <li>
+                <li class="section_1">
                     <a class="page-scroll" href="../index.php#main-page">blink!</a>
                 </li>
                 <li>

@@ -22,10 +22,15 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/fonts.css">
 </head>
 <body id="page-top" class="index landing-main-page">
     <?php include('partials/header.php');?> 
-        TEAM
+        <header>
+        <h1>&#191;C&oacute;mo empezar a usar la aplicaci&oacute;n?</h1>
+        <h2>Te presentamos una gu&iacute;a pr&aacute;ctica de pasos a seguir para descargarla y utilizarla</h2>
+    </header>
     <?php include('partials/footer.php');?>
 
     <!-- Scripts -->

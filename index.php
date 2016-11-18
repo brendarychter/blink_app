@@ -23,7 +23,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="page-top" class="index landing-main-page">
+<body id="page-top" class="index landing-main-page main-page-blink">
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -45,22 +45,22 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
+                    <li class="section_1 page-section">
                         <a class="page-scroll" href="#main-page">blink!</a>
                     </li>
-                    <li>
+                    <li class="section_2 page-section">
                         <a class="page-scroll" href="#conoce">Conoc&eacute; m&aacute;s</a>
                     </li>
-                    <li>
+                    <li class="section_3 page-section">
                         <a class="page-scroll" href="content/demo.php">Demo</a>
                     </li>
-                    <li>
+                    <li class="section_4 page-section">
                         <a class="page-scroll" href="content/faq.php">FAQ</a>
                     </li>
-                    <li>
+                    <li class="section_5 page-section">
                         <a class="page-scroll" href="content/quienessomos.php">Qui&eacute;nes somos</a>
                     </li>
-                    <li>
+                    <li class="page-section">
                         <a class="page-scroll" href="#contact">Contactate</a>
                     </li>
                     
@@ -78,7 +78,7 @@
     </nav>
     
     <!-- Header -->
-    <header id="main-page">
+    <header id="main-page" class="section_1 page-section">
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in subtitle_section_1">Una &uacute;nica aplicaci&oacute;n. Todo lo que necesit&aacute;s.</div>
@@ -90,7 +90,7 @@
     </header>
 
     <!-- conoce Section -->
-    <section id="conoce">
+    <section id="conoce" class="section_2 page-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -118,12 +118,12 @@
                 </div>
             </div>
             <div style="text-align: center;">
-                <a href="content/demo.php" class="page-scroll btn btn-xl button_section_2" id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
+                <a href="content/users-app.php" class="page-scroll btn btn-xl button_section_2" id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
             </div>
         </div>
     </section>
 
-    <section id="demo">
+    <section id="demo" class="section_3 page-section">
         <img src="public/img/play.svg" class="demo-img"><br><br>
         <p class="demo_description">
             Video en construcci&oacute;n
@@ -137,7 +137,7 @@
                     <h2 class="section-heading text-app">Descargate la aplicaci&oacute;n para el celular</h2>
                     <h3 class="section-subheading text-muted">Vas a poder acceder a las novedades m&aacute;s r&aacute;pidamente y usar la aplicaci&oacute;n de forma m&aacute;s c&oacute;moda y eficiente</h3>
                     <div style="text-align: center;">
-                        <a href="content/how_it_works.php" class="page-scroll btn btn-xl button_section_2" id="more-info">Todavía quiero saber más</a>
+                        <a href="content/how_it_works.php" class="page-scroll btn btn-xl button_section_4" id="more-info">¿C&oacute;mo funciona?</a>
                     </div>
                 </div>
             </div>
@@ -215,6 +215,7 @@
 
     <!-- My scripts -->
     <script src="public/js/actions/load.js"></script>
+    <script src="public/js/actions/showSections.js"></script>
     <script type="text/javascript">
         $('#english-lan').on("click", function(){
             console.log("hola")
