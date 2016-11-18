@@ -64,6 +64,11 @@
 				}
            	// }
 		}
+
+		//Primero notificación. Si acepta.
+		public function addUserToGroup($connection, $userID, $idGroup){
+			$query = "INSERT INTO modules (idUser, idGroup) VALUES ('$userID', '$idGroup')"
+		}
 	}
 ?>
 
