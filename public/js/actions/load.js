@@ -36,6 +36,12 @@ $(document).ready(function(){
             $('.text_3_section_2').text(unescape(data["text_3_section_2"].spanish))
             $('.text_4_section_2').text(unescape(data["text_4_section_2"].spanish))
 
+
+            /* SECTION 3 SPANISH */
+
+            /* SECTION 4 SPANISH */
+            $('.button_section_4').text(unescape(data["button_section_4"].spanish));
+
     	}else{
     		$('.title_section_1').text(unescape(data["title_section_1"].english));
             $('.subtitle_section_1').text(unescape(data["subtitle_section_1"].english));

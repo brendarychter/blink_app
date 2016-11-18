@@ -22,6 +22,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="public/js/global/jquery.js"></script>
 </head>
 <body id="page-top" class="index landing-main-page main-page-blink">
     <!-- Navigation -->
@@ -118,7 +119,7 @@
                 </div>
             </div>
             <div style="text-align: center;">
-                <a href="content/users-app.php" class="page-scroll btn btn-xl button_section_2" id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
+                <a href="content/how_it_works.php" class="page-scroll btn btn-xl button_section_2" id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
             </div>
         </div>
     </section>
@@ -137,7 +138,7 @@
                     <h2 class="section-heading text-app">Descargate la aplicaci&oacute;n para el celular</h2>
                     <h3 class="section-subheading text-muted">Vas a poder acceder a las novedades m&aacute;s r&aacute;pidamente y usar la aplicaci&oacute;n de forma m&aacute;s c&oacute;moda y eficiente</h3>
                     <div style="text-align: center;">
-                        <a href="content/how_it_works.php" class="page-scroll btn btn-xl button_section_4" id="more-info">¿C&oacute;mo funciona?</a>
+                        <a href="content/faq.php" class="page-scroll btn btn-xl button_section_4" id="more-info">¿Ten&eacute;s dudas?</a>
                     </div>
                 </div>
             </div>

@@ -54,9 +54,9 @@
 						  	<li role="presentation" class="active toggle-nav-admin" id="home-admin"><a href="#">Home - Landing page</a></li>
 						  	<!-- <div class="panel-heading"><a href=""><svg class="glyph stroked pencil edit-icon"><use xlink:href="#stroked-pencil"></use></svg></a>Qui&eacute;nes somos</div>-->
 						 	<li role="presentation" class="toggle-nav-admin" id="conoce-admin"><a href="#">Conoc&eacute; m&aacute;s</a></li>
-						 	<li role="presentation" class="toggle-nav-admin" id="team-admin"><a href="#">Qui&eacute;nes somos</a></li>
-						 	<li role="presentation" class="toggle-nav-admin" id="use-admin"><a href="#">Qui&eacute;nes la usan</a></li>
+						 	<li role="presentation" class="toggle-nav-admin" id="use-admin"><a href="#">Demo</a></li>
 						  	<li role="presentation" class="toggle-nav-admin" id="faq-admin"><a href="#">FAQ</a></li>
+						 	<li role="presentation" class="toggle-nav-admin" id="team-admin"><a href="#">Qui&eacute;nes somos</a></li>
 						</ul>
 					</div>
 					<!-- QUIENES SOMOS ADMIN -->
