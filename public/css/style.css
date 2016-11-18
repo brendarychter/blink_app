@@ -64,7 +64,7 @@ Main components
 -------------------------------- */
 header {
   height: 210px;
-  line-height: 65px;
+  line-height: 26px;
   text-align: center;
   background: #222;
   padding-top: 55px;
@@ -79,7 +79,8 @@ header h1 {
 header h2{
   font-size: 14px;
   letter-spacing: 1px;
-  line-height: 25px;
+  line-height: 22px;
+  margin-top: 12px;
 }
 @media only screen and (min-width: 1170px) {
   header {

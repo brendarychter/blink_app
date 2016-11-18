@@ -96,7 +96,7 @@
         </div> <!-- cd-timeline-block -->
     </section> <!-- cd-timeline -->
     <?php
-        include 'footer.php';
+        include 'partials/footer.php';
     ?>
 
     <!-- Scripts -->
