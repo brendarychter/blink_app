@@ -116,14 +116,19 @@ $(document).ready(function(){
         $span.addClass("editable-text");
         var newValue = $(this).val();
         var oldValue = $(this).attr('old-value')
+        
+        //FIXEAR 
+        var formValue = $(this).parent().parent().parent().parent().attr('id');
         //Si está vacío, no lo dejo escribir
         if(newValue == ""){
             console.log("is empty");
-            console.log($span.closest('.abm-buttons'))
-            $('.abm-buttons-1').append(divAlert);
+            $('.abm-buttons.'+formValue).append(divAlert);
             $(this).css({border: '0 solid #ff0000'}).animate({
                 borderWidth: 1
             }, 200);
+            setTimeout(function(){
+                $('.alert-danger').fadeOut("slow")
+            }, 2000)
         }else{
             params = {};
             params.action = "modifyContent";
@@ -141,12 +146,12 @@ $(document).ready(function(){
                     type: "POST",
                     data: params
                 }).done(function( data ) {
+                    $('.abm-buttons.'+formValue).append(divSuccess);
                     console.log(data)
                     $span.css({border: '0 solid #29BF29'}).animate({
                         borderWidth: 1
                     }, 200);
                     setTimeout(function(){
-
                         var div = $span;
                         $({alpha:1}).animate({alpha:1}, {
                             duration: 1000,
@@ -154,6 +159,7 @@ $(document).ready(function(){
                                 div.css('border-color','#eee');
                             }
                         });
+                        $('.alert-success').fadeOut("slow")
 
                     }, 2000);
                 }).error(function(error, textStatus){
@@ -173,4 +179,5 @@ $(document).ready(function(){
     $(".editable-text").on("click", switchToInput);
 
     var divAlert = "<div class='alert alert-danger fade in alert-dismissable col-md-10 col-sm-12' style='border-radius: 0; margin-bottom: 0'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Error.</strong> Debe ingresar un valor</div>"
+    var divSuccess = "<div class='alert alert-success fade in alert-dismissable col-md-10 col-sm-12' style='border-radius: 0; margin-bottom: 0'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Listo!</strong> La base de datos se ha modificado exitosamente."
 })

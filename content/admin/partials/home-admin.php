@@ -52,7 +52,7 @@
 						<p class="help-block"></p>
 					</div>
 				</div>
-				<div class="abm-buttons-1 col-md-12 col-sm-12">
+				<div class="abm-buttons col-md-12 col-sm-12 form-section-1">
 					<!-- <button type="submit" class="btn btn-primary edit-section" id="edit-section-1">Editar secci&oacute;n 1</button> -->
 					<button type="submit" class="btn btn-danger edit-section" id="delete-section-1">Ocultar secci&oacute;n 1</button>
 					<!-- tiene que borrar el div del sitio -->
@@ -246,6 +246,19 @@
 							<span class="editable-text text-english-4" realvalue="subtitle_section_4" language="english"></span>
 						</div>
 					</div>
+					<div class="form-group col-md-3 box-section col-sm-12">
+						<div class="title-box">
+							<span class="global-title">bot&oacute;n</span>
+						</div>
+						<div class="portion portion-spanish">
+							<label class="lan">Espa&ntilde;ol</label>
+							<span class="editable-text button-spanish-4" realvalue="button_section_4" language="spanish"></span>
+						</div>
+						<div class="portion portion-english">
+							<label class="lan">Ingl&eacute;s</label>
+							<span class="editable-text button-english-4" realvalue="button_section_4" language="english"></span>
+						</div>
+					</div>
 					<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
 						<div class="title-box">
 							<span class="global-title">imagen QR</span>
@@ -298,11 +311,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text button-spanish-5" realvalue="button_section_4" language="spanish"></span>
+							<span class="editable-text button-spanish-5" realvalue="button_section_5" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text button-english-5" realvalue="button_section_4" language="english"></span>
+							<span class="editable-text button-english-5" realvalue="button_section_5" language="english"></span>
 						</div>
 					</div>
 					<div class="panel-heading" style="overflow: hidden; margin-bottom: 30px;"></div>
