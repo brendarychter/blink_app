@@ -164,7 +164,7 @@
     <!-- Plugin JavaScript -->
     <script src="../public/js/global/jqueryeasing.js"></script>
     <script src="../public/js/global/classie.js"></script>
-    <script src="../public/js/global/cbpAnimatedHeader.js"></script>
+    <script src="../public/js/global/cbpAnimatedHeader.js" data-top="10"></script>
 
     <!-- Contact Form JavaScript -->
     <script src="../public/js/global/jqBootstrapValidation.js"></script>

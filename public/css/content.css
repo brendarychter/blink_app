@@ -586,16 +586,17 @@ h2 {
 #more-info {
   margin-right: 5px;
   margin: 0 auto;
-  margin-top: 30px; }
+  margin-top: 50px; }
 
 .form-control {
   border-radius: 0; }
 
 #demo {
-  background-color: #EEE; }
+  background-color: #EEE;
+  padding: 200px 0; }
 
 #conoce, #contact {
-  padding: 100px 0; }
+  padding: 120px 0; }
 
 .demo_description {
   font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;

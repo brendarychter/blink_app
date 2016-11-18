@@ -275,7 +275,6 @@
 
     <script src="../public/js/global/jquery.js"></script>
     <script src="../public/js/global/bootstrap.min.js"></script>
-    <script src="../public/js/global/chart.min.js"></script>
     <script src="../public/js/global/bootstrap-datepicker.js"></script>
     <script src="../public/js/actions/application.js"></script>
     <script>
