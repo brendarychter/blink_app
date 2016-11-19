@@ -55,13 +55,14 @@
 							<span class="editable-text button-english-1" realvalue="button_section_1" language="english"></span>
 						</div>
 					</div>
-					<form method="post" enctype="multipart/form-data">
+					<form action="../../back/admin/content/loadImages.php" method="post" enctype="multipart/form-data">
 						<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
 							<div class="title-box">
 								<span class="global-title">imagen de fondo</span>
 							</div>
 							<input type="file" name="archivo_a_subir">
 							<input type="text" placeholder="T&iacute;tulo" name="titulo"/>
+							 <input type="submit" value="Subir!" name="submit">
 							<button class="btn btn-primary" type="submit" name="submit" id="save-photo-1"/>Guardar foto</button>
 							<p class="help-block"></p>
 						</div>

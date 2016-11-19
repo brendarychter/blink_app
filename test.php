@@ -1,4 +1,4 @@
-<?php echo exec('whoami'); ?>
+<!-- CORRER EL SCRIPT PARA CAMBIAR PERMISOS -->
 <?php
 	// INCLUYO EL ARCHIVO DE CONEXIÓN A LA BASE DE DATOS
 	require_once("back/admin/connection.php");
@@ -17,6 +17,7 @@
 			
 			// DEFINICIONES INTERNAS PARA CONTROL
 			$target_file = $nombre_carpeta . basename($file["name"]);
+			$ext = pathinfo($file["name"], PATHINFO_EXTENSION);
 			$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 			$checkFile = getimagesize($file["tmp_name"]);
 			$uploadOk = true;

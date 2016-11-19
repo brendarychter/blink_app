@@ -15,7 +15,14 @@
 			$nombre_carpeta = "uploads/";
 			
 			// DEFINICIONES INTERNAS PARA CONTROL
-			$target_file = $nombre_carpeta . basename($file["name"]);
+			$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		    $charactersLength = strlen($characters);
+		    $randomString = '';
+		    for ($i = 0; $i < 10; $i++) {
+		        $randomString .= $characters[rand(0, $charactersLength - 1)];
+		    }
+
+			$target_file = $nombre_carpeta . $randomString . basename($file["name"]);
 			$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 			$checkFile = getimagesize($file["tmp_name"]);
 			$uploadOk = true;
@@ -58,8 +65,7 @@
 
 		// LEVANTO ALGUNOS DATOS DEL FORM
 
-		$campo1 = mysqli_real_escape_string($conexion,$_POST["campo1"]);
-		$campo2 = mysqli_real_escape_string($conexion,$_POST["campo2"]);
+		$campo1 = mysqli_real_escape_string($conexion,$_POST["titulo"]);
 		
 		// LEVANTO EL NOMBRE DEL ARCHIVO USANDO LA FUNCION subir_imagen DECLARADA ARRIBA
 		$imagen = subir_imagen($_FILES["archivo_a_subir"]);
@@ -85,12 +91,12 @@
 		}
 	}
 ?>
-
+<!-- 
 
 <!DOCTYPE html>
 <html>
 <body>
-	<form action="loadImages.php" method="post" enctype="multipart/form-data"> <!-- IMPORTANTISIMO AGREGAR EL ENCTYPE AL FORM, SINO NO FUNCIONA EL UPLOAD -->
+	<form action="loadImages.php" method="post" enctype="multipart/form-data"> IMPORTANTISIMO AGREGAR EL ENCTYPE AL FORM, SINO NO FUNCIONA EL UPLOAD 
 	    <p>
 	    	<label>Subir una imagen</label>
 	    	<input type="file" name="archivo_a_subir">
@@ -107,4 +113,4 @@
 	    <input type="submit" value="Subir!" name="submit">
 	</form>
 </body>
-</html>
+</html> -->
