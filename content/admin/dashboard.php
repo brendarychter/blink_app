@@ -20,6 +20,12 @@
 </head>
 
 <body>
+	<div class="row panel" style="padding:10px;margin-bottom:0;padding-left:20px">
+		<div class="col-md-12 col-sm-12">
+			<label><a href="../../index.php">Ver sitio</a></label>
+		</div>
+	</div>
+	
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">

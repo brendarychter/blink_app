@@ -65,7 +65,8 @@
 					</div>
 				</div>
 				<div class="abm-buttons col-md-12 col-sm-12 form-section-1">
-					<button type="submit" class="btn btn-danger edit-section" id="delete-section-1" data-section="1">Ocultar secci&oacute;n 1</button>
+					<button class="btn btn-danger edit-section" id="delete-section-1" data-section="1">Ocultar secci&oacute;n 1</button>
+					<button class="btn btn-info edit-section" id="edit-section-1" data-section="1">Mostrar secci&oacute;n 1</button>
 					<!-- tiene que ocultar el div del sitio -->
 				</div>
 			</form>	

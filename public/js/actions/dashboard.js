@@ -32,9 +32,15 @@ $(document).ready(function(){
             // SECTION 1
             $('.section-spanish-1').append(unescape(data["section_section_1"].spanish));
             $('.section-english-1').append(unescape(data["section_section_1"].english));
-            
+            console.log(data["section_section_1"].visible)
             if(data["section_section_1"].visible == 0){
                 //boton tiene que ir en verde
+                console.log("no mostrar mostrar")
+                $('#edit-section-1').show();
+                $('#delete-section-1').hide();
+            }else{
+                $('#delete-section-1').show();
+                $('#edit-section-1').hide();
             }
             
             $('.button-spanish-1').append(unescape(data["button_section_1"].spanish));
@@ -43,8 +49,6 @@ $(document).ready(function(){
             $('.titulo-english-1').append(unescape(data["title_section_1"].english));
             $('.subtitle-spanish-1').append(unescape(data["subtitle_section_1"].spanish));
             $('.subtitle-english-1').append(unescape(data["subtitle_section_1"].english));
-            $('.button-spanish-1').append(unescape(data["button_section_1"].spanish));
-            $('.button-english-1').append(unescape(data["button_section_1"].english));
 
 
             //SECTION 2
@@ -194,10 +198,28 @@ $(document).ready(function(){
     var divSuccess = "<div class='alert alert-success fade in alert-dismissable col-md-10 col-sm-12' style='border-radius: 0; margin-bottom: 0'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Listo!</strong> La base de datos se ha modificado exitosamente."
 
 
-
-
-    $('.edit-section').on("click", function(){
-        console.log($(this).attr("data-section"));
+    $('#edit-section-1').on("click", function(){
+        params= {};
+        params.action = "showContent";
+        params.section = "1";
+        params.show = "1";
+        $.ajax({
+            //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
+            url: "../../back/admin/content/adminContent.php",
+            type: "POST",
+            cache: false,
+            data: params,
+            dataType: "json"
+        }).done(function( data ) {
+            console.log(data);
+            $('#edit-section-1').hide();
+            $('#delete-section-1').show();
+        }).error(function(error, textStatus){
+            
+        });
+    })
+    $('#delete-section-1').on("click", function(){
+        console.log("hola")
         params= {};
         params.action = "showContent";
         params.section = "1";
@@ -210,11 +232,14 @@ $(document).ready(function(){
             data: params,
             dataType: "json"
         }).done(function( data ) {
-            console.log(data);
+            console.log("borro seccion");
+            $('#edit-section-1').show();
+            $(this).hide();
+            console.log("ocultar el delete")
         }).error(function(error, textStatus){
             
         });
-
     })
+
 
 })

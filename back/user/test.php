@@ -6,11 +6,11 @@
 	// remove all session variables
 
 	//VALIDAR QUE DEVUELVA TRUE
-	$query = "UPDATE home SET visible='0' WHERE section='1'";
-	echo $query;
-	if (mysqli_query ($connection->connected, $query)) {
-	    echo "Escribio.";
-	} else {
-	    echo "Error updating";
-	}
+	$query = "SELECT visible FROM home WHERE section ='0'";
+			echo $query;
+			if (mysqli_query ($connection->connected, $query)) {
+			    echo "recibio.";
+			} else {
+			    echo "Error updating";
+			}
 ?>

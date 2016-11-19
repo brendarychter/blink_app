@@ -28,7 +28,8 @@
       letter-spacing: 2px; }
     .main-admin-dashboard .tab-admin-page .form-section .edit-section {
       float: right;
-      margin-right: 10px; }
+      margin-right: 10px;
+      display: none; }
     .main-admin-dashboard .tab-admin-page .form-section .box-section .title-box {
       overflow: hidden; }
       .main-admin-dashboard .tab-admin-page .form-section .box-section .title-box .global-title {
