@@ -7,6 +7,7 @@ $(document).ready(function(){
 
     toggleTabs();
     populateLabels();
+    loadImages();
 
     function getSessionAdminUser(){
     	console.log("entro")
@@ -15,6 +16,24 @@ $(document).ready(function(){
         $.get('../../back/admin/users/getUserAdminSession.php', function (data) {
           userAdmin = JSON.parse(data);
           $("#admin-logged").append(userAdmin.username);
+        });
+    }
+
+    function loadImages(){
+        params= {};
+        params.action = "getContent";
+        params.tableName = "home";
+        $.ajax({
+            //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
+            url: "../../back/admin/content/getImages.php",
+            type: "POST",
+            cache: false,
+            data: params,
+            dataType: "json"
+        }).done(function( data ) {
+            console.log(data);
+        }).error(function(error, textStatus){
+            console.log(error);
         });
     }
 
@@ -275,6 +294,42 @@ $(document).ready(function(){
     $('.save-photo').on("click", function(){
         var section = $(this).attr("data-section");
         var table = $(this).attr("data-table");
+
+        var file_data = $('.imagen-img').attr("data-img", section).prop('files')[0];
+        var form_data = new FormData();                  
+        form_data.append('imagen', file_data);
+        form_data.append('section', section);
+        form_data.append('table', table);
+        form_data.append('submit', "submit");
+        form_data.append('titulo', $('.titulo-img').attr("data-title", section).val());
+
+
+        // params.action = "saveImg";
+        // params.section = section;
+        // params.table = table;
+        // params.submit = "submit";
+        // params.titulo = $('.titulo-img').attr("data-title", section).val();
+        // params.imagen = 
+        $.ajax({
+            //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
+            url: "../../back/admin/content/loadImages.php",
+            type: "POST",
+            cache: false,
+            processData: false,
+            data: form_data,
+            dataType: "text",
+            contentType: false,
+        }).done(function( data ) {
+            console.log(data);
+            // switch(data){
+            //     case "1":
+            //     break;
+            // }
+            
+        }).error(function(error, textStatus){
+            console.log(error)
+        });
+
     })
 
 })

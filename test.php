@@ -9,6 +9,7 @@
 	function subir_imagen($file){
 
 		// VALIDO QUE NO ME LLEGUE EL FORMULARIO VACIO.
+
 		if($file && $file["name"]!=""){
 
 			// DEFINO CUÁL VA A SER LA URL DE MI SITIO WEB, Y LA CARPETA DONDE SE GUARDARÁN LAS IMÁGENES (ESTO DEBERÍA ESTAR EN UN ARCHIVO EXTERNO DE CONFIGURACIÓN)
@@ -63,27 +64,27 @@
 		$campo2 = mysqli_real_escape_string($conexion,$_POST["campo2"]);
 		
 		// LEVANTO EL NOMBRE DEL ARCHIVO USANDO LA FUNCION subir_imagen DECLARADA ARRIBA
-		$imagen = subir_imagen($_FILES["archivo_a_subir"]);
+		//$imagen = subir_imagen();
+		echo print_r($_FILES["archivo_a_subir"]);
+		// if($imagen=="error"){
+		// 	echo "Error. Hubo un error con la imagen, por favor revisar";
+		// }
+		// else{
 
-		if($imagen=="error"){
-			echo "Error. Hubo un error con la imagen, por favor revisar";
-		}
-		else{
+		// 	// CONTINUO CON EL RESTO DE MI CÓDIGO...
 
-			// CONTINUO CON EL RESTO DE MI CÓDIGO...
-
-			$sql = "insert into fotos (nombre, img) values ('$campo1','$imagen')";
+		// 	$sql = "insert into fotos (nombre, img) values ('$campo1','$imagen')";
 			
-			// IMPRIMO LA CONSULTA SÓLO PARA DEBUG
-			echo $sql;
+		// 	// IMPRIMO LA CONSULTA SÓLO PARA DEBUG
+		// 	echo $sql;
 
-			if(mysqli_query($conexion,$sql)){
-				echo "Los datos se guardaron exitosamente!";
-			}
-			else{
-				echo "Error. La consulta a la BBDD no se puede ejecutar.";
-			}
-		}
+		// 	if(mysqli_query($conexion,$sql)){
+		// 		echo "Los datos se guardaron exitosamente!";
+		// 	}
+		// 	else{
+		// 		echo "Error. La consulta a la BBDD no se puede ejecutar.";
+		// 	}
+		// }
 	}
 ?>
 

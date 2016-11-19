@@ -65,14 +65,14 @@
 				</div>
 				
 			</form>	
-			<form action="../../back/admin/content/loadImages.php" method="post" enctype="multipart/form-data">
+			<form method="post" enctype="multipart/form-data" id="imageUploadForm">
 				<div class="col-md-3 col-sm-12 line-sections">
 					<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
 						<div class="title-box">
 							<span class="img-titles" style="float: right; font-weight: bold;">imagen de fondo</span>
 						</div>
-						<input type="file" name="archivo_a_subir">
-						<input type="text" placeholder="T&iacute;tulo" name="titulo" required/>
+						<input type="file" class="imagen-img" data-img="img-1" name="imagen" required/>
+						<input class="titulo-img" data-title="title-1" type="text" placeholder="T&iacute;tulo" name="titulo" required/>
 						<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-table="home"/>Guardar foto</button>
 						<p class="help-block"></p>
 					</div>

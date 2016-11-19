@@ -1,10 +1,42 @@
-<?php echo exec('whoami'); ?>
 <?php
 	// INCLUYO EL ARCHIVO DE CONEXIÓN A LA BASE DE DATOS
  	$conexion = @mysqli_connect("localhost", "root", "", "blink");
 	// LA FUNCION PUEDE ESTAR EN UN ARCHIVO EXTERNO DE FUNCIONES GENERALES DEL SITIO
 	// RECIBE COMO PARÁMETRO EL OBJETO $FILE Y DEVUELVE EL NOMBRE DEL ARCHIVO O LA PALABRA "error" SI NO PUDO GUARDARLO
 
+
+ 	// PREGUNTO SI VENGO DEL SUBMIT DEL FORMULARIO
+	if(isset($_POST["submit"])){
+
+		// LEVANTO ALGUNOS DATOS DEL FORM
+
+		$name = mysqli_real_escape_string($conexion,$_POST["titulo"]);
+		$table_name = $_POST["table"];
+		$section = $_POST["section"];
+		
+		// LEVANTO EL NOMBRE DEL ARCHIVO USANDO LA FUNCION subir_imagen DECLARADA ARRIBA
+		$imagen = subir_imagen($_FILES["imagen"]);
+
+		if($imagen=="error"){
+			echo "Error. Hubo un error con la imagen, por favor revisar";
+		}
+		else{
+
+			// CONTINUO CON EL RESTO DE MI CÓDIGO...
+
+			$sql = "insert into fotos (nombre, img, table_name, section) values ('$name','$imagen','$table_name', '$section')";
+			
+			// IMPRIMO LA CONSULTA SÓLO PARA DEBUG
+			echo $sql;
+
+			if(mysqli_query($conexion,$sql)){
+				echo "Los datos se guardaron exitosamente!";
+			}
+			else{
+				echo "Error. La consulta a la BBDD no se puede ejecutar.";
+			}
+		}
+	}
 	function subir_imagen($file){
 
 		// VALIDO QUE NO ME LLEGUE EL FORMULARIO VACIO.
@@ -60,57 +92,5 @@
 	}
 
 	
-	// PREGUNTO SI VENGO DEL SUBMIT DEL FORMULARIO
-	if(isset($_POST["submit"])){
-
-		// LEVANTO ALGUNOS DATOS DEL FORM
-
-		$campo1 = mysqli_real_escape_string($conexion,$_POST["titulo"]);
-		
-		// LEVANTO EL NOMBRE DEL ARCHIVO USANDO LA FUNCION subir_imagen DECLARADA ARRIBA
-		$imagen = subir_imagen($_FILES["archivo_a_subir"]);
-
-		if($imagen=="error"){
-			echo "Error. Hubo un error con la imagen, por favor revisar";
-		}
-		else{
-
-			// CONTINUO CON EL RESTO DE MI CÓDIGO...
-
-			$sql = "insert into fotos (nombre, img) values ('$campo1','$imagen')";
-			
-			// IMPRIMO LA CONSULTA SÓLO PARA DEBUG
-			echo $sql;
-
-			if(mysqli_query($conexion,$sql)){
-				echo "Los datos se guardaron exitosamente!";
-			}
-			else{
-				echo "Error. La consulta a la BBDD no se puede ejecutar.";
-			}
-		}
-	}
+	
 ?>
-<!-- 
-
-<!DOCTYPE html>
-<html>
-<body>
-	<form action="loadImages.php" method="post" enctype="multipart/form-data"> IMPORTANTISIMO AGREGAR EL ENCTYPE AL FORM, SINO NO FUNCIONA EL UPLOAD 
-	    <p>
-	    	<label>Subir una imagen</label>
-	    	<input type="file" name="archivo_a_subir">
-	    </p>
-	    <p>
-	    	<label>Campo 1</label>
-	    	<input type="text" name="campo1" placeholder="Campo de ejemplo para bla bla">
-	    </p>
-	    <p>
-	    	<label>Campo 2</label>
-	    	<input type="text" name="campo2" placeholder="Otro campo de ejemplo para bla bla y mas bla">
-	    </p>
-
-	    <input type="submit" value="Subir!" name="submit">
-	</form>
-</body>
-</html> -->
