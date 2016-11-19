@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Blink!</title>
+    <title>Log in - Blink!</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,7 +20,7 @@
         }
     </style>
 </head>
-<body id="page-top" class="index landing-main-page">
+<body id="page-top" class="index landing-main-page" style="display: block">
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top navbar-login">
         <div class="container">
@@ -64,52 +64,54 @@
     <!-- Header -->
     <!-- <header id="main-page"> -->
         <div class="container">
-            <div class="intro-text" style="padding-top:100px; padding-bottom: 200px;">
+            <div class="intro-text" style="padding-top:100px">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="login-box">
-                            <div class="lb-header">
-                                <a href="#login-box-link" class="active" id="login-box-link">Inici&aacute; sesi&oacute;n</a>
-                                <a href="#signup-box-link" id="signup-box-link">Registrate</a>
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+                        <div class="login-panel panel panel-default" style="border-radius: 0; margin-top: 80px">
+                            <div class="login-box">
+                                <div class="lb-header">
+                                    <a href="#login-box-link" class="active" id="login-box-link" style="border-right: 1px solid #ccc;">Inici&aacute; sesi&oacute;n</a>
+                                    <a href="#signup-box-link" id="signup-box-link">Registrate</a>
+                                </div>
+
+                                <form class="email-login" style="margin-top:70px">
+                                    <div class="u-form-group">
+                                        <input type="text" class="form-control" placeholder="Nombre de usuario" id="username-login" name="username-login" required/>
+                                    </div>
+                                    <div class="u-form-group">
+                                        <input type="password" class="form-control" placeholder="Contrase&ntilde;a" id="password-login" name="password-login" required/>
+                                    </div>
+                                    <div class="u-form-group" style="margin-top:105px">
+                                        <button type="submit" id="log-in-app" class="btn-xl">Acceder</button>
+                                    </div>
+                                    <input type="hidden" name="userID" id="userID"></input>
+                                    <div class="u-form-group">
+                                        <a href="#" class="forgot-password">&#191;Olvidaste tu contrase&ntilde;a?</a>
+                                    </div>
+                                </form>
+
+                                <form class="email-signup">
+                                    <div class="u-form-group">
+                                        <input type="text" class="form-control" placeholder="Nombre de usuario" id="username-signin" name="username-signin" required />
+                                    </div>
+                                    <div class="u-form-group">
+                                        <input type="password" class="form-control" placeholder="Contrase&ntilde;a" id="password-signin" class="password-login" name="password-signin" required/>
+                                    </div>
+                                    <div class="u-form-group">
+                                        <input type="password" class="form-control" placeholder="Confirmar contrase&ntilde;a" class="password-signin" required/>
+                                    </div>
+                                    <div class="u-form-group">
+                                        <input type="email" class="form-control" placeholder="Email" id="mail-signin" name="mail-signin"/>
+                                    </div>
+                                    <div class="u-form-group">
+                                        <input type="telephone" class="form-control" placeholder="Celular" id="mobile-signin" name="mobile-signin"/>
+                                    </div>
+                                    <input type="hidden" name="userID" id="userID"></input>
+                                    <div class="u-form-group" style="margin-top:20px">
+                                        <button type="submit" id="sign-in-app" class="btn-xl">Acceder</button>
+                                    </div>
+                                </form>
                             </div>
-
-                            <form class="email-login">
-                                <div class="u-form-group">
-                                    <input type="email" placeholder="Nombre de usuario" id="username-login" name="username-login"/>
-                                </div>
-                                <div class="u-form-group">
-                                    <input type="password" placeholder="Contrase&ntilde;a" id="password-login" name="password-login"/>
-                                </div>
-                                <div class="u-form-group" style="margin-top:20px">
-                                    <a href="" id="log-in-app" class="btn-xl">Acceder</a>
-                                </div>
-                                <input type="hidden" name="userID" id="userID"></input>
-                                <div class="u-form-group">
-                                    <a href="#" class="forgot-password">&#191;Olvidaste tu contrase&ntilde;a?</a>
-                                </div>
-                            </form>
-
-                            <form class="email-signup">
-                                <div class="u-form-group">
-                                    <input type="email" placeholder="Nombre de usuario" id="username-signin" name="username-signin"/>
-                                </div>
-                                <div class="u-form-group">
-                                    <input type="password" placeholder="Contrase&ntilde;a" id="password-signin" class="password-login" name="password-signin"/>
-                                </div>
-                                <div class="u-form-group">
-                                    <input type="password" placeholder="Confirmar contrase&ntilde;a" class="password-signin"/>
-                                </div>
-                                <div class="u-form-group">
-                                    <input type="email" placeholder="Email" id="mail-signin" name="mail-signin"/>
-                                </div>
-                                <div class="u-form-group">
-                                    <input type="telephone" placeholder="Celular" id="mobile-signin" name="mobile-signin"/>
-                                </div>
-                                <input type="hidden" name="userID" id="userID"></input>
-                                <div class="u-form-group" style="margin-top:20px">
-                                    <a href="#" id="sign-in-app" class="btn-xl">Crear cuenta</a>
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -139,7 +141,6 @@
 
     <!-- Actions -->
     <script src="../public/js/actions/login.js"></script>
-    <script src="../public/js/actions/show.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $(".central-nav").removeClass("navbar-middle");

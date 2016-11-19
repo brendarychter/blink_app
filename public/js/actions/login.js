@@ -60,25 +60,22 @@ $(document).ready(function(){
             }).done(function( data ) {
                 console.log(data)
                 //window.location.href = "application.php";
+                $.ajax({
+                //url: "http://blinkapp.com.ar/back/user/adminUser.php",
+                    url: "../back/user/adminUser.php",
+                    type: "POST",
+                    data: params,
+                    cache: false,
+                    dataType: "text"
+                }).done(function( data ) {
+                    console.log(data)
+                    window.location.href = "application.php";
+                }).error(function(error, textStatus){
+                    console.log("No pudo conectarse: " + textStatus);
+                });
             }).error(function(error, textStatus){
                 console.log("No pudo conectarse: " + textStatus);
             });
-
-
-
-	        // $.ajax({
-         //        //url: "http://blinkapp.com.ar/back/user/adminUser.php",
-         //        url: "../back/user/adminUser.php",
-	        //     type: "POST",
-         //        data: params,
-         //        cache: false,
-         //        dataType: "json"
-	        // }).done(function( data ) {
-         //        console.log(data);
-	        //     window.location.href = "application.php";
-	        // }).error(function(error, textStatus){
-	        // 	console.log("No pudo conectarse: " + textStatus);
-	        // });
     	}else{
     		console.log("error en los campos");
     	}

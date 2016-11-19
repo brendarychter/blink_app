@@ -92,16 +92,6 @@ $(document).ready(function(){
     }
 
     function getSessionUser(){
-
-        /**
-        
-            TODO:
-            - AJAX TYPE GET WITH PARAMS
-            - ONE FILE FOR GET AND DESTROY USER SESSION
-        
-         */
-                //url: "http://blinkapp.com.ar/back/user/adminUser.php",
-        
         //$.get('http://blinkapp.com.ar/back/user/getUserSession.php', function (data) {
         $.get('../back/user/getUserSession.php', function (data) {
             var user = JSON.parse(data);

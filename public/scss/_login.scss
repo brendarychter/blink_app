@@ -9,12 +9,10 @@ a {
   color: #65CCB8;
 }
 .login-box{
-  position:relative;
   margin: 10px auto;
-  width: 70%;
   height: 400px;
   background-color: #fff;
-  padding: 10px;
+  padding: 20px;
   top: 100px;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -29,7 +27,6 @@ a {
   height:28px;
 }
 .lb-header a{
-  margin: 0 25px;
   padding: 0 20px;
   text-decoration: none;
   color: #666;
@@ -54,7 +51,7 @@ a {
 .social-login a{
   position:relative;
   float: left;
-  width:calc(40% - 8px);
+  // width:calc(40% - 8px);
   text-decoration: none;
   color: #fff;
   border: 1px solid rgba(0,0,0,0.05);
@@ -92,7 +89,7 @@ a {
 .u-form-group input[type="email"],
 .u-form-group input[type="telephone"],
 .u-form-group input[type="password"]{
-  width: calc(50% - 22px);
+  // width: calc(50% - 10px);
   height:45px;
   outline: none;
   border: 1px solid #ddd;
@@ -111,8 +108,6 @@ a {
   font-size: 10px;
 }
 
-
-
 .navbar-login{
   background-color: #222;
   padding: 10px 0;
@@ -122,4 +117,23 @@ a {
   z-index: 1030;
   min-height: 50px;
   margin-bottom: 20px;
+}
+
+#username-login, #password-login, #username-signin{
+    height: 45px;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 12px;
+}
+@media (min-width:1px) and (max-width: 760px){
+  .lb-header .active{
+    font-size: 14px;
+  }
+  .lb-header a{
+    padding: 0 10px;
+  }
+  .login-box{
+    padding: 10px;
+  }
 }

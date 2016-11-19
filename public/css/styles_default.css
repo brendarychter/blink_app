@@ -45,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
+    border: 0;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
     color: #fff;
@@ -66,6 +67,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     background-color: #000;
     border-color: #000;
+    border: 0;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
@@ -77,6 +79,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     background-color: #65CCB8;
     border-color: #65CCB8;
+    border: 0;
 }
 .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
     background-image: none;
@@ -84,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-xl.disabled, .btn-xl[disabled], fieldset[disabled] .btn-xl, .btn-xl.disabled:hover, .btn-xl[disabled]:hover, fieldset[disabled] .btn-xl:hover, .btn-xl.disabled:focus, .btn-xl[disabled]:focus, fieldset[disabled] .btn-xl:focus, .btn-xl.disabled:active, .btn-xl[disabled]:active, fieldset[disabled] .btn-xl:active, .btn-xl.disabled.active, .btn-xl[disabled].active, fieldset[disabled] .btn-xl.active {
     background-color: #fed136;
     border-color: #fed136;
+    border: 0;
 }
 .btn-xl .badge {
     color: #fed136;
