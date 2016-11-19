@@ -3,6 +3,7 @@ $(document).ready(function(){
 	//Configurar lenguaje html
     params = {};
     params.action = "getContent";
+    params.table = "home";
 	//if()spanish if english
 	$.ajax({
         //url: "http://blinkapp.com.ar/back/user/adminUser.php",

@@ -1,9 +1,8 @@
+<?php echo exec('whoami'); ?>
 <?php
 	// INCLUYO EL ARCHIVO DE CONEXIÓN A LA BASE DE DATOS
-	// require "conexion.php";
-	require_once("../connection.php");
-    $connection = new connection;
-
+	require_once("back/admin/connection.php");
+ 	$conexion = @mysqli_connect("localhost", "root", "", "blink");
 	// LA FUNCION PUEDE ESTAR EN UN ARCHIVO EXTERNO DE FUNCIONES GENERALES DEL SITIO
 	// RECIBE COMO PARÁMETRO EL OBJETO $FILE Y DEVUELVE EL NOMBRE DEL ARCHIVO O LA PALABRA "error" SI NO PUDO GUARDARLO
 
@@ -13,7 +12,7 @@
 		if($file && $file["name"]!=""){
 
 			// DEFINO CUÁL VA A SER LA URL DE MI SITIO WEB, Y LA CARPETA DONDE SE GUARDARÁN LAS IMÁGENES (ESTO DEBERÍA ESTAR EN UN ARCHIVO EXTERNO DE CONFIGURACIÓN)
-			$direccion_web = "http://localhost/test/upload/";
+			$direccion_web = "http://localhost/uploads/";
 			$nombre_carpeta = "uploads/";
 			
 			// DEFINICIONES INTERNAS PARA CONTROL
@@ -59,6 +58,7 @@
 	if(isset($_POST["submit"])){
 
 		// LEVANTO ALGUNOS DATOS DEL FORM
+
 		$campo1 = mysqli_real_escape_string($conexion,$_POST["campo1"]);
 		$campo2 = mysqli_real_escape_string($conexion,$_POST["campo2"]);
 		
@@ -72,7 +72,7 @@
 
 			// CONTINUO CON EL RESTO DE MI CÓDIGO...
 
-			$sql = "insert into fotos (dato1, dato2, img) values ('$campo1','$campo2','$imagen')";
+			$sql = "insert into fotos (nombre, img) values ('$campo1','$campo2','$imagen')";
 			
 			// IMPRIMO LA CONSULTA SÓLO PARA DEBUG
 			echo $sql;
@@ -91,7 +91,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-	<form action="loadImages.php" method="post" enctype="multipart/form-data"> <!-- IMPORTANTISIMO AGREGAR EL ENCTYPE AL FORM, SINO NO FUNCIONA EL UPLOAD -->
+	<form action="test.php" method="post" enctype="multipart/form-data"> <!-- IMPORTANTISIMO AGREGAR EL ENCTYPE AL FORM, SINO NO FUNCIONA EL UPLOAD -->
 	    <p>
 	    	<label>Subir una imagen</label>
 	    	<input type="file" name="archivo_a_subir">

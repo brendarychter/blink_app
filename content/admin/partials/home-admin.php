@@ -55,13 +55,17 @@
 							<span class="editable-text button-english-1" realvalue="button_section_1" language="english"></span>
 						</div>
 					</div>
-					<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
-						<div class="title-box">
-							<span class="global-title">imagen de fondo</span>
+					<form method="post" enctype="multipart/form-data">
+						<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
+							<div class="title-box">
+								<span class="global-title">imagen de fondo</span>
+							</div>
+							<input type="file" name="archivo_a_subir">
+							<input type="text" placeholder="T&iacute;tulo" name="campo1"/>
+							<button class="btn btn-primary" type="submit" id="save-photo-1"/>Guardar foto</button>
+							<p class="help-block"></p>
 						</div>
-						<input type="file">
-						<p class="help-block"></p>
-					</div>
+					</form>
 				</div>
 				<div class="abm-buttons col-md-12 col-sm-12 form-section-1">
 					<button class="btn btn-danger edit-section" id="delete-section-1" data-section="1" data-action="delete">Ocultar secci&oacute;n 1</button>
@@ -142,10 +146,15 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text text_1_section_2-english" realvalue="text_1_section_2" language="english"></span>
 						</div>
-						<div class="portion">
-							<input type="file">
-							<p class="help-block"></p>
-						</div>
+						<form method="post" enctype="multipart/form-data">
+
+							<div class="portion portion-image">
+								<input type="file">
+								<input type="text" placeholder="T&iacute;tulo" required/>
+								<button class="btn btn-primary" type="submit" id="save-photo-1"/>Guardar foto</button>
+								<p class="help-block"></p>
+							</div>
+						</form>
 					</div>
 					<div class="form-group col-md-3 box-section col-sm-12">
 						<div class="title-box">
@@ -159,10 +168,15 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text text_2_section_2-english" realvalue="text_2_section_2" language="english"></span>
 						</div>
-						<div class="portion">
-							<input type="file">
-							<p class="help-block"></p>
-						</div>
+						<form method="post" enctype="multipart/form-data">
+
+							<div class="portion portion-image">
+								<input type="file">
+								<input type="text" placeholder="T&iacute;tulo" required/>
+								<button class="btn btn-primary" type="submit" id="save-photo-1"/>Guardar foto</button>
+								<p class="help-block"></p>
+							</div>
+						</form>
 					</div>
 					<div class="form-group col-md-3 box-section col-sm-12">
 						<div class="title-box">
@@ -176,10 +190,14 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text text_3_section_2-english" realvalue="text_3_section_2" language="english"></span>
 						</div>
-						<div class="portion">
-							<input type="file">
-							<p class="help-block"></p>
-						</div>
+						<form method="post" enctype="multipart/form-data">
+							<div class="portion portion-image">
+								<input type="file">
+								<input type="text" placeholder="T&iacute;tulo" required/>
+								<button class="btn btn-primary" type="submit" id="save-photo-1"/>Guardar foto</button>
+								<p class="help-block"></p>
+							</div>
+						</form>
 					</div>
 					<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
 						<div class="title-box">
@@ -193,10 +211,14 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text  text_4_section_2-english" realvalue="text_4_section_2" language="english"></span>
 						</div>
-						<div class="portion">
-							<input type="file">
-							<p class="help-block"></p>
-						</div>
+						<form method="post" enctype="multipart/form-data">
+							<div class="portion portion-image">
+								<input type="file">
+								<input type="text" placeholder="T&iacute;tulo" required/>
+								<button class="btn btn-primary" type="submit" id="save-photo-1"/>Guardar foto</button>
+								<p class="help-block"></p>
+							</div>
+						</form>
 					</div>	
 				</div>
 				<div class="abm-buttons col-md-12 col-sm-12 form-section-2">
@@ -216,6 +238,8 @@
 						</div>
 						<div class="portion">
 							<input type="file">
+							<input type="text" placeholder="T&iacute;tulo" required/>
+							<button class="btn btn-primary" type="submit" id="save-photo-1"/>Guardar video</button>
 							<p class="help-block"></p>
 						</div>
 					</div>	
@@ -276,6 +300,8 @@
 							<span class="global-title">imagen QR</span>
 						</div>
 						<input type="file">
+						<input type="text" placeholder="T&iacute;tulo" required/>
+						<button class="btn btn-primary" type="submit" id="save-photo-1"/>Guardar foto</button>
 						<p class="help-block"></p>
 					</div>
 				</div>
@@ -289,7 +315,7 @@
 		<div class="panel-heading"></div>
 		<div class="panel-body">
 			<label class="section-name">Secci&oacute;n 5</label>
-			<form role="form" class="form-section" id="form-section-4" method="post" enctype="multipart/form-data" data-toggle="validator">
+			<form role="form" class="form-section" id="form-section-5" method="post" enctype="multipart/form-data" data-toggle="validator">
 				<div class="col-md-12 col-sm-12 line-sections">
 					
 					<div class="form-group col-md-4 box-section col-sm-12">

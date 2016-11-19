@@ -21,6 +21,7 @@ $(document).ready(function(){
     function populateLabels(){
         params= {};
         params.action = "getContent";
+        params.table = "home";
         $.ajax({
             //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
             url: "../../back/admin/content/adminContent.php",
@@ -125,12 +126,10 @@ $(document).ready(function(){
         $('.team-admin').hide();
         $(".toggle-nav-admin").click(function() {
             // remove classes from all
-            $(".toggle-nav-admin").css("backgroundColor", "#fff");
             $(".toggle-nav-admin").removeClass("active");
             $(".tab-admin-page .admin-nav").hide();
             // add class to the one we clicked
             $(this).addClass("active");
-            $(this).css("backgroundColor", "#ccc");
             $(".tab-admin-page ." + $(this).attr('id')).show();
         });
     }
@@ -178,6 +177,7 @@ $(document).ready(function(){
         }else{
             params = {};
             params.action = "modifyContent";
+            params.table = "home";
             newValue = escape(newValue);
             oldValue = escape(oldValue);
             params.newValue = newValue;
@@ -224,8 +224,8 @@ $(document).ready(function(){
     }
     $(".editable-text").on("click", switchToInput);
 
-    var divAlert = "<div class='alert alert-danger fade in alert-dismissable col-md-10 col-sm-12' style='border-radius: 0; margin-bottom: 0'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Error.</strong> Debe ingresar un valor</div>"
-    var divSuccess = "<div class='alert alert-success fade in alert-dismissable col-md-10 col-sm-12' style='border-radius: 0; margin-bottom: 0'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Listo!</strong> La base de datos se ha modificado exitosamente."
+    var divAlert = "<div class='alert alert-danger fade in alert-dismissable col-md-10 col-sm-12' style='border-radius: 0; margin-bottom: 0;float:right'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Error.</strong> Debe ingresar un valor</div>"
+    var divSuccess = "<div class='alert alert-success fade in alert-dismissable col-md-10 col-sm-12' style='border-radius: 0; margin-bottom: 0;float:right'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Listo!</strong> La base de datos se ha modificado exitosamente."
 
 
     /**
@@ -241,6 +241,7 @@ $(document).ready(function(){
         console.log(section);
         params= {};
         params.action = "showContent";
+        params.table = "table";
         params.section = section;
         
         if(action=="delete"){
@@ -252,7 +253,11 @@ $(document).ready(function(){
             $('#delete-section-'+section).show();
             params.show = "1";
         }
+        $('.abm-buttons.form-section-'+section).append(divSuccess);
+        setTimeout(function(){
+            $('.alert-success').fadeOut("slow")
 
+        }, 2000);
         $.ajax({
             //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
             url: "../../back/admin/content/adminContent.php",
@@ -262,8 +267,9 @@ $(document).ready(function(){
             dataType: "json"
         }).done(function( data ) {
             console.log(data);
-        }).error(function(error, textStatus){
             
+        }).error(function(error, textStatus){
+            console.log(error)
         });
     })
 

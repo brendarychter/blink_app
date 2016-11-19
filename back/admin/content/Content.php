@@ -37,9 +37,9 @@
 			$this->value_id = $value_id;
 		}
 
-		public function getHomeContent($connection){
+		public function getHomeContent($connection, $table){
 			//VALIDAR QUE DEVUELVA TRUE
-			$query = "SELECT * FROM home";
+			$query = "SELECT * FROM $table";
 			$response = mysqli_query($connection->connected,$query);
 
 			while($obj = mysqli_fetch_object($response)){
@@ -52,9 +52,9 @@
 		/*envio de form*/
 
 		//CADA ROW TIENE QUE SER UNA INSTANCIA DE LA CLASE CONTENT
-		public function modifyHomeContent($connection, $newValue, $realValue, $language){
+		public function modifyHomeContent($connection, $newValue, $realValue, $language, $table){
 			//VALIDAR QUE DEVUELVA TRUE
-			$query = "UPDATE home SET $language='$newValue' WHERE value='$realValue'";
+			$query = "UPDATE $table SET $language='$newValue' WHERE value='$realValue'";
 			echo $query;
 			if (mysqli_query ($connection->connected, $query)) {
 			    echo "Escribio.";
@@ -64,9 +64,9 @@
 		}
 
 
-		public function showContent($connection, $val, $flag){
+		public function showContent($connection, $val, $flag, $table){
 			//VALIDAR QUE DEVUELVA TRUE
-			$query = "UPDATE home SET visible='$flag' WHERE section='$val'";
+			$query = "UPDATE $table SET visible='$flag' WHERE section='$val'";
 			echo $query;
 			if (mysqli_query ($connection->connected, $query)) {
 			    echo "Escribio.";

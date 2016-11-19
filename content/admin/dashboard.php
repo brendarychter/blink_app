@@ -58,10 +58,10 @@
 						<ul class="nav nav-tabs">
 						  	<li role="presentation" class="active toggle-nav-admin" id="home-admin"><a href="#">Home - Landing page</a></li>
 						  	<!-- <div class="panel-heading"><a href=""><svg class="glyph stroked pencil edit-icon"><use xlink:href="#stroked-pencil"></use></svg></a>Qui&eacute;nes somos</div>-->
-						 	<li role="presentation" class="toggle-nav-admin" id="conoce-admin"><a href="#">Conoc&eacute; m&aacute;s</a></li>
-						 	<li role="presentation" class="toggle-nav-admin" id="use-admin"><a href="#">Demo</a></li>
-						  	<li role="presentation" class="toggle-nav-admin" id="faq-admin"><a href="#">FAQ</a></li>
-						 	<li role="presentation" class="toggle-nav-admin" id="team-admin"><a href="#">Qui&eacute;nes somos</a></li>
+						 	<li role="presentation" class="toggle-nav-admin" id="conoce-admin"><a href="#">P&aacute;gina 1</a></li>
+						 	<li role="presentation" class="toggle-nav-admin" id="use-admin"><a href="#">P&aacute;gina 2</a></li>
+						  	<li role="presentation" class="toggle-nav-admin" id="faq-admin"><a href="#">P&aacute;gina 3</a></li>
+						 	<li role="presentation" class="toggle-nav-admin" id="team-admin"><a href="#">P&aacute;gina 4</a></li>
 						</ul>
 					</div>
 					<!-- QUIENES SOMOS ADMIN -->
@@ -83,7 +83,7 @@
 						</div>
 						<div class="row use-admin admin-nav">
 							<?php
-						        include 'partials/use-admin.php';
+						        include 'partials/demo-admin.php';
 						    ?>
 						</div>
 						<div class="row faq-admin admin-nav">
