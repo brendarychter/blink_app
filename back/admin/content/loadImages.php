@@ -1,7 +1,6 @@
 <?php echo exec('whoami'); ?>
 <?php
 	// INCLUYO EL ARCHIVO DE CONEXIÓN A LA BASE DE DATOS
-	require_once("back/admin/connection.php");
  	$conexion = @mysqli_connect("localhost", "root", "", "blink");
 	// LA FUNCION PUEDE ESTAR EN UN ARCHIVO EXTERNO DE FUNCIONES GENERALES DEL SITIO
 	// RECIBE COMO PARÁMETRO EL OBJETO $FILE Y DEVUELVE EL NOMBRE DEL ARCHIVO O LA PALABRA "error" SI NO PUDO GUARDARLO
@@ -72,7 +71,7 @@
 
 			// CONTINUO CON EL RESTO DE MI CÓDIGO...
 
-			$sql = "insert into fotos (nombre, img) values ('$campo1','$campo2','$imagen')";
+			$sql = "insert into fotos (nombre, img) values ('$campo1','$imagen')";
 			
 			// IMPRIMO LA CONSULTA SÓLO PARA DEBUG
 			echo $sql;
@@ -91,7 +90,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-	<form action="test.php" method="post" enctype="multipart/form-data"> <!-- IMPORTANTISIMO AGREGAR EL ENCTYPE AL FORM, SINO NO FUNCIONA EL UPLOAD -->
+	<form action="loadImages.php" method="post" enctype="multipart/form-data"> <!-- IMPORTANTISIMO AGREGAR EL ENCTYPE AL FORM, SINO NO FUNCIONA EL UPLOAD -->
 	    <p>
 	    	<label>Subir una imagen</label>
 	    	<input type="file" name="archivo_a_subir">

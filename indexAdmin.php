@@ -44,7 +44,7 @@
 							<div class="form-group">
 								<input class="form-control" placeholder="Contrase&ntilde;a" name="password" type="password" value="" id="pass-admin" style="border-radius: 0;" required />
 							</div>
-							<button class="btn btn-primary" id="login-admin">Iniciar sesi&oacute;n</button>
+							<button type="submit" class="btn btn-primary" id="login-admin">Iniciar sesi&oacute;n</button>
 						</fieldset>
 					</form>
 				</div>

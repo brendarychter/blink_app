@@ -125,7 +125,7 @@ $(document).ready(function(){
             if(data.length == 0){
                 //No tiene grupos asociados
                 $('.no-groups').show();
-                $('.action-todo-groups').text("Todav&iacute;a no ten&eacute;s grupos");
+                $('.action-todo-groups').text("Todavíaa no tenés grupos");
             }else{
                 //Tiene grupos asociados
                 $('.no-groups').hide();
@@ -152,22 +152,22 @@ $(document).ready(function(){
     $(".mis-grupos").on('click', function(){
         $('.menu-side').removeClass("active");
         $(this).addClass("active");
-        $('.no-groups').fadeOut("slow", function(){
-            $('.main').fadeIn("slow");
+        $('.no-groups').fadeOut(150, function(){
+            $('.main').fadeIn(150);
         });
     })
     $('.crear-grupo').on('click', function(){
         $('.menu-side').removeClass("active");
         $(this).addClass("active");
         
-        $('.main').fadeOut("slow", function(){
-            $('.no-groups').fadeIn("slow");
+        $('.main').fadeOut(150, function(){
+            $('.no-groups').fadeIn(150);
         });
     })
 
     $('#create-group').on('click', function(){
-        $('.info-no-groups').fadeOut("slow", function(){
-            $('.form-create-group').fadeIn("slow");
+        $('.info-no-groups').fadeOut(150, function(){
+            $('.form-create-group').fadeIn(150);
             $('.mis-grupos').removeClass("active", 400);
             $('.crear-grupo').addClass("active", 400);
             paramsUsers = {};

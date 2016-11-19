@@ -72,7 +72,7 @@
 
 			// CONTINUO CON EL RESTO DE MI CÓDIGO...
 
-			$sql = "insert into fotos (dato1, dato2, img) values ('$campo1','$campo2','$imagen')";
+			$sql = "insert into fotos (nombre, img) values ('$campo1','$imagen')";
 			
 			// IMPRIMO LA CONSULTA SÓLO PARA DEBUG
 			echo $sql;

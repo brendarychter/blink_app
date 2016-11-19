@@ -273,4 +273,8 @@ $(document).ready(function(){
         });
     })
 
+    $('#save-photo-1').on("click", function(){
+        console.log("lcick");
+    })
+
 })

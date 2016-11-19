@@ -61,8 +61,8 @@
 								<span class="global-title">imagen de fondo</span>
 							</div>
 							<input type="file" name="archivo_a_subir">
-							<input type="text" placeholder="T&iacute;tulo" name="campo1"/>
-							<button class="btn btn-primary" type="submit" id="save-photo-1"/>Guardar foto</button>
+							<input type="text" placeholder="T&iacute;tulo" name="titulo"/>
+							<button class="btn btn-primary" type="submit" name="submit" id="save-photo-1"/>Guardar foto</button>
 							<p class="help-block"></p>
 						</div>
 					</form>

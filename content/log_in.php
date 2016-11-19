@@ -81,7 +81,7 @@
                                     <div class="u-form-group">
                                         <input type="password" class="form-control" placeholder="Contrase&ntilde;a" id="password-login" name="password-login" required/>
                                     </div>
-                                    <div class="u-form-group" style="margin-top:105px">
+                                    <div class="u-form-group" style="margin-top:95px">
                                         <button type="submit" id="log-in-app" class="btn-xl">Acceder</button>
                                     </div>
                                     <input type="hidden" name="userID" id="userID"></input>
