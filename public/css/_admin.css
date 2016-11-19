@@ -4,6 +4,9 @@
 .separation {
   height: 20px; }
 
+.error-log-in-admin {
+  display: none; }
+
 .main-admin-dashboard {
   padding-top: 20px; }
   .main-admin-dashboard li.active a:focus, .main-admin-dashboard li.active a:hover {

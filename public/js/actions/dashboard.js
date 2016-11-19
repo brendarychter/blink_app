@@ -29,20 +29,21 @@ $(document).ready(function(){
             data: params,
             dataType: "json"
         }).done(function( data ) {
+
+            /*=============================================
+            =            Section comment block            =
+            =============================================*/
+            
+            //console.log(data["section_section_1"].visible)
+            checkVisibility(data["section_section_1"]);
+            checkVisibility(data["button_section_2"]);
+            checkVisibility(data["title_section_4"]);
+            checkVisibility(data["button_section_5"]);
+
             // SECTION 1
+            //SECTION 1 HOME
             $('.section-spanish-1').append(unescape(data["section_section_1"].spanish));
             $('.section-english-1').append(unescape(data["section_section_1"].english));
-            console.log(data["section_section_1"].visible)
-            if(data["section_section_1"].visible == 0){
-                //boton tiene que ir en verde
-                console.log("no mostrar mostrar")
-                $('#edit-section-1').show();
-                $('#delete-section-1').hide();
-            }else{
-                $('#delete-section-1').show();
-                $('#edit-section-1').hide();
-            }
-            
             $('.button-spanish-1').append(unescape(data["button_section_1"].spanish));
             $('.button-english-1').append(unescape(data["button_section_1"].english));
             $('.titulo-spanish-1').append(unescape(data["title_section_1"].spanish));
@@ -85,9 +86,38 @@ $(document).ready(function(){
             $('.title-english-5').append(unescape(data["title_section_5"].english));
             $('.subtitle-spanish-5').append(unescape(data["subtitle_section_5"].spanish));
             $('.subtitle-english-5').append(unescape(data["subtitle_section_5"].english));
+
+            $('.text_1_section_5-spanish').append(unescape(data["text_1_section_5"].spanish));
+            $('.text_1_section_5-english').append(unescape(data["text_1_section_5"].english));
+            $('.text_2_section_5-spanish').append(unescape(data["text_2_section_5"].spanish));
+            $('.text_2_section_5-english').append(unescape(data["text_2_section_5"].english));
+            $('.text_3_section_5-spanish').append(unescape(data["text_3_section_5"].spanish));
+            $('.text_3_section_5-english').append(unescape(data["text_3_section_5"].english));
+            $('.text_4_section_5-spanish').append(unescape(data["text_4_section_5"].spanish));
+            $('.text_4_section_5-english').append(unescape(data["text_4_section_5"].english));
+            
+            
+            /*=====  End of Section comment block  ======*/
+            
+            
+
+
         }).error(function(error, textStatus){
             console.log(error);
         });
+    }
+
+    function checkVisibility(section){
+        console.log(section.section);
+        console.log(section.visible);
+        if (section.visible == 0){
+            console.log("no mostrar");
+            $('#edit-section-'+section.section).show();
+            $('#delete-section-'+section.section).hide();
+        }else{
+           $('#edit-section-'+section.section).hide();
+            $('#delete-section-'+section.section).show();
+        }
     }
 
     function toggleTabs(){
@@ -198,11 +228,31 @@ $(document).ready(function(){
     var divSuccess = "<div class='alert alert-success fade in alert-dismissable col-md-10 col-sm-12' style='border-radius: 0; margin-bottom: 0'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Listo!</strong> La base de datos se ha modificado exitosamente."
 
 
-    $('#edit-section-1').on("click", function(){
+    /**
+     *
+     * OCULTAR Y MOSTRAR SECCION Y BOTÓN
+     *
+     */
+    
+    $('.edit-section').on("click", function(){
+        var action = $(this).attr("data-action");
+        var section = $(this).attr("data-section");
+        console.log(action);
+        console.log(section);
         params= {};
         params.action = "showContent";
-        params.section = "1";
-        params.show = "1";
+        params.section = section;
+        
+        if(action=="delete"){
+            $('#edit-section-'+section).show();
+            $('#delete-section-'+section).hide();
+            params.show = "0";
+        }else if(action=="edit"){
+            $('#edit-section-'+section).hide();
+            $('#delete-section-'+section).show();
+            params.show = "1";
+        }
+
         $.ajax({
             //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
             url: "../../back/admin/content/adminContent.php",
@@ -212,34 +262,9 @@ $(document).ready(function(){
             dataType: "json"
         }).done(function( data ) {
             console.log(data);
-            $('#edit-section-1').hide();
-            $('#delete-section-1').show();
         }).error(function(error, textStatus){
             
         });
     })
-    $('#delete-section-1').on("click", function(){
-        console.log("hola")
-        params= {};
-        params.action = "showContent";
-        params.section = "1";
-        params.show = "0";
-        $.ajax({
-            //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: "../../back/admin/content/adminContent.php",
-            type: "POST",
-            cache: false,
-            data: params,
-            dataType: "json"
-        }).done(function( data ) {
-            console.log("borro seccion");
-            $('#edit-section-1').show();
-            $(this).hide();
-            console.log("ocultar el delete")
-        }).error(function(error, textStatus){
-            
-        });
-    })
-
 
 })

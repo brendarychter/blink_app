@@ -50,7 +50,7 @@
                         <a class="page-scroll" href="#main-page">blink!</a>
                     </li>
                     <li class="section_2 page-section">
-                        <a class="page-scroll" href="#conoce">Conoc&eacute; m&aacute;s</a>
+                        <a class="page-scroll" href="content/how_it_works.php">Conoc&eacute; m&aacute;s</a>
                     </li>
                     <li class="section_3 page-section">
                         <a class="page-scroll" href="content/demo.php">Demo</a>
@@ -79,7 +79,7 @@
     </nav>
     
     <!-- Header -->
-    <header id="main-page" class="section_1 page-section">
+    <header id="main-page" class="section_1 page-section-home">
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in subtitle_section_1">Una &uacute;nica aplicaci&oacute;n. Todo lo que necesit&aacute;s.</div>
@@ -91,7 +91,7 @@
     </header>
 
     <!-- conoce Section -->
-    <section id="conoce" class="section_2 page-section">
+    <section id="conoce" class="section_2 page-section-home">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -124,13 +124,13 @@
         </div>
     </section>
 
-    <section id="demo" class="section_3 page-section">
+    <section id="demo" class="section_3 page-section-home">
         <img src="public/img/play.svg" class="demo-img"><br><br>
         <p class="demo_description">
             Video en construcci&oacute;n
         </p>
     </section>
-    <section id="download-app">
+    <section id="download-app" class="section_4 page-section-home">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center download-application">
@@ -145,7 +145,7 @@
         </div>
     </section>
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="section_5 page-section-home">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">

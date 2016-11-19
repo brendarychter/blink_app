@@ -12,19 +12,12 @@ $(document).ready(function(){
         cache: false,
         dataType: "json"
     }).done(function( data ) {
-        console.log(data)
         language = "es";
         if (language == "es"){
-            /* SECTION 1 SPANISH */
-            //Pregunto por uno de los items
-
-            //ARRAY DE SECCIONES
-
-            var a = 1;
-            // for (a; a < array.length + 1; a++){
-            //     showSection(data["title_section"+a]);
-            // }
-            showSection(data["title_section_1"], a);
+            showSection(data["title_section_1"], 1);
+            showSection(data["text_1_section_2"], 2);
+            showSection(data["text_section_4"], 4);
+            showSection(data["title_section_5"], 5);
         }
         $('body').fadeIn();
 

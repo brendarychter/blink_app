@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	$('#login-admin').on('click', function(){
         //Validate empty input
-        console.log("hello");
         params= {};
         params.action = "getUserAdmin";
         params.username = $('#username-admin').val();
@@ -18,6 +17,7 @@ $(document).ready(function(){
             console.log(data);
             window.location.href = "content/admin/dashboard.php";
         }).error(function(error, textStatus){
+            $('.error-log-in-admin').show();
             console.log(error);
         });
     })
