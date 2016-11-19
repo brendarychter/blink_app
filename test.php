@@ -1,4 +1,4 @@
-<!-- CORRER EL SCRIPT PARA CAMBIAR PERMISOS -->
+<?php echo exec('whoami'); ?>
 <?php
 	// INCLUYO EL ARCHIVO DE CONEXIÓN A LA BASE DE DATOS
 	require_once("back/admin/connection.php");
@@ -17,7 +17,6 @@
 			
 			// DEFINICIONES INTERNAS PARA CONTROL
 			$target_file = $nombre_carpeta . basename($file["name"]);
-			$ext = pathinfo($file["name"], PATHINFO_EXTENSION);
 			$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 			$checkFile = getimagesize($file["tmp_name"]);
 			$uploadOk = true;
@@ -35,10 +34,10 @@
 			}
 			
 			// VERIFICO QUE EL TAMAÑO DEL ARCHIVO NO SEA MAYOR DE 1MB
-			if ($file["size"] > 1000000) {
-			    echo "Error. El archivo es mayor de 1MB";
-			    $uploadOk = false;
-			}
+			// if ($file["size"] > 1000000) {
+			//     echo "Error. El archivo es mayor de 1MB";
+			//     $uploadOk = false;
+			// }
 
 			// SI PASÓ TODAS LAS VALIDACIONES, INTENTO SUBIR EL ARCHIVO AL SERVIDOR
 			if($uploadOk){

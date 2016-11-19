@@ -81,6 +81,7 @@
 		}
 	}
 }
+	
 @media (min-width: 1px) and (max-width:768px) {
 	.main-admin-dashboard{
 		.tabs-page-blink .nav-tabs li a{
@@ -112,6 +113,11 @@
 			.panel-body{
 				padding-left: 0;
 				padding-right: 0;
+				.img-titles{
+					display: block;
+					float: right;
+					font-weight: bold;
+				}
 			}
 		}
 	}

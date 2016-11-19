@@ -2,9 +2,10 @@
 	<div class="panel panel-default">
 		<div class="panel-heading"></div>
 		<div class="panel-body">
-			<form role="form" class="form-section" id="form-section-1" method="post" enctype="multipart/form-data" data-toggle="validator">
-				<div class="col-md-12 col-sm-12 line-sections">
-					<div class="form-group col-md-12 box-section col-sm-12 " style="border-right: none;">
+			<!-- 
+					<div class="panel-heading" style="overflow: hidden; margin-bottom: 10px;"></div>
+	
+			<div class="form-group col-md-12 box-section col-sm-12 " style="border-right: none;">
 						<label class="section-name">Secci&oacute;n 1</label> 
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
@@ -14,9 +15,11 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text section-english-1" realvalue="section_section_1" language="english"></span>
 						</div>
-					</div>						
-					<div class="panel-heading" style="overflow: hidden; margin-bottom: 10px;"></div>
-					<div class="form-group col-md-3 box-section first-section col-sm-12 ">
+					</div>		 -->
+			<form role="form" class="form-section" id="form-section-1" method="post" enctype="multipart/form-data" data-toggle="validator">
+				<div class="col-md-9 col-sm-12 line-sections">
+									
+					<div class="form-group col-md-4 box-section first-section col-sm-12 ">
 						<div class="title-box">
 							<span class="global-title">t&iacute;tulo</span>
 						</div>
@@ -29,7 +32,7 @@
 							<span class="editable-text titulo-english-1" realvalue="title_section_1" language="english"></span>
 						</div>
 					</div>						
-					<div class="form-group col-md-3 box-section col-sm-12">
+					<div class="form-group col-md-4 box-section col-sm-12">
 						<div class="title-box">
 							<span class="global-title">subt&iacute;tulo</span>
 						</div>
@@ -42,7 +45,7 @@
 							<span class="editable-text subtitle-english-1" realvalue="subtitle_section_1" language="english"></span>
 						</div>
 					</div>
-					<div class="form-group col-md-3 box-section col-sm-12">
+					<div class="form-group col-md-4 box-section col-sm-12">
 						<div class="title-box">
 							<span class="global-title">bot&oacute;n</span>
 						</div>
@@ -55,26 +58,29 @@
 							<span class="editable-text button-english-1" realvalue="button_section_1" language="english"></span>
 						</div>
 					</div>
-					<form action="../../back/admin/content/loadImages.php" method="post" enctype="multipart/form-data">
-						<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
-							<div class="title-box">
-								<span class="global-title">imagen de fondo</span>
-							</div>
-							<input type="file" name="archivo_a_subir">
-							<input type="text" placeholder="T&iacute;tulo" name="titulo"/>
-							 <input type="submit" value="Subir!" name="submit">
-							<button class="btn btn-primary" type="submit" name="submit" id="save-photo-1"/>Guardar foto</button>
-							<p class="help-block"></p>
-						</div>
-					</form>
+					<div class="abm-buttons form-section-1">
+						<button class="btn btn-danger edit-section" id="delete-section-1" data-section="1" data-action="delete">Ocultar secci&oacute;n 1</button>
+						<button class="btn btn-info edit-section" id="edit-section-1" data-section="1" data-action="edit">Mostrar secci&oacute;n 1</button>
+					</div>
 				</div>
-				<div class="abm-buttons col-md-12 col-sm-12 form-section-1">
-					<button class="btn btn-danger edit-section" id="delete-section-1" data-section="1" data-action="delete">Ocultar secci&oacute;n 1</button>
-					<button class="btn btn-info edit-section" id="edit-section-1" data-section="1" data-action="edit">Mostrar secci&oacute;n 1</button>
-				</div>
+				
 			</form>	
-
+			<form action="../../back/admin/content/loadImages.php" method="post" enctype="multipart/form-data">
+				<div class="col-md-3 col-sm-12 line-sections">
+					<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
+						<div class="title-box">
+							<span class="img-titles" style="float: right; font-weight: bold;">imagen de fondo</span>
+						</div>
+						<input type="file" name="archivo_a_subir">
+						<input type="text" placeholder="T&iacute;tulo" name="titulo" required/>
+						<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-table="home"/>Guardar foto</button>
+						<p class="help-block"></p>
+					</div>
+				</div>
+			</form>
 		</div>
+
+		
 		<div class="panel-heading" style="padding-top: 0;"></div>
 		<div class="panel-body">
 			<label class="section-name">Secci&oacute;n 2</label>

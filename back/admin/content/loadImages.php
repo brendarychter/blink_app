@@ -40,10 +40,10 @@
 			}
 			
 			// VERIFICO QUE EL TAMAÑO DEL ARCHIVO NO SEA MAYOR DE 1MB
-			if ($file["size"] > 1000000) {
-			    echo "Error. El archivo es mayor de 1MB";
-			    $uploadOk = false;
-			}
+			// if ($file["size"] > 1000000) {
+			//     echo "Error. El archivo es mayor de 1MB";
+			//     $uploadOk = false;
+			// }
 
 			// SI PASÓ TODAS LAS VALIDACIONES, INTENTO SUBIR EL ARCHIVO AL SERVIDOR
 			if($uploadOk){

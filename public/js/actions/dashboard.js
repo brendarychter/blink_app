@@ -109,8 +109,6 @@ $(document).ready(function(){
     }
 
     function checkVisibility(section){
-        console.log(section.section);
-        console.log(section.visible);
         if (section.visible == 0){
             console.log("no mostrar");
             $('#edit-section-'+section.section).show();
@@ -224,8 +222,8 @@ $(document).ready(function(){
     }
     $(".editable-text").on("click", switchToInput);
 
-    var divAlert = "<div class='alert alert-danger fade in alert-dismissable col-md-10 col-sm-8' style='border-radius: 0; margin-bottom: 0;float:right'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Error.</strong> Debe ingresar un valor</div>"
-    var divSuccess = "<div class='alert alert-success fade in alert-dismissable col-md-10 col-sm-8' style='border-radius: 0; margin-bottom: 0;float:right'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Listo!</strong> La base de datos se ha modificado exitosamente."
+    var divAlert = "<div class='alert alert-danger fade in alert-dismissable col-md-9 col-sm-8' style='border-radius: 0; margin-bottom: 0;float:right;margin-right: 10px; margin-top: 5px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Error.</strong> Debe ingresar un valor</div>"
+    var divSuccess = "<div class='alert alert-success fade in alert-dismissable col-md-9 col-sm-8' style='border-radius: 0; margin-bottom: 0;float:right; margin-right: 10px; margin-top: 5px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Listo!</strong> La base de datos se ha modificado exitosamente."
 
 
     /**
@@ -241,7 +239,7 @@ $(document).ready(function(){
         console.log(section);
         params= {};
         params.action = "showContent";
-        params.table = "table";
+        params.table = "home";
         params.section = section;
         
         if(action=="delete"){
@@ -258,6 +256,7 @@ $(document).ready(function(){
             $('.alert-success').fadeOut("slow")
 
         }, 2000);
+        console.log(params)
         $.ajax({
             //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
             url: "../../back/admin/content/adminContent.php",
@@ -273,8 +272,9 @@ $(document).ready(function(){
         });
     })
 
-    $('#save-photo-1').on("click", function(){
-        console.log("lcick");
+    $('.save-photo').on("click", function(){
+        var section = $(this).attr("data-section");
+        var table = $(this).attr("data-table");
     })
 
 })

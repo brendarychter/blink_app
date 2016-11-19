@@ -4,9 +4,6 @@
 .separation {
   height: 20px; }
 
-.error-log-in-admin {
-  display: none; }
-
 .main-admin-dashboard {
   padding-top: 20px; }
   .main-admin-dashboard li.active a:focus, .main-admin-dashboard li.active a:hover {
@@ -87,6 +84,10 @@
   .main-admin-dashboard .tab-admin-page .panel-body {
     padding-left: 0;
     padding-right: 0; }
+    .main-admin-dashboard .tab-admin-page .panel-body .img-titles {
+      display: block;
+      float: right;
+      font-weight: bold; }
 
   .navbar .navbar-toggle {
     display: none; }
