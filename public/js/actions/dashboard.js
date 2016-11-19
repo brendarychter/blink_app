@@ -19,6 +19,7 @@ $(document).ready(function(){
         });
     }
 
+    var updates = false;
     function loadImages(){
         params= {};
         params.action = "getContent";
@@ -31,7 +32,14 @@ $(document).ready(function(){
             data: params,
             dataType: "json"
         }).done(function( data ) {
-            console.log(data);
+            //Tener la seccion a mostrar
+
+            for (var i in data[1]){
+                var item = data[1][i];
+                $('.imagen-img').attr("data-id", item.id_image)
+                $('.titulo-img').val(item.nombre)
+            }
+
         }).error(function(error, textStatus){
             console.log(error);
         });
@@ -310,25 +318,70 @@ $(document).ready(function(){
         // params.submit = "submit";
         // params.titulo = $('.titulo-img').attr("data-title", section).val();
         // params.imagen = 
+
+        params1= {};
+        params1.action = "getContent";
+        params1.tableName = "home";
+
         $.ajax({
             //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: "../../back/admin/content/loadImages.php",
+            url: "../../back/admin/content/getImages.php",
             type: "POST",
             cache: false,
-            processData: false,
-            data: form_data,
-            dataType: "text",
-            contentType: false,
+            data: params1,
+            dataType: "json"
         }).done(function( data ) {
-            console.log(data);
-            // switch(data){
-            //     case "1":
-            //     break;
-            // }
-            
+            for (var i in data[1]){
+                var item = data[1][i];
+                if(item.img == null){
+                    $.ajax({
+                        //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
+                        url: "../../back/admin/content/loadImages.php",
+                        type: "POST",
+                        cache: false,
+                        processData: false,
+                        data: form_data,
+                        dataType: "text",
+                        contentType: false,
+                    }).done(function( data ) {
+                        console.log(data);
+                        // switch(data){
+                        //     case "1":
+                        //     break;
+                        // }
+                        
+                    }).error(function(error, textStatus){
+                        console.log(error)
+                    });
+                }else{
+                    console.log( data[1][i].id_image)
+                    $.ajax({
+                        //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
+                        url: "../../back/admin/content/loadImages.php",
+                        type: "POST",
+                        cache: false,
+                        processData: false,
+                        data: form_data,
+                        dataType: "text",
+                        contentType: false,
+                    }).done(function( data ) {
+                        console.log(data);
+                        // switch(data){
+                        //     case "1":
+                        //     break;
+                        // }
+                        
+                    }).error(function(error, textStatus){
+                        console.log(error)
+                    });
+                }
+            }
+
         }).error(function(error, textStatus){
             console.log(error)
         });
+
+        
 
     })
 
