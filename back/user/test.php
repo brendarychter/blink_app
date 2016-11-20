@@ -6,12 +6,11 @@
 	// remove all session variables
 
 	//VALIDAR QUE DEVUELVA TRUE
-    $query = "SELECT * FROM menu";
-        $response = mysqli_query($connection->connected,$query);
-
-        while($obj = mysqli_fetch_object($response)){
-            $matriz[$obj->value] = array('spanish' => $obj->spanish, 'english' => $obj->english, 'id_menu' => $obj->id_menu);
-        }
-        $datos = json_encode($matriz);
-        echo $datos;
+   $query = "UPDATE menu SET visible='0' WHERE value='blink_menu'";
+            echo $query;
+            if (mysqli_query ($connection->connected, $query)) {
+                echo "Escribio.";
+            } else {
+                echo "Error updating";
+            }
 ?>

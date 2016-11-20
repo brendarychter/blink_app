@@ -41,6 +41,12 @@
                     $flag = $_POST['show'];
                     $content->showContent($connection, $val, $flag, $table);
                 break;
+
+                case "showAndHideMenu":
+                    $value = $_POST['value'];
+                    $flag = $_POST['show'];
+                    $content->showAndHideMenu($connection, $value, $flag);
+                break;
     		}
     	}else{
     		echo "action not setted";

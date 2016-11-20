@@ -81,7 +81,7 @@
 			$response = mysqli_query($connection->connected,$query);
 
 			while($obj = mysqli_fetch_object($response)){
-				$matriz[$obj->value] = array('spanish' => $obj->spanish, 'english' => $obj->english, 'id_menu' => $obj->id_menu);
+				$matriz[$obj->value] = array('spanish' => $obj->spanish, 'english' => $obj->english, 'id_menu' => $obj->id_menu, 'visible' => $obj->visible);
 			}
 			$datos = json_encode($matriz);
 			echo $datos;
@@ -90,6 +90,17 @@
 		public function showContent($connection, $val, $flag, $table){
 			//VALIDAR QUE DEVUELVA TRUE
 			$query = "UPDATE $table SET visible='$flag' WHERE section='$val'";
+			echo $query;
+			if (mysqli_query ($connection->connected, $query)) {
+			    echo "Escribio.";
+			} else {
+			    echo "Error updating";
+			}
+		}
+
+		public function showAndHideMenu($connection, $value, $flag){
+			//VALIDAR QUE DEVUELVA TRUE
+			$query = "UPDATE menu SET visible='$flag' WHERE value='$value'";
 			echo $query;
 			if (mysqli_query ($connection->connected, $query)) {
 			    echo "Escribio.";
