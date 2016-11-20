@@ -15,33 +15,32 @@
 				</div>
 			</div>	
 			<form role="form" class="form-section" id="form-section-1" method="post" enctype="multipart/form-data" data-toggle="validator">
-				<label class="section-name">Secci&oacute;n 1</label>
-				<div class="col-md-9 col-sm-12 line-sections">
+				<div class="col-md-12 col-sm-12 line-sections">
 									
 					<div class="form-group col-md-4 box-section first-section col-sm-12 ">
 						<div class="title-box">
-							<span class="global-title">t&iacute;tulo</span>
+							<span class="global-title">t&iacute;tulo header</span>
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text titulo-spanish-1" realvalue="title_section_1" language="spanish"></span>
+							<span class="editable-text title_header_spanish" realvalue="title_header" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text titulo-english-1" realvalue="title_section_1" language="english"></span>
+							<span class="editable-text title_header_english" realvalue="title_header" language="english"></span>
 						</div>
 					</div>						
 					<div class="form-group col-md-4 box-section col-sm-12">
 						<div class="title-box">
-							<span class="global-title">subt&iacute;tulo</span>
+							<span class="global-title">subt&iacute;tulo header</span>
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text subtitle-spanish-1" realvalue="subtitle_section_1" language="spanish"></span>
+							<span class="editable-text subtitle_header_spanish" realvalue="subtitle_header" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text subtitle-english-1" realvalue="subtitle_section_1" language="english"></span>
+							<span class="editable-text subtitle_header_english" realvalue="subitle_header" language="english"></span>
 						</div>
 					</div>
 					<div class="form-group col-md-4 box-section col-sm-12">

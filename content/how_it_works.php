@@ -31,8 +31,8 @@
 <body id="page-top" class="index landing-main-page">
     <?php include('header.php');?> 
     <header>
-        <h1>&#191;C&oacute;mo empezar a usar la aplicaci&oacute;n?</h1>
-        <h2>Te presentamos una gu&iacute;a pr&aacute;ctica de pasos a seguir para descargarla y utilizarla</h2>
+        <h1 class="title_header">&#191;C&oacute;mo empezar a usar la aplicaci&oacute;n?</h1>
+        <h2 class="subtitle_header">Te presentamos una gu&iacute;a pr&aacute;ctica de pasos a seguir para descargarla y utilizarla</h2>
     </header>
 
     <section id="cd-timeline" class="cd-container">
@@ -122,6 +122,7 @@
     <!-- TIMELINE -->
     <script src="../public/js/global/index_timeline.js"></script>
     <script src="../public/js/actions/show.js"></script>
+    <script src="../public/js/works/loadWorks.js"></script>
 
     <script type="text/javascript">
         $('#page-works').closest('li').addClass("active");
