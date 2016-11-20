@@ -40,22 +40,22 @@
                     <a href="#page-top"></a>
                     </li>
                     <li class="section_1">
-                        <a class="page-scroll" href="../index.php#main-page">blink!</a>
+                        <a class="page-scroll blink_menu" href="../index.php#main-page">blink!</a>
                     </li>
                     <li>
                         <a class="page-scroll works_menu" id="page-works" href="how_it_works.php">Conoc&eacute; m&aacute;s</a>
                     </li>
                     <li>
-                        <a class="page-scroll" id="page-demo" href="demo.php">Demo</a>
+                        <a class="page-scroll demo_menu" id="page-demo" href="demo.php">Demo</a>
                     </li>
                     <li>
-                        <a class="page-scroll" id="page-faq" href="faq.php">FAQ</a>
+                        <a class="page-scroll faq_menu" id="page-faq" href="faq.php">FAQ</a>
                     </li>
                     <li>
-                        <a class="page-scroll" id="page-team" href="team.php">Qui&eacute;nes somos</a>
+                        <a class="page-scroll team_menu" id="page-team" href="team.php">Qui&eacute;nes somos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="../index.php#contact">Contactate</a>
+                        <a class="page-scroll contact_menu" href="../index.php#contact">Contactate</a>
                     </li>
                 </ul>
             </div>
