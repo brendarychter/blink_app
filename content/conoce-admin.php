@@ -112,11 +112,12 @@
 					<div class="col-md-3 col-sm-12 line-sections">
 						<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
 							<div class="title-box">
-								<span class="img-titles" style="float: right; font-weight: bold;">imagen</span>
+								<span class="img-titles" style="float: right; font-weight: bold;"></span>
 							</div>
-							<input type="file" class="img-load" id="img_1_section_works" data-img="img-1" name="imagen" data-id="" data-section="1" data-url="" required/>
-							<input class="title-load" data-title="title-1" type="text" placeholder="T&iacute;tulo" name="titulo" id="title_1_section_works" required/>
-							<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-table="works"/>Guardar foto</button>
+							<input type="file" class="img_works" name="imagen" data-url="" required/><span>Imagen actual: </span><label for="img_works" style="display: inline-block" id="img_url_works"></label>
+							<input class="title-load" data-title="title-1" type="text" placeholder="T&iacute;tulo" name="titulo" id="title_img_works" required/>
+							<label class="img_url_menu"></label>
+							<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-table="works"/>Guardar foto</button>
 							<p class="help-block"></p>
 						</div>
 					</div>

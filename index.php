@@ -37,7 +37,7 @@
                     <span class="icon-bar"></span>
                 </button>
                  <!-- href="#page-top"-->
-                <a class="navbar-brand page-scroll" href="#page-top" style="margin-top: -4px; padding: 0;"><img alt="Blink app" title="Blink app" src="public/img/logo.svg" id="icon-top"></img></a>
+                <a class="navbar-brand page-scroll" href="#page-top" style="margin-top: -4px; padding: 0;"><img alt="" title="" src="public/img/logo.svg" class="img_menu" id="icon-top"></img></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

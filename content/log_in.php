@@ -31,7 +31,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="../index.php" style="margin-top: -14px; padding: 0;"><img alt="Blink app" title="Blink app" src="../public/img/logo_small.svg" id="icon-top" style="height:80px"></img></a>
+                <a class="navbar-brand page-scroll" href="../index.php" style="margin-top: -14px; padding: 0;"><img class="img_menu" alt="" title="" src="" id="icon-top" style="height:80px;padding:10px"></img></a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -141,7 +141,7 @@
 
     <!-- Actions -->
     <script src="../public/js/actions/login.js"></script>
-    <script src="public/js/actions/loadMenu.js"></script>
+    <script src="../public/js/actions/loadMenu.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $(".central-nav").removeClass("navbar-middle");
