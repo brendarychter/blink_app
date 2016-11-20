@@ -6,11 +6,12 @@
 	// remove all session variables
 
 	//VALIDAR QUE DEVUELVA TRUE
-   $query = "UPDATE menu SET visible='0' WHERE value='blink_menu'";
-            echo $query;
-            if (mysqli_query ($connection->connected, $query)) {
-                echo "Escribio.";
-            } else {
-                echo "Error updating";
-            }
+$consulta = "SELECT * FROM fotos WHERE table_name = menu";
+        $response = mysqli_query($connection->connected,$consulta);
+
+        while($obj = mysqli_fetch_object($response)){
+            $matriz[$obj->table_name][] = array('id_name' => $obj->id_name, 'section' => $obj->section, 'img' => basename($obj->img), 'nombre' => $obj->nombre, 'id_image' => $obj->id_image, 'num' => $obj->num);
+        }
+        $datos = json_encode($matriz);
+        echo $datos;
 ?>
