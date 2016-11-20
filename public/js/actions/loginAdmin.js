@@ -7,7 +7,7 @@ $(document).ready(function(){
         params.password = $('#pass-admin').val();
 
         $.ajax({
-            //url: "http://blinkapp.com.ar/back/user/adminUser.php",
+            //url: "http://www.blinkapp.com.ar/back/admin/users/admin_user.php",
             url: "back/admin/users/admin_user.php",
             type: "POST",
             data: params,
@@ -15,10 +15,12 @@ $(document).ready(function(){
             dataType: "json"
         }).done(function( data ) {
             console.log(data);
-            window.location.href = "content/admin/dashboard.php";
+            console.log("redirect");
+            window.location = "content/admin/dashboard.php";
+            //window.location = "http://www.blinkapp.com.ar/content/admin/dashboard.php";
         }).error(function(error, textStatus){
             $('.error-log-in-admin').show();
-            console.log(error);
+            console.log(error, textStatus);
         });
     })
 })

@@ -34,10 +34,13 @@ $(document).ready(function(){
         }).done(function( data ) {
             //Tener la seccion a mostrar
 
+            //cargo por sección, los ids
             for (var i in data[1]){
                 var item = data[1][i];
-                $('.imagen-img').attr("data-id", item.id_image)
-                $('.titulo-img').val(item.nombre)
+                $('.imagen-img').attr("data-id", item.id_image);
+                $('.imagen-img').attr("data-url", item.img);
+
+                $('.titulo-img').val(item.nombre);
             }
 
         }).error(function(error, textStatus){
@@ -303,86 +306,64 @@ $(document).ready(function(){
         var section = $(this).attr("data-section");
         var table = $(this).attr("data-table");
 
-        var file_data = $('.imagen-img').attr("data-img", section).prop('files')[0];
-        var form_data = new FormData();                  
-        form_data.append('imagen', file_data);
-        form_data.append('section', section);
-        form_data.append('table', table);
-        form_data.append('submit', "submit");
-        form_data.append('titulo', $('.titulo-img').attr("data-title", section).val());
-
-
-        // params.action = "saveImg";
-        // params.section = section;
-        // params.table = table;
-        // params.submit = "submit";
-        // params.titulo = $('.titulo-img').attr("data-title", section).val();
-        // params.imagen = 
-
-        params1= {};
-        params1.action = "getContent";
-        params1.tableName = "home";
-
-        $.ajax({
-            //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: "../../back/admin/content/getImages.php",
-            type: "POST",
-            cache: false,
-            data: params1,
-            dataType: "json"
-        }).done(function( data ) {
-            for (var i in data[1]){
-                var item = data[1][i];
-                if(item.img == null){
-                    $.ajax({
-                        //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
-                        url: "../../back/admin/content/loadImages.php",
-                        type: "POST",
-                        cache: false,
-                        processData: false,
-                        data: form_data,
-                        dataType: "text",
-                        contentType: false,
-                    }).done(function( data ) {
-                        console.log(data);
-                        // switch(data){
-                        //     case "1":
-                        //     break;
-                        // }
-                        
-                    }).error(function(error, textStatus){
-                        console.log(error)
-                    });
-                }else{
-                    console.log( data[1][i].id_image)
-                    $.ajax({
-                        //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
-                        url: "../../back/admin/content/loadImages.php",
-                        type: "POST",
-                        cache: false,
-                        processData: false,
-                        data: form_data,
-                        dataType: "text",
-                        contentType: false,
-                    }).done(function( data ) {
-                        console.log(data);
-                        // switch(data){
-                        //     case "1":
-                        //     break;
-                        // }
-                        
-                    }).error(function(error, textStatus){
-                        console.log(error)
-                    });
-                }
-            }
-
-        }).error(function(error, textStatus){
-            console.log(error)
-        });
-
         
 
+
+        var img = $('.imagen-img').attr("data-section", section);
+        var id = img.attr("data-id");
+        var url = img.attr("data-url");
+
+
+        if (url == null || url ==undefined || url == ""){
+            console.log("url vacia, escribir en base");
+            var file_data = $('.imagen-img').attr("data-img", section).prop('files')[0];
+            var form_data = new FormData();                  
+            form_data.append('imagen', file_data);
+            form_data.append('section', section);
+            form_data.append('table', table);
+            form_data.append('submit', "submit");
+            form_data.append('titulo', $('.titulo-img').attr("data-title", section).val());
+            
+            $.ajax({
+                //url: "http://blinkapp.com.ar/back/admin/content/loadImages.php",
+                url: "../../back/admin/content/loadImages.php",
+                type: "POST",
+                cache: false,
+                processData: false,
+                data: form_data,
+                dataType: "text",
+                contentType: false,
+            }).done(function( data ) {
+                console.log(data);
+            }).error(function(error, textStatus){
+                console.log(error)
+            });
+        }else{
+            console.log("url existe, hacer un update");
+            var id = img.attr("data-id");
+            var file_data = $('.imagen-img').attr("data-img", section).prop('files')[0];
+            var form_data = new FormData();                  
+            form_data.append('imagen', file_data);
+            form_data.append('section', section);
+            form_data.append('table', table);
+            form_data.append('id', id);
+            form_data.append('submit', "submit");
+            form_data.append('titulo', $('.titulo-img').attr("data-title", section).val());
+            $.ajax({
+                //url: "http://blinkapp.com.ar/back/admin/content/updateImages.php",
+                url: "../../back/admin/content/updateImages.php",
+                type: "POST",
+                cache: false,
+                processData: false,
+                data: form_data,
+                dataType: "text",
+                contentType: false,
+            }).done(function( data ) {
+                console.log(data);
+            }).error(function(error, textStatus){
+                console.log(error)
+            });
+        }
     })
 
 })
