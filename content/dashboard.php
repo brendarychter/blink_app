@@ -62,6 +62,7 @@
 						 	<li role="presentation" class="toggle-nav-admin" id="use-admin"><a href="#use-admin">P&aacute;gina 2</a></li>
 						  	<li role="presentation" class="toggle-nav-admin" id="faq-admin"><a href="#faq-admin">P&aacute;gina 3</a></li>
 						 	<li role="presentation" class="toggle-nav-admin" id="team-admin"><a href="#team-admin">P&aacute;gina 4</a></li>
+						 	<li role="presentation" class="toggle-nav-admin" id="menu-admin"><a href="#menu-admin">Men&uacute;</a></li>
 						</ul>
 					</div>
 					<!-- QUIENES SOMOS ADMIN -->
@@ -86,6 +87,11 @@
 						</div>
 						<div class="row faq-admin admin-nav">
 							<?php
+						    ?>
+						</div>
+						<div class="row menu-admin admin-nav">
+							<?php
+						        include 'menu-admin.php';
 						    ?>
 						</div>
 					</div>
@@ -118,6 +124,7 @@
     <script src="../public/js/global/jquery.validate.min.js"></script>
     <script src="../public/js/actions/dashboard.js"></script>
     <script src="../public/js/works/loadWorks.js"></script>
+    <script src="../public/js/actions/loadMenu.js"></script>
     <script type="text/javascript">
 	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 	function myFunction() {

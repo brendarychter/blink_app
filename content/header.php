@@ -22,7 +22,7 @@
                     <a class="page-scroll" href="../index.php">blink!</a>
                 </li>
                 <li>
-                    <a class="page-scroll" id="page-works" href="how_it_works.php">Conoc&eacute; m&aacute;s</a>
+                    <a class="page-scroll works_menu" id="page-works" href="how_it_works.php">Conoc&eacute; m&aacute;s</a>
                 </li>
                 <li>
                     <a class="page-scroll" id="page-demo" href="demo.php">Demo</a>

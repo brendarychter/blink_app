@@ -7,11 +7,11 @@
 
 				<div class="portion portion-spanish">
 					<label class="lan" style="margin-right:20px">Espa&ntilde;ol</label>
-					<span class="editable-text page_name_spanish" realvalue="page_name" language="spanish"></span>
+					<span class="editable-text menu_name page_name_spanish" realvalue="page_name" language="spanish" menu-name="true"></span>
 				</div>
 				<div class="portion portion-english">
 					<label class="lan" style="margin-right:20px">Ingl&eacute;s</label>
-					<span class="editable-text page_name_english" realvalue="page_name" language="english"></span>
+					<span class="editable-text menu_name page_name_english" realvalue="page_name" language="english" menu-name="true"></span>
 				</div>
 			</div>
 			<form role="form" class="form-section" id="form-section-1" method="post" enctype="multipart/form-data" data-toggle="validator">
@@ -65,7 +65,7 @@
 		</div>
 		<div class="panel-heading"></div>
 		<div class="panel-body">
-			<form role="form" class="form-section" id="form-section-1" method="post" enctype="multipart/form-data" data-toggle="validator">
+			<form role="form" class="form-section" id="form-section-2" method="post" enctype="multipart/form-data" data-toggle="validator">
 				<label class="section-name">SECCI&oacute;n 1</label>
 				<div class="col-md-12 col-sm-12 line-sections">
 					<div class="form-group col-md-3 box-section first-section col-sm-12 ">
@@ -120,7 +120,7 @@
 							<span class="editable-text button_2_section_1_english" realvalue="button_2_section_1" language="english"></span>
 						</div>
 					</div>
-					<div class="abm-buttons form-section-1">
+					<div class="abm-buttons form-section-2">
 						<button class="btn btn-danger edit-section" id="delete-section-1" data-section="1" data-action="delete">Ocultar secci&oacute;n 1</button>
 						<button class="btn btn-info edit-section" id="edit-section-1" data-section="1" data-action="edit">Mostrar secci&oacute;n 1</button>
 					</div>
@@ -145,7 +145,7 @@
 		</div>
 		<div class="panel-heading"></div>
 		<div class="panel-body">
-			<form role="form" class="form-section" id="form-section-1" method="post" enctype="multipart/form-data" data-toggle="validator">
+			<form role="form" class="form-section" id="form-section-3" method="post" enctype="multipart/form-data" data-toggle="validator">
 				<label class="section-name">SECCI&oacute;n 2</label>
 				<div class="col-md-12 col-sm-12 line-sections">
 					<div class="form-group col-md-4 box-section first-section col-sm-12 ">
@@ -187,7 +187,7 @@
 							<span class="editable-text button_section_2_english" realvalue="button_section_2" language="english"></span>
 						</div>
 					</div>
-					<div class="abm-buttons form-section-1">
+					<div class="abm-buttons form-section-3">
 						<button class="btn btn-danger edit-section" id="delete-section-1" data-section="1" data-action="delete">Ocultar secci&oacute;n 1</button>
 						<button class="btn btn-info edit-section" id="edit-section-1" data-section="1" data-action="edit">Mostrar secci&oacute;n 1</button>
 					</div>

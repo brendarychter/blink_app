@@ -50,7 +50,7 @@
                         <a class="page-scroll" href="#main-page">blink!</a>
                     </li>
                     <li class="section_2 page-section">
-                        <a class="page-scroll" href="content/how_it_works.php">Conoc&eacute; m&aacute;s</a>
+                        <a class="page-scroll works_menu" href="content/how_it_works.php">Conoc&eacute; m&aacute;s</a>
                     </li>
                     <li class="section_3 page-section">
                         <a class="page-scroll" href="content/demo.php">Demo</a>
@@ -216,6 +216,7 @@
 
     <!-- My scripts -->
     <script src="public/js/actions/load.js"></script>
+    <script src="public/js/actions/loadMenu.js"></script>
     <script src="public/js/actions/showSections.js"></script>
     <script type="text/javascript">
         $('#english-lan').on("click", function(){

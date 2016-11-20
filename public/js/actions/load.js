@@ -21,7 +21,6 @@ $(document).ready(function(){
     	if (language == "es"){
             /* SECTION 1 SPANISH */
             //Pregunto por uno de los items
-            $('.section_1 a').text(unescape(data["section_section_1"].spanish));
             $('.title_section_1').text(unescape(data["title_section_1"].spanish));
             $('.subtitle_section_1').text(unescape(data["subtitle_section_1"].spanish));
             $('.button_section_1').text(unescape(data["button_section_1"].spanish));

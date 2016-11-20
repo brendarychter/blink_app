@@ -63,6 +63,29 @@
 			}
 		}
 
+		//CADA ROW TIENE QUE SER UNA INSTANCIA DE LA CLASE CONTENT
+		public function updateMenu($connection, $newValue, $realValue, $language){
+			//VALIDAR QUE DEVUELVA TRUE
+			$query = "UPDATE menu SET $language='$newValue' WHERE value='$realValue'";
+			echo $query;
+			if (mysqli_query ($connection->connected, $query)) {
+			    echo "Escribio.";
+			} else {
+			    echo "Error updating";
+			}
+		}
+
+		public function getMenu($connection){
+			//VALIDAR QUE DEVUELVA TRUE
+			$query = "SELECT * FROM menu";
+			$response = mysqli_query($connection->connected,$query);
+
+			while($obj = mysqli_fetch_object($response)){
+				$matriz[$obj->value] = array('spanish' => $obj->spanish, 'english' => $obj->english, 'id_menu' => $obj->id_menu);
+			}
+			$datos = json_encode($matriz);
+			echo $datos;
+		}
 
 		public function showContent($connection, $val, $flag, $table){
 			//VALIDAR QUE DEVUELVA TRUE

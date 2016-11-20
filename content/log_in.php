@@ -43,7 +43,7 @@
                         <a class="page-scroll" href="../index.php#main-page">blink!</a>
                     </li>
                     <li>
-                        <a class="page-scroll" id="page-works" href="how_it_works.php">Conoc&eacute; m&aacute;s</a>
+                        <a class="page-scroll works_menu" id="page-works" href="how_it_works.php">Conoc&eacute; m&aacute;s</a>
                     </li>
                     <li>
                         <a class="page-scroll" id="page-demo" href="demo.php">Demo</a>
@@ -141,6 +141,7 @@
 
     <!-- Actions -->
     <script src="../public/js/actions/login.js"></script>
+    <script src="public/js/actions/loadMenu.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $(".central-nav").removeClass("navbar-middle");

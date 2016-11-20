@@ -29,7 +29,7 @@
     <ul>
         <li>
             <a href="../index.php">Home</a>
-            <a href="../how_it_works.php">Conoc&eacute; m&aacute;s</a>
+            <a href="../how_it_works.php" class="works_menu">Conoc&eacute; m&aacute;s</a>
             <a href="../demo.php">Demo</a>
             <a href="../faq.php">FAQ</a>
             <a href="../index.php">Qui&eacute;nes somos</a>

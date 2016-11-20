@@ -55,7 +55,8 @@
 
     <!-- TIMELINE -->
     <script src="../public/js/global/index_timeline.js"></script>
-
+    <script src="public/js/actions/loadMenu.js"></script>
+    
     <script type="text/javascript">
         $('#page-team').closest('li').addClass("active");
     </script>

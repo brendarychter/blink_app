@@ -25,6 +25,17 @@
 		        case "getContent":
 		        	$content->getHomeContent($connection, $table);
 		        break;
+                case "getMenu":
+                    $content->getMenu($connection);
+                break;
+                case "updateMenu":
+                    if(isset($_POST['newValue'])){
+                        $newValue = $_POST['newValue'];
+                        $realValue = $_POST['realValue'];
+                        $language = $_POST['language'];
+                        $content->updateMenu($connection, $newValue, $realValue, $language);
+                    }
+                break;
                 case "showContent":
                     $val = $_POST['section'];
                     $flag = $_POST['show'];

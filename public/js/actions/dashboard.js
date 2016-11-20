@@ -162,8 +162,13 @@ $(document).ready(function(){
         
         //FIXEAR 
         var formValue = $(this).parent().parent().parent().parent().attr('id');
-        var table1 = $(this).closest("[data-table]");
-        var id = table1.attr("id");
+        console.log(formValue)
+        if(formValue =="form-section-6"){
+            id="menu";
+        }else{
+            var table1 = $(this).closest("[data-table]");
+            var id = table1.attr("id");
+        }
         //Si está vacío, no lo dejo escribir
         if(newValue == ""){
             console.log("is empty");

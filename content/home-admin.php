@@ -2,18 +2,6 @@
 	<div class="panel panel-default">
 		<div class="panel-heading"></div>
 		<div class="panel-body">
-			<div class="form-group col-md-12 box-section col-sm-12 " style="border-right: none; padding-left: 0;">
-				<label class="section-name">Nombre de la p&aacute;gina</label> 
-
-				<div class="portion portion-spanish">
-					<label class="lan" style="margin-right:20px">Espa&ntilde;ol</label>
-					<span class="editable-text section-spanish-1" realvalue="section_section_1" language="spanish"></span>
-				</div>
-				<div class="portion portion-english">
-					<label class="lan" style="margin-right:20px">Ingl&eacute;s</label>
-					<span class="editable-text section-english-1" realvalue="section_section_1" language="english"></span>
-				</div>
-			</div>		
 			<form role="form" class="form-section" id="form-section-1" method="post" enctype="multipart/form-data" data-toggle="validator">
 				<label class="section-name">Secci&oacute;n 1</label>
 				<div class="col-md-9 col-sm-12 line-sections">
