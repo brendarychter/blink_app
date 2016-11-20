@@ -51,12 +51,7 @@
 			$nombre_carpeta = "../../../uploads/";
 			
 			// DEFINICIONES INTERNAS PARA CONTROL
-			$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-		    $charactersLength = strlen($characters);
-		    $randomString = '';
-		    for ($i = 0; $i < 10; $i++) {
-		        $randomString .= $characters[rand(0, $charactersLength - 1)];
-		    }
+			
 
 			$target_file = $nombre_carpeta . basename($file["name"]);
 			$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);

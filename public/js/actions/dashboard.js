@@ -278,22 +278,19 @@ $(document).ready(function(){
         var section = $(this).attr("data-section");
         var table = $(this).attr("data-table");
         console.log(section)
-        
-        var img = $('.img-load').attr('id');
-        console.log("U ERE ELE " + img);
-        var url = $('#'+img).attr('data-url');
-        console.log("U ERE ELE " + url);
+
+        var url = $('#img_'+section+'_section_works').attr('data-url');
+        console.log("NUEVA URL " + url);
 
         if (url == null || url ==undefined || url == ""){
             console.log("url vacia, escribir en base");
-            var file = $('.img-load').attr('id');
-            var file_data = $('#'+file).prop('files')[0];
+            var file_data = $('#img_'+section+'_section_works').prop('files')[0];
             var form_data = new FormData();                  
             form_data.append('imagen', file_data);
             form_data.append('section', section);
             form_data.append('table', table);
             form_data.append('submit', "submit");
-            form_data.append('id_name', file);
+            form_data.append('id_name', 'img_'+section+'_section_works');
             var nom = $('.title-load').attr('id');
             form_data.append('titulo', $('#'+nom).val());
             console.log(file_data)

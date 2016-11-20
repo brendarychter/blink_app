@@ -75,14 +75,15 @@ $(document).ready(function(){
             console.log(data["works"]);
             var n = 1;
             for (i in data["works"]){
-                console.log(i)
+                console.log(n)
                 var img = data["works"][i];
+                console.log(img.nombre)
                 $('#img_'+n+'_section_works').attr("data-url", img.img);
                 $('#img_'+n+'_section_works').prop("alt", img.nombre);
                 $('#img_'+n+'_section_works').prop("title", img.nombre);
                 $('#img_'+n+'_section_works').attr("src", "../../blink_app/uploads/" + img.img);
 
-                $('#title_1_section_works').val(img.nombre);
+                $('#title_'+n+'_section_works').val(img.nombre);
                 n++;
             }
 
