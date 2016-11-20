@@ -200,6 +200,8 @@ $(document).ready(function(){
         
         //FIXEAR 
         var formValue = $(this).parent().parent().parent().parent().attr('id');
+        var table1 = $(this).closest("[data-table]");
+        var id = table1.attr("id");
         //Si está vacío, no lo dejo escribir
         if(newValue == ""){
             console.log("is empty");
@@ -213,7 +215,7 @@ $(document).ready(function(){
         }else{
             params = {};
             params.action = "modifyContent";
-            params.table = "home";
+            params.table = id;
             newValue = escape(newValue);
             oldValue = escape(oldValue);
             params.newValue = newValue;

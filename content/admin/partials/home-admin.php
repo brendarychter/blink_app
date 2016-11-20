@@ -1,4 +1,4 @@
-<div class="col-lg-12 col-sm-12 col-md-12">
+<div class="col-lg-12 col-sm-12 col-md-12 admin-partial" data-table="home" id="home">
 	<div class="panel panel-default">
 		<div class="panel-heading"></div>
 		<div class="panel-body">
