@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="../public/css/global/faq.css">
 </head>
 <body id="page-top" class="index landing-main-page">
-<?php include('partials/header.php');?> 
+    <?php include('header.php');?> 
         <header>
             <h1>Preguntas frecuentes</h1>
             <h2>&#191;Ten&eacute;s preguntas sobre c&oacute;mo usar la aplicaci&oacute;n? &#161;Te las respondemos!</h2>

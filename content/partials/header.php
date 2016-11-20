@@ -34,7 +34,7 @@
                     <a class="page-scroll" id="page-team" href="team.php">Qui&eacute;nes somos</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="www.blinkapp.com.ar/index.php#contact">Contactate</a>
+                    <a class="page-scroll" href="../../index.php#contact">Contactate</a>
                 </li>
                 
             </ul>

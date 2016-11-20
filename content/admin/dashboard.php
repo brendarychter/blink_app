@@ -72,6 +72,9 @@
 						    ?>
 						</div>
 						<div class="row conoce-admin admin-nav">
+							<?php
+						        include 'partials/conoce-admin.php';
+						    ?>
 						</div>
 						<div class="row team-admin admin-nav">
 							<?php

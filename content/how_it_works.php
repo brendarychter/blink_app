@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- CAMBIAR ACÁ TAMBIÉN EL TITLE POR IDIOMA -->
-    <title>Como funciona - Blink App</title>
+    <title>C&oacute;mo funciona - Blink App</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="../public/css/content.css">
 </head>
 <body id="page-top" class="index landing-main-page">
-    <?php include('partials/header.php');?> 
+    <?php include('header.php');?> 
     <header>
         <h1>&#191;C&oacute;mo empezar a usar la aplicaci&oacute;n?</h1>
         <h2>Te presentamos una gu&iacute;a pr&aacute;ctica de pasos a seguir para descargarla y utilizarla</h2>
@@ -96,7 +96,7 @@
         </div> <!-- cd-timeline-block -->
     </section> <!-- cd-timeline -->
     <?php
-        include 'partials/footer.php';
+        include 'footer.php';
     ?>
 
     <!-- Scripts -->

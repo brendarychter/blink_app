@@ -105,5 +105,7 @@
   .main-admin-dashboard .tab-admin-page .form-section .line-sections {
     padding-right: 0;
     padding-left: 0; } }
+.conoce-admin {
+  display: none; }
 
 /*# sourceMappingURL=_admin.css.map */
