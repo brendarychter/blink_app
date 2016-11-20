@@ -230,7 +230,7 @@ $(document).ready(function(){
     $(".editable-text").on("click", switchToInput);
 
     var divAlert = "<div class='alert alert-danger fade in alert-dismissable col-md-9 col-sm-8' style='border-radius: 0; margin-bottom: 0;position: fixed; bottom: 0;margin-right: 10px; margin-top: 5px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Error.</strong> Debe ingresar un valor</div>"
-    var divSuccess = "<div class='alert alert-success fade in alert-dismissable col-md-9 col-sm-8' style='border-radius: 0; margin-bottom: 0;position:fixed; bottom: 0margin-right: 10px; margin-top: 5px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Listo!</strong> La base de datos se ha modificado exitosamente."
+    var divSuccess = "<div class='alert alert-success fade in alert-dismissable col-md-9 col-sm-8' style='border-radius: 0; margin-bottom: 0;position:fixed; bottom: 0;margin-right: 10px; margin-top: 5px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Listo!</strong> La base de datos se ha modificado exitosamente."
 
 
     /**
