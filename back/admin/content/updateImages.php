@@ -1,3 +1,4 @@
+
 <?php
 	// INCLUYO EL ARCHIVO DE CONEXIÓN A LA BASE DE DATOS
  	$conexion = @mysqli_connect("localhost", "root", "", "blink");
@@ -13,7 +14,7 @@
 		$name = mysqli_real_escape_string($conexion,$_POST["titulo"]);
 		$table_name = $_POST["table"];
 		$section = $_POST["section"];
-		$id_name = $_POST["id_name"];
+		$id = $_POST["id"];
 		
 		// LEVANTO EL NOMBRE DEL ARCHIVO USANDO LA FUNCION subir_imagen DECLARADA ARRIBA
 		$imagen = subir_imagen($_FILES["imagen"]);
@@ -25,7 +26,7 @@
 
 			// CONTINUO CON EL RESTO DE MI CÓDIGO...
 
-			$sql = "insert into fotos (nombre, img, table_name, section, id_name) values ('$name','$imagen','$table_name', '$section', '$id_name')";
+			$sql = "update fotos SET nombre='$name', img='$imagen' where id_name='$id'";
 			
 			// IMPRIMO LA CONSULTA SÓLO PARA DEBUG
 			echo $sql;

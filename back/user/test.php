@@ -6,13 +6,12 @@
 	// remove all session variables
 
 	//VALIDAR QUE DEVUELVA TRUE
-       $query = "SELECT * FROM 'home'";
-        $response = mysqli_query($connection->connected,$query);
+        $consulta = "SELECT * FROM fotos WHERE table_name = 'works'";
+        $response = mysqli_query($connection->connected,$consulta);
 
         while($obj = mysqli_fetch_object($response)){
-            $matriz[$obj->value] = array('spanish' => $obj->spanish, 'english' => $obj->english, 'visible' => $obj->visible, 'section' => $obj->section);
+            $matriz[$obj->table_name][] = array('id_name' => $obj->id_name, 'section' => $obj->section, 'img' => basename($obj->img), 'nombre' => $obj->nombre, 'id_image' => $obj->id_image, 'num' => $obj->num);
         }
-        //, 'value_id' => $obj->value_id
-        // $datos = json_encode($matriz);
-        // echo $datos;
+        $datos = json_encode($matriz);
+        echo $datos;
 ?>

@@ -38,7 +38,7 @@
     <section id="cd-timeline" class="cd-container">
         <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-picture">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
+                <img id="img_1_section_works" src="" alt="" title="">
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
@@ -51,7 +51,7 @@
 
         <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-movie">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-movie.svg" alt="Movie">
+                <img id="img_2_section_works" src="" alt="" title="">
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">

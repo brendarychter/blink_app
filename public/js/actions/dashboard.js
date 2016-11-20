@@ -7,7 +7,7 @@ $(document).ready(function(){
 
     toggleTabs();
     populateLabels();
-    loadImages();
+    //loadImages();
 
     function getSessionAdminUser(){
     	console.log("entro")
@@ -315,24 +315,26 @@ $(document).ready(function(){
     $('.save-photo').on("click", function(){
         var section = $(this).attr("data-section");
         var table = $(this).attr("data-table");
-
+        console.log(section)
         
-
-
-        var img = $('.imagen-img').attr("data-section", section);
-        var id = img.attr("data-id");
-        var url = img.attr("data-url");
-
+        var img = $('.img-load').attr('id');
+        console.log("U ERE ELE " + img);
+        var url = $('#'+img).attr('data-url');
+        console.log("U ERE ELE " + url);
 
         if (url == null || url ==undefined || url == ""){
             console.log("url vacia, escribir en base");
-            var file_data = $('.imagen-img').attr("data-img", section).prop('files')[0];
+            var file = $('.img-load').attr('id');
+            var file_data = $('#'+file).prop('files')[0];
             var form_data = new FormData();                  
             form_data.append('imagen', file_data);
             form_data.append('section', section);
             form_data.append('table', table);
             form_data.append('submit', "submit");
-            form_data.append('titulo', $('.titulo-img').attr("data-title", section).val());
+            form_data.append('id_name', file);
+            var nom = $('.title-load').attr('id');
+            form_data.append('titulo', $('#'+nom).val());
+            console.log(file_data)
             
             $.ajax({
                 //url: "http://blinkapp.com.ar/back/admin/content/loadImages.php",
@@ -350,15 +352,19 @@ $(document).ready(function(){
             });
         }else{
             console.log("url existe, hacer un update");
-            var id = img.attr("data-id");
-            var file_data = $('.imagen-img').attr("data-img", section).prop('files')[0];
+            var file = $('.img-load').attr('id');
+            var file_data = $('#'+file).prop('files')[0];
             var form_data = new FormData();                  
             form_data.append('imagen', file_data);
+            form_data.append('id', file);
             form_data.append('section', section);
             form_data.append('table', table);
-            form_data.append('id', id);
             form_data.append('submit', "submit");
-            form_data.append('titulo', $('.titulo-img').attr("data-title", section).val());
+            form_data.append('id_name', file);
+            var nom = $('.title-load').attr('id');
+            form_data.append('titulo', $('#'+nom).val());
+            console.log(file_data)
+
             $.ajax({
                 //url: "http://blinkapp.com.ar/back/admin/content/updateImages.php",
                 url: "../back/admin/content/updateImages.php",
