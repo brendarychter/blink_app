@@ -197,7 +197,7 @@ $(document).ready(function(){
                     type: "POST",
                     data: params
                 }).done(function( data ) {
-                    $('.abm-buttons.'+formValue).append(divSuccess);
+                    $('.admin-partial').append(divSuccess);
                     console.log(data)
                     $span.css({border: '0 solid #29BF29'}).animate({
                         borderWidth: 1
@@ -229,8 +229,8 @@ $(document).ready(function(){
     }
     $(".editable-text").on("click", switchToInput);
 
-    var divAlert = "<div class='alert alert-danger fade in alert-dismissable col-md-9 col-sm-8' style='border-radius: 0; margin-bottom: 0;float:right;margin-right: 10px; margin-top: 5px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Error.</strong> Debe ingresar un valor</div>"
-    var divSuccess = "<div class='alert alert-success fade in alert-dismissable col-md-9 col-sm-8' style='border-radius: 0; margin-bottom: 0;float:right; margin-right: 10px; margin-top: 5px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Listo!</strong> La base de datos se ha modificado exitosamente."
+    var divAlert = "<div class='alert alert-danger fade in alert-dismissable col-md-9 col-sm-8' style='border-radius: 0; margin-bottom: 0;position: fixed; bottom: 0;margin-right: 10px; margin-top: 5px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Error.</strong> Debe ingresar un valor</div>"
+    var divSuccess = "<div class='alert alert-success fade in alert-dismissable col-md-9 col-sm-8' style='border-radius: 0; margin-bottom: 0;position:fixed; bottom: 0margin-right: 10px; margin-top: 5px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Listo!</strong> La base de datos se ha modificado exitosamente."
 
 
     /**

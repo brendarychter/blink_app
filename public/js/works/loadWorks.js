@@ -51,6 +51,23 @@ $(document).ready(function(){
             $('.button_2_section_1_english').text(unescape(data["button_2_section_1"].english));
             //DEFAULT
             $('.button_2_section_1').text(unescape(data["button_2_section_1"].spanish));
+
+            //SECTION 2
+            $('.title_section_2_spanish').text(unescape(data["title_section_2"].spanish));
+            $('.title_section_2_english').text(unescape(data["title_section_2"].english));
+            //DEFAULT
+            $('.title_section_2').text(unescape(data["title_section_2"].spanish));
+
+            $('.subtitle_section_2_spanish').text(unescape(data["subtitle_section_2"].spanish));
+            $('.subtitle_section_2_english').text(unescape(data["subtitle_section_2"].english));
+            //DEFAULT
+            $('.subtitle_section_2').text(unescape(data["subtitle_section_2"].spanish));
+            
+            $('.button_section_2_spanish').text(unescape(data["button_section_2"].spanish));
+            $('.button_section_2_english').text(unescape(data["button_section_2"].english));
+            //DEFAULT
+            $('.button_section_2').text(unescape(data["button_section_2"].spanish));
+
     }).error(function(error, textStatus){
         console.log(error, textStatus);
     });
