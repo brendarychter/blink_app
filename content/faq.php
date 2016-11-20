@@ -129,7 +129,7 @@
     <script src="../public/js/global/index_timeline.js"></script>
     <script src="../public/js/actions/show.js"></script>
     <script src="../public/js/global/faq.js"></script> <!-- Resource jQuery -->
-    <script src="public/js/actions/loadMenu.js"></script>
+    <script src="../public/js/actions/loadMenu.js"></script>
 
     <script type="text/javascript">
         $('#page-faq').closest('li').addClass("active");
