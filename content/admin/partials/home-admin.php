@@ -2,20 +2,18 @@
 	<div class="panel panel-default">
 		<div class="panel-heading"></div>
 		<div class="panel-body">
-			<!-- 
-					<div class="panel-heading" style="overflow: hidden; margin-bottom: 10px;"></div>
-	
-			<div class="form-group col-md-12 box-section col-sm-12 " style="border-right: none;">
-						<label class="section-name">Secci&oacute;n 1</label> 
-						<div class="portion portion-spanish">
-							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text section-spanish-1" realvalue="section_section_1" language="spanish"></span>
-						</div>
-						<div class="portion portion-english">
-							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text section-english-1" realvalue="section_section_1" language="english"></span>
-						</div>
-					</div>		 -->
+			<div class="form-group col-md-12 box-section col-sm-12 " style="border-right: none; padding-left: 0;">
+				<label class="section-name">Nombre de la p&aacute;gina</label> 
+
+				<div class="portion portion-spanish">
+					<label class="lan" style="margin-right:20px">Espa&ntilde;ol</label>
+					<span class="editable-text section-spanish-1" realvalue="section_section_1" language="spanish"></span>
+				</div>
+				<div class="portion portion-english">
+					<label class="lan" style="margin-right:20px">Ingl&eacute;s</label>
+					<span class="editable-text section-english-1" realvalue="section_section_1" language="english"></span>
+				</div>
+			</div>		
 			<form role="form" class="form-section" id="form-section-1" method="post" enctype="multipart/form-data" data-toggle="validator">
 				<label class="section-name">Secci&oacute;n 1</label>
 				<div class="col-md-9 col-sm-12 line-sections">
@@ -154,13 +152,14 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text text_1_section_2-english" realvalue="text_1_section_2" language="english"></span>
 						</div>
-						<form method="post" enctype="multipart/form-data">
-
-							<div class="portion portion-image">
-								<input type="file">
-								<input type="text" placeholder="T&iacute;tulo" required/>
-								<button class="btn btn-primary" type="submit" id="save-photo-1"/>Guardar foto</button>
-								<p class="help-block"></p>
+						<form method="post" enctype="multipart/form-data" id="imageUploadForm" data-form="">
+							<div class="col-md-3 col-sm-12 line-sections">
+								<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
+									<input type="file" class="imagen-img" data-img="img-2" name="imagen" data-id="" data-section="2" data-url="" data-num="1" required/>
+									<input class="titulo-img" data-title="title-2" type="text" placeholder="T&iacute;tulo" name="titulo" required/>
+									<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="2" data-table="home"/>Guardar foto</button>
+									<p class="help-block"></p>
+								</div>
 							</div>
 						</form>
 					</div>
@@ -176,13 +175,14 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text text_2_section_2-english" realvalue="text_2_section_2" language="english"></span>
 						</div>
-						<form method="post" enctype="multipart/form-data">
-
-							<div class="portion portion-image">
-								<input type="file">
-								<input type="text" placeholder="T&iacute;tulo" required/>
-								<button class="btn btn-primary" type="submit" id="save-photo-1"/>Guardar foto</button>
-								<p class="help-block"></p>
+						<form method="post" enctype="multipart/form-data" id="imageUploadForm" data-form="">
+							<div class="col-md-3 col-sm-12 line-sections">
+								<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
+									<input type="file" class="imagen-img" data-img="img-2" name="imagen" data-id="" data-section="2" data-url="" data-num="2" required/>
+									<input class="titulo-img" data-title="title-2" type="text" placeholder="T&iacute;tulo" name="titulo" required/>
+									<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="2" data-table="home"/>Guardar foto</button>
+									<p class="help-block"></p>
+								</div>
 							</div>
 						</form>
 					</div>
@@ -198,12 +198,14 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text text_3_section_2-english" realvalue="text_3_section_2" language="english"></span>
 						</div>
-						<form method="post" enctype="multipart/form-data">
-							<div class="portion portion-image">
-								<input type="file">
-								<input type="text" placeholder="T&iacute;tulo" required/>
-								<button class="btn btn-primary" type="submit" id="save-photo-1"/>Guardar foto</button>
-								<p class="help-block"></p>
+						<form method="post" enctype="multipart/form-data" id="imageUploadForm" data-form="">
+							<div class="col-md-3 col-sm-12 line-sections">
+								<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
+									<input type="file" class="imagen-img" data-img="img-2" name="imagen" data-id="" data-section="2" data-url="" data-num="3" required/>
+									<input class="titulo-img" data-title="title-2" type="text" placeholder="T&iacute;tulo" name="titulo" required/>
+									<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="2" data-table="home"/>Guardar foto</button>
+									<p class="help-block"></p>
+								</div>
 							</div>
 						</form>
 					</div>
@@ -219,12 +221,14 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text  text_4_section_2-english" realvalue="text_4_section_2" language="english"></span>
 						</div>
-						<form method="post" enctype="multipart/form-data">
-							<div class="portion portion-image">
-								<input type="file">
-								<input type="text" placeholder="T&iacute;tulo" required/>
-								<button class="btn btn-primary" type="submit" id="save-photo-1"/>Guardar foto</button>
-								<p class="help-block"></p>
+						<form method="post" enctype="multipart/form-data" id="imageUploadForm" data-form="">
+							<div class="col-md-3 col-sm-12 line-sections">
+								<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
+									<input type="file" class="imagen-img" data-img="img-2" name="imagen" data-id="" data-section="2" data-url="" data-num="4" required/>
+									<input class="titulo-img" data-title="title-2" type="text" placeholder="T&iacute;tulo" name="titulo" required/>
+									<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="2" data-table="home"/>Guardar foto</button>
+									<p class="help-block"></p>
+								</div>
 							</div>
 						</form>
 					</div>	

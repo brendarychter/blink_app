@@ -59,7 +59,7 @@
                         <a class="page-scroll" href="content/faq.php">FAQ</a>
                     </li>
                     <li class="section_5 page-section">
-                        <a class="page-scroll" href="content/quienessomos.php">Qui&eacute;nes somos</a>
+                        <a class="page-scroll" href="content/team.php">Qui&eacute;nes somos</a>
                     </li>
                     <li class="page-section">
                         <a class="page-scroll" href="#contact">Contactate</a>
@@ -82,8 +82,8 @@
     <header id="main-page" class="section_1 page-section-home">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in subtitle_section_1">Una &uacute;nica aplicaci&oacute;n. Todo lo que necesit&aacute;s.</div>
-                <div class="intro-heading title_section_1">Tus grupos en un mismo lugar</div>
+                <h2 class="intro-lead-in subtitle_section_1">Una &uacute;nica aplicaci&oacute;n. Todo lo que necesit&aacute;s.</h2>
+                <h1 class="intro-heading title_section_1">Tus grupos en un mismo lugar</h1>
                 <!--<a href="#conoce" class="page-scroll btn btn-xl" style="margin-right:5px">Conoc&eacute; m&aacute;s</a>-->
                 <a href="#download-app" class="page-scroll btn btn-xl button_section_1">Descarg&aacute; la app</a>
             </div>
@@ -135,8 +135,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center download-application">
                     <img src="public/img/qr_app_example.png">
-                    <h2 class="section-heading text-app">Descargate la aplicaci&oacute;n para el celular</h2>
-                    <h3 class="section-subheading text-muted">Vas a poder acceder a las novedades m&aacute;s r&aacute;pidamente y usar la aplicaci&oacute;n de forma m&aacute;s c&oacute;moda y eficiente</h3>
+                    <h2 class="section-heading text-app title_section_4">Descargate la aplicaci&oacute;n para el celular</h2>
+                    <h3 class="section-subheading text-muted text_section_4">Vas a poder acceder a las novedades m&aacute;s r&aacute;pidamente y usar la aplicaci&oacute;n de forma m&aacute;s c&oacute;moda y eficiente</h3>
                     <div style="text-align: center;">
                         <a href="content/faq.php" class="page-scroll btn btn-xl button_section_4" id="more-info">¿Ten&eacute;s dudas?</a>
                     </div>
@@ -149,8 +149,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contactate</h2>
-                    <h3 class="section-subheading text-muted">&iexcl;Queremos saber tu opini&oacute;n!</h3>
+                    <h2 class="section-heading subtitle_section_5">Contactate</h2>
+                    <h3 class="section-subheading text-muted title_section_5">&iexcl;Queremos saber tu opini&oacute;n!</h3>
                 </div>
             </div>
             <div class="row">
@@ -159,28 +159,28 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Nombre *" id="name" required data-validation-required-message="Por favor ingresa tu nombre">
+                                    <input type="text" class="text_1_section_5 form-control" placeholder="Nombre *" id="name" required data-validation-required-message="Por favor ingresa tu nombre">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Mail *" id="email" required data-validation-required-message="Por favor ingresa tu mail.">
+                                    <input type="email" class="text_2_section_5 form-control" placeholder="Mail *" id="email" required data-validation-required-message="Por favor ingresa tu mail.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="N&uacute;mero de tel&eacute;fono" id="phone" required data-validation-required-message="Por favor ingresa tu n&uacute;mero de tel&eacute;fono.">
+                                    <input type="tel" class="text_3_section_5 form-control" placeholder="N&uacute;mero de tel&eacute;fono" id="phone" required data-validation-required-message="Por favor ingresa tu n&uacute;mero de tel&eacute;fono.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Tu mensaje *" id="message" required data-validation-required-message="Por favor ingresa tu mensaje."></textarea>
+                                    <textarea class="text_4_section_5 form-control" placeholder="Tu mensaje *" id="message" required data-validation-required-message="Por favor ingresa tu mensaje."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Enviar mensaje</button>
+                                <button type="submit" class="button_section_5 btn btn-xl">Enviar mensaje</button>
                             </div>
                         </div>
                     </form>

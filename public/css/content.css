@@ -476,4 +476,7 @@ header {
 body {
   display: none; }
 
+.intro-lead-in {
+  text-transform: initial; }
+
 /*# sourceMappingURL=content.css.map */

@@ -11,15 +11,11 @@
                 <a href="../polytics.php" target="_blank">Pol&iacute;ticas de Privacidad</a>
                 ·
                 <a href="../terms.php" target="_blank">T&eacute;rminos de uso</a>
+                </br>
+                <a href="../map.php">Mapa</a>
             </p>
         </p>
-
-        <div class="footer-icons">
-
-            <a href="https://www.facebook.com/blinkthenewapp/" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter" target="_blank"></i></a>
-
-        </div>
+        <span style="color:#fff">SUSCRIBITE AL NEWSLETTER</span>
         <div class="newsletter">
             <script type="text/javascript" src="http://v2.envialosimple.com/form/show/AdministratorID/93288/FormID/1/format/widget"></script>
         </div>
@@ -29,13 +25,6 @@
         <h3>Brenda Rychter</h3>
         <a href="http://www.brendarychter.com.ar" target="_blank">www.brendarychter.com.ar</a>
         
-        <div class="footer-icons">
-
-            <a href="https://www.facebook.com/brendarychter" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="https://twitter.com/brenrych" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a href="https://ar.linkedin.com/in/brenda-rychter-97a55465" target="_blank"><i class="fa fa-linkedin"></i></a>
-
-        </div>
         <p class="footer-company-name">Brenda Rychter &copy; 2016</p>
         
 

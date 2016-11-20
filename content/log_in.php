@@ -52,7 +52,7 @@
                         <a class="page-scroll" id="page-faq" href="faq.php">FAQ</a>
                     </li>
                     <li>
-                        <a class="page-scroll" id="page-team" href="quienessomos.php">Qui&eacute;nes somos</a>
+                        <a class="page-scroll" id="page-team" href="team.php">Qui&eacute;nes somos</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="../index.php#contact">Contactate</a>
@@ -107,7 +107,7 @@
                                         <input type="telephone" class="form-control" placeholder="Celular" id="mobile-signin" name="mobile-signin"/>
                                     </div>
                                     <input type="hidden" name="userID" id="userID"></input>
-                                    <div class="u-form-group" style="margin-top:20px">
+                                    <div class="u-form-group" style="margin-top:10px">
                                         <button type="submit" id="sign-in-app" class="btn-xl">Acceder</button>
                                     </div>
                                 </form>

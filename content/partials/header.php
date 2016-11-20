@@ -31,10 +31,10 @@
                     <a class="page-scroll" id="page-faq" href="faq.php">FAQ</a>
                 </li>
                 <li>
-                    <a class="page-scroll" id="page-team" href="quienessomos.php">Qui&eacute;nes somos</a>
+                    <a class="page-scroll" id="page-team" href="team.php">Qui&eacute;nes somos</a>
                 </li>
                 <li>
-                    <a class="page-scroll" data-target="../index.php#contact">Contactate</a>
+                    <a class="page-scroll" href="www.blinkapp.com.ar/index.php#contact">Contactate</a>
                 </li>
                 
             </ul>

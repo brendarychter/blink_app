@@ -35,12 +35,20 @@ $(document).ready(function(){
             //Tener la seccion a mostrar
 
             //cargo por sección, los ids
-            for (var i in data[1]){
-                var item = data[1][i];
-                $('.imagen-img').attr("data-id", item.id_image);
-                $('.imagen-img').attr("data-url", item.img);
+            for (var i in data){
+                for (var n in data[i]){
+                    var item = data[i][n];
+                    console.log(item)
+                    console.log($('.imagen-img').attr("data-img"))
+                    $('.imagen-img').attr("data-id", item.id_image);
+                    $('.imagen-img').attr("data-url", item.img);
 
-                $('.titulo-img').val(item.nombre);
+                    $('.titulo-img').val(item.nombre);
+                }
+                // $('.imagen-img').attr("data-id", item.id_image);
+                // $('.imagen-img').attr("data-url", item.img);
+
+                // $('.titulo-img').val(item.nombre);
             }
 
         }).error(function(error, textStatus){

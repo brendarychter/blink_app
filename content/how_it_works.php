@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="../public/css/content.css">
     <link rel="stylesheet" href="../public/css/bootstrap.css" >
 
     <!-- Custom CSS -->
@@ -27,6 +26,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="../public/css/style.css">
     <link rel="stylesheet" href="../public/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/content.css">
 </head>
 <body id="page-top" class="index landing-main-page">
     <?php include('partials/header.php');?> 

@@ -72,23 +72,17 @@
 						    ?>
 						</div>
 						<div class="row conoce-admin admin-nav">
-							<?php
-						        include 'partials/conoce-admin.php';
-						    ?>
 						</div>
 						<div class="row team-admin admin-nav">
 							<?php
-						        include 'partials/team-admin.php';
 						    ?>
 						</div>
 						<div class="row use-admin admin-nav">
 							<?php
-						        include 'partials/demo-admin.php';
 						    ?>
 						</div>
 						<div class="row faq-admin admin-nav">
 							<?php
-						        include 'partials/faq-admin.php';
 						    ?>
 						</div>
 					</div>
