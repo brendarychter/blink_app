@@ -3,7 +3,7 @@ $(document).ready(function(){
     params.action = "getContent";
     params.table = "works";
     $.ajax({
-            //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
+            //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
             url: "../back/admin/content/adminContent.php",
             type: "POST",
             cache: false,
@@ -62,7 +62,7 @@ $(document).ready(function(){
         params.action = "getContent";
         params.tableName = "works";
         $.ajax({
-            //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
+            //url: "http://www.blinkapp.com.ar/back/admin/content/getImages.php",
             url: "../back/admin/content/getImages.php",
             type: "POST",
             cache: false,
@@ -80,7 +80,7 @@ $(document).ready(function(){
                 $('#img_'+n+'_section_works').attr("data-url", img.img);
                 $('#img_'+n+'_section_works').prop("alt", img.nombre);
                 $('#img_'+n+'_section_works').prop("title", img.nombre);
-                $('#img_'+n+'_section_works').attr("src", img.img);
+                $('#img_'+n+'_section_works').attr("src", "../../blink_app/uploads/" + img.img);
 
                 $('#title_1_section_works').val(img.nombre);
                 n++;

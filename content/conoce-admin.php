@@ -143,5 +143,72 @@
 				</form>
 			</div>
 		</div>
+		<div class="panel-heading"></div>
+		<div class="panel-body">
+			<form role="form" class="form-section" id="form-section-1" method="post" enctype="multipart/form-data" data-toggle="validator">
+				<label class="section-name">SECCI&oacute;n 2</label>
+				<div class="col-md-12 col-sm-12 line-sections">
+					<div class="form-group col-md-4 box-section first-section col-sm-12 ">
+						<div class="title-box">
+							<span class="global-title">&iacute;tem 1</span>
+						</div>
+						<div class="portion portion-spanish">
+							<label class="lan">Espa&ntilde;ol</label>
+							<span class="editable-text title_section_2_spanish" realvalue="title_section_2" language="spanish"></span>
+						</div>
+						<div class="portion portion-english">
+							<label class="lan">Ingl&eacute;s</label>
+							<span class="editable-text title_section_2_english" realvalue="title_section_2" language="english"></span>
+						</div>
+					</div>						
+					<div class="form-group col-md-4 box-section col-sm-12">
+						<div class="title-box">
+							<span class="global-title">subt&iacute;tulo header</span>
+						</div>
+						<div class="portion portion-spanish">
+							<label class="lan">Espa&ntilde;ol</label>
+							<span class="editable-text subtitle_section_2_spanish" realvalue="subtitle_section_2" language="spanish"></span>
+						</div>
+						<div class="portion portion-english">
+							<label class="lan">Ingl&eacute;s</label>
+							<span class="editable-text subtitle_section_2_english" realvalue="subtitle_section_2" language="english"></span>
+						</div>
+					</div>
+					<div class="form-group col-md-4 box-section col-sm-12" style="border-right: none">
+						<div class="title-box">
+							<span class="global-title">bot&oacute;n</span>
+						</div>
+						<div class="portion portion-spanish">
+							<label class="lan">Espa&ntilde;ol</label>
+							<span class="editable-text button_section_2_spanish" realvalue="button_section_2" language="spanish"></span>
+						</div>
+						<div class="portion portion-english">
+							<label class="lan">Ingl&eacute;s</label>
+							<span class="editable-text button_section_2_english" realvalue="button_section_2" language="english"></span>
+						</div>
+					</div>
+					<div class="abm-buttons form-section-1">
+						<button class="btn btn-danger edit-section" id="delete-section-1" data-section="1" data-action="delete">Ocultar secci&oacute;n 1</button>
+						<button class="btn btn-info edit-section" id="edit-section-1" data-section="1" data-action="edit">Mostrar secci&oacute;n 1</button>
+					</div>
+				</div>
+				
+			</form>	
+			<div class="col-md-12 col-sm-12 line-sections">
+				<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="works">
+					<div class="col-md-3 col-sm-12 line-sections">
+						<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
+							<div class="title-box">
+								<span class="img-titles" style="float: right; font-weight: bold;">imagen</span>
+							</div>
+							<input type="file" class="img-load" id="img_2_section_works" data-img="img-2" name="imagen" data-id="" data-section="2" data-url="" required/>
+							<input class="title-load" data-title="title-2" type="text" placeholder="T&iacute;tulo" name="titulo" id="title_2_section_works" required/>
+							<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="2" data-table="works"/>Guardar foto</button>
+							<p class="help-block"></p>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
 	</div>
 </div>
