@@ -16,7 +16,6 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-
 </head>
 
 <body>
@@ -59,7 +58,7 @@
 						  	<li role="presentation" class="active toggle-nav-admin" id="home-admin"><a href="#home-admin">Home - Landing page</a></li>
 						  	<!-- <div class="panel-heading"><a href=""><svg class="glyph stroked pencil edit-icon"><use xlink:href="#stroked-pencil"></use></svg></a>Qui&eacute;nes somos</div>-->
 						 	<li role="presentation" class="toggle-nav-admin" id="conoce-admin"><a href="#conoce-admin">P&aacute;gina 1</a></li>
-						 	<li role="presentation" class="toggle-nav-admin" id="use-admin"><a href="#use-admin">P&aacute;gina 2</a></li>
+						 	<li role="presentation" class="toggle-nav-admin" id="use-admin"><a href="#demo-admin">P&aacute;gina 2</a></li>
 						  	<li role="presentation" class="toggle-nav-admin" id="faq-admin"><a href="#faq-admin">P&aacute;gina 3</a></li>
 						 	<li role="presentation" class="toggle-nav-admin" id="team-admin"><a href="#team-admin">P&aacute;gina 4</a></li>
 						 	<li role="presentation" class="toggle-nav-admin" id="menu-admin"><a href="#menu-admin">Men&uacute;</a></li>
@@ -81,7 +80,7 @@
 							<?php
 						    ?>
 						</div>
-						<div class="row use-admin admin-nav">
+						<div class="row demo-admin admin-nav">
 							<?php
 						    ?>
 						</div>

@@ -20,7 +20,7 @@ $(document).ready(function(){
             showSection(data["text_section_4"], 4);
             showSection(data["title_section_5"], 5);
         }
-        $('body').fadeIn();
+        $('.page-section-home').fadeIn();
 
     })
 

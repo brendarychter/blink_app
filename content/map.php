@@ -24,7 +24,7 @@
     <![endif]-->
     <script src="public/js/global/jquery.js"></script>
 </head>
-<body id="page-top" class="index landing-main-page main-page-blink" style="display: block">
+<body id="page-top" class="index landing-main-page main-page-blink">
     <label>Web</label>
     <ul>
         <li>

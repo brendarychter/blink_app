@@ -127,7 +127,7 @@
     <section id="demo" class="section_3 page-section-home">
         <img src="public/img/play.svg" class="demo-img"><br><br>
         <p class="demo_description">
-            Video en construcci&oacute;n
+            <a href="content/demo.php" style="cursor: pointer;">Video en construcci&oacute;n</a>
         </p>
     </section>
     <section id="download-app" class="section_4 page-section-home">

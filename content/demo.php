@@ -19,12 +19,12 @@
     <link rel="stylesheet" href="../public/css/fonts.css">
 </head>
 <body id="page-top" class="index landing-main-page">
-    <?php include('partials/header.php');?> 
+    <?php include('header.php');?> 
     <header>
         <h1>&#191;C&oacute;mo empezar a usar la aplicaci&oacute;n?</h1>
         <h2>Te presentamos una gu&iacute;a pr&aacute;ctica de pasos a seguir para descargarla y utilizarla</h2>
     </header>
-    <?php include('partials/footer.php');?>
+    <?php include('footer.php');?>
 
     <!-- Scripts -->
     

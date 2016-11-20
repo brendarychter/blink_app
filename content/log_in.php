@@ -20,7 +20,7 @@
         }
     </style>
 </head>
-<body id="page-top" class="index landing-main-page" style="display: block">
+<body id="page-top" class="index landing-main-page">
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top navbar-login">
         <div class="container">

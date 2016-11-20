@@ -24,7 +24,7 @@
     <![endif]-->
     <script src="public/js/global/jquery.js"></script>
 </head>
-<body id="page-top" class="index landing-main-page main-page-blink" style="display: block">
+<body id="page-top" class="index landing-main-page main-page-blink">
     <h1>Te has suscripto satisfactoriamente al newsletter! Pronto tendr&aacute;s informaci&oacute; en tu correo</h1>
 </body>
 </html>

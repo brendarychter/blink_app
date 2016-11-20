@@ -172,7 +172,7 @@ $(document).ready(function(){
         //Si está vacío, no lo dejo escribir
         if(newValue == ""){
             console.log("is empty");
-            $('.abm-buttons.'+formValue).append(divAlert);
+            $('.admin-partial').append(divAlert);
             $(this).css({border: '0 solid #ff0000'}).animate({
                 borderWidth: 1
             }, 200);

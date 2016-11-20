@@ -45,10 +45,6 @@
 							<span class="editable-text button-english-1" realvalue="button_section_1" language="english"></span>
 						</div>
 					</div>
-					<div class="abm-buttons form-section-1">
-						<button class="btn btn-danger edit-section" id="delete-section-1" data-section="1" data-action="delete">Ocultar secci&oacute;n 1</button>
-						<button class="btn btn-info edit-section" id="edit-section-1" data-section="1" data-action="edit">Mostrar secci&oacute;n 1</button>
-					</div>
 				</div>
 				
 			</form>	
@@ -221,10 +217,6 @@
 						</form>
 					</div>	
 				</div>
-				<div class="abm-buttons col-md-12 col-sm-12 form-section-2">
-					<button class="btn btn-danger edit-section" id="delete-section-2" data-section="2" data-action="delete">Ocultar secci&oacute;n 2</button>
-					<button class="btn btn-info edit-section" id="edit-section-2" data-section="2" data-action="edit">Mostrar secci&oacute;n 2</button>
-				</div>
 			</form>	
 		</div>
 		<div class="panel-heading"></div>
@@ -243,10 +235,6 @@
 							<p class="help-block"></p>
 						</div>
 					</div>	
-				</div>
-				<div class="abm-buttons col-md-12 col-sm-12 form-section-3">
-					<button class="btn btn-danger edit-section" id="delete-section-3" data-section="3" data-action="delete">Ocultar secci&oacute;n 3</button>
-					<button class="btn btn-info edit-section" id="edit-section-3" data-section="3" data-action="edit">Mostrar secci&oacute;n 3</button>
 				</div>
 			</form>	
 		</div>
@@ -304,10 +292,6 @@
 						<button class="btn btn-primary" type="submit" id="save-photo-1"/>Guardar foto</button>
 						<p class="help-block"></p>
 					</div>
-				</div>
-				<div class="abm-buttons col-md-12 col-sm-12 form-section-4">
-					<button class="btn btn-danger edit-section" id="delete-section-4" data-section="4" data-action="delete">Ocultar secci&oacute;n 4</button>
-					<button class="btn btn-info edit-section" id="edit-section-4" data-section="4" data-action="edit">Mostrar secci&oacute;n 4</button>
 				</div>
 			</form>	
 
@@ -410,10 +394,6 @@
 							<span class="editable-text text_4_section_5-english" realvalue="text_4_section_5" language="english"></span>
 						</div>
 					</div>
-				</div>
-				<div class="abm-buttons col-md-12 col-sm-12 form-section-5">
-					<button class="btn btn-danger edit-section" id="delete-section-5" data-section="5" data-action="delete">Ocultar secci&oacute;n 5</button>
-					<button class="btn btn-info edit-section" id="edit-section-5" data-section="5" data-action="edit">Mostrar secci&oacute;n 5</button>
 				</div>
 			</form>	
 

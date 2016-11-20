@@ -44,10 +44,6 @@
 							<span class="editable-text button-english-1" realvalue="button_section_1" language="english"></span>
 						</div>
 					</div>
-					<div class="abm-buttons form-section-1">
-						<button class="btn btn-danger edit-section" id="delete-section-1" data-section="1" data-action="delete">Ocultar secci&oacute;n 1</button>
-						<button class="btn btn-info edit-section" id="edit-section-1" data-section="1" data-action="edit">Mostrar secci&oacute;n 1</button>
-					</div>
 				</div>
 			</form>	
 		</div>
@@ -107,10 +103,6 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text button_2_section_1_english" realvalue="button_2_section_1" language="english"></span>
 						</div>
-					</div>
-					<div class="abm-buttons form-section-2">
-						<button class="btn btn-danger edit-section" id="delete-section-1" data-section="1" data-action="delete">Ocultar secci&oacute;n 1</button>
-						<button class="btn btn-info edit-section" id="edit-section-1" data-section="1" data-action="edit">Mostrar secci&oacute;n 1</button>
 					</div>
 				</div>
 				
@@ -175,10 +167,6 @@
 							<span class="editable-text button_section_2_english" realvalue="button_section_2" language="english"></span>
 						</div>
 					</div>
-					<div class="abm-buttons form-section-3">
-						<button class="btn btn-danger edit-section" id="delete-section-1" data-section="1" data-action="delete">Ocultar secci&oacute;n 1</button>
-						<button class="btn btn-info edit-section" id="edit-section-1" data-section="1" data-action="edit">Mostrar secci&oacute;n 1</button>
-					</div>
 				</div>
 				
 			</form>	
@@ -228,10 +216,6 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text subtitle_section_3_english" realvalue="subtitle_section_3" language="english"></span>
 						</div>
-					</div>
-					<div class="abm-buttons form-section-3">
-						<button class="btn btn-danger edit-section" id="delete-section-3" data-section="1" data-action="delete">Ocultar secci&oacute;n 1</button>
-						<button class="btn btn-info edit-section" id="edit-section-1" data-section="1" data-action="edit">Mostrar secci&oacute;n 1</button>
 					</div>
 				</div>
 				
@@ -296,14 +280,6 @@
 							<span class="editable-text button_section_4_english" realvalue="button_section_4" language="english"></span>
 						</div>
 					</div>
-					<div class="abm-buttons form-section-3">
-						<button class="btn btn-danger edit-section" id="delete-section-1" data-section="1" data-action="delete">Ocultar secci&oacute;n 1</button>
-						<button class="btn btn-info edit-section" id="edit-section-1" data-section="1" data-action="edit">Mostrar secci&oacute;n 1</button>
-					</div>
-					<div class="abm-buttons form-section-3">
-						<button class="btn btn-danger edit-section" id="delete-section-4" data-section="1" data-action="delete">Ocultar secci&oacute;n 1</button>
-						<button class="btn btn-info edit-section" id="edit-section-1" data-section="1" data-action="edit">Mostrar secci&oacute;n 1</button>
-					</div>
 				</div>
 				
 			</form>	
@@ -353,10 +329,6 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text subtitle_section_5_english" realvalue="subtitle_section_5" language="english"></span>
 						</div>
-					</div>
-					<div class="abm-buttons form-section-5">
-						<button class="btn btn-danger edit-section" id="delete-section-5" data-section="1" data-action="delete">Ocultar secci&oacute;n 1</button>
-						<button class="btn btn-info edit-section" id="edit-section-1" data-section="1" data-action="edit">Mostrar secci&oacute;n 1</button>
 					</div>
 				</div>
 				

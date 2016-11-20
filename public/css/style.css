@@ -63,13 +63,13 @@ Main components
 
 -------------------------------- */
 header {
-  height: 210px;
   line-height: 26px;
   text-align: center;
   background: #222;
   padding-top: 55px;
   padding-right: 12px;
   padding-left: 12px;
+  padding-bottom: 50px;
 }
 header h1 {
   color: #ffffff;
@@ -84,7 +84,6 @@ header h2{
 }
 @media only screen and (min-width: 1170px) {
   header {
-    height: 300px;
     line-height: 85px;
     padding-top: 112px;
   }

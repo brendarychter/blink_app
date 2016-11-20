@@ -2,7 +2,7 @@
 
     <div class="footer-left">
         <p class="footer-company-about">
-            <span>BLINK APP</span>
+            <span style="font-size: 13px; color: #ccc">BLINK APP</span>
             <p class="footer-links">
                 <a href="#" id="spanish" class="language-selection">Espa&ntilde;ol</a>
                 ·
@@ -14,11 +14,12 @@
                 </br>
                 <a href="../map.php">Mapa</a>
             </p>
+            <span style="font-size: 13px; color: #ccc">SUSCRIBITE AL NEWSLETTER</span>
+            <div class="newsletter">
+                <script type="text/javascript" src="http://v2.envialosimple.com/form/show/AdministratorID/93288/FormID/1/format/widget"></script>
+            </div>
         </p>
-        <span style="color:#fff">SUSCRIBITE AL NEWSLETTER</span>
-        <div class="newsletter">
-            <script type="text/javascript" src="http://v2.envialosimple.com/form/show/AdministratorID/93288/FormID/1/format/widget"></script>
-        </div>
+        
     </div>
     <div class="footer-right">
 
