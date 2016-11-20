@@ -42,10 +42,10 @@
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
-                <h3>Lector de QR</h3>
-                <p>Primero necesitas descargarte una aplicaci&oacute;n para leer el c&oacute;digo de descarga</p>
-                <a href="https://itunes.apple.com/us/app/qr-reader-for-iphone/id368494609?mt=8" class="cd-read-more" style="margin-left: 5px;" target="_blank">Itunes</a>
-                <a href="https://play.google.com/store/apps/details?id=me.scan.android.client&hl=es" class="cd-read-more" style="margin-left: 5px;" target="_blank">Android</a>
+                <h3 class="title_section_1">Lector de QR</h3>
+                <p class="subtitle_section_1">Primero necesitas descargarte una aplicaci&oacute;n para leer el c&oacute;digo de descarga</p>
+                <a href="https://itunes.apple.com/us/app/qr-reader-for-iphone/id368494609?mt=8" class="cd-read-more button_1_section_1" style="margin-left: 5px; margin-bottom: 5px;" target="_blank">Itunes</a>
+                <a href="https://play.google.com/store/apps/details?id=me.scan.android.client&hl=es" class="cd-read-more button_2_section_1" style="margin-left: 5px;" target="_blank">Android</a>
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
 

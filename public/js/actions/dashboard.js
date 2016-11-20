@@ -13,7 +13,7 @@ $(document).ready(function(){
     	console.log("entro")
 
         //$.get('http://blinkapp.com.ar/back/admin/users/getUserAdminSession.php', function (data) {
-        $.get('../../back/admin/users/getUserAdminSession.php', function (data) {
+        $.get('../back/admin/users/getUserAdminSession.php', function (data) {
           userAdmin = JSON.parse(data);
           $("#admin-logged").append(userAdmin.username);
         });
@@ -26,7 +26,7 @@ $(document).ready(function(){
         params.tableName = "home";
         $.ajax({
             //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: "../../back/admin/content/getImages.php",
+            url: "../back/admin/content/getImages.php",
             type: "POST",
             cache: false,
             data: params,
@@ -62,7 +62,7 @@ $(document).ready(function(){
         params.table = "home";
         $.ajax({
             //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: "../../back/admin/content/adminContent.php",
+            url: "../back/admin/content/adminContent.php",
             type: "POST",
             cache: false,
             data: params,
@@ -226,7 +226,7 @@ $(document).ready(function(){
                 console.log("insert");
                 $.ajax({
                     //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
-                    url: "../../back/admin/content/adminContent.php",
+                    url: "../back/admin/content/adminContent.php",
                     type: "POST",
                     data: params
                 }).done(function( data ) {
@@ -299,7 +299,7 @@ $(document).ready(function(){
         console.log(params)
         $.ajax({
             //url: "http://blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: "../../back/admin/content/adminContent.php",
+            url: "../back/admin/content/adminContent.php",
             type: "POST",
             cache: false,
             data: params,
@@ -336,7 +336,7 @@ $(document).ready(function(){
             
             $.ajax({
                 //url: "http://blinkapp.com.ar/back/admin/content/loadImages.php",
-                url: "../../back/admin/content/loadImages.php",
+                url: "../back/admin/content/loadImages.php",
                 type: "POST",
                 cache: false,
                 processData: false,
@@ -361,7 +361,7 @@ $(document).ready(function(){
             form_data.append('titulo', $('.titulo-img').attr("data-title", section).val());
             $.ajax({
                 //url: "http://blinkapp.com.ar/back/admin/content/updateImages.php",
-                url: "../../back/admin/content/updateImages.php",
+                url: "../back/admin/content/updateImages.php",
                 type: "POST",
                 cache: false,
                 processData: false,
