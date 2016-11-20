@@ -52,6 +52,7 @@ $(document).ready(function(){
             //DEFAULT
             $('.button_2_section_1').text(unescape(data["button_2_section_1"].spanish));
 
+
             //SECTION 2
             $('.title_section_2_spanish').text(unescape(data["title_section_2"].spanish));
             $('.title_section_2_english').text(unescape(data["title_section_2"].english));
@@ -68,6 +69,45 @@ $(document).ready(function(){
             //DEFAULT
             $('.button_section_2').text(unescape(data["button_section_2"].spanish));
 
+
+            //SECTION 3
+            $('.title_section_3_spanish').text(unescape(data["title_section_3"].spanish));
+            $('.title_section_3_english').text(unescape(data["title_section_3"].english));
+            //DEFAULT
+            $('.title_section_3').text(unescape(data["title_section_3"].spanish));
+
+            $('.subtitle_section_3_spanish').text(unescape(data["subtitle_section_3"].spanish));
+            $('.subtitle_section_3_english').text(unescape(data["subtitle_section_3"].english));
+            //DEFAULT
+            $('.subtitle_section_3').text(unescape(data["subtitle_section_3"].spanish));
+
+            //SECTION 4
+            $('.title_section_4_spanish').text(unescape(data["title_section_4"].spanish));
+            $('.title_section_4_english').text(unescape(data["title_section_4"].english));
+            //DEFAULT
+            $('.title_section_4').text(unescape(data["title_section_4"].spanish));
+
+            $('.subtitle_section_4_spanish').text(unescape(data["subtitle_section_4"].spanish));
+            $('.subtitle_section_4_english').text(unescape(data["subtitle_section_4"].english));
+            //DEFAULT
+            $('.subtitle_section_4').text(unescape(data["subtitle_section_4"].spanish));
+            
+            $('.button_section_4_spanish').text(unescape(data["button_section_4"].spanish));
+            $('.button_section_4_english').text(unescape(data["button_section_4"].english));
+            //DEFAULT
+            $('.button_section_4').text(unescape(data["button_section_4"].spanish));
+
+            //SECTION 5
+            $('.title_section_5_spanish').text(unescape(data["title_section_5"].spanish));
+            $('.title_section_5_english').text(unescape(data["title_section_5"].english));
+            //DEFAULT
+            $('.title_section_5').text(unescape(data["title_section_5"].spanish));
+
+            $('.subtitle_section_5_spanish').text(unescape(data["subtitle_section_5"].spanish));
+            $('.subtitle_section_5_english').text(unescape(data["subtitle_section_5"].english));
+            //DEFAULT
+            $('.subtitle_section_5').text(unescape(data["subtitle_section_5"].spanish));
+            
     }).error(function(error, textStatus){
         console.log(error, textStatus);
     });

@@ -67,8 +67,8 @@
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
-                <h3>Create una cuenta</h3>
-                <p>Necesitas acceder con un nombre de usuario y una contrase&ntilde;a. Agreg&aacute; tambi&eacute;n una imagen para que tus contactos puedan encontrarte r&aacute;pidamente</p>
+                <h3 class="title_section_3">Create una cuenta</h3>
+                <p class="subtitle_section_3">Necesitas acceder con un nombre de usuario y una contrase&ntilde;a. Agreg&aacute; tambi&eacute;n una imagen para que tus contactos puedan encontrarte r&aacute;pidamente</p>
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
 
@@ -78,9 +78,9 @@
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
-                <h3>Empez&aacute; a crear</h3>
-                <p>Cre&aacute; un grupo e invit&aacute; a contactos para que participen y puedan cargar contenido. Podr&aacute;n manejar calendarios, eventos, registros y mucho m&aacute;s</p>
-                <a href="#0" class="cd-read-more">Ver preguntas frecuentes</a>
+                <h3 class="title_section_4">Empez&aacute; a crear</h3>
+                <p class="subtitle_section_4">Cre&aacute; un grupo e invit&aacute; a contactos para que participen y puedan cargar contenido. Podr&aacute;n manejar calendarios, eventos, registros y mucho m&aacute;s</p>
+                <a href="#0" class="cd-read-more button_section_4">Ver preguntas frecuentes</a>
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
 
@@ -90,8 +90,8 @@
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
-                <h3>Aprovech&aacute; al m&aacute;ximo las notificicaciones</h3>
-                <p>Configur&aacute; las opciones para recibir notificaciones en tiempo real cuando tus amigos interact&uacute;n con la aplicaci&oacute;n</p>
+                <h3 class="title_section_5">Aprovech&aacute; al m&aacute;ximo las notificicaciones</h3>
+                <p class="subtitle_section_5">Configur&aacute; las opciones para recibir notificaciones en tiempo real cuando tus amigos interact&uacute;n con la aplicaci&oacute;n</p>
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
     </section> <!-- cd-timeline -->
