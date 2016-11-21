@@ -16,7 +16,7 @@ $(document).ready(function(){
         }).done(function( data ) {
             console.log(data);
             console.log("redirect");
-            window.location = "content/admin/dashboard.php";
+            window.location = "content/dashboard.php";
             //window.location = "http://www.blinkapp.com.ar/content/admin/dashboard.php";
         }).error(function(error, textStatus){
             $('.error-log-in-admin').show();
