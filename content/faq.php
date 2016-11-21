@@ -37,65 +37,65 @@
         </header>
         <section class="cd-faq">
             <ul class="cd-faq-categories">
-                <li><a class="selected" href="#uno">&#191;Para qu&eacute; sirve Blink App?</a></li>
-                <li><a href="#dos">&#191;C&oacute;mo interact&uacute;o con los grupos?</a></li>
-                <li><a href="#tres">&#191;C&oacute;mo me conecto con mis amigos?</a></li>
+                <li><a class="selected faq_question_1" href="#uno">&#191;Para qu&eacute; sirve Blink App?</a></li>
+                <li><a class="faq_question_2" href="#dos">&#191;C&oacute;mo interact&uacute;o con los grupos?</a></li>
+                <li><a class="faq_question_3" href="#tres">&#191;C&oacute;mo me conecto con mis amigos?</a></li>
             </ul> <!-- cd-faq-categories -->
 
             <div class="cd-faq-items">
                 <ul id="uno" class="cd-faq-group">
-                    <li class="cd-faq-title"><h3>&#191;Para qu&eacute; sirve Blink App?</h3></li>
+                    <li class="cd-faq-title"><h3 class="faq_question_1">&#191;Para qu&eacute; sirve Blink App?</h3></li>
                     <li>
-                        <a class="cd-faq-trigger" href="#0">Por qu&eacute; elegirla</a>
+                        <a class="cd-faq-trigger faq_subquestion_1" href="#0">Por qu&eacute; elegirla</a>
                         <div class="cd-faq-content">
-                            <p>Blink es una aplicaci&oacute;n distinta. Te permite estar conectado todo el tiempo con tus contactos, pudiendo segmentar por distintos temas y tipos. Podr&aacute;s crear la cantidad de grupos que necesites, y agregar a las personas relacionadas.</p>
+                            <p class="faq_text_1">Blink es una aplicaci&oacute;n distinta. Te permite estar conectado todo el tiempo con tus contactos, pudiendo segmentar por distintos temas y tipos. Podr&aacute;s crear la cantidad de grupos que necesites, y agregar a las personas relacionadas.</p>
                         </div> <!-- cd-faq-content -->
                     </li>
 
                     <li>
-                        <a class="cd-faq-trigger" href="#0">En qu&eacute; se diferencia de las dem&aacute;s aplicaciones</a>
+                        <a class="cd-faq-trigger faq_subquestion_2" href="#0">En qu&eacute; se diferencia de las dem&aacute;s aplicaciones</a>
                         <div class="cd-faq-content">
-                            <p>La particularidad de esta aplicaci&oacute;n es que no requiere de funcionalidades ni aplicaciones externas que cumplan funciones necesarias. Ya tiene incorporada las funcionalidades que te sirven d&iacute;a a d&iacute;a para mantenerte actualizado con las nuevas notificaciones.</p>
+                            <p class="faq_text_2">La particularidad de esta aplicaci&oacute;n es que no requiere de funcionalidades ni aplicaciones externas que cumplan funciones necesarias. Ya tiene incorporada las funcionalidades que te sirven d&iacute;a a d&iacute;a para mantenerte actualizado con las nuevas notificaciones.</p>
                         </div> <!-- cd-faq-content -->
                     </li>
 
                     <li>
-                        <a class="cd-faq-trigger" href="#0">&#191;Qu&eacute; funcionalidades ofrece?</a>
+                        <a class="cd-faq-trigger faq_subquestion_3" href="#0">&#191;Qu&eacute; funcionalidades ofrece?</a>
                         <div class="cd-faq-content">
-                            <p>Permite generar, dentro de los grupos, <strong>calendarios</strong> de eventos, para registrar reuniones, cumplea&ntilde;os o reuniones, <strong>registros econ&oacute;micos</strong> , en caso de tener gastos grupales y un <strong>muro</strong> para compartir publicaciones e informaci&oacute;n</p>
+                            <p class="faq_text_3">Permite generar, dentro de los grupos, <strong>calendarios</strong> de eventos, para registrar reuniones, cumplea&ntilde;os o reuniones, <strong>registros econ&oacute;micos</strong> , en caso de tener gastos grupales y un <strong>muro</strong> para compartir publicaciones e informaci&oacute;n</p>
                         </div> <!-- cd-faq-content -->
                     </li>
 
                 </ul> <!-- cd-faq-group -->
 
                 <ul id="dos" class="cd-faq-group">
-                    <li class="cd-faq-title"><h3>&#191;C&oacute;mo interact&uacute;o con los grupos?</h3></li>
+                    <li class="cd-faq-title"><h3 class="faq_question_2">&#191;C&oacute;mo interact&uacute;o con los grupos?</h3></li>
                     <li>
-                        <a class="cd-faq-trigger" href="#0">Pod&eacute;s crear la cantidad de grupos que quieras</a>
+                        <a class="cd-faq-trigger faq_subquestion_4" href="#0">Pod&eacute;s crear la cantidad de grupos que quieras</a>
                         <div class="cd-faq-content">
-                            <p>No hay un l&iacute;mite de grupos. Pod&eacute;s tener del trabajo, la facultad, danza, f&uacute;tbol, etc. Adem&aacute;s, podr&aacute;s compartir usuarios entre grupos.</p>
+                            <p class="faq_text_4">No hay un l&iacute;mite de grupos. Pod&eacute;s tener del trabajo, la facultad, danza, f&uacute;tbol, etc. Adem&aacute;s, podr&aacute;s compartir usuarios entre grupos.</p>
                         </div> <!-- cd-faq-content -->
                     </li>
                     <li>
-                        <a class="cd-faq-trigger" href="#0">&#191;C&oacute;mo crear un grupo?</a>
+                        <a class="cd-faq-trigger faq_subquestion_5" href="#0">&#191;C&oacute;mo crear un grupo?</a>
                         <div class="cd-faq-content">
-                            <p>Es muy sencillo. Simplemente deb&eacute;s encontrar la secci&oacute;n de <strong>crear grupo</strong> y seguir los pasos. Tendr&aacute;s que seleccionar qu&eacute; funcionalidades tendr&aacute; la aplicaci&oacute;n - pudiendo luego agregar nuevas o borrar las existentes -. Luego podr&aacute;s seleccionar los usuarios para agregar. Al crear un grupo, te convertir&aacute;s en el administrador del mismo; luego podr&aacute;s delegar o compartir este rol.</p>
+                            <p class="faq_text_5">Es muy sencillo. Simplemente deb&eacute;s encontrar la secci&oacute;n de <strong>crear grupo</strong> y seguir los pasos. Tendr&aacute;s que seleccionar qu&eacute; funcionalidades tendr&aacute; la aplicaci&oacute;n - pudiendo luego agregar nuevas o borrar las existentes -. Luego podr&aacute;s seleccionar los usuarios para agregar. Al crear un grupo, te convertir&aacute;s en el administrador del mismo; luego podr&aacute;s delegar o compartir este rol.</p>
                         </div> <!-- cd-faq-content -->
                     </li>
                     <li>
-                        <a class="cd-faq-trigger" href="#0">&#191;C&oacute;mo me uno a un grupo?</a>
+                        <a class="cd-faq-trigger faq_subquestion_6" href="#0">&#191;C&oacute;mo me uno a un grupo?</a>
                         <div class="cd-faq-content">
-                            <p> Para poder unirte a los grupos, tendr&aacute;s que pedirle acceso al administrador del mismo, ya que es &eacute;l quien puede incorporar los nuevos contactos. Sin embargo, al loggearte, podr&aacute;s solicitarle permisos de administrador para agregar y borrar nuevos contactos.</p>
+                            <p class="faq_text_6"> Para poder unirte a los grupos, tendr&aacute;s que pedirle acceso al administrador del mismo, ya que es &eacute;l quien puede incorporar los nuevos contactos. Sin embargo, al loggearte, podr&aacute;s solicitarle permisos de administrador para agregar y borrar nuevos contactos.</p>
                         </div> <!-- cd-faq-content -->
                     </li>
                 </ul> <!-- cd-faq-group -->
 
                 <ul id="tres" class="cd-faq-group">
-                    <li class="cd-faq-title"><h3>&#191;C&oacute;mo me conecto con mis amigos?</h3></li>
+                    <li class="cd-faq-title faq_subquestion_7"><h3 class="faq_question_3">&#191;C&oacute;mo me conecto con mis amigos?</h3></li>
                     <li>
                         <a class="cd-faq-trigger" href="#0">Buscar amigos</a>
                         <div class="cd-faq-content">
-                            <p>Habiendo creado un grupo, pod&eacute;s conectarte con cualquier contacto que est&eacute; registrado en la aplicaci&oacute;n. Para buscarlos, deber&aacute;s ingresar su n&uacute;mero de tel&eacute;fono, correo electr&oacute;nico o nombre de usuario y luego invitarlo al grupo. Deber&aacute; aceptar una solicitud de incorporaci&oacute;n al grupo.</p>
+                            <p class="faq_text_7">Habiendo creado un grupo, pod&eacute;s conectarte con cualquier contacto que est&eacute; registrado en la aplicaci&oacute;n. Para buscarlos, deber&aacute;s ingresar su n&uacute;mero de tel&eacute;fono, correo electr&oacute;nico o nombre de usuario y luego invitarlo al grupo. Deber&aacute; aceptar una solicitud de incorporaci&oacute;n al grupo.</p>
                         </div> <!-- cd-faq-content -->
                     </li>
 

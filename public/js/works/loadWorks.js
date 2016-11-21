@@ -174,6 +174,111 @@ $(document).ready(function(){
                 //DEFAULT
                 $('.faq_subtitle_header').text(unescape(data["subtitle_header"].spanish));
 
+                //QUESTIONS
+                //1
+                $('.faq_question_1_spanish').text(unescape(data["faq_question_1"].spanish));
+                $('.faq_question_1_english').text(unescape(data["faq_question_1"].english));
+                //DEFAULT
+                $('.faq_question_1').text(unescape(data["faq_question_1"].spanish));
+
+                //2
+                $('.faq_question_2_spanish').text(unescape(data["faq_question_2"].spanish));
+                $('.faq_question_2_english').text(unescape(data["faq_question_2"].english));
+                //DEFAULT
+                $('.faq_question_2').text(unescape(data["faq_question_2"].spanish));
+
+                //3
+                $('.faq_question_3_spanish').text(unescape(data["faq_question_3"].spanish));
+                $('.faq_question_3_english').text(unescape(data["faq_question_3"].english));
+                //DEFAULT
+                $('.faq_question_3').text(unescape(data["faq_question_3"].spanish));
+
+                //SUBQUESTIONS
+                //1
+                $('.faq_subquestion_1_spanish').text(unescape(data["faq_subquestion_1"].spanish));
+                $('.faq_subquestion_1_english').text(unescape(data["faq_subquestion_1"].english));
+                //DEFAULT
+                $('.faq_subquestion_1').text(unescape(data["faq_subquestion_1"].spanish));
+
+                //2
+                $('.faq_subquestion_2_spanish').text(unescape(data["faq_subquestion_2"].spanish));
+                $('.faq_subquestion_2_english').text(unescape(data["faq_subquestion_2"].english));
+                //DEFAULT
+                $('.faq_subquestion_2').text(unescape(data["faq_subquestion_2"].spanish));
+
+                //3
+                $('.faq_subquestion_3_spanish').text(unescape(data["faq_subquestion_3"].spanish));
+                $('.faq_subquestion_3_english').text(unescape(data["faq_subquestion_3"].english));
+                //DEFAULT
+                $('.faq_subquestion_3').text(unescape(data["faq_subquestion_3"].spanish));
+
+                //4
+                $('.faq_subquestion_4_spanish').text(unescape(data["faq_subquestion_4"].spanish));
+                $('.faq_subquestion_4_english').text(unescape(data["faq_subquestion_4"].english));
+                //DEFAULT
+                $('.faq_subquestion_4').text(unescape(data["faq_subquestion_4"].spanish));
+
+                //5
+                $('.faq_subquestion_5_spanish').text(unescape(data["faq_subquestion_5"].spanish));
+                $('.faq_subquestion_5_english').text(unescape(data["faq_subquestion_5"].english));
+                //DEFAULT
+                $('.faq_subquestion_5').text(unescape(data["faq_subquestion_5"].spanish));
+
+                //6
+                $('.faq_subquestion_6_spanish').text(unescape(data["faq_subquestion_6"].spanish));
+                $('.faq_subquestion_6_english').text(unescape(data["faq_subquestion_6"].english));
+                //DEFAULT
+                $('.faq_subquestion_6').text(unescape(data["faq_subquestion_6"].spanish));
+
+                //7
+                $('.faq_subquestion_7_spanish').text(unescape(data["faq_subquestion_7"].spanish));
+                $('.faq_subquestion_7_english').text(unescape(data["faq_subquestion_7"].english));
+                //DEFAULT
+                $('.faq_subquestion_7').text(unescape(data["faq_subquestion_7"].spanish));
+
+                //TEXT
+                //1
+                $('.faq_text_1_spanish').text(unescape(data["faq_text_1"].spanish));
+                $('.faq_text_1_english').text(unescape(data["faq_text_1"].english));
+                //DEFAULT
+                $('.faq_text_1').text(unescape(data["faq_text_1"].spanish));
+
+                //2
+                $('.faq_text_2_spanish').text(unescape(data["faq_text_2"].spanish));
+                $('.faq_text_2_english').text(unescape(data["faq_text_2"].english));
+                //DEFAULT
+                $('.faq_text_2').text(unescape(data["faq_text_2"].spanish));
+
+                //3
+                $('.faq_text_3_spanish').text(unescape(data["faq_text_3"].spanish));
+                $('.faq_text_3_english').text(unescape(data["faq_text_3"].english));
+                //DEFAULT
+                $('.faq_text_3').text(unescape(data["faq_text_3"].spanish));
+
+                //4
+                $('.faq_text_4_spanish').text(unescape(data["faq_text_4"].spanish));
+                $('.faq_text_4_english').text(unescape(data["faq_text_4"].english));
+                //DEFAULT
+                $('.faq_text_4').text(unescape(data["faq_text_4"].spanish));
+
+                //5
+                $('.faq_text_5_spanish').text(unescape(data["faq_text_5"].spanish));
+                $('.faq_text_5_english').text(unescape(data["faq_text_5"].english));
+                //DEFAULT
+                $('.faq_text_5').text(unescape(data["faq_text_5"].spanish));
+
+                //6
+                $('.faq_text_6_spanish').text(unescape(data["faq_text_6"].spanish));
+                $('.faq_text_6_english').text(unescape(data["faq_text_6"].english));
+                //DEFAULT
+                $('.faq_text_6').text(unescape(data["faq_text_6"].spanish));
+
+                //7
+                $('.faq_text_7_spanish').text(unescape(data["faq_text_7"].spanish));
+                $('.faq_text_7_english').text(unescape(data["faq_text_7"].english));
+                //DEFAULT
+                $('.faq_text_7').text(unescape(data["faq_text_7"].spanish));
+
             }).error(function(error, textStatus){
             console.log(error);
         });
