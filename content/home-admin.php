@@ -48,19 +48,24 @@
 				</div>
 				
 			</form>	
-			<form method="post" enctype="multipart/form-data" id="imageUploadForm" data-form="">
-				<div class="col-md-3 col-sm-12 line-sections">
-					<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
+			<div class="col-md-12 col-sm-12 line-sections">
+				<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="home">
+					<div class="col-md-3 col-sm-12 line-sections">
 						<div class="title-box">
-							<span class="img-titles" style="float: right; font-weight: bold;">imagen de fondo</span>
+							<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">imagen de fondo</span>
 						</div>
-						<input type="file" class="imagen-img" data-img="img-1" name="imagen" data-id="" data-section="1" data-url="" required/>
-						<input class="titulo-img" data-title="title-1" type="text" placeholder="T&iacute;tulo" name="titulo" required/>
-						<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-table="home"/>Guardar foto</button>
-						<p class="help-block"></p>
+						<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
+							<div class="title-box">
+								<span class="img-titles" style="float: right; font-weight: bold;"></span>
+							</div>
+							<input type="file" class="img_home" id="img_home" data-id="img_home" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_home"></label>
+							<input class="title-load" data-title="title-1" type="text" placeholder="T&iacute;tulo" name="titulo" id="title_img_home" data-id="title_img_home" required/>
+							<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-table="home"/>Guardar foto</button>
+							<p class="help-block"></p>
+						</div>
 					</div>
-				</div>
-			</form>
+				</form>
+			</div>
 		</div>
 
 		

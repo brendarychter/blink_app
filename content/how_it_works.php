@@ -38,7 +38,7 @@
     <section id="cd-timeline" class="cd-container">
         <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-picture">
-                <img class="img_works" src="" alt="" title="">
+                <img class="img_works" src="" alt="Como funciona" title="Como funciona">
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">

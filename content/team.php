@@ -14,7 +14,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../public/css/styles_default.css">
-    <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png"/>
+    <link rel="shortcut icon" type="image/png" href="" class="img_icon_menu" />
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,9 +28,9 @@
 <body id="page-top" class="index landing-main-page">
     <?php include('header.php');?> 
         <header>
-            <h1>Conoc&eacute; al equipo creador de Blink App</h1>
-            <h2>Desde hace cuatro a&ntilde;os que desarrollamos aplicaciones y sitios web a medida</h2>
-            <p>Satisfacemos las necesidades de los clientes cumpliendo con un correcto desarrollo orientado a una excelente experiencia de usuario</p>
+            <h1 class="title_header">Conoc&eacute; al equipo creador de Blink App</h1>
+            <h2 class="subtitle_header">Desde hace cuatro a&ntilde;os que desarrollamos aplicaciones y sitios web a medida</h2>
+            <p class="text_header">Satisfacemos las necesidades de los clientes cumpliendo con un correcto desarrollo orientado a una excelente experiencia de usuario</p>
         </header>
         <div class="container">
             <div class="row">

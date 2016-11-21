@@ -79,7 +79,7 @@
     </nav>
     
     <!-- Header -->
-    <header id="main-page" class="section_1 page-section-home">
+    <header id="main-page" class="section_1 page-section-home img_home">
         <div class="container">
             <div class="intro-text">
                 <h2 class="intro-lead-in subtitle_section_1">Una &uacute;nica aplicaci&oacute;n. Todo lo que necesit&aacute;s.</h2>
