@@ -78,14 +78,17 @@
 						</div>
 						<div class="row team-admin admin-nav">
 							<?php
+						        include 'team-admin.php';
 						    ?>
 						</div>
 						<div class="row demo-admin admin-nav">
 							<?php
+						        include 'demo-admin.php';
 						    ?>
 						</div>
 						<div class="row faq-admin admin-nav">
 							<?php
+						        include 'faq-admin.php';
 						    ?>
 						</div>
 						<div class="row menu-admin admin-nav">

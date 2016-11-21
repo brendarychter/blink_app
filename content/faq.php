@@ -32,12 +32,12 @@
 <body id="page-top" class="index landing-main-page">
     <?php include('header.php');?> 
         <header>
-            <h1>Preguntas frecuentes</h1>
-            <h2>&#191;Ten&eacute;s preguntas sobre c&oacute;mo usar la aplicaci&oacute;n? &#161;Te las respondemos!</h2>
+            <h1 class="faq_title_header">Preguntas frecuentes</h1>
+            <h2 class="faq_subtitle_header">&#191;Ten&eacute;s preguntas sobre c&oacute;mo usar la aplicaci&oacute;n? &#161;Te las respondemos!</h2>
         </header>
         <section class="cd-faq">
             <ul class="cd-faq-categories">
-                <li><a class="selected" href="#uno">&#191;Para qu&eacute; sirve?</a></li>
+                <li><a class="selected" href="#uno">&#191;Para qu&eacute; sirve Blink App?</a></li>
                 <li><a href="#dos">&#191;C&oacute;mo interact&uacute;o con los grupos?</a></li>
                 <li><a href="#tres">&#191;C&oacute;mo me conecto con mis amigos?</a></li>
             </ul> <!-- cd-faq-categories -->
@@ -62,7 +62,7 @@
                     <li>
                         <a class="cd-faq-trigger" href="#0">&#191;Qu&eacute; funcionalidades ofrece?</a>
                         <div class="cd-faq-content">
-                            <p>Permite generar, dentro de los grupos, <strong>calendarios</strong> de eventos, para registrar reuniones, cumplea&ntilde;os o reuniones, <strong>registros econ&oacute;micos</strong> , en caso de tener gastos grupales y </p>
+                            <p>Permite generar, dentro de los grupos, <strong>calendarios</strong> de eventos, para registrar reuniones, cumplea&ntilde;os o reuniones, <strong>registros econ&oacute;micos</strong> , en caso de tener gastos grupales y un <strong>muro</strong> para compartir publicaciones e informaci&oacute;n</p>
                         </div> <!-- cd-faq-content -->
                     </li>
 
@@ -103,7 +103,7 @@
             </div> <!-- cd-faq-items -->
             <a href="#0" class="cd-close-panel">Close</a>
         </section> <!-- cd-faq -->
-    <?php include('partials/footer.php');?>
+    <?php include('footer.php');?>
 
     <!-- Scripts -->
     
@@ -130,6 +130,7 @@
     <script src="../public/js/actions/show.js"></script>
     <script src="../public/js/global/faq.js"></script> <!-- Resource jQuery -->
     <script src="../public/js/actions/loadMenu.js"></script>
+    <script src="../public/js/works/loadWorks.js"></script>
 
     <script type="text/javascript">
         $('#page-faq').closest('li').addClass("active");

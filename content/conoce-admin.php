@@ -18,7 +18,7 @@
 							<span class="editable-text title_header_english" realvalue="title_header" language="english"></span>
 						</div>
 					</div>						
-					<div class="form-group col-md-4 box-section col-sm-12">
+					<div class="form-group col-md-4 box-section col-sm-12" style="border-right: none">
 						<div class="title-box">
 							<span class="global-title">subt&iacute;tulo header</span>
 						</div>
@@ -29,19 +29,6 @@
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text subtitle_header_english" realvalue="subitle_header" language="english"></span>
-						</div>
-					</div>
-					<div class="form-group col-md-4 box-section col-sm-12" style="border-right: none">
-						<div class="title-box">
-							<span class="global-title">bot&oacute;n</span>
-						</div>
-						<div class="portion portion-spanish">
-							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text button-spanish-1" realvalue="button_section_1" language="spanish"></span>
-						</div>
-						<div class="portion portion-english">
-							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text button-english-1" realvalue="button_section_1" language="english"></span>
 						</div>
 					</div>
 				</div>
