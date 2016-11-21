@@ -91,9 +91,9 @@
                 </ul> <!-- cd-faq-group -->
 
                 <ul id="tres" class="cd-faq-group">
-                    <li class="cd-faq-title faq_subquestion_7"><h3 class="faq_question_3">&#191;C&oacute;mo me conecto con mis amigos?</h3></li>
+                    <li class="cd-faq-title faq_question_7"><h3 class="faq_question_3">&#191;C&oacute;mo me conecto con mis amigos?</h3></li>
                     <li>
-                        <a class="cd-faq-trigger" href="#0">Buscar amigos</a>
+                        <a class="cd-faq-trigger faq_subquestion_7" href="#0">Buscar amigos</a>
                         <div class="cd-faq-content">
                             <p class="faq_text_7">Habiendo creado un grupo, pod&eacute;s conectarte con cualquier contacto que est&eacute; registrado en la aplicaci&oacute;n. Para buscarlos, deber&aacute;s ingresar su n&uacute;mero de tel&eacute;fono, correo electr&oacute;nico o nombre de usuario y luego invitarlo al grupo. Deber&aacute; aceptar una solicitud de incorporaci&oacute;n al grupo.</p>
                         </div> <!-- cd-faq-content -->
