@@ -8,11 +8,14 @@
                 ·
                 <a href="#" id="english" class="language-selection">Ingl&eacute;s</a>
                 </br>
-                <a href="../polytics.php" target="_blank">Pol&iacute;ticas de Privacidad</a>
+                <a href="#" target="_blank">Pol&iacute;ticas de Privacidad</a>
                 ·
-                <a href="../terms.php" target="_blank">T&eacute;rminos de uso</a>
+                <a href="#" target="_blank">T&eacute;rminos de uso</a>
                 </br>
-                <a href="www.blinkapp.com.ar/map.php">Mapa</a>
+                <script type="text/javascript">
+                    console.log(document.referrer)
+                </script>
+                <a href="map.php">Mapa</a>
             </p>
             <span class="newsletter-title" style="font-size: 13px; color: #ccc">SUSCRIBITE AL NEWSLETTER</span>
             <div class="newsletter">

@@ -21,8 +21,8 @@ $(document).ready(function(){
         params.password = $('#password-login').val();
 
         $.ajax({
-            //url: "http://blinkapp.com.ar/back/user/adminUser.php",
-            url: "../back/user/adminUser.php",
+            url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
+            //url: "../back/user/adminUser.php",
             type: "POST",
             data: params,
             cache: false,
@@ -51,8 +51,8 @@ $(document).ready(function(){
             par.password = $('#password-signin').val();
             par.action = "userExists"; 
             $.ajax({
-                //url: "http://blinkapp.com.ar/back/user/adminUser.php",
-                url: "../back/user/adminUser.php",
+                url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
+                //url: "../back/user/adminUser.php",
                 type: "POST",
                 data: par,
                 cache: false,
@@ -61,8 +61,8 @@ $(document).ready(function(){
                 console.log(data)
                 //window.location.href = "application.php";
                 $.ajax({
-                //url: "http://blinkapp.com.ar/back/user/adminUser.php",
-                    url: "../back/user/adminUser.php",
+                    url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
+                    //url: "../back/user/adminUser.php",
                     type: "POST",
                     data: params,
                     cache: false,

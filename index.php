@@ -190,7 +190,7 @@
     </section>
 
     <?php
-        include 'content/footer.php';
+        include 'footer.php';
     ?>
 
 
