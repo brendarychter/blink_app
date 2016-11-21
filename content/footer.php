@@ -12,9 +12,9 @@
                 ·
                 <a href="../terms.php" target="_blank">T&eacute;rminos de uso</a>
                 </br>
-                <a href="../map.php">Mapa</a>
+                <a href="www.blinkapp.com.ar/map.php">Mapa</a>
             </p>
-            <span style="font-size: 13px; color: #ccc">SUSCRIBITE AL NEWSLETTER</span>
+            <span class="newsletter-title" style="font-size: 13px; color: #ccc">SUSCRIBITE AL NEWSLETTER</span>
             <div class="newsletter">
                 <script type="text/javascript" src="http://v2.envialosimple.com/form/show/AdministratorID/93288/FormID/1/format/widget"></script>
             </div>
@@ -27,7 +27,6 @@
         <a href="http://www.brendarychter.com.ar" target="_blank">www.brendarychter.com.ar</a>
         
         <p class="footer-company-name">Brenda Rychter &copy; 2016</p>
-        
 
     </div>
 
