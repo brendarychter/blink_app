@@ -42,11 +42,7 @@
                         <h4>Dami&aacute;n Cukierman</h4>
                         <p class="text-muted">UI &#38; UX designer</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="www.facebook.com"><img src="../public/img/fb.svg" style="border:0"></a>
                             </li>
                         </ul>
                     </div>
