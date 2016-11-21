@@ -28,9 +28,9 @@
 <body id="page-top" class="index landing-main-page">
     <?php include('header.php');?> 
         <header>
-            <h1 class="title_header">Conoc&eacute; al equipo creador de Blink App</h1>
-            <h2 class="subtitle_header">Desde hace cuatro a&ntilde;os que desarrollamos aplicaciones y sitios web a medida</h2>
-            <p class="text_header">Satisfacemos las necesidades de los clientes cumpliendo con un correcto desarrollo orientado a una excelente experiencia de usuario</p>
+            <h1 class="team_title_header">Conoc&eacute; al equipo creador de Blink App</h1>
+            <h2 class="team_subtitle_header">Desde hace cuatro a&ntilde;os que desarrollamos aplicaciones y sitios web a medida</h2>
+            <p class="team_text_header">Satisfacemos las necesidades de los clientes cumpliendo con un correcto desarrollo orientado a una excelente experiencia de usuario</p>
         </header>
         <div class="container" style="padding-top:15px">
             <div class="row">
@@ -79,6 +79,7 @@
     <!-- TIMELINE -->
     <script src="../public/js/global/index_timeline.js"></script>
     <script src="../public/js/actions/loadMenu.js"></script>
+    <script src="../public/js/works/loadWorks.js"></script>
     
     <script type="text/javascript">
         $('#page-team').closest('li').addClass("active");

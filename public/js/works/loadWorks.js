@@ -174,11 +174,78 @@ $(document).ready(function(){
                 //DEFAULT
                 $('.faq_subtitle_header').text(unescape(data["subtitle_header"].spanish));
 
-                //SECTION 1
-                $('.title_section_1_spanish').text(unescape(data["title_section_1"].spanish));
-                $('.title_section_1_english').text(unescape(data["title_section_1"].english));
+            }).error(function(error, textStatus){
+            console.log(error);
+        });
+    }
+
+    loadTeam();
+    function loadTeam(){
+        params = {};
+        params.action = "getContent";
+        params.table = "team";
+        $.ajax({
+                //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+                url: "../back/admin/content/adminContent.php",
+                type: "POST",
+                cache: false,
+                data: params,
+                dataType: "json"
+            }).done(function( data ) {
+                //HEADER
+                $('.team_title_header_spanish').text(unescape(data["title_header"].spanish));
+                $('.team_title_header_english').text(unescape(data["title_header"].english));
+                //DEFAULT 
+                $('.team_title_header').text(unescape(data["title_header"].spanish));
+
+                //SUBTITLE
+                $('.team_subtitle_header_spanish').text(unescape(data["subtitle_header"].spanish));
+                $('.team_subtitle_header_english').text(unescape(data["subtitle_header"].english));
                 //DEFAULT
-                $('.title_section_1').text(unescape(data["title_section_1"].spanish));
+                $('.team_subtitle_header').text(unescape(data["subtitle_header"].spanish));
+
+                //SUBTITLE
+                $('.team_text_header_spanish').text(unescape(data["text_header"].spanish));
+                $('.team_text_header_english').text(unescape(data["text_header"].english));
+                //DEFAULT
+                $('.team_text_header').text(unescape(data["text_header"].spanish));
+
+            }).error(function(error, textStatus){
+            console.log(error);
+        });
+    }
+
+    loadDemo();
+    function loadDemo(){
+        params = {};
+        params.action = "getContent";
+        params.table = "demo";
+        $.ajax({
+                //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+                url: "../back/admin/content/adminContent.php",
+                type: "POST",
+                cache: false,
+                data: params,
+                dataType: "json"
+            }).done(function( data ) {
+                //HEADER
+                $('.demo_title_header_spanish').text(unescape(data["title_header"].spanish));
+                $('.demo_title_header_english').text(unescape(data["title_header"].english));
+                //DEFAULT 
+                $('.demo_title_header').text(unescape(data["title_header"].spanish));
+
+                //SUBTITLE
+                $('.demo_subtitle_header_spanish').text(unescape(data["subtitle_header"].spanish));
+                $('.demo_subtitle_header_english').text(unescape(data["subtitle_header"].english));
+                //DEFAULT
+                $('.demo_subtitle_header').text(unescape(data["subtitle_header"].spanish));
+
+                //SUBTITLE
+                $('.demo_text_header_spanish').text(unescape(data["text_header"].spanish));
+                $('.demo_text_header_english').text(unescape(data["text_header"].english));
+                //DEFAULT
+                $('.demo_text_header').text(unescape(data["text_header"].spanish));
+
             }).error(function(error, textStatus){
             console.log(error);
         });

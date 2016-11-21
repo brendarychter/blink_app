@@ -21,9 +21,9 @@
 <body id="page-top" class="index landing-main-page">
     <?php include('header.php');?> 
     <header>
-        <h1 class="title_header">Blink App, una nueva red social</h1>
-        <h2 class="subtitle_header">Y un nuevo concepto de interacci&oacute;n</h2>
-        <p class="text_header">Te mostramos un video informativo y las opiniones de los usuarios que la eligen</p>
+        <h1 class="demo_title_header">Blink App, una nueva red social</h1>
+        <h2 class="demo_subtitle_header">Y un nuevo concepto de interacci&oacute;n</h2>
+        <p class="demo_text_header">Te mostramos un video informativo y las opiniones de los usuarios que la eligen</p>
     </header>
     <section id="portfolio" class="bg-light-gray" style="padding-top:50px">
         <div class="container">
@@ -102,6 +102,7 @@
     <!-- TIMELINE -->
     <script src="../public/js/global/index_timeline.js"></script>
     <script src="../public/js/actions/loadMenu.js"></script>
+    <script src="../public/js/works/loadWorks.js"></script>
 
 
     <script type="text/javascript">

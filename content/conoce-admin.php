@@ -1,5 +1,6 @@
 <div class="col-lg-12 col-sm-12 col-md-12 admin-partial" data-table="works" id="works">
 	<div class="panel panel-default">
+		<label class="section-name works_menu_spanish" style="padding-top: 20px;font-size: 22px;color: #222;"></label>
 		<div class="panel-heading"></div>
 		<div class="panel-body">
 			<form role="form" class="form-section" id="form-section-1" method="post" enctype="multipart/form-data" data-toggle="validator">
@@ -28,7 +29,7 @@
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text subtitle_header_english" realvalue="subitle_header" language="english"></span>
+							<span class="editable-text subtitle_header_english" realvalue="subtitle_header" language="english"></span>
 						</div>
 					</div>
 				</div>
