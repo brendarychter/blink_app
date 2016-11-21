@@ -23,6 +23,19 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="public/js/global/jquery.js"></script>
+    <style type="text/css">
+        section{
+            padding: 150px 150px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        ul li a{
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body id="page-top" class="index landing-main-page main-page-blink">
     <?php include('header.php');?> 
@@ -30,12 +43,12 @@
         <h1>Blink App Website</h1>
         <ul>
             <li>
-                <a href="../index.php">Home</a>
-                <a href="../how_it_works.php" class="works_menu">Conoc&eacute; m&aacute;s</a>
-                <a href="../demo.php">Demo</a>
-                <a href="../faq.php">FAQ</a>
-                <a href="../index.php">Qui&eacute;nes somos</a>
-                <a href="../index#contacto.php">Contacto</a>
+                <a href="../index.php">Home</a> - 
+                <a href="how_it_works.php" class="works_menu">Conoc&eacute; m&aacute;s</a> - 
+                <a href="demo.php">Demo</a> - 
+                <a href="faq.php">FAQ</a> - 
+                <a href="index.php">Qui&eacute;nes somos</a> - 
+                <a href="index#contacto.php">Contacto</a>
             </li>
         </ul>
     </section>
