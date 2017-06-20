@@ -33,6 +33,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="public/js/global/jquery.js"></script>
+    
+    <!-- Analytics -->
+    <script src="public/js/actions/ga_commons.js"></script>
 </head>
 <body id="page-top" class="index landing-main-page main-page-blink">
         <nav class="navbar navbar-default navbar-fixed-top">

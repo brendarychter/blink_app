@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="../public/css/style.css">
     <link rel="stylesheet" href="../public/css/fonts.css">
     <link rel="stylesheet" href="../public/css/global/faq.css">
+
+    <!-- Analytics -->
+    <script src="public/js/actions/ga_commons.js"></script>
 </head>
 <body id="page-top" class="index landing-main-page">
     <?php include('header.php');?> 

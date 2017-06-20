@@ -15,7 +15,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../public/css/styles_default.css">
     <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png"/>
-    
+
+    <!-- Analytics -->
+    <script src="public/js/actions/ga_commons.js"></script>
 </head>
 <body id="page-top" class="index landing-main-page">
     <?php include('partials/header.php');?> 
