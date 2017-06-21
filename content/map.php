@@ -22,7 +22,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="public/js/global/jquery.js"></script>
+    <script src="../public/js/global/jquery.js"></script>
     <style type="text/css">
         section{
             padding: 150px 150px;
@@ -36,6 +36,9 @@
             font-size: 16px;
         }
     </style>
+    
+    <!-- Analytics -->
+    <script src="public/js/actions/ga_commons.js"></script>
 </head>
 <body id="page-top" class="index landing-main-page main-page-blink">
     <?php include('header.php');?> 
@@ -47,8 +50,8 @@
                 <a href="how_it_works.php" class="works_menu">Conoc&eacute; m&aacute;s</a> - 
                 <a href="demo.php">Demo</a> - 
                 <a href="faq.php">FAQ</a> - 
-                <a href="index.php">Qui&eacute;nes somos</a> - 
-                <a href="index#contacto.php">Contacto</a>
+                <a href="../index.php">Qui&eacute;nes somos</a> - 
+                <a href="../index#contacto.php">Contacto</a>
             </li>
         </ul>
     </section>

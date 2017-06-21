@@ -19,6 +19,9 @@
             display: none;
         }
     </style>
+
+    <!-- Analytics -->
+    <script src="public/js/actions/ga_commons.js"></script>
 </head>
 <body id="page-top" class="index landing-main-page">
     <!-- Navigation -->

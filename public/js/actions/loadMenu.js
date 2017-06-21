@@ -9,8 +9,8 @@ $(document).ready(function(){
         urlAdmin = "back/admin/content/adminContent.php";
     }
     $.ajax({
-            //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: urlAdmin,
+            url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+            //url: urlAdmin,
             type: "POST",
             cache: false,
             data: params,
@@ -51,8 +51,8 @@ $(document).ready(function(){
             params.show = "0";
         }
         $.ajax({
-            //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: urlAdmin,
+            url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+            //url: urlAdmin,
             type: "POST",
             cache: false,
             data: params,
@@ -82,8 +82,8 @@ $(document).ready(function(){
             urlImage = "../../uploads/";
         }
         $.ajax({
-            //url: "http://www.blinkapp.com.ar/back/admin/content/getImages.php",
-            url: url,
+            url: "http://www.blinkapp.com.ar/back/admin/content/getImages.php",
+            //url: url,
             type: "POST",
             cache: false,
             data: params,
@@ -105,8 +105,8 @@ $(document).ready(function(){
                         $('.img_'+table).prop("title", img.nombre);
                         var val = img.img;
                         $('#img_url_'+table).text(val.substr(val.indexOf("/") + 1));
-                        $('.img_'+table).attr("src", "../../blink_app/uploads/" + img.img);
-                        $('.img_icon_'+table).attr("href", "../../blink_app/uploads/" + img.img);
+                        $('.img_'+table).attr("src", urlImage + img.img);
+                        $('.img_icon_'+table).attr("href", urlImage + img.img);
                         $('#title_img_'+table).val(img.nombre);
                     break;
                     case "works":
@@ -116,12 +116,12 @@ $(document).ready(function(){
                         $('.img_'+table).prop("title", img.nombre);
                         var val = img.img;
                         $('#img_url_'+table).text(val.substr(val.indexOf("/") + 1));
-                        $('.img_'+table).attr("src", "../../blink_app/uploads/" + img.img);
+                        $('.img_'+table).attr("src", urlImage + img.img);
                         $('#title_img_'+table).val(img.nombre);
                     break;
                     case "home":
                         console.log("entro home")
-                        $('.img_'+table).css('background-image', 'url(' + "../../blink_app/uploads/" +  img.img + ')');
+                        $('.img_'+table).css('background-image', 'url(' + urlImage +  img.img + ')');
                         //bug fixin
                         $('#img_'+table).css('background-image', 'url()');
                         $('.img_'+table).attr("data-url", img.img);
@@ -162,8 +162,8 @@ $(document).ready(function(){
         if (url == null || url ==undefined || url ==""){
             console.log("nueva");
             $.ajax({
-                //url: "http://www.blinkapp.com.ar/back/admin/content/loadImages.php",
-                url: "../back/admin/content/loadImages.php",
+                url: "http://www.blinkapp.com.ar/back/admin/content/loadImages.php",
+                //url: "../back/admin/content/loadImages.php",
                 type: "POST",
                 cache: false,
                 processData: false,
@@ -178,8 +178,8 @@ $(document).ready(function(){
         }else{
             console.log("url existe, hacer un update");
             $.ajax({
-                //url: "http://www.blinkapp.com.ar/back/admin/content/updateImages.php",
-                url: "../back/admin/content/updateImages.php",
+                url: "http://www.blinkapp.com.ar/back/admin/content/updateImages.php",
+                //url: "../back/admin/content/updateImages.php",
                 type: "POST",
                 cache: false,
                 processData: false,

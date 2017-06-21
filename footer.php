@@ -15,7 +15,7 @@
                 <script type="text/javascript">
                     console.log(document.referrer)
                 </script>
-                <a href="map.php">Mapa</a>
+                <a href="content/map.php">Mapa</a>
             </p>
             <span class="newsletter-title" style="font-size: 13px; color: #ccc">SUSCRIBITE AL NEWSLETTER</span>
             <div class="newsletter">

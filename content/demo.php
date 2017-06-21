@@ -17,6 +17,9 @@
     <link rel="shortcut icon" type="image/png" href="" class="img_icon_menu" />
     <link rel="stylesheet" href="../public/css/style.css">
     <link rel="stylesheet" href="../public/css/fonts.css">
+    
+    <!-- Analytics -->
+    <script src="public/js/actions/ga_commons.js"></script>
 </head>
 <body id="page-top" class="index landing-main-page">
     <?php include('header.php');?> 

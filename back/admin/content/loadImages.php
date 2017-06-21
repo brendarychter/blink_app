@@ -1,7 +1,7 @@
 <?php
 	// INCLUYO EL ARCHIVO DE CONEXIÓN A LA BASE DE DATOS
- 	$conexion = @mysqli_connect("localhost", "root", "", "blink");
- 	//$conexion = @mysqli_connect("localhost", "m6000758_blink", "lu43seGIza", "m6000758_blink");
+ 	//$conexion = @mysqli_connect("localhost", "root", "", "blink");
+ 	$conexion = @mysqli_connect("localhost", "m6000758_blink", "lu43seGIza", "m6000758_blink");
 	// LA FUNCION PUEDE ESTAR EN UN ARCHIVO EXTERNO DE FUNCIONES GENERALES DEL SITIO
 	// RECIBE COMO PARÁMETRO EL OBJETO $FILE Y DEVUELVE EL NOMBRE DEL ARCHIVO O LA PALABRA "error" SI NO PUDO GUARDARLO
 
@@ -44,8 +44,8 @@
 		if($file && $file["name"]!=""){
 
 			// DEFINO CUÁL VA A SER LA URL DE MI SITIO WEB, Y LA CARPETA DONDE SE GUARDARÁN LAS IMÁGENES (ESTO DEBERÍA ESTAR EN UN ARCHIVO EXTERNO DE CONFIGURACIÓN)
-			//$direccion_web = "http://www.blinkapp.com.ar/uploads/";
-			$direccion_web = "http://localhost/uploads/";
+			$direccion_web = "http://www.blinkapp.com.ar/uploads/";
+			//$direccion_web = "http://localhost/uploads/";
 			$nombre_carpeta = "../../../uploads/";
  			chmod("../../../uploads/", 0755);
 			

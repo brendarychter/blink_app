@@ -6,8 +6,8 @@ $(document).ready(function(){
     params.table = "home";
 	//if()spanish if english
 	$.ajax({
-        //url: "http://blinkapp.com.ar/back/user/adminUser.php",
-        url: "../back/admin/content/adminContent.php",
+        url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
+        //url: "../back/admin/content/adminContent.php",
         type: "POST",
         data: params,
         cache: false,
