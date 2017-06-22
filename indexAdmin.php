@@ -35,7 +35,7 @@
 			<div class="login-panel panel panel-default" style="border-radius: 0; margin-top: 120px">
 				<h2 style="font-size: 26px">Panel de Administraci&oacute;n</h2>
 				<h3>Blink App</h3>
-				<div class="panel-heading">Log in</div>
+				<div class="panel-heading">L O G &nbsp; I N</div>
 				<div class="panel-body">
 					<form role="form">
 						<fieldset>

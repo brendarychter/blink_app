@@ -10,8 +10,8 @@ $(document).ready(function(){
     params.table = "home";
 	//if()spanish if english
 	$.ajax({
-        url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-        //url: "back/admin/content/adminContent.php",
+        //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+        url: "back/admin/content/adminContent.php",
         type: "POST",
         data: params,
         cache: false,
@@ -66,8 +66,8 @@ $(document).ready(function(){
         params.action = "getContent";
         params.tableName = "home";
         $.ajax({
-            url: "http://www.blinkapp.com.ar/back/admin/content/getImages.php",
-            //url: "back/admin/content/getImages.php",
+            //url: "http://www.blinkapp.com.ar/back/admin/content/getImages.php",
+            url: "back/admin/content/getImages.php",
             type: "POST",
             cache: false,
             data: params,
