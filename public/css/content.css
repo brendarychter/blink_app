@@ -278,11 +278,15 @@ header {
   margin-bottom: 0; }
 
 .footer-blink {
+  font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #292c2f;
   width: 100%;
   font: bold 16px sans-serif;
   padding: 55px 50px;
   text-align: left; }
+  @media (min-width: 500px) and (max-width: 768px) {
+    .footer-blink {
+      overflow: auto; } }
   @media (min-width: 769px) {
     .footer-blink {
       display: flex; } }
@@ -314,20 +318,27 @@ header {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 400; }
-  @media (min-width: 1px) and (max-width: 768px) {
+  .footer-blink .footer-box .separator {
+    display: none; }
+  @media (min-width: 1px) and (max-width: 499px) {
     .footer-blink .footer-box {
       display: block;
       text-align: center;
       margin-bottom: 30px; }
       .footer-blink .footer-box .separator {
         display: block; } }
+  @media (min-width: 500px) and (max-width: 768px) {
+    .footer-blink .footer-box {
+      width: 48%;
+      display: inline-block;
+      float: left;
+      flex: 1;
+      margin-bottom: 30px; } }
   @media (min-width: 769px) {
     .footer-blink .footer-box {
       width: 24%;
       display: inline-block;
-      flex: 1; }
-      .footer-blink .footer-box .separator {
-        display: none; } }
+      flex: 1; } }
   .footer-blink .footer-box .dev-info .dev-name {
     font-weight: 200;
     letter-spacing: 4px;
@@ -336,7 +347,8 @@ header {
   .footer-blink .footer-box .dev-info .web-dev {
     font-weight: bold;
     background-color: #fed136;
-    padding: 0 5px; }
+    padding: 0 5px;
+    cursor: pointer; }
   .footer-blink .footer-box .dev-info p {
     color: #fff;
     font-weight: normal; }

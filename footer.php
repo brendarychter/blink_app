@@ -17,7 +17,7 @@
         <div class="separator">·</div>
     </div>
  
-    <div class=" footer-box newsletter-container">
+    <div class="footer-box newsletter-container">
         <span class="footer-box-title">Newsletter</span>
         <div class="newsletter">
             <script type="text/javascript" src="http://v2.envialosimple.com/form/show/AdministratorID/93288/FormID/1/format/widget"></script>
@@ -28,9 +28,8 @@
     <div class="footer-box">
         <span class="footer-box-title">Seguinos en las redes</span>
         <ul class="list-inline social-buttons">
-            <li><a href="www.facebook.com" target="_blank"><img src="public/img/icons/fb.svg"></a>
-            <li><a href="www.facebook.com" target="_blank"><img src="public/img/icons/fb.svg"></a>
-            <li><a href="www.facebook.com" target="_blank"><img src="public/img/icons/fb.svg"></a>
+            <li><a href="http://www.facebook.com" target="_blank"><img src="public/img/icons/fb.svg"></a>
+            <li><a href="http://www.youtube.com" target="_blank"><img src="public/img/icons/youtube.svg"></a>
         </ul>
         <div class="separator">·</div>
     </div>
@@ -41,9 +40,8 @@
             <h5 class="dev-name">Brenda Yael Rychter</h5>
             <a href="http://www.brendarychter.com.ar" target="_blank" class="web-dev">www.brendarychter.com.ar</a> 
             <ul class="list-inline social-buttons">
-                <li><a href="www.facebook.com" target="_blank"><img src="public/img/icons/fb.svg"></a>
-                <!-- <p>+1565220958</p>  -->
-                <li><a href="mailto:brendarychter@gmail.com" target="_blank"><img src="public/img/icons/fb.svg"></a>
+                <li><a href="https://api.whatsapp.com/send?phone=1165220958" target="_blank"><img src="public/img/icons/whatsapp.svg"></a>
+                <li><a href="mailto:brendarychter@gmail.com" target="_blank"><img src="public/img/icons/mail.svg"></a>
             </ul>
             <p><span>Capital Federal</span> Buenos Aires, Argentina</p>
         </div>
