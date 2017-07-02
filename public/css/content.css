@@ -277,110 +277,77 @@ header {
   font-style: normal;
   margin-bottom: 0; }
 
-.footer-distributed {
+.footer-blink {
   background-color: #292c2f;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
   width: 100%;
-  text-align: left;
   font: bold 16px sans-serif;
-  padding: 55px 50px; }
+  padding: 55px 50px;
+  text-align: left; }
+  @media (min-width: 769px) {
+    .footer-blink {
+      display: flex; } }
+  .footer-blink .footer-box .footer-box-title {
+    font-size: 15px;
+    color: #ccc;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
+    @media (min-width: 1px) and (max-width: 768px) {
+      .footer-blink .footer-box .footer-box-title {
+        font-size: 18px; } }
+  .footer-blink .footer-box .list-inline.social-buttons li {
+    cursor: pointer; }
+  .footer-blink .footer-box .list-inline.social-buttons img {
+    border: 0; }
+  .footer-blink .footer-box .newsletter {
+    display: table;
+    margin: 0 auto; }
+  .footer-blink .footer-box .footer-links, .footer-blink .footer-box .list-inline.social-buttons, .footer-blink .footer-box .dev-info {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0; }
+    .footer-blink .footer-box .footer-links a, .footer-blink .footer-box .list-inline.social-buttons a, .footer-blink .footer-box .dev-info a {
+      display: inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+      color: inherit; }
+  .footer-blink .footer-box .language-selection {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400; }
+  @media (min-width: 1px) and (max-width: 768px) {
+    .footer-blink .footer-box {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px; }
+      .footer-blink .footer-box .separator {
+        display: block; } }
+  @media (min-width: 769px) {
+    .footer-blink .footer-box {
+      width: 24%;
+      display: inline-block;
+      flex: 1; }
+      .footer-blink .footer-box .separator {
+        display: none; } }
+  .footer-blink .footer-box .dev-info .dev-name {
+    font-weight: 200;
+    letter-spacing: 4px;
+    font-size: 20px;
+    color: #fed136; }
+  .footer-blink .footer-box .dev-info .web-dev {
+    font-weight: bold;
+    background-color: #fed136;
+    padding: 0 5px; }
+  .footer-blink .footer-box .dev-info p {
+    color: #fff;
+    font-weight: normal; }
+  .footer-blink .footer-box .separator {
+    font-size: 16px;
+    color: #fff; }
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right {
-  display: inline-block;
-  vertical-align: top; }
-
-/* Footer left */
-.footer-distributed .footer-left {
-  width: 40%; }
-
-/* The company logo */
-.footer-distributed h3 {
-  color: #ffffff;
-  margin: 0; }
-
-.footer-distributed h3 span {
-  color: #5383d3; }
-
-/* Footer links */
-.footer-distributed .footer-links {
-  color: #ffffff;
-  margin: 20px 0 12px;
-  padding: 0; }
-
-.footer-distributed .footer-links a {
-  display: inline-block;
-  line-height: 1.8;
-  text-decoration: none;
-  color: inherit; }
-
-.footer-distributed .footer-company-name {
-  color: #8f9296;
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0; }
-
-/* Footer Center */
-.footer-distributed .footer-center {
-  width: 25%; }
-
-.footer-distributed .footer-center i {
-  background-color: #33383b;
-  color: #ffffff;
-  font-size: 25px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 42px;
-  margin: 10px 15px;
-  vertical-align: middle; }
-
-.footer-distributed .footer-center i.fa-envelope {
-  font-size: 17px;
-  line-height: 38px; }
-
-.footer-distributed .footer-center p {
-  display: inline-block;
-  color: #ffffff;
-  vertical-align: middle;
-  margin: 0; }
-
-.footer-distributed .footer-center p span {
-  display: block;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 2; }
-
-.footer-distributed .footer-center p a {
-  color: #5383d3;
-  text-decoration: none; }
-
-/* Footer Right */
-.footer-distributed .footer-right {
-  width: 32%; }
-
-.footer-distributed .footer-company-about {
-  line-height: 20px;
-  color: #92999f;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0;
-  margin-right: 10px; }
-
-.footer-distributed .footer-company-about span {
-  display: block;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 20px; }
-
-.footer-distributed .footer-icons {
+.footer-blink .footer-icons {
   margin-top: 25px; }
 
-.footer-distributed .footer-icons a {
+.footer-blink .footer-icons a {
   display: inline-block;
   width: 35px;
   height: 35px;
@@ -394,21 +361,6 @@ header {
   margin-right: 3px;
   margin-bottom: 5px; }
 
-/* If you don't want the footer to be responsive, remove these media queries */
-@media (max-width: 880px) {
-  .footer-distributed {
-    font: bold 14px sans-serif; }
-
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center; }
-
-  .footer-distributed .footer-center i {
-    margin-left: 0; } }
 #more-info {
   margin-right: 5px;
   margin: 0 auto;
