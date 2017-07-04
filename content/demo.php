@@ -14,7 +14,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../public/css/styles_default.css">
-    <link rel="shortcut icon" type="image/png" href="" class="img_icon_menu" />
+    <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png" class="img_icon_menu" />
     <link rel="stylesheet" href="../public/css/style.css">
     <link rel="stylesheet" href="../public/css/fonts.css">
     
@@ -31,10 +31,10 @@
     <section id="portfolio" class="bg-light-gray" style="padding-top:50px">
         <div class="container">
             <div class="row">
-                <div style="text-align: center;">
+                <!-- <div style="text-align: center;">
                     <a href="#" class="page-scroll btn btn-xl button_section_2" id="more-info" style="margin-top: 0;margin-bottom: 20px;">Video en construcci&oacute;n</a>
                 </div>
-
+ -->
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">

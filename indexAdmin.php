@@ -22,7 +22,15 @@
             border-radius: 0;
         }
         h2, h3{
-        	padding: 0 9px;
+        	padding: 0 15px;
+        	margin-top: 15px;
+        	letter-spacing: 2px;
+        }
+        h2{
+        	font-size: 28px;
+        }
+        h3{
+        	font-size: 22px;
         }
         .error-log-in-admin{
         	display: none;
@@ -33,8 +41,8 @@
 	<div class="row">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
 			<div class="login-panel panel panel-default" style="border-radius: 0; margin-top: 120px">
-				<h2 style="font-size: 26px">Panel de Administraci&oacute;n</h2>
-				<h3>Blink App</h3>
+				<h2>Blink App</h2>
+				<h3>Panel de Administraci&oacute;n</h3>
 				<div class="panel-heading">L O G &nbsp; I N</div>
 				<div class="panel-body">
 					<form role="form">
@@ -54,8 +62,8 @@
     			<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
 				<strong>Por favor verifique sus datos</strong>
 			</div>
-		</div><!-- /.col-->
-	</div><!-- /.row -->	
+		</div>
+	</div>
 	
 
 	<script src="public/js/global/jquery.js"></script>

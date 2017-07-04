@@ -231,10 +231,5 @@
     <script src="public/js/actions/load.js"></script>
     <script src="public/js/actions/loadMenu.js"></script>
     <script src="public/js/actions/showSections.js"></script>
-    <script type="text/javascript">
-        $('#english-lan').on("click", function(){
-            console.log("hola")
-        })
-    </script>
 </body>
 </html>

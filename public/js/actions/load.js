@@ -2,13 +2,14 @@ $(document).ready(function(){
 	var language = "es";
 	//Configurar lenguaje html
     
-    function loadContent(){
+    $('#english.language-selection').on("click", function(){
 
-    }
+    })
+    
+    /*Filtrar en que pagina esta ubicado*/
     params = {};
     params.action = "getContent";
     params.table = "home";
-	//if()spanish if english
 	$.ajax({
         //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
         url: "back/admin/content/adminContent.php",

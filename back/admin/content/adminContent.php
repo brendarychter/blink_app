@@ -6,12 +6,11 @@
 	require("Content.php");
 
 	if(!mysqli_connect_error()){
-    	if(isset($_POST['action'])){
-    		$action = $_POST['action'];
+    		$action = 'getContent';
     		
     		//agregar en params el value.
     		//filtrar por español o por ingles. 2 queries distintas?
-            $table = $_POST['table'];
+            $table = 'home';
     		$content = new Content;
     		switch($action){
     			case "modifyContent":
@@ -48,9 +47,6 @@
                     $content->showAndHideMenu($connection, $value, $flag);
                 break;
     		}
-    	}else{
-    		echo "action not setted";
-    	}
 		
 	}else{
 		echo "error";
