@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="../public/css/content.css">
     
     <!-- Analytics -->
-    <script src="public/js/actions/ga_commons.js"></script>
+    <script src="../public/js/actions/ga_commons.js"></script>
 </head>
 <body id="page-top" class="index landing-main-page">
     <?php include('header.php');?> 
@@ -98,7 +98,7 @@
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
     </section> <!-- cd-timeline -->
-    
+
     <?php
         include '../footer.php';
     ?>
