@@ -14,6 +14,7 @@
             </br>
             <a href="content/map.php">Mapa</a>
         </p>
+        <img src="../public/img/fiscal.jpg">
         <div class="separator">·</div>
     </div>
  

@@ -286,7 +286,8 @@ header {
   text-align: left; }
   @media (min-width: 500px) and (max-width: 768px) {
     .footer-blink {
-      overflow: auto; } }
+      overflow: auto;
+      text-align: center; } }
   @media (min-width: 769px) {
     .footer-blink {
       display: flex; } }
@@ -297,7 +298,7 @@ header {
     text-transform: uppercase; }
     @media (min-width: 1px) and (max-width: 768px) {
       .footer-blink .footer-box .footer-box-title {
-        font-size: 18px; } }
+        font-size: 20px; } }
   .footer-blink .footer-box .list-inline.social-buttons li {
     cursor: pointer; }
   .footer-blink .footer-box .list-inline.social-buttons img {
@@ -329,11 +330,12 @@ header {
         display: block; } }
   @media (min-width: 500px) and (max-width: 768px) {
     .footer-blink .footer-box {
-      width: 48%;
+      width: 50%;
       display: inline-block;
       float: left;
       flex: 1;
-      margin-bottom: 30px; } }
+      margin-bottom: 30px;
+      height: 265px; } }
   @media (min-width: 769px) {
     .footer-blink .footer-box {
       width: 24%;
@@ -374,6 +376,9 @@ header {
   margin-right: 3px;
   margin-bottom: 5px; }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .emailMarketingSubscriptionFormContainer {
+    margin-left: -30px !important; } }
 #more-info {
   margin-right: 5px;
   margin: 0 auto;
