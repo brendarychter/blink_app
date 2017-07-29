@@ -98,8 +98,9 @@
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
     </section> <!-- cd-timeline -->
+    
     <?php
-        include 'footer.php';
+        include '../footer.php';
     ?>
 
     <!-- Scripts -->
@@ -127,6 +128,7 @@
     <script src="../public/js/actions/show.js"></script>
     <script src="../public/js/works/loadWorks.js"></script>
     <script src="../public/js/actions/loadMenu.js"></script>
+    <script src="../public/js/actions/renameLocation.js"></script>
 
     <script type="text/javascript">
         $('#page-works').closest('li').addClass("active");

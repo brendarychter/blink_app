@@ -106,7 +106,9 @@
             </div> <!-- cd-faq-items -->
             <a href="#0" class="cd-close-panel">Close</a>
         </section> <!-- cd-faq -->
-    <?php include('footer.php');?>
+   <?php
+        include '../footer.php';
+    ?>
 
     <!-- Scripts -->
     
@@ -134,6 +136,7 @@
     <script src="../public/js/global/faq.js"></script> <!-- Resource jQuery -->
     <script src="../public/js/actions/loadMenu.js"></script>
     <script src="../public/js/works/loadWorks.js"></script>
+    <script src="../public/js/actions/renameLocation.js"></script>
 
     <script type="text/javascript">
         $('#page-faq').closest('li').addClass("active");

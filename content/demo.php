@@ -80,7 +80,9 @@
             </div>
         </div>
     </section>
-    <?php include('footer.php');?>
+    <?php
+        include '../footer.php';
+    ?>
 
     <!-- Scripts -->
     
@@ -106,6 +108,7 @@
     <script src="../public/js/global/index_timeline.js"></script>
     <script src="../public/js/actions/loadMenu.js"></script>
     <script src="../public/js/works/loadWorks.js"></script>
+    <script src="../public/js/actions/renameLocation.js"></script>
 
 
     <script type="text/javascript">

@@ -12,7 +12,7 @@
             </br>
             <a href="#" target="_blank">T&eacute;rminos de uso</a>
             </br>
-            <a href="content/map.php">Mapa</a>
+            <a href="content/map.php" class="locate">Mapa</a>
         </p>
         <img src="public/img/fiscal.jpg" class="footer-links">
         <div class="separator">·</div>

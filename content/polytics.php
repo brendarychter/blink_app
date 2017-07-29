@@ -21,7 +21,9 @@
 </head>
 <body id="page-top" class="index landing-main-page">
     <?php include('partials/header.php');?> 
-    <?php include('partials/footer.php');?>
+    <?php
+        include '../footer.php';
+    ?>
 
     <!-- Scripts -->
     
@@ -45,6 +47,7 @@
 
     <!-- TIMELINE -->
     <script src="../public/js/global/index_timeline.js"></script>
+    <script src="../public/js/actions/renameLocation.js"></script>
 
 
 </body>
