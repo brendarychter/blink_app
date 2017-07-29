@@ -3,8 +3,8 @@ $(document).ready(function(){
     params.action = "getContent";
     params.table = "works";
     $.ajax({
-            url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-            //url: "../back/admin/content/adminContent.php",
+            //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+            url: "../back/admin/content/adminContent.php",
             type: "POST",
             cache: false,
             data: params,
@@ -119,8 +119,8 @@ $(document).ready(function(){
         params.action = "getContent";
         params.tableName = "works";
         $.ajax({
-            url: "http://www.blinkapp.com.ar/back/admin/content/getImages.php",
-            //url: "../back/admin/content/getImages.php",
+            //url: "http://www.blinkapp.com.ar/back/admin/content/getImages.php",
+            url: "../back/admin/content/getImages.php",
             type: "POST",
             cache: false,
             data: params,
@@ -155,8 +155,8 @@ $(document).ready(function(){
         params.action = "getContent";
         params.table = "faq";
         $.ajax({
-                url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-                //url: "../back/admin/content/adminContent.php",
+                //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+                url: "../back/admin/content/adminContent.php",
                 type: "POST",
                 cache: false,
                 data: params,
@@ -290,8 +290,8 @@ $(document).ready(function(){
         params.action = "getContent";
         params.table = "team";
         $.ajax({
-                url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-                //url: "../back/admin/content/adminContent.php",
+                //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+                url: "../back/admin/content/adminContent.php",
                 type: "POST",
                 cache: false,
                 data: params,
@@ -326,8 +326,8 @@ $(document).ready(function(){
         params.action = "getContent";
         params.table = "demo";
         $.ajax({
-                url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-                //url: "../back/admin/content/adminContent.php",
+                //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+                url: "../back/admin/content/adminContent.php",
                 type: "POST",
                 cache: false,
                 data: params,
@@ -362,8 +362,8 @@ $(document).ready(function(){
         params.action = "getContent";
         params.table = "faq";
         $.ajax({
-                url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-                //url: "../back/admin/content/adminContent.php",
+                //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+                url: "../back/admin/content/adminContent.php",
                 type: "POST",
                 cache: false,
                 data: params,

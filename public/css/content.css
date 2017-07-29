@@ -348,7 +348,8 @@ header {
     font-weight: bold;
     background-color: #fed136;
     padding: 0 5px;
-    cursor: pointer; }
+    cursor: pointer;
+    color: #222; }
   .footer-blink .footer-box .dev-info p {
     color: #fff;
     font-weight: normal; }

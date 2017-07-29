@@ -15,6 +15,7 @@
             <a href="content/map.php">Mapa</a>
         </p>
         <div class="separator">·</div>
+        <img src="public/img/fiscal.jpg">
     </div>
  
     <div class="footer-box newsletter-container">

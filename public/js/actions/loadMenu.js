@@ -76,10 +76,11 @@ $(document).ready(function(){
         var url, urlImage;
         if (window.location.href.indexOf("content") > -1){
             url = "../back/admin/content/getImages.php";
-            urlImage = "../../uploads/";
+            urlImage = "uploads/";
         }else{
             url = "back/admin/content/getImages.php";
-            urlImage = "../../uploads/";
+            urlImage = "uploads/";
+            //urlImage = "../../uploads/";
         }
         $.ajax({
             //url: "http://www.blinkapp.com.ar/back/admin/content/getImages.php",

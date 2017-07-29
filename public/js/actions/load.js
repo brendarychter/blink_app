@@ -18,7 +18,7 @@ $(document).ready(function(){
         cache: false,
         dataType: "json"
     }).done(function( data ) {
-        console.log(data);
+        //console.log(data);
     	if (language == "es"){
             /* SECTION 1 SPANISH */
             //Pregunto por uno de los items

@@ -69,7 +69,6 @@
 	<script src="public/js/global/jquery.js"></script>
 	<script src="public/js/actions/loginAdmin.js"></script>
 	<script src="public/js/global/bootstrap.min.js"></script>
-    <script src="public/js/actions/loadMenu.js"></script>
 
 </body>
 

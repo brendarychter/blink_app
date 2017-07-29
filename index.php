@@ -230,6 +230,5 @@
     <!-- My scripts -->
     <script src="public/js/actions/load.js"></script>
     <script src="public/js/actions/loadMenu.js"></script>
-    <script src="public/js/actions/showSections.js"></script>
 </body>
 </html>
