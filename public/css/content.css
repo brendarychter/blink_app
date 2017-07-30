@@ -315,6 +315,9 @@ header {
       line-height: 1.8;
       text-decoration: none;
       color: inherit; }
+    .footer-blink .footer-box .footer-links a:hover, .footer-blink .footer-box .list-inline.social-buttons a:hover, .footer-blink .footer-box .dev-info a:hover {
+      color: #fed136;
+      cursor: pointer; }
   .footer-blink .footer-box .language-selection {
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -351,7 +354,10 @@ header {
     background-color: #fed136;
     padding: 0 5px;
     cursor: pointer;
-    color: #222; }
+    color: #292c2f; }
+  .footer-blink .footer-box .dev-info :hover {
+    background-color: #292c2f;
+    color: #fff; }
   .footer-blink .footer-box .dev-info p {
     color: #fff;
     font-weight: normal; }
@@ -379,6 +385,42 @@ header {
 @media (min-width: 769px) {
   .emailMarketingSubscriptionFormContainer {
     margin-left: -75px !important; } }
+.map-container ul {
+  list-style-type: none; }
+  .map-container ul li {
+    display: inline-block; }
+    .map-container ul li a {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 16px; }
+@media (min-width: 1024px) {
+  .map-container {
+    padding: 150px 150px; } }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .map-container {
+    padding: 150px 85px; } }
+@media (min-width: 1px) and (max-width: 767px) {
+  .map-container {
+    padding: 120px 50px; } }
+@media (min-width: 1px) and (max-width: 320px) {
+  .map-container ul li {
+    display: block; }
+  .map-container .separator {
+    display: none; } }
+
+@media (min-width: 1024px) {
+  .general-container {
+    padding: 150px 150px; } }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .general-container {
+    padding: 150px 85px; } }
+@media (min-width: 1px) and (max-width: 767px) {
+  .general-container {
+    padding: 120px 50px; } }
+
+.not-found-page {
+  text-align: center; }
+
 #more-info {
   margin-right: 5px;
   margin: 0 auto;

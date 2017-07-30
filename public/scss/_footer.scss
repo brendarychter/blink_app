@@ -47,6 +47,10 @@
 				text-decoration: none;
 				color: inherit;
 			}
+			a:hover{
+				color: #fed136;
+				cursor: pointer;
+			}
 		}
 		.language-selection{
 			letter-spacing: 1px;
@@ -90,8 +94,12 @@
 			    background-color: #fed136;
 			    padding: 0 5px;
 			    cursor: pointer;
-			    color: #222;
+			    color: #292c2f;
+			}:hover{
+				background-color: #292c2f;
+				color: #fff;
 			}
+
 			p{
 				color: #fff;
 				font-weight: normal;

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Mapa</title>
-    <meta name="description" content="">
+    <meta name="description" content="Mapa de sitio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--CSS-->
@@ -23,36 +23,22 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="../public/js/global/jquery.js"></script>
-    <style type="text/css">
-        section{
-            padding: 150px 150px;
-        }
-        ul{
-            list-style-type: none;
-        }
-        ul li a{
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 16px;
-        }
-    </style>
     
     <!-- Analytics -->
     <script src="../public/js/actions/ga_commons.js"></script>
 </head>
 <body id="page-top" class="index landing-main-page main-page-blink">
     <?php include('header.php');?> 
-    <section>
+    <section class="map-container">
         <h1>Blink App Website</h1>
         <ul>
-            <li>
-                <a href="../index.php">Home</a> - 
-                <a href="how_it_works.php" class="works_menu">Conoc&eacute; m&aacute;s</a> - 
-                <a href="demo.php">Demo</a> - 
-                <a href="faq.php">FAQ</a> - 
-                <a href="team.php">Qui&eacute;nes somos</a> - 
-                <a href="../index#contacto.php">Contacto</a>
-            </li>
+            <li><a href="../index.php">Home</a> <span class="separator"> - </span> </li>
+            <li><a href="how_it_works.php" class="works_menu">Conoc&eacute; m&aacute;s</a> <span class="separator"> - </span> </li>
+            <li><a href="demo.php">Demo</a> <span class="separator"> - </span> </li>
+            <li><a href="faq.php">FAQ</a> <span class="separator"> - </span> </li>
+            <li><a href="team.php">Qui&eacute;nes somos</a> <span class="separator"> - </span> </li>
+            <li><a href="../index#contacto.php">Contacto</a></li>
+            
         </ul>
     </section>
 
