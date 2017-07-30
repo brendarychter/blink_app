@@ -29,58 +29,7 @@
     <script src="public/js/actions/ga_commons.js"></script>
 </head>
 <body id="page-top" class="index landing-main-page main-page-blink">
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                 <!-- href="#page-top"-->
-                <a class="navbar-brand page-scroll" href="#page-top" style="margin-top: -4px; padding: 0;"><img alt="Blink App" title="Blink App" src="public/img/logo.svg" class="img_menu" id="icon-top"></img></a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-home" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-middle central-nav">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="section_1 page-section">
-                        <a class="page-scroll blink_menu" href="#main-page">blink!</a>
-                    </li>
-                    <li class="section_2 page-section">
-                        <a class="page-scroll works_menu" href="content/how_it_works.php">Conoc&eacute; m&aacute;s</a>
-                    </li>
-                    <li class="section_3 page-section">
-                        <a class="page-scroll demo_menu" href="content/demo.php">Demo</a>
-                    </li>
-                    <li class="section_4 page-section">
-                        <a class="page-scroll faq_menu" href="content/faq.php">FAQ</a>
-                    </li>
-                    <li class="section_5 page-section">
-                        <a class="page-scroll team_menu" href="content/team.php">Qui&eacute;nes somos</a>
-                    </li>
-                    <li class="page-section">
-                        <a class="page-scroll contact_menu" href="#contact">Contactate</a>
-                    </li>
-                    
-                </ul>
-                <ul class="nav navbar-nav navbar-right logandsign" id="logandsign">
-                    <li>
-                        <a class="button" href="content/log_in.php#login-box-link">Inici&aacute; sesi&oacute;n</a>
-                    </li>
-                    <li class="last-item-header">
-                        <a class="button" href="content/log_in.php#signup-box-link"><b>Registrate</b></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     
     <!-- Header -->
     <header id="main-page" class="section_1 page-section-home img_home">
@@ -95,7 +44,9 @@
 
     <!-- Main home -->
     <main>
-
+        <?php
+            include 'header.php';
+        ?>
         <!-- CONOCE Section -->
         <section id="conoce" class="section_2 page-section-home">
             <div class="container">
@@ -155,49 +106,84 @@
         </section>
 
         <!-- CONTACT Section -->
-        <section id="contact" class="section_5 page-section-home">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading subtitle_section_5">Contactate</h2>
-                        <h3 class="section-subheading text-muted title_section_5">&iexcl;Queremos saber tu opini&oacute;n!</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <form name="sentMessage" id="contactForm" novalidate>
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-8 col-lg-offset-2">
+
+                    <form id="contact-form" method="post" action="back/contact/contact.php" role="form">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="text_1_section_5 form-control" placeholder="Nombre *" id="name" required data-validation-required-message="Por favor ingresa tu nombre">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="text_2_section_5 form-control" placeholder="Mail *" id="email" required data-validation-required-message="Por favor ingresa tu mail.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="tel" class="text_3_section_5 form-control" placeholder="N&uacute;mero de tel&eacute;fono" id="phone" required data-validation-required-message="Por favor ingresa tu n&uacute;mero de tel&eacute;fono.">
-                                        <p class="help-block text-danger"></p>
+                                        <label for="form_name">Firstname *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <textarea class="text_4_section_5 form-control" placeholder="Tu mensaje *" id="message" required data-validation-required-message="Por favor ingresa tu mensaje."></textarea>
-                                        <p class="help-block text-danger"></p>
+                                        <label for="form_lastname">Lastname *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <div class="clearfix"></div>
-                                <div class="col-lg-12 text-center">
-                                    <div id="success"></div>
-                                    <button type="submit" class="button_section_5 btn btn-xl">Enviar mensaje</button>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_phone">Phone</label>
+                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <!-- Replace data-sitekey with your own one, generated at https://www.google.com/recaptcha/admin -->
+                                        <div class="g-recaptcha" data-sitekey="6Le78ScUAAAAAIwMiCcAfjo6XputN6OYM3LXyLQx"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="https://bootstrapious.com/p/bootstrap-recaptcha" target="_blank">Bootstrapious</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div><!-- /.8 -->
+
+            </div> <!-- /.row-->
+
+        </div> <!-- /.container-->
 
     </main>
     
@@ -226,9 +212,13 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="public/js/global/agency.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <!-- My scripts -->
     <script src="public/js/actions/load.js"></script>
     <script src="public/js/actions/loadMenu.js"></script>
+    <script src="public/js/contact/validator.js"></script>
+    <script src="public/js/contact/contact.js"></script>
+
 </body>
 </html>
