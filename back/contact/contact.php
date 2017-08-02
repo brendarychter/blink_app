@@ -9,12 +9,13 @@ $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
 $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
 $errorMessage = 'There was an error while submitting the form. Please try again later';
-$recaptchaSecret = '6Le78ScUAAAAAIwMiCcAfjo6XputN6OYM3LXyLQx';
+$recaptchaSecret = '6Le78ScUAAAAALWRRZshuqD2iwNqp2m4ENHMIhvT';
 
 // let's do the sending
 try
 {
     if (!empty($_POST)) {
+
         // validate the ReCaptcha, if something is wrong, we throw an Exception, 
         // i.e. code stops executing and goes to catch() block
         
@@ -31,8 +32,8 @@ try
         
         $response = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
-        if (!$response->isSuccess()) {
 
+        if (!$response->isSuccess()) {
             throw new \Exception('ReCaptcha was not validated.');
         }
         
@@ -64,13 +65,13 @@ catch (\Exception $e)
     $responseArray = array('type' => 'danger', 'message' => $errorMessage);
 }
 
-// if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-//     $encoded = json_encode($responseArray);
+if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+    $encoded = json_encode($responseArray);
 
-//     header('Content-Type: application/json');
+    header('Content-Type: application/json');
 
-//     echo $encoded;
-// }
-// else {
-//     echo $responseArray['message'];
-// }
+    echo $encoded;
+}
+else {
+    echo $responseArray['message'];
+}
