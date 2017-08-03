@@ -5,7 +5,7 @@ $(function () {
     $('#contact-form').on('submit', function (e) {
         if (!e.isDefaultPrevented()) {
             var url = "back/contact/contact.php";
-            console.log(($this).serialize())
+
             $.ajax({
                 type: "POST",
                 url: url,

@@ -1,14 +1,19 @@
 <?php
 // require ReCaptcha class
 require('recaptcha-master/src/autoload.php');
+require_once("../admin/connection.php");
+$connection = new connection;
 
 // configure
 $from = 'brendarychter@gmail.com';
-$sendTo = 'brendarychter@gmail.com';
-$subject = 'New message from contact form';
-$fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
-$errorMessage = 'There was an error while submitting the form. Please try again later';
+$sendTo = $_POST["email"];
+$subject = 'Blink App - ¡Gracias :)!';
+$fields = array('name' => 'Name', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
+$okMessage = '¡Gracias :)! En breve nos estaremos comunicando con vos';
+
+/*$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';*/
+$errorMessage = 'Se produjo un error. Por favor, intente m&aacute;s tarde';
+/*$errorMessage = 'There was an error while submitting the form. Please try again later';*/
 $recaptchaSecret = '6Le78ScUAAAAALWRRZshuqD2iwNqp2m4ENHMIhvT';
 
 // let's do the sending
@@ -39,6 +44,16 @@ try
         
         // everything went well, we can compose the message, as usually
         
+
+        $name = $_POST["name"];
+        $phone = $_POST["phone"];
+        $mail = $_POST["email"];
+        $message = $_POST["message"];
+
+
+        $query = "INSERT INTO subscribers (name, phone, mail, message) VALUES ('$name','$phone','$mail', '$message')";
+
+
         $emailText = "You have new message from contact form\n=============================\n";
 
         foreach ($_POST as $key => $value) {
@@ -58,6 +73,10 @@ try
         mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
         $responseArray = array('type' => 'success', 'message' => $okMessage);
+        
+        if (mysqli_query ($connection->connected, $query)) {
+            echo 'datos guardados';
+        }
     }
 }
 catch (\Exception $e)
