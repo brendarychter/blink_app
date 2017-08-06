@@ -7,9 +7,10 @@
 
 	<!--CSS-->
 	<link rel="stylesheet" href="public/css/datepicker3.css">
-	<link rel="stylesheet" type="text/css" href="public/css/content.css">
 	<link rel="stylesheet" href="public/css/bootstrap.css" >
 	<link rel="stylesheet" href="public/css/styles_default.css">
+	<link rel="stylesheet" href="public/css/register_admin.css">
+
 	<link rel="shortcut icon" type="image/png" href="public/img/icon_tab.png"/>
     <link rel="shortcut icon" type="image/png" href="" class="img_icon_menu" />
 	
@@ -28,24 +29,28 @@
         }
         h2{
         	font-size: 28px;
+        	padding-left: 50px;
         }
         h3{
         	font-size: 22px;
         }
-        .error-log-in-admin{
-        	display: none;
+        img{
+        	position: absolute;
         }
     </style>
 	</head>
 <body>
 	<div class="row">
+	</div>
+	<div class="row">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
 			<div class="login-panel panel panel-default" style="border-radius: 0; margin-top: 120px">
+				<img src="public/img/logo.svg" alt="Blink App" title="Blink App">
 				<h2>Blink App</h2>
 				<h3>Panel de Administraci&oacute;n</h3>
 				<div class="panel-heading">L O G &nbsp; I N</div>
 				<div class="panel-body">
-					<form role="form">
+					<form role="form" id="login-admin-form" method="post">
 						<fieldset>
 							<div class="form-group">
 								<input class="form-control" placeholder="Usuario" name="email" type="input" autofocus="" id="username-admin" style="border-radius: 0;" required />
@@ -53,12 +58,15 @@
 							<div class="form-group">
 								<input class="form-control" placeholder="Contrase&ntilde;a" name="password" type="password" value="" id="pass-admin" style="border-radius: 0;" required />
 							</div>
-							<button type="submit" class="btn btn-primary" id="login-admin">Iniciar sesi&oacute;n</button>
+                            <input type="submit" class="btn btn-primary btn-send send-form" id="login-admin" value="Iniciar sesi&oacute;n">
+                            <div class="sign-in-admin">
+                            	<span>&iquest;Necesitas una cuenta?</span><a href="sign-in-admin.php" class="register">Registrate</a>
+                            </div>
 						</fieldset>
 					</form>
 				</div>
 			</div>
-			<div class="alert alert-danger fade in alert-dismissable error-log-in-admin" style="border-radius: 0">
+			<div class="alert alert-danger fade in alert-dismissable error-log-in-admin" style="border-radius:0" id="error-log-in-admin">
     			<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
 				<strong>Por favor verifique sus datos</strong>
 			</div>

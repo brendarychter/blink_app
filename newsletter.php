@@ -23,7 +23,9 @@
             padding: 150px 150px;
             text-align: center;
         }
-
+        h2{
+            font-size: 18px;
+        }
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -90,13 +92,14 @@
         </div>
     </nav>
     <section>
+        <img src="public/img/logo.svg" alt="Blink App" title="Blink App" style="width:100px">
         <h1>Te has suscripto satisfactoriamente al newsletter</h1>
         <h2>Revisa tu correo, pronto recibir&aacute;s informaci&oacute;n de las novedades de Blink</h2>
         <a href="index.php" style="text-transform: uppercase;font-weight:700;font-size:20px">Volver a la home</a>
     </section>
     <div class="no-newsletter">
         <?php
-            include 'content/footer.php';
+            include 'footer.php';
         ?>
     </div>
     

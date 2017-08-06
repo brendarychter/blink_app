@@ -10,6 +10,18 @@
     	if(isset($_POST['action'])){
     		$action = $_POST['action'];
     		
+    		if ($action == "setUserAdmin"){
+    			$name = $_POST['nombre'];
+    			$username = $_POST['username'];
+    			$password = $_POST['password'];
+    			$email = $_POST['email'];
+
+    			$user = new userAdmin;
+    			
+    			$user->createNewUser($connection, $name, $username, $password, $email);
+
+    		}
+
     		if(isset($_POST['username']) && isset($_POST['password'])){
     			$user = new userAdmin;
 	        	$user->setUsername($_POST['username']);
