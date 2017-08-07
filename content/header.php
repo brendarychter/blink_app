@@ -43,9 +43,6 @@
                 <li>
                     <a class="button" href="log_in.php#login-box-link">Inici&aacute; sesi&oacute;n</a>
                 </li>
-                <li class="last-item-header">
-                    <a class="button" href="log_in.php#signup-box-link"><b>Registrate</b></a>
-                </li>
             </ul>
         </div>
     </div>

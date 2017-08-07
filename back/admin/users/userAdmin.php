@@ -1,5 +1,5 @@
 <?php
-	require('../../recaptcha-master/src/autoload.php');
+	require('../../global/recaptcha-master/src/autoload.php');
 	class userAdmin{
 		private $username;
 		private $password;
@@ -44,14 +44,20 @@
 		 */
 		
 
-		public function getUserAdmin($connection){
+		public function getUserAdmin($connection, $username, $password){
 			//VALIDAR QUE DEVUELVA TRUE
-			$consulta = "SELECT * FROM admin WHERE username = '$this->username' AND password = '$this->password'";
-			$response = mysqli_query($connection->connected,$consulta);
+			$consulta = "SELECT * FROM admin WHERE username = '$username' AND password = '$password'";
+			$matriz = array();
 
-			while($obj = mysqli_fetch_object($response)){
-				$matriz = array('username' => $obj->username, 'password' => $obj->password);
-				$this->setUserID($obj->id_admin);
+			if($response = mysqli_query($connection->connected, $consulta)){
+				if(mysqli_num_rows($response)>=1){
+					while($obj = mysqli_fetch_object($response)){
+						$matriz = array('type'=> 'success', 'username' => $obj->username, 'password' => $obj->password);
+						$this->setUserID($obj->id_admin);
+					}
+				}else{
+	        		$matriz = array('type' => 'danger', 'message' => 'Error: revise sus datos.');
+				}
 			}
 			//, 'userID' => $obj->userID
 			$datos = json_encode($matriz);
@@ -86,7 +92,7 @@
 	        				$responseArray = array('type' => 'success', 'message' => 'El ReCaptcha no se valido correctamente.');
 				        }
 
-				        $emailText = "You have new message from contact form\n=============================\n";
+				        $emailText = "Bienvenido a la plataforma de administracion de Blink App";
 
 
 				        $headers = array('Content-Type: text/plain; charset="UTF-8";',

@@ -60,9 +60,9 @@
 		 */
 		
 
-		public function getUser($connection){
+		public function getUser($connection, $username, $password){
 			//VALIDAR QUE DEVUELVA TRUE
-			$consulta = "SELECT * FROM users WHERE username = '$this->username' AND password = '$this->password'";
+			$consulta = "SELECT * FROM users WHERE username = '$username' AND password = 'password'";
 			$response = mysqli_query($connection->connected,$consulta);
 
 			while($obj = mysqli_fetch_object($response)){

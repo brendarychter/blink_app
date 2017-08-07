@@ -28,9 +28,8 @@
     <!-- Analytics -->
     <script src="public/js/actions/ga_commons.js"></script>
 </head>
-<body id="page-top" class="index landing-main-page main-page-blink">
 
-    
+<body id="page-top" class="index landing-main-page main-page-blink">
     <!-- Header -->
     <header id="main-page" class="section_1 page-section-home img_home">
         <div class="container">
@@ -195,9 +194,6 @@
 
     <!-- Scripts -->
     
-    <!-- jQuery -->
-    <script src="public/js/global/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="public/js/global/bootstrap.min.js"></script>
 

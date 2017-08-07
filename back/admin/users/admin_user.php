@@ -11,7 +11,6 @@
     		$action = $_POST['action'];
     		
     		if ($action == "setUserAdmin"){
-
     			if (!isset($_POST['g-recaptcha-response']) || empty($_POST['g-recaptcha-response'])) {
 	        		$responseArray = array('type' => 'danger', 'message' => 'Valide el ReCaptcha.');
 	        		$encoded = json_encode($responseArray);
@@ -27,23 +26,14 @@
 
 	    			$user->createNewUser($connection, $name, $username, $password, $email, $captcha);
 		        }
-
-
     		} else if ($action =="getUserAdmin"){
-
-
 
 	    		if(isset($_POST['username']) && isset($_POST['password'])){
 	    			$user = new userAdmin;
-		        	$user->setUsername($_POST['username']);
-		        	$user->setPassword($_POST['password']);
-		        	
-		    		switch($action){
-		    			//asignar mobile y telefono acá
-		    			case "getUserAdmin":
-				        	$user->getUserAdmin($connection);
-				        break;
-		    		}
+		        	$username = $_POST['username'];
+	    			$password = $_POST['password'];
+
+				    $user->getUserAdmin($connection, $username, $password);
 		    		//VALIDAR ESTO
 		    		$_SESSION["username"] = $user->getUsername();
 		        	$_SESSION["password"] = $user->getPassword();
