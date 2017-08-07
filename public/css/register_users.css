@@ -1,0 +1,67 @@
+.login-panel{
+	font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+#error-log-in-admin{
+	display: none;
+}
+@media (min-width:1px) and (max-width:500px){
+	.sign-in-admin{
+		display: block;
+		text-align: center;
+		padding-top: 10px;
+	}
+	.sign-in-user{
+		display: block;
+		text-align: center;
+		padding-top: 10px;
+	}
+	.g-recaptcha {
+	    transform:scale(0.77);
+	    transform-origin:0 0;
+	}
+}
+@media (min-width:500px){
+	.sign-in-admin, .sign-in-user{
+		display: inline-block;
+	}
+}
+.sign-in-admin span, .sign-in-user span{
+	font-size: 13px;
+	padding-left: 8px;
+}
+.sign-in-admin .register{
+	padding-left: 6px;
+	font-weight: bold;
+}
+.sign-in-user .register{
+	padding-left: 4px;
+	font-weight: bold;
+}
+.sign-in-admin .register:hover{
+	text-decoration: none;
+}
+.send-form{
+	letter-spacing: 1px;
+	padding: 5px;
+}
+.send-form:active, .send-form:hover{
+	background-color: #65CCB8;
+}
+.logo-login{
+	position: absolute;
+}
+input, .btn {
+    border-radius: 0;
+}
+h2, h3{
+	padding: 0 15px;
+	margin-top: 15px;
+	letter-spacing: 2px;
+}
+h3{
+	font-size: 22px;
+}
+h2{
+	font-size: 28px;
+	padding-left: 50px;
+}
