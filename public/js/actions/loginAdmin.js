@@ -23,6 +23,7 @@ $(document).ready(function(){
                 if (messageAlert && messageText) {
                     $('#login-admin-form').find('.messages').html(alertBox);
                     $('#login-admin-form')[0].reset();
+                    $('.messages').show();
                     setTimeout(function(){
                         $('.messages').fadeOut('slow');
                     }, 3000);

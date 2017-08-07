@@ -61,6 +61,8 @@
 						  	<li role="presentation" class="toggle-nav-admin" id="faq-admin"><a href="#faq-admin">P&aacute;gina 3</a></li>
 						 	<li role="presentation" class="toggle-nav-admin" id="team-admin"><a href="#team-admin">P&aacute;gina 4</a></li>
 						 	<li role="presentation" class="toggle-nav-admin" id="menu-admin"><a href="#menu-admin">Men&uacute;</a></li>
+						 	<li role="presentation" class="toggle-nav-admin" id="subscribers-admin"><a href="#subscribers-admin">Suscriptores</a></li>
+						 	<li role="presentation" class="toggle-nav-admin" id="users-admin"><a href="#users-admin">Usuarios</a></li>
 						</ul>
 					</div>
 					<!-- QUIENES SOMOS ADMIN -->

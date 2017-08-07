@@ -18,10 +18,10 @@ $(function () {
                 var messageAlert = 'alert-' + data.type;
                 var messageText = data.message;
                 var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert">&times;</button>' + messageText + '</div>';
-                
                 if (messageAlert && messageText) {
                     $('#login-user-form').find('.messages').html(alertBox);
                     $('#login-user-form')[0].reset();
+                    $('.messages').show();
                     setTimeout(function(){
                         $('.messages').fadeOut('slow');
                     }, 3000);
