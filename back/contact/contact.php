@@ -9,7 +9,7 @@ $from = 'brendarychter@gmail.com';
 $sendTo = $_POST["email"];
 $subject = 'Blink App - ¡Gracias :)!';
 $fields = array('name' => 'Name', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
-$okMessage = '¡Gracias :)! En breve nos estaremos comunicando con vos';
+$okMessage = 'Gracias :) ¡En breve nos estaremos comunicando con vos!';
 
 /*$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';*/
 $errorMessage = 'Se produjo un error. Por favor, intente m&aacute;s tarde';
@@ -51,10 +51,11 @@ try
         $message = $_POST["message"];
 
 
-        $query = "INSERT INTO subscribers (name, phone, mail, message) VALUES ('$name','$phone','$mail', '$message')";
+        $query = "insert into subscribers (name, phone, mail, message) values ('$name','$phone','$mail', '$message')";
 
+        mysqli_query($connection->connected, $query);
 
-        $emailText = "You have new message from contact form\n=============================\n";
+        $emailText = "Gracias por tus comentarios";
 
         foreach ($_POST as $key => $value) {
 
@@ -62,7 +63,6 @@ try
                 $emailText .= "$fields[$key]: $value\n";
             }
         }
-        
 
         $headers = array('Content-Type: text/plain; charset="UTF-8";',
             'From: ' . $from,
@@ -73,10 +73,7 @@ try
         mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
         $responseArray = array('type' => 'success', 'message' => $okMessage);
-        
-        if (mysqli_query ($connection->connected, $query)) {
-            echo 'datos guardados';
-        }
+
     }
 }
 catch (\Exception $e)

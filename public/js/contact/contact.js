@@ -21,6 +21,9 @@ $(function () {
                         $('#contact-form')[0].reset();
                         grecaptcha.reset();
                     }
+                },
+                error: function(err){
+                    console.log(err.responseText);
                 }
             });
             return false;
