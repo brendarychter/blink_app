@@ -12,8 +12,9 @@
     		
     		if(isset($_POST['username']) && isset($_POST['password'])){
     			$user = new User;
-	        	
-	        	
+	        	$username = $_POST['username'];
+	        	$password = $_POST['password'];
+
 	    		switch($action){
 	    			case "userExists":
 	    				$user->setMail($_POST['mail']);
@@ -21,16 +22,13 @@
 	    			break;
 	    			//asignar mobile y telefono acá
 	    			case "getUser":
-	    				$user->setUsername($_POST['username']);
-	        			$user->setPassword($_POST['password']);
-			        	$user->getUser($connection);
-			        	//me trae nulos el mail y el telefono
+	    				//$user->setUsername($_POST['username']);
+	        			//$user->setPassword($_POST['password']);
+			        	$user->getUser($connection, $username, $password);
 	        			$_SESSION["userID"] = $user->getUserID();
-	        			$_SESSION["mail"] = $user->getMail();
-	        			$_SESSION["phoneNumber"] = $user->getPhoneNumber();
+	        			//$_SESSION["mail"] = $user->getMail();
+	        			//$_SESSION["phoneNumber"] = $user->getPhoneNumber();
 
-	        			//$this->setPhoneNumber($user->getPhoneNumber());
-	        			//$this->setMail($user->getMail());
 			        break;
 
 			        case "createUser":

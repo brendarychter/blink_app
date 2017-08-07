@@ -1,26 +1,37 @@
 $(document).ready(function(){
-	$('#login-admin').on('click', function(){
-        //Validate empty input
+    $('#login-admin-form').validator();
+
+    $('#login-admin-form').on('submit', function (e) {
         params= {};
         params.action = "getUserAdmin";
         params.username = $('#username-admin').val();
         params.password = $('#pass-admin').val();
-
         $.ajax({
             //url: "http://www.blinkapp.com.ar/back/admin/users/admin_user.php",
             url: "back/admin/users/admin_user.php",
             type: "POST",
             data: params,
-            cache: false,
-            dataType: "json"
         }).done(function( data ) {
-            console.log(data);
-            console.log("redirect");
-            window.location = "content/dashboard.php";
-            //window.location = "http://www.blinkapp.com.ar/content/dashboard.php";
+            data = JSON.parse(data);
+            if (data.type == "success"){
+                window.location.href='content/dashboard.php';
+            }else if (data.type=="danger"){
+                console.log('entro')
+                var messageAlert = 'alert-' + data.type;
+                var messageText = data.message;
+                var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert">&times;</button>' + messageText + '</div>';
+                if (messageAlert && messageText) {
+                    $('#login-admin-form').find('.messages').html(alertBox);
+                    $('#login-admin-form')[0].reset();
+                    $('.messages').show();
+                    setTimeout(function(){
+                        $('.messages').fadeOut('slow');
+                    }, 3000);
+                }
+            }
         }).error(function(error, textStatus){
-            $('.error-log-in-admin').show();
-            console.log(error, textStatus);
+            console.log(error);
         });
+        return false;
     })
 })

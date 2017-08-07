@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Log in - Blink!</title>
-    <meta name="description" content="">
+    <meta name="description" content="Ingresa a la plataforma de Blink App y conectate con tus amigos">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--CSS-->
@@ -13,115 +13,60 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../public/css/styles_default.css">
     <link rel="stylesheet" href="../public/css/content.css">
-    <link rel="shortcut icon" type="image/png" href="" class="img_icon_menu" />
+    <link rel="stylesheet" href="../public/css/register_users.css">
+    <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png" class="img_icon_menu" />
+    
     <style type="text/css">
-        .login-section .navbar-default .container .navbar-home .logandsign {
+        .logandsign {
             display: none;
         }
     </style>
 
     <!-- Analytics -->
-    <script src="public/js/actions/ga_commons.js"></script>
+    <script src="../public/js/actions/ga_commons.js"></script>
 </head>
-<body id="page-top" class="index landing-main-page">
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-login">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="../index.php" style="margin-top: -14px; padding: 0;"><img class="img_menu" alt="" title="" src="" id="icon-top" style="height:80px;padding:10px"></img></a>
-            </div>
+<body> <!-- id="page-top" class="index landing-main-page" -->
+    <!-- <header> -->
+    <?php
+        include 'header.php';
+    ?>
+    <!-- </header> -->
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                    <a href="#page-top"></a>
-                    </li>
-                    <li class="section_1">
-                        <a class="page-scroll blink_menu" href="../index.php#main-page">blink!</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll works_menu" id="page-works" href="how_it_works.php">Conoc&eacute; m&aacute;s</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll demo_menu" id="page-demo" href="demo.php">Demo</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll faq_menu" id="page-faq" href="faq.php">FAQ</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll team_menu" id="page-team" href="team.php">Qui&eacute;nes somos</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll contact_menu" href="../index.php#contact">Contactate</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Header -->
-    <!-- <header id="main-page"> -->
-        <div class="container">
-            <div class="intro-text" style="padding-top:100px">
-                <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-                        <div class="login-panel panel panel-default" style="border-radius: 0; margin-top: 80px">
-                            <div class="login-box">
-                                <div class="lb-header">
-                                    <a href="#login-box-link" class="active" id="login-box-link" style="border-right: 1px solid #ccc;">Inici&aacute; sesi&oacute;n</a>
-                                    <a href="#signup-box-link" id="signup-box-link">Registrate</a>
+    <main>
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default" style="border-radius: 0; margin-top: 170px; margin-bottom: 100px;">
+                    <img src="../public/img/logo.svg" alt="Blink App" title="Blink App" class="logo-login">
+                    <h2>Blink App</h2>
+                    <div class="panel-heading">L O G &nbsp; I N</div>
+                    <div class="panel-body">
+                        <form role="form" id="login-user-form" method="post">
+                            <div class="messages"></div>
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Usuario" name="email" type="input" autofocus="" id="username-user" style="border-radius: 0;" required />
                                 </div>
-
-                                <form class="email-login" style="margin-top:70px">
-                                    <div class="u-form-group">
-                                        <input type="text" class="form-control" placeholder="Nombre de usuario" id="username-login" name="username-login" required/>
-                                    </div>
-                                    <div class="u-form-group">
-                                        <input type="password" class="form-control" placeholder="Contrase&ntilde;a" id="password-login" name="password-login" required/>
-                                    </div>
-                                    <div class="u-form-group" style="margin-top:95px">
-                                        <button type="submit" id="log-in-app" class="btn-xl">Acceder</button>
-                                    </div>
-                                    <input type="hidden" name="userID" id="userID"></input>
-                                    <div class="u-form-group">
-                                        <a href="#" class="forgot-password">&#191;Olvidaste tu contrase&ntilde;a?</a>
-                                    </div>
-                                </form>
-
-                                <form class="email-signup">
-                                    <div class="u-form-group">
-                                        <input type="text" class="form-control" placeholder="Nombre de usuario" id="username-signin" name="username-signin" required />
-                                    </div>
-                                    <div class="u-form-group">
-                                        <input type="password" class="form-control" placeholder="Contrase&ntilde;a" id="password-signin" class="password-login" name="password-signin" required/>
-                                    </div>
-                                    <div class="u-form-group">
-                                        <input type="password" class="form-control" placeholder="Confirmar contrase&ntilde;a" class="password-signin" required/>
-                                    </div>
-                                    <div class="u-form-group">
-                                        <input type="email" class="form-control" placeholder="Email" id="mail-signin" name="mail-signin"/>
-                                    </div>
-                                    <div class="u-form-group">
-                                        <input type="telephone" class="form-control" placeholder="Celular" id="mobile-signin" name="mobile-signin"/>
-                                    </div>
-                                    <input type="hidden" name="userID" id="userID"></input>
-                                    <div class="u-form-group" style="margin-top:10px">
-                                        <button type="submit" id="sign-in-app" class="btn-xl">Acceder</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Contrase&ntilde;a" name="password" type="password" value="" id="pass-user" style="border-radius: 0;" required />
+                                </div>
+                                <input type="submit" class="btn btn-primary btn-send send-form" id="login-user" value="Iniciar sesi&oacute;n">
+                                <div class="sign-in-user">
+                                    <span>&iquest;Todav&iacute;a no ten&eacute;s cuenta?</span><a href="sign-in-user.php" class="register">Registrate</a>
+                                </div>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    <!-- </header>
- -->    
+    </main>
+
+    <!-- <footer> -->
+    <?php
+        include '../footer.php';
+    ?>
+    <!-- </footer> -->
+
     <!-- Scripts -->
     
     <!-- jQuery -->
@@ -145,6 +90,9 @@
     <!-- Actions -->
     <script src="../public/js/actions/login.js"></script>
     <script src="../public/js/actions/loadMenu.js"></script>
+    <script src="../public/js/actions/renameLocation.js"></script>
+    <script src="../public/js/contact/validator.js"></script>
+    
     <script type="text/javascript">
         $(document).ready(function(){
             $(".central-nav").removeClass("navbar-middle");

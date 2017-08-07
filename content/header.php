@@ -41,10 +41,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right logandsign" id="logandsign">
                 <li>
-                    <a class="button" href="log_in.php#login-box-link">Inici&aacute; sesi&oacute;n</a>
-                </li>
-                <li class="last-item-header">
-                    <a class="button" href="log_in.php#signup-box-link"><b>Registrate</b></a>
+                    <a class="button" href="log_in.php">Inici&aacute; sesi&oacute;n</a>
                 </li>
             </ul>
         </div>

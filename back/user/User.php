@@ -60,14 +60,19 @@
 		 */
 		
 
-		public function getUser($connection){
-			//VALIDAR QUE DEVUELVA TRUE
-			$consulta = "SELECT * FROM users WHERE username = '$this->username' AND password = '$this->password'";
-			$response = mysqli_query($connection->connected,$consulta);
+		public function getUser($connection, $username, $password){
+			$consulta = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
+			$matriz = array();
 
-			while($obj = mysqli_fetch_object($response)){
-				$matriz = array('username' => $obj->username, 'password' => $obj->password, 'mail' => utf8_encode($obj->mail), 'phoneNumber' => $obj->phoneNumber, 'userID' => $obj->userID);
-				$this->setUserID($obj->userID);
+			if($response = mysqli_query($connection->connected, $consulta)){
+				if(mysqli_num_rows($response)>=1){
+					while($obj = mysqli_fetch_object($response)){
+						$matriz = array('type'=> 'success', 'username' => $obj->username, 'password' => $obj->password, 'mail' => utf8_encode($obj->mail), 'phoneNumber' => $obj->phoneNumber, 'userID' => $obj->userID);
+						$this->setUserID($obj->userID);
+					}
+				}else{
+	        		$matriz = array('type' => 'danger', 'message' => 'Error: revise sus datos.');
+				}
 			}
 			$datos = json_encode($matriz);
 			echo $datos;

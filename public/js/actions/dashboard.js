@@ -18,6 +18,13 @@ $(document).ready(function(){
         });
     }
 
+    $('#log-out').on('click', function(){
+        $.ajaxSetup({cache: false})
+        $.get('../back/global/destroySession.php', function (data) {
+            window.location.href = "../indexAdmin.php";
+        });
+    })
+
     function populateLabels(){
         params= {};
         params.action = "getContent";
