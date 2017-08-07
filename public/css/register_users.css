@@ -20,7 +20,7 @@
 	    transform-origin:0 0;
 	}
 }
-@media (min-width:500px){
+@media (min-width: 500px){
 	.sign-in-admin, .sign-in-user{
 		display: inline-block;
 	}
