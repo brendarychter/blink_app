@@ -1,6 +1,7 @@
 $(document).ready(function(){
-	$('#login-admin-form').on('click', function(){
-        //Validate empty input
+    $('#login-admin-form').validator();
+
+    $('#login-admin-form').on('submit', function (e) {
         params= {};
         params.action = "getUserAdmin";
         params.username = $('#username-admin').val();

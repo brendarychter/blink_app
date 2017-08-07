@@ -28,11 +28,14 @@
     <script src="../public/js/actions/ga_commons.js"></script>
 </head>
 <body id="page-top" class="index landing-main-page main-page-blink">
-    <?php include('content/header.php');?> 
+    <?php 
+        include('header.php');
+    ?> 
     <section class="general-container not-found-page">
         <img src="../public/img/not-found.svg" width="250px">
-        <h1>¡Error!</h1>
-        <a href="index.php" class="btn btn-xl" style="margin-top: 15px">Volver a la p&aacute;gina de inicio</a>
+        <h1>&iexcl;Error!</h1>
+        <h4 style="text-transform: inherit; margin-top: 20px;" class="subtitle-error">No podemos localizar la p&aacute;gina a la que intentas acceder</h4>
+        <a href="../index.php" class="btn btn-xl" style="margin-top: 15px" class="button-error">Volver al inicio</a>
     </section>
 
     <?php

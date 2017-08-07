@@ -34,7 +34,6 @@
 	    			$password = $_POST['password'];
 
 				    $user->getUserAdmin($connection, $username, $password);
-		    		//VALIDAR ESTO
 		    		$_SESSION["username"] = $user->getUsername();
 		        	$_SESSION["password"] = $user->getPassword();
 		    	}else{

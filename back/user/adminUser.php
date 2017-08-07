@@ -25,10 +25,9 @@
 	    				//$user->setUsername($_POST['username']);
 	        			//$user->setPassword($_POST['password']);
 			        	$user->getUser($connection, $username, $password);
-			        	//me trae nulos el mail y el telefono
 	        			$_SESSION["userID"] = $user->getUserID();
-	        			$_SESSION["mail"] = $user->getMail();
-	        			$_SESSION["phoneNumber"] = $user->getPhoneNumber();
+	        			//$_SESSION["mail"] = $user->getMail();
+	        			//$_SESSION["phoneNumber"] = $user->getPhoneNumber();
 
 			        break;
 

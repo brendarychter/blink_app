@@ -46,17 +46,13 @@
 						</form>
 					</div>
 				</div>
-				<div class="alert alert-danger fade in alert-dismissable" style="border-radius:0" id="error-log-in-admin">
-	    			<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
-					<strong>Por favor verifique sus datos</strong>
-				</div>
 			</div>
 		</div>
 	</main>
 	
-
 	<script src="public/js/global/jquery.js"></script>
 	<script src="public/js/actions/loginAdmin.js"></script>
+    <script src="public/js/contact/validator.js"></script>
 	<script src="public/js/global/bootstrap.min.js"></script>
 
 </body>
