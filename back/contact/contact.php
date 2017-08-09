@@ -1,13 +1,15 @@
 <?php
 // require ReCaptcha class
 require('../global/recaptcha-master/src/autoload.php');
+require 'PHPMailer-master/PHPMailerAutoload.php';
+
 require_once("../admin/connection.php");
 $connection = new connection;
 
 // configure
 $from = 'brendarychter@gmail.com';
 $sendTo = $_POST["email"];
-$subject = 'Blink App - ¡Gracias :)!';
+$subject = '¡Gracias :)! - Blink App';
 $fields = array('name' => 'Name', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
 
 /*get session language!!!*/
@@ -53,20 +55,27 @@ try
         $message = $_POST["message"];
         $datetime = $_POST["datetime"];
 
-        /*Rename base*/
         $query = "insert into contactos (name, phone, mail, message, active, date_time) values ('$name','$phone','$mail', '$message', 'true', '$datetime')";
 
         mysqli_query($connection->connected, $query);
 
-        $emailText = "Gracias por tus comentarios";
+        //$emailText = "Gracias por tus comentarios";
 
         /*sacar para cambiar con phpmailer*/
-        foreach ($_POST as $key => $value) {
+        // foreach ($_POST as $key => $value) {
 
-            if (isset($fields[$key])) {
-                $emailText .= "$fields[$key]: $value\n";
-            }
-        }
+        //     if (isset($fields[$key])) {
+        //         $emailText .= "$fields[$key]: $value\n";
+        //     }
+        // }
+
+
+        $emailTextHtml = "<h1>Blink App te da la bienvenida</h1><hr>";
+        $emailTextHtml .= "<table>";
+
+        $emailTextHtml .= "</table><hr>";
+        $emailTextHtml .= "<h2> Hola <strong>". $name ."</strong></h2><br><p>Muchas gracias por contactarte con nosotros, en breve estaremos respondiendo tu consulta,<br>Saludos de todo el equipo de Blink App</p>";
+
 
         $headers = array('Content-Type: text/plain; charset="UTF-8";',
             'From: ' . $from,
@@ -74,7 +83,22 @@ try
             'Return-Path: ' . $from,
         );
 
-        mail($sendTo, $subject, $emailText, implode("\n", $headers));
+        $mail = new PHPMailer;
+
+        $mail->setFrom($from, $from);
+        $mail->addAddress($sendTo, $name);
+        $mail->addReplyTo($from);
+
+
+        $mail->isHTML(true);
+
+        $mail->Subject = $subject;
+        $mail->msgHTML($emailTextHtml); 
+
+        if(!$mail->send()) {
+            throw new \Exception('I could not send the email.' . $mail->ErrorInfo);
+        }
+        //mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
         $responseArray = array('type' => 'success', 'message' => $okMessage);
 

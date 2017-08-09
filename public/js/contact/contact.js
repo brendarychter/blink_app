@@ -6,8 +6,8 @@ $(function () {
         if (!e.isDefaultPrevented()) {
             var url = "back/contact/contact.php";
             var today = new Date();
+            //CHEQUEAR UBICACION????
             var date_time = today.getDate() + '/' + (today.getMonth()+1) + '/' + today.getFullYear() + '. ' + today.getHours() + ":" + today.getMinutes();
-            console.log(date_time);
             $.ajax({
                 type: "POST",
                 url: url,

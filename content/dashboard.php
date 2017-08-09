@@ -9,6 +9,7 @@
 	<link href="../public/css/datepicker3.css" rel="stylesheet">
 	<link href="../public/css/styles_dashboard.css" rel="stylesheet">
 	<link href="../public/css/_admin.css" rel="stylesheet">
+	<link href="../public/css/subscribers.css" rel="stylesheet">
 
 	<link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png"/>
 	<!--[if lt IE 9]>
@@ -21,7 +22,7 @@
 <body>
 	<div class="row panel" style="padding:10px;margin-bottom:0;padding-left:20px">
 		<div class="col-md-12 col-sm-12">
-			<label style="text-align: center; margin: 0 auto; display: block;"><a href="../index.php" target="_blank">Ver sitio</a></label>
+			<label style="text-align: center; margin: 0 auto; display: block;"><a href="../index.php" target="_blank">Ir al sitio</a></label>
 		</div>
 	</div>
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -61,8 +62,9 @@
 						  	<li role="presentation" class="toggle-nav-admin" id="faq-admin"><a href="#faq-admin">P&aacute;gina 3</a></li>
 						 	<li role="presentation" class="toggle-nav-admin" id="team-admin"><a href="#team-admin">P&aacute;gina 4</a></li>
 						 	<li role="presentation" class="toggle-nav-admin" id="menu-admin"><a href="#menu-admin">Men&uacute;</a></li>
+						 	<li role="presentation" class="toggle-nav-admin" id="contactos-admin"><a href="#contactos-admin">Contactos</a></li>
 						 	<li role="presentation" class="toggle-nav-admin" id="subscribers-admin"><a href="#subscribers-admin">Suscriptores</a></li>
-						 	<li role="presentation" class="toggle-nav-admin" id="users-admin"><a href="#users-admin">Usuarios</a></li>
+						 	<li role="presentation" class="toggle-nav-admin" id="app-admin"><a href="#app-admin">App</a></li>
 						</ul>
 					</div>
 					<!-- QUIENES SOMOS ADMIN -->
@@ -95,6 +97,21 @@
 						<div class="row menu-admin admin-nav">
 							<?php
 						        include 'menu-admin.php';
+						    ?>
+						</div>
+						<div class="row contactos-admin admin-nav">
+							<?php
+						        include 'contactos-admin.php';
+						    ?>
+						</div>
+						<div class="row suscriptores-admin admin-nav">
+							<?php
+						        include 'subscribers-admin.php';
+						    ?>
+						</div>
+						<div class="row app-admin admin-nav">
+							<?php
+						        include 'app-admin.php';
 						    ?>
 						</div>
 					</div>
