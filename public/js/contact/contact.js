@@ -5,11 +5,13 @@ $(function () {
     $('#contact-form').on('submit', function (e) {
         if (!e.isDefaultPrevented()) {
             var url = "back/contact/contact.php";
-
+            var today = new Date();
+            var date_time = today.getDate() + '/' + (today.getMonth()+1) + '/' + today.getFullYear() + '. ' + today.getHours() + ":" + today.getMinutes();
+            console.log(date_time);
             $.ajax({
                 type: "POST",
                 url: url,
-                data: $(this).serialize(),
+                data: $(this).serialize() + '&datetime=' + date_time.toString(),
                 success: function (data)
                 {
                     var messageAlert = 'alert-' + data.type;
@@ -21,6 +23,9 @@ $(function () {
                         $('#contact-form')[0].reset();
                         grecaptcha.reset();
                     }
+                    setTimeout(function(){
+                        $('.messages').fadeOut('slow');
+                    }, 3000);
                 },
                 error: function(err){
                     console.log(err.responseText);

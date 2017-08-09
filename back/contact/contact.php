@@ -1,6 +1,6 @@
 <?php
 // require ReCaptcha class
-require('recaptcha-master/src/autoload.php');
+require('../global/recaptcha-master/src/autoload.php');
 require_once("../admin/connection.php");
 $connection = new connection;
 
@@ -51,10 +51,10 @@ try
         $phone = $_POST["phone"];
         $mail = $_POST["email"];
         $message = $_POST["message"];
-
+        $datetime = $_POST["datetime"];
 
         /*Rename base*/
-        $query = "insert into contact (name, phone, mail, message, active) values ('$name','$phone','$mail', '$message', 'true')";
+        $query = "insert into contactos (name, phone, mail, message, active, date_time) values ('$name','$phone','$mail', '$message', 'true', '$datetime')";
 
         mysqli_query($connection->connected, $query);
 
