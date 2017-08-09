@@ -9,6 +9,8 @@ $from = 'brendarychter@gmail.com';
 $sendTo = $_POST["email"];
 $subject = 'Blink App - ¡Gracias :)!';
 $fields = array('name' => 'Name', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
+
+/*get session language!!!*/
 $okMessage = 'Gracias :) ¡En breve nos estaremos comunicando con vos!';
 
 /*$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';*/
@@ -51,12 +53,14 @@ try
         $message = $_POST["message"];
 
 
-        $query = "insert into subscribers (name, phone, mail, message) values ('$name','$phone','$mail', '$message')";
+        /*Rename base*/
+        $query = "insert into contact (name, phone, mail, message, active) values ('$name','$phone','$mail', '$message', 'true')";
 
         mysqli_query($connection->connected, $query);
 
         $emailText = "Gracias por tus comentarios";
 
+        /*sacar para cambiar con phpmailer*/
         foreach ($_POST as $key => $value) {
 
             if (isset($fields[$key])) {
