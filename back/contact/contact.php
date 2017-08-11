@@ -59,7 +59,7 @@ try
 
         mysqli_query($connection->connected, $query);
 
-        $emailText = "Gracias por tus comentarios";
+        $emailText = "Muchas gracias por contactarte con nosotros, en breve estaremos respondiendo tu consulta\nSaludos de todo el equipo de Blink App";
 
         /*sacar para cambiar con phpmailer*/
         foreach ($_POST as $key => $value) {
@@ -77,11 +77,11 @@ try
         //$emailTextHtml .= "<h2> Hola <strong>". $name ."</strong></h2><br><p>Muchas gracias por contactarte con nosotros, en breve estaremos respondiendo tu consulta,<br>Saludos de todo el equipo de Blink App</p>";
 
 
-        $headers = array('Content-Type: text/plain; charset="UTF-8";',
-            'From: ' . $from,
-            'Reply-To: ' . $from,
-            'Return-Path: ' . $from,
-        );
+        // $headers = array('Content-Type: text/plain; charset="UTF-8";',
+        //     'From: ' . $from,
+        //     'Reply-To: ' . $from,
+        //     'Return-Path: ' . $from,
+        // );
 
         // $mail = new PHPMailer;
 

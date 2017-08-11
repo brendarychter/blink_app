@@ -18,6 +18,15 @@
 	<script src="js/html5shiv.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<style type="text/css">
+		@media (max-width: 500px) and (min-width: 1px){
+            register_users.css:18
+            .g-recaptcha {
+                transform: scale(0.77);
+                transform-origin: 0 0;
+            }
+        }
+	</style>
 	</head>
 <body>
 	<div class="row">

@@ -355,7 +355,7 @@ header {
     padding: 0 5px;
     cursor: pointer;
     color: #292c2f; }
-  .footer-blink .footer-box .dev-info :hover {
+  .footer-blink .footer-box .dev-info .web-dev:hover {
     background-color: #292c2f;
     color: #fff; }
   .footer-blink .footer-box .dev-info p {
