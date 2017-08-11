@@ -104,7 +104,7 @@
 						        include 'contactos-admin.php';
 						    ?>
 						</div>
-						<div class="row suscriptores-admin admin-nav">
+						<div class="row subscribers-admin admin-nav">
 							<?php
 						        include 'subscribers-admin.php';
 						    ?>
@@ -145,6 +145,7 @@
     <script src="../public/js/actions/dashboard.js"></script>
     <script src="../public/js/works/loadWorks.js"></script>
     <script src="../public/js/actions/loadMenu.js"></script>
+    <script src="../public/js/actions/admin_dashboard/getContactMessages.js"></script>
     <script type="text/javascript">
 	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 	function myFunction() {

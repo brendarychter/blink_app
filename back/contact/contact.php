@@ -74,7 +74,7 @@ try
         $emailTextHtml .= "<table>";
 
         $emailTextHtml .= "</table><hr>";
-        $emailTextHtml .= "<h2> Hola <strong>". $name ."</strong></h2><br><p>Muchas gracias por contactarte con nosotros, en breve estaremos respondiendo tu consulta,<br>Saludos de todo el equipo de Blink App</p>";
+        //$emailTextHtml .= "<h2> Hola <strong>". $name ."</strong></h2><br><p>Muchas gracias por contactarte con nosotros, en breve estaremos respondiendo tu consulta,<br>Saludos de todo el equipo de Blink App</p>";
 
 
         $headers = array('Content-Type: text/plain; charset="UTF-8";',
