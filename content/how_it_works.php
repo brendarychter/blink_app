@@ -60,7 +60,7 @@
             <div class="cd-timeline-content">
                 <h3 class="title_section_2">Acced&eacute; al sitio</h3>
                 <p class="subtitle_section_2">En la p&aacute;gina de la home del sitio, en la secci&oacute;n de descargas, vas a encontrar la imagen a descargar</p>
-                <a href="www.blinkapp.com.ar" class="cd-read-more button_section_2">Home</a>
+                <a href="../index.php#download-app" class="cd-read-more button_section_2">Home</a>
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
 

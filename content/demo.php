@@ -24,7 +24,7 @@
 <body id="page-top" class="index landing-main-page">
     <?php include('header.php');?> 
     <header>
-        <h1 class="demo_title_header">Blink App, una nueva red social</h1>
+        <h1 class="demo_title_header">Blink App: tu nueva red social</h1>
         <h2 class="demo_subtitle_header">Y un nuevo concepto de interacci&oacute;n</h2>
         <p class="demo_text_header">Te mostramos un video informativo y las opiniones de los usuarios que la eligen</p>
     </header>

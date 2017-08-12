@@ -34,8 +34,6 @@
 	    			$password = $_POST['password'];
 
 				    $user->getUserAdmin($connection, $username, $password);
-		    		$_SESSION["username"] = $user->getUsername();
-		        	$_SESSION["password"] = $user->getPassword();
 		    	}else{
 	    			echo "admin username and password not setted";
 		    	}

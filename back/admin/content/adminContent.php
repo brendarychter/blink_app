@@ -7,10 +7,10 @@
 
 	if(!mysqli_connect_error()){
     		$action = $_POST['action'];
-    		
             $table = $_POST['table'];
     		$content = new Content;
-    		switch($action){
+    		
+            switch($action){
     			case "modifyContent":
                     if(isset($_POST['newValue'])){
                         $newValue = $_POST['newValue'];
