@@ -10,71 +10,82 @@
     	if(isset($_POST['action'])){
     		$action = $_POST['action'];
     		
-    		if(isset($_POST['username']) && isset($_POST['password'])){
-    			$user = new User;
-	        	$username = $_POST['username'];
-	        	$password = $_POST['password'];
 
-	    		switch($action){
-	    			case "userExists":
-	    				$user->setMail($_POST['mail']);
-	    				$user->checkUser($connection);
-	    			break;
-	    			//asignar mobile y telefono acá
-	    			case "getUser":
-	    				//$user->setUsername($_POST['username']);
-	        			//$user->setPassword($_POST['password']);
-			        	$user->getUser($connection, $username, $password);
-	        			$_SESSION["userID"] = $user->getUserID();
-	        			//$_SESSION["mail"] = $user->getMail();
-	        			//$_SESSION["phoneNumber"] = $user->getPhoneNumber();
+    		if ($action == "createNewUser"){
+    			if (!isset($_POST['g-recaptcha-response']) || empty($_POST['g-recaptcha-response'])) {
+	        		$responseArray = array('type' => 'danger', 'message' => 'Valide el ReCaptcha.');
+	        		$encoded = json_encode($responseArray);
+					echo $encoded;
+		      	}else{
+	    			$name = $_POST['nombre-usuario'];
+	    			$username = $_POST['username-usuario'];
+	    			$password = $_POST['password-usuario'];
+	    			$email = $_POST['email-usuario'];
+	    			$phone = $_POST['phone-usuario'];
+	    			$captcha = $_POST['g-recaptcha-response'];
+	    			//$photo = $_POST['imagen-usuario'];
+					$datetime = $_POST["datetime"];
 
-			        break;
+	    			$user = new User;
 
-			        case "createUser":
-			        	$user->setUsername($_POST['username']);
-	        			$user->setPassword($_POST['password']);
-			        	$user->setPhoneNumber($_POST['phoneNumber']);
-	        			$user->setMail($_POST['mail']);
-			        	$user->createUser($connection);
-			        	$_SESSION["userID"] = $user->getUserID();
-			        break;
+	    			$user->createNewUser($connection, $name, $username, $password, $email, $phone, $captcha, $datetime);
+		        }
+    		}else{
+	    		if(isset($_POST['username']) && isset($_POST['password'])){
+	    			$user = new User;
+		        	$username = $_POST['username'];
+		        	$password = $_POST['password'];
 
-			        case "updateUser":
-			        	//$user->setPhoneNumber($_POST['phoneNumber']);
-			        	$user->setUserID($_SESSION["userID"]);
-			        	$user->setUsername($_POST['username']);
-	        			$user->setPassword($_POST['password']);
-	        			$user->setMail($_POST['mailUpdate']);
-	        			$user->setPhoneNumber($_POST['phoneNumberUpdate']);
+		    		switch($action){
+		    			case "getUser":
+				        	$user->getUser($connection, $username, $password);
+		        			$_SESSION["userID"] = $user->getUserID();
+				        break;
 
-	        			$_SESSION["userID"] = $user->getUserID();
+				        case "createUser":
+				        	$user->setUsername($_POST['username']);
+		        			$user->setPassword($_POST['password']);
+				        	$user->setPhoneNumber($_POST['phoneNumber']);
+		        			$user->setMail($_POST['mail']);
+				        	$user->createUser($connection);
+				        	$_SESSION["userID"] = $user->getUserID();
+				        break;
 
-			        	$user->updateUser($connection);
-	        			$_SESSION["mail"] = $user->getMail();
-	        			$_SESSION["phoneNumber"] = $user->getPhoneNumber();
+				        case "updateUser":
+				        	$user->setUserID($_SESSION["userID"]);
+				        	$user->setUsername($_POST['username']);
+		        			$user->setPassword($_POST['password']);
+		        			$user->setMail($_POST['mailUpdate']);
+		        			$user->setPhoneNumber($_POST['phoneNumberUpdate']);
 
-			        break;	
+		        			$_SESSION["userID"] = $user->getUserID();
 
-			        case "deleteUser":
-			        	$user->setUsername($_POST['username']);
-	        			$user->setPassword($_POST['password']);
-			        	$user->setUserID($_SESSION["userID"]);
-			        	$user->deleteUser($connection);
-			        break;
+				        	$user->updateUser($connection);
+		        			$_SESSION["mail"] = $user->getMail();
+		        			$_SESSION["phoneNumber"] = $user->getPhoneNumber();
 
-			        case "getAllUsers":
-			        	$user->setUsername($_POST['username']);
-	        			$user->setPassword($_POST['password']);
-			        	$user->getAllUsers($connection, $user->getUserID());
-			        break;
-	    		}
-	    		//VALIDAR ESTO
-	    		$_SESSION["username"] = $user->getUsername();
-	        	$_SESSION["password"] = $user->getPassword();
-	    	}else{
-    			echo "username and password not setted";
-	    	}
+				        break;	
+
+				        case "deleteUser":
+				        	$user->setUsername($_POST['username']);
+		        			$user->setPassword($_POST['password']);
+				        	$user->setUserID($_SESSION["userID"]);
+				        	$user->deleteUser($connection);
+				        break;
+
+				        case "getAllUsers":
+				        	$user->setUsername($_POST['username']);
+		        			$user->setPassword($_POST['password']);
+				        	$user->getAllUsers($connection, $user->getUserID());
+				        break;
+		    		}
+		    		//VALIDAR ESTO
+		    		$_SESSION["username"] = $user->getUsername();
+		        	$_SESSION["password"] = $user->getPassword();
+		    	}else{
+	    			echo "username and password not setted";
+		    	}
+    		}
     	}else{
     		echo "action not setted";
     	}

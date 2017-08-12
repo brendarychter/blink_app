@@ -63,15 +63,16 @@
                             </div>
                             <div class="form-group">
                                 <input class="form-control" placeholder="Ingrese una contrase&ntilde;a" name="password-usuario" type="password" value="" id="new-passowrd" style="border-radius: 0;" required />
-                            </div>
-                            <div class="form-group">
-                                <div class="g-recaptcha" data-sitekey="6Le78ScUAAAAAIwMiCcAfjo6XputN6OYM3LXyLQx"></div>
-                            </div>
+                            </div><!-- 
                             <div class="form-group">
                                 <form method="post" enctype="multipart/form-data" id="imageUploadFormUser" data-form="">
-                                    <input class="titulo-img form-control" data-title="title-2" type="text" placeholder="Seleccione una imagen de usuario" name="titulo" required style="width: 100%; margin-bottom: 10px;"/>
-                                    <input type="file" class="imagen-img" data-img="img-2" name="imagen" data-id="" data-section="2" data-url="" data-num="2" required/>
+                                    <input name="imagen-usuario" class="titulo-img form-control" data-title="title-2" type="text" placeholder="Seleccione una imagen de usuario" name="titulo" style="width: 100%; margin-bottom: 10px;"/>
+                                    <input style="display: inline-block;" type="file" class="imagen-img" data-img="img-2" name="imagen-usuario" data-id="" data-section="2" data-url="" data-num="2"/>
+                                    <span style="display: inline-block; float: right">Puedes elegirla m&aacute;s tarde</span>
                                 </form>
+                            </div> -->
+                            <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="6Le78ScUAAAAAIwMiCcAfjo6XputN6OYM3LXyLQx"></div>
                             </div>
                             <input type="submit" class="btn btn-primary btn-send send-form" id="signup-user" value="Iniciar sesi&oacute;n">
                         </form>
@@ -96,5 +97,12 @@
     <script src="../public/js/contact/validator.js"></script>
     <script src="../public/js/actions/signinUser.js"></script>
 
+    <!-- Move menu to right -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".central-nav").removeClass("navbar-middle");
+            $(".central-nav").addClass("navbar-right");
+        })
+    </script>
 </body>
 </html>

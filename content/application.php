@@ -9,7 +9,7 @@
 <link href="../public/css/global/datepicker3.css" rel="stylesheet">
 <link href="../public/css/global/styles.css" rel="stylesheet">
 <link href="../public/css/newAppStyles.css" rel="stylesheet">
-<link rel="shortcut icon" type="image/png" href="" class="img_icon_menu" />
+<link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png"/>
 
 <!--Icons-->
 <script src="../public/js/global/lumino.glyphs.js"></script>

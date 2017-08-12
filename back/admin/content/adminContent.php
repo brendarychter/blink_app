@@ -6,11 +6,9 @@
 	require("Content.php");
 
 	if(!mysqli_connect_error()){
-    		$action = 'getContent';
+    		$action = $_POST['action'];
     		
-    		//agregar en params el value.
-    		//filtrar por español o por ingles. 2 queries distintas?
-            $table = 'home';
+            $table = $_POST['table'];
     		$content = new Content;
     		switch($action){
     			case "modifyContent":

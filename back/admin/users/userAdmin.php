@@ -83,7 +83,7 @@
 						$sendTo = $email;
 						$recaptchaSecret = '6Le78ScUAAAAALWRRZshuqD2iwNqp2m4ENHMIhvT';
         				$recaptcha = new \ReCaptcha\ReCaptcha($recaptchaSecret, new \ReCaptcha\RequestMethod\CurlPost());
-						$subject = 'New message from contact form';
+						$subject = 'Bienvenido a la plataforma de administracion de Blink App';
 
         				$response = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
@@ -92,7 +92,7 @@
 	        				$responseArray = array('type' => 'success', 'message' => 'El ReCaptcha no se valido correctamente.');
 				        }
 
-				        $emailText = "Bienvenido a la plataforma de administracion de Blink App";
+				        $emailText = "Su usuario se ha registrado correctamente, ya puede empezar a utilizar las funcionalidades administrativas.";
 
 
 				        $headers = array('Content-Type: text/plain; charset="UTF-8";',
@@ -107,10 +107,10 @@
 	        			$responseArray = array('type' => 'success', 'message' => 'Se ha registrado exitosamente. Revisa tu correo electronico');
 					}
 				}else{
-	        		$responseArray = array('type' => 'danger', 'message' => 'Ya existe un usuario con ese nombre. Escoja otro.');
+	        		$responseArray = array('type' => 'danger', 'message' => 'Ya existe un usuario registrado con ese nombre. Escoja otro.');
 				}
 			}else{
-	        	$responseArray = array('type' => 'danger', 'message' => 'Ya existe un usuario con ese mail. Utilice otro.');
+	        	$responseArray = array('type' => 'danger', 'message' => 'Ya existe un usuario registrado con ese mail. Utilice otro.');
 			}
     		
     		$encoded = json_encode($responseArray);

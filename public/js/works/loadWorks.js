@@ -352,11 +352,11 @@ $(document).ready(function(){
                 $('.demo_text_header').text(unescape(data["text_header"].spanish));
 
             }).error(function(error, textStatus){
-            console.log(error);
-        });
-    }
+                console.log(error);
+            });
+        }
 
-    loadHome();
+    //loadHome();
     function loadHome(){
         params = {};
         params.action = "getContent";
