@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="es"> 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Blink App - Home</title>
     <!-- Agregarle el idioma -->
@@ -192,7 +192,5 @@
     <!-- Change language -->
     <script src="public/js/content/changeLanguage.js"></script>
     <script src="public/js/content/header-content.js"></script>
-    <script src="public/js/content/footer-content.js"></script>
-    <!-- <script src="public/js/content/index-content.js"></script> -->
 </body>
 </html>

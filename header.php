@@ -41,7 +41,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right logandsign" id="logandsign">
                 <li>
-                    <a class="button" href="content/log_in.php" style="font-weight: bold;">Inici&aacute; sesi&oacute;n</a>
+                    <a class="button log_in_menu" href="content/log_in.php" style="font-weight: bold;">Inici&aacute; sesi&oacute;n</a>
                 </li>
             </ul>
         </div>

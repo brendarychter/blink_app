@@ -2,17 +2,17 @@
     <div class="footer-box">
         <span class="footer-box-title">Blink app</span>
         <p class="footer-links">
-            <a href="" id="spanish" class="language-selection">Espa&ntilde;ol</a>
+            <a href="" id="spanish" class="language-selection footer_spanish">Espa&ntilde;ol</a>
             ·
-            <a href="" id="english" class="language-selection">Ingl&eacute;s</a>
+            <a href="" id="english" class="language-selection footer_english">Ingl&eacute;s</a>
             </br>
         </p>
         <p class="footer-links">
-            <a href="content/polytics.php" class="locate" target="_blank">Pol&iacute;ticas de Privacidad</a>
+            <a href="content/polytics.php" class="locate footer_policies" target="_blank">Pol&iacute;ticas de Privacidad</a>
             </br>
-            <a href="content/terms.php" class="locate" target="_blank">T&eacute;rminos de uso</a>
+            <a href="content/terms.php" class="locate footer_terms" target="_blank">T&eacute;rminos de uso</a>
             </br>
-            <a href="content/map.php" class="locate" target="_blank">Mapa</a>
+            <a href="content/map.php" class="locate footer_map" target="_blank">Mapa</a>
         </p>
         <img src="public/img/fiscal.jpg" class="footer-links replace-image">
         <div class="separator">·</div>
@@ -27,7 +27,7 @@
     </div>
 
     <div class="footer-box">
-        <span class="footer-box-title">Seguinos en las redes</span>
+        <span class="footer-box-title footer_follow">Seguinos en las redes</span>
         <ul class="list-inline social-buttons">
             <li><a href="http://www.facebook.com" target="_blank"><img src="public/img/icons/fb.svg" class="replace-image"></a>
             <li><a href="http://www.youtube.com" target="_blank"><img src="public/img/icons/youtube.svg" class="replace-image"></a>
@@ -36,7 +36,7 @@
     </div>
  
     <div class="footer-box">
-        <span class="footer-box-title">Desarrollado por</span>
+        <span class="footer-box-title footer_developer">Desarrollado por</span>
         <div class="dev-info">
             <h5 class="dev-name">Brenda Yael Rychter</h5>
             <a href="http://www.brendarychter.com.ar" target="_blank" class="web-dev">www.brendarychter.com.ar</a> 
