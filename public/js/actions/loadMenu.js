@@ -1,71 +1,4 @@
 $(document).ready(function(){
-    params = {};
-    params.action = "getMenu";
-    params.table = "menu";
-    var urlAdmin;
-    if (window.location.href.indexOf("content") > -1){
-        urlAdmin = "../back/admin/content/adminContent.php";
-    }else{
-        urlAdmin = "back/admin/content/adminContent.php";
-    }
-    $.ajax({
-            //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: urlAdmin,
-            type: "POST",
-            cache: false,
-            data: params,
-            dataType: "json"
-        }).done(function( data ) {
-            // /*=============================================
-            // =            Page 1 block            =
-            // =============================================*/
-            
-            //PAGE
-            for (var i in data){
-                if(data[i].visible == 1){
-                    $('.'+i).show();
-                    $('.show-page:checkbox[value='+i+']').attr('checked', true);
-                }else{
-                    $('.'+i).hide();
-                    $('.show-page:checkbox[value='+i+']').attr('checked', false);
-                }
-                $('.'+i+'_spanish').text(unescape(data[i].spanish));
-                $('.'+i+'_english').text(unescape(data[i].english));
-                $('.'+i).text(unescape(data[i].spanish));
-
-            }
-            
-    }).error(function(error, textStatus){
-        console.log(error, textStatus);
-    });
-
-
-    $('.show-page').on("click", function(){
-        params= {};
-        params.action = "showAndHideMenu";
-        params.table = "menu";
-        params.value = $(this).val();
-        if ($(this).is(":checked")){
-            params.show = "1";
-        }else{
-            params.show = "0";
-        }
-        $.ajax({
-            //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: urlAdmin,
-            type: "POST",
-            cache: false,
-            data: params,
-            dataType: "json"
-        }).done(function( data ) {
-            console.log(data);
-        }).error(function(error, textStatus){
-            console.log(error)
-        });
-    })
-
-
-    loadImagesMenu("menu");
     loadImagesMenu("works");
     loadImagesMenu("home");
     function loadImagesMenu(table){
@@ -75,12 +8,12 @@ $(document).ready(function(){
 
         var url, urlImage;
         if (window.location.href.indexOf("content") > -1){
-            url = "../back/admin/content/getImages.php";
+            url = "../../back/admin/content/getImages.php";
             urlImage = "uploads/";
         }else{
             url = "back/admin/content/getImages.php";
             urlImage = "uploads/";
-            //urlImage = "../../uploads/";
+            //urlImage = "../../../../uploads/";
         }
         $.ajax({
             //url: "http://www.blinkapp.com.ar/back/admin/content/getImages.php",
@@ -91,12 +24,11 @@ $(document).ready(function(){
             dataType: "json"
         }).done(function( data ) {
             //Tener la seccion a mostrar
-            /* FOR LOCAL UPLOADS USE ../../blink_app/uploads/ */
+            /* FOR LOCAL UPLOADS USE ../../../../blink_app/uploads/ */
             /* FOR PROD UPLOADS USE urlImage */
             
             //cargo por sección, los ids
             for (i in data[table]){
-                console.log(data[table])
                 var img = data[table][i];
                 console.log(table)
                 switch (table){
@@ -111,7 +43,6 @@ $(document).ready(function(){
                         $('#title_img_'+table).val(img.nombre);
                     break;
                     case "works":
-                        console.log("es works!")
                         $('.img_'+table).attr("data-url", img.img);
                         $('.img_'+table).prop("alt", img.nombre);
                         $('.img_'+table).prop("title", img.nombre);
@@ -121,7 +52,6 @@ $(document).ready(function(){
                         $('#title_img_'+table).val(img.nombre);
                     break;
                     case "home":
-                        console.log("entro home")
                         $('.img_'+table).css('background-image', 'url(' + urlImage +  img.img + ')');
                         //bug fixin
                         $('#img_'+table).css('background-image', 'url()');
@@ -164,7 +94,7 @@ $(document).ready(function(){
             console.log("nueva");
             $.ajax({
                 //url: "http://www.blinkapp.com.ar/back/admin/content/loadImages.php",
-                url: "../back/admin/content/loadImages.php",
+                url: "../../back/admin/content/loadImages.php",
                 type: "POST",
                 cache: false,
                 processData: false,
@@ -180,7 +110,7 @@ $(document).ready(function(){
             console.log("url existe, hacer un update");
             $.ajax({
                 //url: "http://www.blinkapp.com.ar/back/admin/content/updateImages.php",
-                url: "../back/admin/content/updateImages.php",
+                url: "../../back/admin/content/updateImages.php",
                 type: "POST",
                 cache: false,
                 processData: false,

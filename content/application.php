@@ -9,7 +9,7 @@
 <link href="../public/css/global/datepicker3.css" rel="stylesheet">
 <link href="../public/css/global/styles.css" rel="stylesheet">
 <link href="../public/css/newAppStyles.css" rel="stylesheet">
-<link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png"/>
+<link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png" class="img_menu" />
 
 <!--Icons-->
 <script src="../public/js/global/lumino.glyphs.js"></script>
@@ -276,10 +276,7 @@
     <script src="../public/js/global/bootstrap.min.js"></script>
     <script src="../public/js/global/bootstrap-datepicker.js"></script>
     <script src="../public/js/actions/application.js"></script>
-    <script src="../public/js/actions/loadMenu.js"></script>
     <script>
-        $('#calendar').datepicker({
-        });
 
         !function ($) {
             $(document).on("click","ul.nav li.parent > a > span.icon", function(){          

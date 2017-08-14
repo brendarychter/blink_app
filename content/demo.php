@@ -13,7 +13,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../public/css/styles_default.css">
-    <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png" class="img_icon_menu" />
+    <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png" class="img_menu" />
     <link rel="stylesheet" href="../public/css/style.css">
     <link rel="stylesheet" href="../public/css/fonts.css">
     
@@ -100,8 +100,6 @@
 
     <!-- TIMELINE -->
     <script src="../public/js/global/index_timeline.js"></script>
-    <!--<script src="../public/js/actions/loadMenu.js"></script>
-    <script src="../public/js/works/loadWorks.js"></script>-->
     <script src="../public/js/actions/renameLocation.js"></script>
 
     <!-- Change language -->

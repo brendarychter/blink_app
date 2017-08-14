@@ -76,7 +76,6 @@
 		}
 
 		public function getMenu($connection){
-			//VALIDAR QUE DEVUELVA TRUE
 			$query = "SELECT * FROM menu";
 			$response = mysqli_query($connection->connected,$query);
 
@@ -88,7 +87,6 @@
 		}
 
 		public function showContent($connection, $val, $flag, $table){
-			//VALIDAR QUE DEVUELVA TRUE
 			$query = "UPDATE $table SET visible='$flag' WHERE section='$val'";
 			echo $query;
 			if (mysqli_query ($connection->connected, $query)) {
@@ -99,9 +97,7 @@
 		}
 
 		public function showAndHideMenu($connection, $value, $flag){
-			//VALIDAR QUE DEVUELVA TRUE
 			$query = "UPDATE menu SET visible='$flag' WHERE value='$value'";
-			echo $query;
 			if (mysqli_query ($connection->connected, $query)) {
 			    echo "Escribio.";
 			} else {

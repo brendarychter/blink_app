@@ -14,7 +14,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../public/css/styles_default.css">
-    <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png" class="img_icon_menu" />
+    <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png" class="img_menu" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -51,18 +51,14 @@
     <script src="../public/js/global/classie.js"></script>
     <script src="../public/js/global/cbpAnimatedHeader.js" data-top="10"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="../public/js/global/jqBootstrapValidation.js"></script>
-    <script src="../public/js/global/contact_me.js"></script>
-
     <!-- Custom Theme JavaScript -->
     <script src="../public/js/global/agency.js"></script>
 
     <!-- TIMELINE -->
     <script src="../public/js/global/index_timeline.js"></script>
-    <script src="../public/js/works/loadWorks.js"></script>
-    <script src="../public/js/actions/loadMenu.js"></script>
     <script src="../public/js/actions/renameLocation.js"></script>
     
+    <!-- Change language -->
+    <script src="../public/js/content/common-content.js"></script>
 </body>
 </html>

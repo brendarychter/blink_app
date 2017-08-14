@@ -12,11 +12,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text faq_title_header_spanish" realvalue="title_header" language="spanish"></span>
+							<span class="editable-text faq_title_header_spanish" realvalue="faq_title_header" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text faq_title_header_english" realvalue="title_header" language="english"></span>
+							<span class="editable-text faq_title_header_english" realvalue="faq_title_header" language="english"></span>
 						</div>
 					</div>						
 					<div class="form-group col-md-4 box-section col-sm-12" style="border-right: none">
@@ -25,11 +25,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text faq_subtitle_header_spanish" realvalue="subtitle_header" language="spanish"></span>
+							<span class="editable-text faq_subtitle_header_spanish" realvalue="faq_subtitle_header" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text faq_subtitle_header_english" realvalue="subtitle_header" language="english"></span>
+							<span class="editable-text faq_subtitle_header_english" realvalue="faq_subtitle_header" language="english"></span>
 						</div>
 					</div>
 				</div>

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	console.log('hola');
 	$.ajax({
-        url: "../back/admin/subscribers/site_data.php",
+        url: "../../back/admin/subscribers/site_data.php",
         type: "POST",
         dataType: "json"
     }).done(function( data ) {

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../public/css/styles_default.css">
     <link rel="stylesheet" href="../public/css/content.css">
     <link rel="stylesheet" href="../public/css/register_users.css">
-    <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png" class="img_icon_menu" />
+    <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png" class="img_menu" />
     
     <style type="text/css">
         .logandsign {
@@ -89,7 +89,6 @@
 
     <!-- Actions -->
     <script src="../public/js/actions/login.js"></script>
-    <script src="../public/js/actions/loadMenu.js"></script>
     <script src="../public/js/actions/renameLocation.js"></script>
     <script src="../public/js/contact/validator.js"></script>
     

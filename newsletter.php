@@ -14,7 +14,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="public/css/styles_default.css">
-    <link rel="shortcut icon" type="image/png" href="public/img/icon_tab.png"/>
+    <link rel="shortcut icon" type="image/png" href="public/img/icon_tab.png" class="img_menu" />
     <style type="text/css">
         .no-newsletter .newsletter, .no-newsletter .newsletter-title {
             display: none;
@@ -58,5 +58,7 @@
         ?>
     </div>
     
+    <!-- Change language -->
+    <script src="public/js/content/common-content.js"></script>
 </body>
 </html>

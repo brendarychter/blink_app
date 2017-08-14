@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title class="tab_title">C&oacute;mo funciona - Blink App</title>
+    <title class="works_tab_title">C&oacute;mo funciona - Blink App</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,7 +12,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../public/css/styles_default.css">
-    <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png" class="img_icon_menu" />
+    <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png" class="img_menu" />
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,10 +33,12 @@
     <script src="../public/js/actions/ga_commons.js"></script>
 </head>
 <body id="page-top" class="index landing-main-page">
-    <?php include('header.php');?> 
+    <?php 
+        include('header.php');
+    ?> 
     <header>
-        <h1 class="title_header">&#191;C&oacute;mo empezar a usar la aplicaci&oacute;n?</h1>
-        <h2 class="subtitle_header">Te presentamos una gu&iacute;a pr&aacute;ctica de pasos a seguir para descargarla y utilizarla</h2>
+        <h1 class="works_title_header">&#191;C&oacute;mo empezar a usar la aplicaci&oacute;n?</h1>
+        <h2 class="works_subtitle_header">Te presentamos una gu&iacute;a pr&aacute;ctica de pasos a seguir para descargarla y utilizarla</h2>
     </header>
 
     <section id="cd-timeline" class="cd-container">
@@ -46,10 +48,10 @@
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
-                <h3 class="title_section_1">Lector de QR</h3>
-                <p class="subtitle_section_1">Primero necesitas descargarte una aplicaci&oacute;n para leer el c&oacute;digo de descarga</p>
-                <a href="https://itunes.apple.com/us/app/qr-reader-for-iphone/id368494609?mt=8" class="cd-read-more button_1_section_1" style="margin-left: 5px; margin-bottom: 5px;" target="_blank">Itunes</a>
-                <a href="https://play.google.com/store/apps/details?id=me.scan.android.client&hl=es" class="cd-read-more button_2_section_1" style="margin-left: 5px;" target="_blank">Android</a>
+                <h3 class="works_title_section_1">Lector de QR</h3>
+                <p class="works_subtitle_section_1">Primero necesitas descargarte una aplicaci&oacute;n para leer el c&oacute;digo de descarga</p>
+                <a href="https://itunes.apple.com/us/app/qr-reader-for-iphone/id368494609?mt=8" class="cd-read-more works_button_1_section_1" style="margin-left: 5px; margin-bottom: 5px;" target="_blank">Itunes</a>
+                <a href="https://play.google.com/store/apps/details?id=me.scan.android.client&hl=es" class="cd-read-more works_button_2_section_1" style="margin-left: 5px;" target="_blank">Android</a>
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
 
@@ -59,9 +61,9 @@
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
-                <h3 class="title_section_2">Acced&eacute; al sitio</h3>
-                <p class="subtitle_section_2">En la p&aacute;gina de la home del sitio, en la secci&oacute;n de descargas, vas a encontrar la imagen a descargar</p>
-                <a href="../index.php#download-app" class="cd-read-more button_section_2">Home</a>
+                <h3 class="works_title_section_2">Acced&eacute; al sitio</h3>
+                <p class="works_subtitle_section_2">En la p&aacute;gina de la home del sitio, en la secci&oacute;n de descargas, vas a encontrar la imagen a descargar</p>
+                <a href="../index.php#download-app" class="cd-read-more works_button_section_2">Home</a>
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
 
@@ -71,8 +73,8 @@
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
-                <h3 class="title_section_3">Create una cuenta</h3>
-                <p class="subtitle_section_3">Necesitas acceder con un nombre de usuario y una contrase&ntilde;a. Agreg&aacute; tambi&eacute;n una imagen para que tus contactos puedan encontrarte r&aacute;pidamente</p>
+                <h3 class="works_title_section_3">Create una cuenta</h3>
+                <p class="works_subtitle_section_3">Necesitas acceder con un nombre de usuario y una contrase&ntilde;a. Agreg&aacute; tambi&eacute;n una imagen para que tus contactos puedan encontrarte r&aacute;pidamente</p>
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
 
@@ -82,9 +84,9 @@
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
-                <h3 class="title_section_4">Empez&aacute; a crear</h3>
-                <p class="subtitle_section_4">Cre&aacute; un grupo e invit&aacute; a contactos para que participen y puedan cargar contenido. Podr&aacute;n manejar calendarios, eventos, registros y mucho m&aacute;s</p>
-                <a href="#0" class="cd-read-more button_section_4">Ver preguntas frecuentes</a>
+                <h3 class="works_title_section_4">Empez&aacute; a crear</h3>
+                <p class="works_subtitle_section_4">Cre&aacute; un grupo e invit&aacute; a contactos para que participen y puedan cargar contenido. Podr&aacute;n manejar calendarios, eventos, registros y mucho m&aacute;s</p>
+                <a href="#0" class="cd-read-more works_button_section_4">Ver preguntas frecuentes</a>
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
 
@@ -94,8 +96,8 @@
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
-                <h3 class="title_section_5">Aprovech&aacute; al m&aacute;ximo las notificicaciones</h3>
-                <p class="subtitle_section_5">Configur&aacute; las opciones para recibir notificaciones en tiempo real cuando tus amigos interact&uacute;n con la aplicaci&oacute;n</p>
+                <h3 class="works_title_section_5">Aprovech&aacute; al m&aacute;ximo las notificicaciones</h3>
+                <p class="works_subtitle_section_5">Configur&aacute; las opciones para recibir notificaciones en tiempo real cuando tus amigos interact&uacute;n con la aplicaci&oacute;n</p>
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
     </section> <!-- cd-timeline -->
@@ -122,7 +124,6 @@
 
     <!-- TIMELINE -->
     <script src="../public/js/global/index_timeline.js"></script>
-    <!--<script src="../public/js/works/loadWorks.js"></script>-->
     <script src="../public/js/actions/renameLocation.js"></script>
 
     <script type="text/javascript">

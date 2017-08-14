@@ -13,7 +13,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../public/css/styles_default.css">
-    <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png" class="img_icon_menu" />
+    <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png" class="img_menu" />
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -129,10 +129,7 @@
 
     <!-- TIMELINE -->
     <script src="../public/js/global/index_timeline.js"></script>
-    <script src="../public/js/global/faq.js"></script> 
-    <!-- Resource jQuery -->
-    <!-- <script src="../public/js/actions/loadMenu.js"></script>
-    <script src="../public/js/works/loadWorks.js"></script>-->
+    <script src="../public/js/global/faq.js"></script>
     <script src="../public/js/actions/renameLocation.js"></script>
 
     <!-- Change language -->

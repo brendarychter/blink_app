@@ -14,7 +14,7 @@ $(document).ready(function(){
         }).done(function( data ) {
             data = JSON.parse(data);
             if (data.type == "success"){
-                window.location.href='content/dashboard.php';
+                window.location.href='content/admin/dashboard.php';
             }else if (data.type=="danger"){
                 console.log('entro')
                 var messageAlert = 'alert-' + data.type;

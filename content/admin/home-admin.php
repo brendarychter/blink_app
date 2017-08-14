@@ -13,11 +13,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text titulo-spanish-1" realvalue="title_section_1" language="spanish"></span>
+							<span class="editable-text home_title_section_1_spanish" realvalue="home_title_section_1" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text titulo-english-1" realvalue="title_section_1" language="english"></span>
+							<span class="editable-text home_title_section_1_english" realvalue="home_title_section_1" language="english"></span>
 						</div>
 					</div>						
 					<div class="form-group col-md-4 box-section col-sm-12">
@@ -26,11 +26,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text subtitle-spanish-1" realvalue="subtitle_section_1" language="spanish"></span>
+							<span class="editable-text home_subtitle_section_1_spanish" realvalue="home_subtitle_section_1" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text subtitle-english-1" realvalue="subtitle_section_1" language="english"></span>
+							<span class="editable-text home_subtitle_section_1_english" realvalue="home_subtitle_section_1" language="english"></span>
 						</div>
 					</div>
 					<div class="form-group col-md-4 box-section col-sm-12">
@@ -39,11 +39,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text button-spanish-1" realvalue="button_section_1" language="spanish"></span>
+							<span class="editable-text home_button_section_1_spanish" realvalue="home_button_section_1" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text button-english-1" realvalue="button_section_1" language="english"></span>
+							<span class="editable-text home_button_section_1_english" realvalue="home_button_section_1" language="english"></span>
 						</div>
 					</div>
 				</div>
@@ -81,11 +81,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text title-spanish-2" realvalue="title_section_2" language="spanish"></span>
+							<span class="editable-text home_title_section_2_spanish" realvalue="home_title_section_2" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text title-english-2" realvalue="title_section_2" language="english"></span>
+							<span class="editable-text home_title_section_2_english" realvalue="home_title_section_2" language="english"></span>
 						</div>
 					</div>						
 					<div class="form-group col-md-3 box-section col-sm-12">
@@ -94,11 +94,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text subtitle-spanish-2" realvalue="subtitle_section_2" language="spanish"></span>
+							<span class="editable-text home_subtitle_section_2_spanish" realvalue="home_subtitle_section_2" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text subtitle-english-2" realvalue="subtitle_section_2" language="english"></span>
+							<span class="editable-text home_subtitle_section_2_english" realvalue="home_subtitle_section_2" language="english"></span>
 						</div>
 					</div>
 					<div class="form-group col-md-3 box-section col-sm-12">
@@ -107,11 +107,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text text-spanish-2" realvalue="text_section_2" language="spanish"></span>
+							<span class="editable-text home_text_section_2_spanish" realvalue="home_text_section_2" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text text-english-2" realvalue="text_section_2" language="english"></span>
+							<span class="editable-text home_text_section_2_english" realvalue="home_text_section_2" language="english"></span>
 						</div>
 					</div>
 					<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
@@ -120,11 +120,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text button-spanish-2" realvalue="button_section_2" language="spanish"></span>
+							<span class="editable-text home_button_section_2_spanish" realvalue="home_button_section_2" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text button-english-2" realvalue="button_section_2" language="english"></span>
+							<span class="editable-text home_button_section_2_english" realvalue="home_button_section_2" language="english"></span>
 						</div>
 					</div>
 				</div>
@@ -136,11 +136,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text text_1_section_2-spanish" realvalue="text_1_section_2" language="spanish"></span>
+							<span class="editable-text home_text_1_section_2_spanish" realvalue="home_text_1_section_2" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text text_1_section_2-english" realvalue="text_1_section_2" language="english"></span>
+							<span class="editable-text home_text_1_section_2_english" realvalue="home_text_1_section_2" language="english"></span>
 						</div>
 						<form method="post" enctype="multipart/form-data" id="imageUploadForm" data-form="">
 							<div class="col-md-3 col-sm-12 line-sections">
@@ -159,11 +159,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text text_2_section_2-spanish" realvalue="text_2_section_2" language="spanish"></span>
+							<span class="editable-text home_text_2_section_2_spanish" realvalue="home_text_2_section_2" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text text_2_section_2-english" realvalue="text_2_section_2" language="english"></span>
+							<span class="editable-text home_text_2_section_2_english" realvalue="home_text_2_section_2" language="english"></span>
 						</div>
 						<form method="post" enctype="multipart/form-data" id="imageUploadForm" data-form="">
 							<div class="col-md-3 col-sm-12 line-sections">
@@ -182,11 +182,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text text_3_section_2-spanish" realvalue="text3_section_2" language="spanish"></span>
+							<span class="editable-text home_text_3_section_2_spanish" realvalue="home_text3_section_2" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text text_3_section_2-english" realvalue="text_3_section_2" language="english"></span>
+							<span class="editable-text home_text_3_section_2_english" realvalue="home_text_3_section_2" language="english"></span>
 						</div>
 						<form method="post" enctype="multipart/form-data" id="imageUploadForm" data-form="">
 							<div class="col-md-3 col-sm-12 line-sections">
@@ -205,11 +205,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text text_4_section_2-spanish" realvalue="text_4_section_2" language="spanish"></span>
+							<span class="editable-text home_text_4_section_2_spanish" realvalue="home_text_4_section_2" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text  text_4_section_2-english" realvalue="text_4_section_2" language="english"></span>
+							<span class="editable-text home_text_4_section_2_english" realvalue="home_text_4_section_2" language="english"></span>
 						</div>
 						<form method="post" enctype="multipart/form-data" id="imageUploadForm" data-form="">
 							<div class="col-md-3 col-sm-12 line-sections">
@@ -256,11 +256,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text title-spanish-4" realvalue="title_section_4" language="spanish"></span>
+							<span class="editable-text home_title_section_4_spanish" realvalue="home_title_section_4" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text title-english-4" realvalue="title_section_4" language="english"></span>
+							<span class="editable-text home_title_section_4_english" realvalue="home_title_section_4" language="english"></span>
 						</div>
 					</div>						
 					<div class="form-group col-md-3 box-section col-sm-12">
@@ -269,11 +269,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text text-spanish-4" realvalue="subtitle_section_4" language="spanish"></span>
+							<span class="editable-text home_text_section_4_spanish" realvalue="home_text_section_4" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text text-english-4" realvalue="subtitle_section_4" language="english"></span>
+							<span class="editable-text home_text_section_4_english" realvalue="home_text_section_4" language="english"></span>
 						</div>
 					</div>
 					<div class="form-group col-md-3 box-section col-sm-12">
@@ -282,11 +282,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text button-spanish-4" realvalue="button_section_4" language="spanish"></span>
+							<span class="editable-text home_button_section_4_spanish" realvalue="home_button_section_4" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text button-english-4" realvalue="button_section_4" language="english"></span>
+							<span class="editable-text home_button_section_4_english" realvalue="home_button_section_4" language="english"></span>
 						</div>
 					</div>
 					<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
@@ -314,11 +314,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text title-spanish-5" realvalue="title_section_5" language="spanish"></span>
+							<span class="editable-text home_title_section_5_spanish" realvalue="home_title_section_5" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text title-english-5" realvalue="title_section_5" language="english"></span>
+							<span class="editable-text home_title_section_5_english" realvalue="home_title_section_5" language="english"></span>
 						</div>
 					</div>						
 					<div class="form-group col-md-4 box-section col-sm-12">
@@ -327,11 +327,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text subtitle-spanish-5" realvalue="subtitle_section_5" language="spanish"></span>
+							<span class="editable-text home_subtitle_section_5_spanish" realvalue="home_subtitle_section_5" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text subtitle-english-5" realvalue="subtitle_section_5" language="english"></span>
+							<span class="editable-text home_subtitle_section_5_english" realvalue="home_subtitle_section_5" language="english"></span>
 						</div>
 					</div>
 					<div class="form-group col-md-4 box-section col-sm-12" style="border-right: none">
@@ -340,11 +340,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text button-spanish-5" realvalue="button_section_5" language="spanish"></span>
+							<span class="editable-text home_button_section_5_spanish" realvalue="home_button_section_5" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text button-english-5" realvalue="button_section_5" language="english"></span>
+							<span class="editable-text home_button_section_5_english" realvalue="home_button_section_5" language="english"></span>
 						</div>
 					</div>
 					<div class="panel-heading" style="overflow: hidden; margin-bottom: 30px;"></div>
@@ -354,11 +354,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span  class="editable-text text_1_section_5-spanish" realvalue="text_1_section_5" language="spanish"></span>
+							<span  class="editable-text home_text_1_section_5_spanish" realvalue="home_text_1_section_5" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span  class="editable-text text_1_section_5-english" realvalue="text_1_section_5" language="english"></span>
+							<span  class="editable-text home_text_1_section_5_english" realvalue="home_text_1_section_5" language="english"></span>
 						</div>
 					</div>
 					<div class="form-group col-md-3 box-section col-sm-12">
@@ -367,11 +367,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span  class="editable-text text_2_section_5-spanish" realvalue="text_2_section_5" language="spanish"></span>
+							<span  class="editable-text home_text_2_section_5_spanish" realvalue="home_text_2_section_5" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span  class="editable-text text_2_section_5-english" realvalue="text_2_section_5" language="english"></span>
+							<span  class="editable-text home_text_2_section_5_english" realvalue="home_text_2_section_5" language="english"></span>
 						</div>
 					</div>
 					<div class="form-group col-md-3 box-section col-sm-12">
@@ -380,11 +380,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span  class="editable-text text_3_section_5-spanish" realvalue="text_3_section_5" language="spanish"></span>
+							<span  class="editable-text home_text_3_section_5_spanish" realvalue="home_text_3_section_5" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text text_3_section_5-english" realvalue="text_3_section_5" language="english"></span>
+							<span class="editable-text home_text_3_section_5_english" realvalue="home_text_3_section_5" language="english"></span>
 						</div>
 					</div>
 					<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
@@ -393,11 +393,11 @@
 						</div>
 						<div class="portion portion-spanish">
 							<label class="lan">Espa&ntilde;ol</label>
-							<span class="editable-text text_4_section_5-spanish" realvalue="text_4_section_5" language="spanish"></span>
+							<span class="editable-text home_text_4_section_5_spanish" realvalue="home_text_4_section_5" language="spanish"></span>
 						</div>
 						<div class="portion portion-english">
 							<label class="lan">Ingl&eacute;s</label>
-							<span class="editable-text text_4_section_5-english" realvalue="text_4_section_5" language="english"></span>
+							<span class="editable-text home_text_4_section_5_english" realvalue="home_text_4_section_5" language="english"></span>
 						</div>
 					</div>
 				</div>

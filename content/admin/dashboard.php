@@ -5,13 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Blink - Panel de administraci&oacute;n</title>
 
-	<link href="../public/css/bootstrap.css" rel="stylesheet">
-	<link href="../public/css/datepicker3.css" rel="stylesheet">
-	<link href="../public/css/styles_dashboard.css" rel="stylesheet">
-	<link href="../public/css/_admin.css" rel="stylesheet">
-	<link href="../public/css/subscribers.css" rel="stylesheet">
+	<link href="../../public/css/bootstrap.css" rel="stylesheet">
+	<link href="../../public/css/datepicker3.css" rel="stylesheet">
+	<link href="../../public/css/styles_dashboard.css" rel="stylesheet">
+	<link href="../../public/css/_admin.css" rel="stylesheet">
+	<link href="../../public/css/subscribers.css" rel="stylesheet">
 
-	<link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png"/>
+    <link rel="shortcut icon" type="image/png" href="../../public/img/icon_tab.png" class="img_menu" />
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
 	<script src="js/respond.min.js"></script>
@@ -22,7 +22,7 @@
 <body>
 	<div class="row panel" style="padding:10px;margin-bottom:0;padding-left:20px">
 		<div class="col-md-12 col-sm-12">
-			<label style="text-align: center; margin: 0 auto; display: block;"><a href="../index.php" target="_blank">Ir al sitio</a></label>
+			<label style="text-align: center; margin: 0 auto; display: block;"><a href="../../index.php" target="_blank">Ir al sitio</a></label>
 		</div>
 	</div>
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -63,7 +63,6 @@
 						 	<li role="presentation" class="toggle-nav-admin" id="team-admin"><a href="#team-admin">P&aacute;gina 4</a></li>
 						 	<li role="presentation" class="toggle-nav-admin" id="menu-admin"><a href="#menu-admin">Men&uacute;</a></li>
 						 	<li role="presentation" class="toggle-nav-admin" id="contactos-admin"><a href="#contactos-admin">Contactos</a></li>
-						 	<li role="presentation" class="toggle-nav-admin" id="subscribers-admin"><a href="#subscribers-admin">Suscriptores</a></li>
 						 	<li role="presentation" class="toggle-nav-admin" id="app-admin"><a href="#app-admin">App</a></li>
 						</ul>
 					</div>
@@ -104,11 +103,6 @@
 						        include 'contactos-admin.php';
 						    ?>
 						</div>
-						<div class="row subscribers-admin admin-nav">
-							<?php
-						        include 'subscribers-admin.php';
-						    ?>
-						</div>
 						<div class="row app-admin admin-nav">
 							<?php
 						        include 'app-admin.php';
@@ -120,32 +114,32 @@
 		</div>
 	</div>
     
-    <script src="../public/js/global/lumino.glyphs.js"></script>
+    <script src="../../public/js/global/lumino.glyphs.js"></script>
 
     <!-- jQuery -->
-    <script src="../public/js/global/jquery.js"></script>
+    <script src="../../public/js/global/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../public/js/global/bootstrap.min.js"></script>
+    <script src="../../public/js/global/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="../public/js/global/jqueryeasing.js"></script>
+    <script src="../../public/js/global/jqueryeasing.js"></script>
     <!--<script src="../../public/js/global/classie.js"></script>
     <script src="../../public/js/global/cbpAnimatedHeader.js"></script>-->
 
     <!-- Contact Form JavaScript -->
-    <script src="../public/js/global/jqBootstrapValidation.js"></script>
-    <script src="../public/js/global/contact_me.js"></script>
+    <script src="../../public/js/global/jqBootstrapValidation.js"></script>
+    <script src="../../public/js/global/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="../public/js/global/agency.js"></script>
+    <script src="../../public/js/global/agency.js"></script>
 
     <!-- Actions -->
-    <script src="../public/js/global/jquery.validate.min.js"></script>
-    <script src="../public/js/actions/dashboard.js"></script>
-    <script src="../public/js/works/loadWorks.js"></script>
-    <script src="../public/js/actions/loadMenu.js"></script>
-    <script src="../public/js/actions/admin_dashboard/getContactMessages.js"></script>
+    <script src="../../public/js/global/jquery.validate.min.js"></script>
+    <script src="../../public/js/actions/dashboard.js"></script>
+    <script src="../../public/js/actions/loadMenu.js"></script>
+    <script src="../../public/js/actions/admin_dashboard/getContactMessages.js"></script>
+    
     <script type="text/javascript">
 	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 	function myFunction() {
@@ -157,6 +151,9 @@
 	    }
 	}
     </script>
+
+    <script src="../../public/js/content/dashboard-content.js"></script>
+
 </body>
 
 </html>

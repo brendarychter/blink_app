@@ -6,13 +6,12 @@ $(document).ready(function(){
     getSessionAdminUser();
 
     toggleTabs();
-    populateLabels();
 
     function getSessionAdminUser(){
     	console.log("entro")
 
         //$.get('http://www.blinkapp.com.ar/back/admin/users/getUserAdminSession.php', function (data) {
-        $.get('../back/admin/users/getUserAdminSession.php', function (data) {
+        $.get('../../back/admin/users/getUserAdminSession.php', function (data) {
           userAdmin = JSON.parse(data);
           $("#admin-logged").append(userAdmin.username);
         });
@@ -20,111 +19,10 @@ $(document).ready(function(){
 
     $('#log-out').on('click', function(){
         $.ajaxSetup({cache: false})
-        $.get('../back/global/destroySession.php', function (data) {
-            window.location.href = "../indexAdmin.php";
+        $.get('../../back/global/destroySession.php', function (data) {
+            window.location.href = "../../indexAdmin.php";
         });
     })
-
-    function populateLabels(){
-        params= {};
-        params.action = "getContent";
-        params.table = "home";
-        $.ajax({
-            //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: "../back/admin/content/adminContent.php",
-            type: "POST",
-            cache: false,
-            data: params,
-            dataType: "json"
-        }).done(function( data ) {
-
-            /*=============================================
-            =            Section comment block            =
-            =============================================*/
-            
-            //console.log(data["section_section_1"].visible)
-            checkVisibility(data["section_section_1"]);
-            checkVisibility(data["button_section_2"]);
-            checkVisibility(data["title_section_4"]);
-            checkVisibility(data["button_section_5"]);
-
-            // SECTION 1
-            //SECTION 1 HOME
-            $('.section-spanish-1').append(unescape(data["section_section_1"].spanish));
-            $('.section-english-1').append(unescape(data["section_section_1"].english));
-            $('.button-spanish-1').append(unescape(data["button_section_1"].spanish));
-            $('.button-english-1').append(unescape(data["button_section_1"].english));
-            $('.titulo-spanish-1').append(unescape(data["title_section_1"].spanish));
-            $('.titulo-english-1').append(unescape(data["title_section_1"].english));
-            $('.subtitle-spanish-1').append(unescape(data["subtitle_section_1"].spanish));
-            $('.subtitle-english-1').append(unescape(data["subtitle_section_1"].english));
-
-
-            //SECTION 2
-            $('.title-spanish-2').append(unescape(data["title_section_2"].spanish));
-            $('.title-english-2').append(unescape(data["title_section_2"].english));
-            $('.subtitle-spanish-2').append(unescape(data["subtitle_section_2"].spanish));
-            $('.subtitle-english-2').append(unescape(data["subtitle_section_2"].english));
-            $('.text-spanish-2').append(unescape(data["text_section_2"].spanish));
-            $('.text-english-2').append(unescape(data["text_section_2"].english));
-            $('.button-spanish-2').append(unescape(data["button_section_2"].spanish));
-            $('.button-english-2').append(unescape(data["button_section_2"].english));
-
-            $('.text_1_section_2-spanish').text(unescape(data["text_1_section_2"].spanish))
-            $('.text_1_section_2-english').text(unescape(data["text_1_section_2"].english))
-            $('.text_2_section_2-spanish').text(unescape(data["text_2_section_2"].spanish))
-            $('.text_2_section_2-english').text(unescape(data["text_2_section_2"].english))
-            $('.text_3_section_2-spanish').text(unescape(data["text_3_section_2"].spanish))
-            $('.text_3_section_2-english').text(unescape(data["text_3_section_2"].english))
-            $('.text_4_section_2-spanish').text(unescape(data["text_4_section_2"].spanish))
-            $('.text_4_section_2-english').text(unescape(data["text_4_section_2"].english))
-
-            //SECTION 4
-            $('.title-spanish-4').append(unescape(data["title_section_4"].spanish));
-            $('.title-english-4').append(unescape(data["title_section_4"].english));
-            $('.text-spanish-4').append(unescape(data["text_section_4"].spanish));
-            $('.text-english-4').append(unescape(data["text_section_4"].english));
-            $('.button-spanish-4').append(unescape(data["button_section_4"].spanish));
-            $('.button-english-4').append(unescape(data["button_section_4"].english));
-
-            //SECTION 5
-            $('.button-spanish-5').append(unescape(data["button_section_5"].spanish));
-            $('.button-english-5').append(unescape(data["button_section_5"].english));
-            $('.title-spanish-5').append(unescape(data["title_section_5"].spanish));
-            $('.title-english-5').append(unescape(data["title_section_5"].english));
-            $('.subtitle-spanish-5').append(unescape(data["subtitle_section_5"].spanish));
-            $('.subtitle-english-5').append(unescape(data["subtitle_section_5"].english));
-
-            $('.text_1_section_5-spanish').append(unescape(data["text_1_section_5"].spanish));
-            $('.text_1_section_5-english').append(unescape(data["text_1_section_5"].english));
-            $('.text_2_section_5-spanish').append(unescape(data["text_2_section_5"].spanish));
-            $('.text_2_section_5-english').append(unescape(data["text_2_section_5"].english));
-            $('.text_3_section_5-spanish').append(unescape(data["text_3_section_5"].spanish));
-            $('.text_3_section_5-english').append(unescape(data["text_3_section_5"].english));
-            $('.text_4_section_5-spanish').append(unescape(data["text_4_section_5"].spanish));
-            $('.text_4_section_5-english').append(unescape(data["text_4_section_5"].english));
-            
-            
-            /*=====  End of Section comment block  ======*/
-            
-            
-
-
-        }).error(function(error, textStatus){
-            console.log(error);
-        });
-    }
-
-    function checkVisibility(section){
-        if (section.visible == 0){
-            console.log("no mostrar");
-            $('#edit-section-'+section.section).show();
-            $('#delete-section-'+section.section).hide();
-        }else{
-           $('#edit-section-'+section.section).hide();
-            $('#delete-section-'+section.section).show();
-        }
-    }
 
     function toggleTabs(){
     //borrar todas las que están en el dashboard de pestañas
@@ -200,7 +98,7 @@ $(document).ready(function(){
                 console.log("insert");
                 $.ajax({
                     //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-                    url: "../back/admin/content/adminContent.php",
+                    url: "../../back/admin/content/adminContent.php",
                     type: "POST",
                     data: params
                 }).done(function( data ) {
@@ -273,7 +171,7 @@ $(document).ready(function(){
         console.log(params)
         $.ajax({
             //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: "../back/admin/content/adminContent.php",
+            url: "../../back/admin/content/adminContent.php",
             type: "POST",
             cache: false,
             data: params,
