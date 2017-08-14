@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Blink App - Home</title>
-    <!-- Agregarle el idioma -->
+    <title class="tab_title">Blink App - Home</title>
     <meta name="description" content="Blink app es una herramienta, un aliado en tu día a día. Es la mejor manera de mantenerte informado todo el tiempo de todo lo que pasa en tus grupos al recibir notificaciones en el momento en que tus amigos publican contenidos.">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +15,6 @@
     <link rel="stylesheet" href="public/css/styles_default.css">
 
     <link rel="shortcut icon" type="image/png" href="public/img/icon_tab.png" class="img_icon_menu" />
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -135,7 +133,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <textarea id="form_message" name="message" class="form-control" placeholder="Mensaje *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                            <textarea id="form_message" name="message" class="form-control text_4_section_5" placeholder="Mensaje *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
                                             <!-- <div class="help-block with-errors"></div> -->
                                             <p class="help-block text-danger"></p>
                                         </div>
@@ -184,13 +182,13 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <!-- My scripts -->
-    <script src="public/js/actions/load.js"></script>
-    <script src="public/js/actions/loadMenu.js"></script>
+    <!--<script src="public/js/actions/load.js"></script>
+    <script src="public/js/actions/loadMenu.js"></script>-->
     <script src="public/js/contact/validator.js"></script>
     <script src="public/js/contact/contact.js"></script>
 
     <!-- Change language -->
-    <script src="public/js/content/changeLanguage.js"></script>
-    <script src="public/js/content/header-content.js"></script>
+    <script src="public/js/content/common-content.js"></script>
+    <script src="public/js/content/home-content.js"></script>
 </body>
 </html>

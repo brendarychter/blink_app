@@ -1,7 +1,7 @@
 <footer class="footer-blink">
     <div class="footer-box">
         <span class="footer-box-title">Blink app</span>
-        <p class="footer-links">
+        <p class="footer-links seleccion-idioma">
             <a href="" id="spanish" class="language-selection footer_spanish">Espa&ntilde;ol</a>
             ·
             <a href="" id="english" class="language-selection footer_english">Ingl&eacute;s</a>

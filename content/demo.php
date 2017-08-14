@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- CAMBIAR ACÁ TAMBIÉN EL TITLE POR IDIOMA -->
-    <title class="title-section-3">Demo - Blink App</title>
+    <title class="demo_tab_title">Demo - Blink App</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,7 +21,9 @@
     <script src="../public/js/actions/ga_commons.js"></script>
 </head>
 <body id="page-top" class="index landing-main-page">
-    <?php include('header.php');?> 
+    <?php 
+        include('header.php');
+    ?> 
     <header>
         <h1 class="demo_title_header">Blink App: tu nueva red social</h1>
         <h2 class="demo_subtitle_header">Y un nuevo concepto de interacci&oacute;n</h2>
@@ -31,10 +32,6 @@
     <section id="portfolio" class="bg-light-gray" style="padding-top:50px">
         <div class="container">
             <div class="row">
-                <!-- <div style="text-align: center;">
-                    <a href="#" class="page-scroll btn btn-xl button_section_2" id="more-info" style="margin-top: 0;margin-bottom: 20px;">Video en construcci&oacute;n</a>
-                </div>
- -->
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -80,6 +77,7 @@
             </div>
         </div>
     </section>
+
     <?php
         include '../footer.php';
     ?>
@@ -97,20 +95,19 @@
     <script src="../public/js/global/classie.js"></script>
     <script src="../public/js/global/cbpAnimatedHeader.js" data-top="10"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="../public/js/global/jqBootstrapValidation.js"></script>
-    <script src="../public/js/global/contact_me.js"></script>
-
     <!-- Custom Theme JavaScript -->
     <script src="../public/js/global/agency.js"></script>
 
     <!-- TIMELINE -->
     <script src="../public/js/global/index_timeline.js"></script>
-    <script src="../public/js/actions/loadMenu.js"></script>
-    <script src="../public/js/works/loadWorks.js"></script>
+    <!--<script src="../public/js/actions/loadMenu.js"></script>
+    <script src="../public/js/works/loadWorks.js"></script>-->
     <script src="../public/js/actions/renameLocation.js"></script>
 
-
+    <!-- Change language -->
+    <script src="../public/js/content/common-content.js"></script>
+    <script src="../public/js/content/demo-content.js"></script>
+    
     <script type="text/javascript">
         $('#page-demo').closest('li').addClass("active");
     </script>

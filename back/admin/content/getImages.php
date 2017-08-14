@@ -11,7 +11,7 @@
 	    $response = mysqli_query($connection->connected,$consulta);
 	    if(mysqli_num_rows($response)>=1){
 		    while($obj = mysqli_fetch_object($response)){
-	            $matriz[$obj->table_name][] = array('id_name' => $obj->id_name, 'section' => $obj->section, 'img' => basename($obj->img), 'nombre' => $obj->nombre, 'id_image' => $obj->id_image, 'num' => $obj->num);
+	            $matriz[$obj->table_name][] = array('id_name' => $obj->id_name, 'section' => $obj->section, 'img' => basename($obj->img), 'nombre_es' => $obj->nombre_es, 'nombre_en' => $obj->nombre_es, 'id_image' => $obj->id_image, 'num' => $obj->num);
 		    }
 		    $datos = json_encode($matriz);
 		    echo $datos;

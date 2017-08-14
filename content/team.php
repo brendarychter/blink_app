@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- CAMBIAR ACÁ TAMBIÉN EL TITLE POR IDIOMA -->
-    <title class="title-section-2">Qui&eacute;nes somos - Blink App</title>
+    <title class="team_tab_title">Qui&eacute;nes somos - Blink App</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -92,19 +91,19 @@
     <script src="../public/js/global/classie.js"></script>
     <script src="../public/js/global/cbpAnimatedHeader.js" data-top="10"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="../public/js/global/jqBootstrapValidation.js"></script>
-    <script src="../public/js/global/contact_me.js"></script>
-
     <!-- Custom Theme JavaScript -->
     <script src="../public/js/global/agency.js"></script>
 
     <!-- TIMELINE -->
     <script src="../public/js/global/index_timeline.js"></script>
-    <script src="../public/js/actions/loadMenu.js"></script>
-    <script src="../public/js/works/loadWorks.js"></script>
+    <!--<script src="../public/js/actions/loadMenu.js"></script>
+    <script src="../public/js/works/loadWorks.js"></script>-->
     <script src="../public/js/actions/renameLocation.js"></script>
     
+    <!-- Change language -->
+    <script src="../public/js/content/common-content.js"></script>
+    <script src="../public/js/content/team-content.js"></script>
+
     <script type="text/javascript">
         $('#page-team').closest('li').addClass("active");
     </script>

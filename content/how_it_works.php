@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- CAMBIAR ACÁ TAMBIÉN EL TITLE POR IDIOMA -->
-    <title>C&oacute;mo funciona - Blink App</title>
+    <title class="tab_title">C&oacute;mo funciona - Blink App</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,7 +20,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
     <script src="../public/js/global/modernizr.js"></script>
+    <!-- Estilo de la linea -->
     <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="../public/css/style.css">
@@ -116,22 +117,21 @@
     <script src="../public/js/global/classie.js"></script>
     <script src="../public/js/global/cbpAnimatedHeader.js" data-top="10"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="../public/js/global/jqBootstrapValidation.js"></script>
-    <script src="../public/js/global/contact_me.js"></script>
-
     <!-- Custom Theme JavaScript -->
     <script src="../public/js/global/agency.js"></script>
 
     <!-- TIMELINE -->
     <script src="../public/js/global/index_timeline.js"></script>
-    <script src="../public/js/actions/show.js"></script>
-    <script src="../public/js/works/loadWorks.js"></script>
-    <script src="../public/js/actions/loadMenu.js"></script>
+    <!--<script src="../public/js/works/loadWorks.js"></script>-->
     <script src="../public/js/actions/renameLocation.js"></script>
 
     <script type="text/javascript">
         $('#page-works').closest('li').addClass("active");
     </script>
+
+    <!-- Change language -->
+    <script src="../public/js/content/common-content.js"></script>
+    <script src="../public/js/content/working-content.js"></script>
+
 </body>
 </html>

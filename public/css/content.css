@@ -364,6 +364,8 @@ header {
   .footer-blink .footer-box .separator {
     font-size: 16px;
     color: #fff; }
+  .footer-blink .footer-box .seleccion-idioma .selected-language {
+    color: #fed136; }
 
 .footer-blink .footer-icons {
   margin-top: 25px; }
