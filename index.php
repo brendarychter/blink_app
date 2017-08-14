@@ -189,5 +189,10 @@
     <script src="public/js/contact/validator.js"></script>
     <script src="public/js/contact/contact.js"></script>
 
+    <!-- Change language -->
+    <script src="public/js/content/changeLanguage.js"></script>
+    <script src="public/js/content/header-content.js"></script>
+    <script src="public/js/content/footer-content.js"></script>
+    <!-- <script src="public/js/content/index-content.js"></script> -->
 </body>
 </html>

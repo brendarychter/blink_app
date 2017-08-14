@@ -2,9 +2,9 @@
     <div class="footer-box">
         <span class="footer-box-title">Blink app</span>
         <p class="footer-links">
-            <a href="#" id="spanish" class="language-selection">Espa&ntilde;ol</a>
+            <a href="" id="spanish" class="language-selection">Espa&ntilde;ol</a>
             ·
-            <a href="#" id="english" class="language-selection">Ingl&eacute;s</a>
+            <a href="" id="english" class="language-selection">Ingl&eacute;s</a>
             </br>
         </p>
         <p class="footer-links">

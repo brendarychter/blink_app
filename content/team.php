@@ -46,7 +46,7 @@
                     <div class="separator">·</div>
                     <p class="large text-muted">Me esfuerzo plenamente por llevar adelante este gran equipo, comprometido a satisfacer las necesidades de los clientes.</p>
                     <ul class="list-inline social-buttons">
-                        <li><a href="https://www.behance.net/DamianCukierman"><img src="../public/img/linkedin.svg" style="border:0"></a>
+                        <li><a href="https://www.behance.net/DamianCukierman"><img src="../public/img/icons/linkedin.svg" style="border:0"></a>
                         </li>
                     </ul>
                 </div>
@@ -57,7 +57,7 @@
                     <div class="separator">·</div>
                     <p class="large text-muted">Desarrollar es mi pasi&oacute;n. D&iacute;a a d&iacute;a me dedico a explorar las nuevas tecnolog&iacute;as para estar a la vanguardia en nuestros proyectos.</p>
                     <ul class="list-inline social-buttons">
-                        <li><a href="https://ar.linkedin.com/in/juanmamig"><img src="../public/img/linkedin.svg" style="border:0"></a>
+                        <li><a href="https://ar.linkedin.com/in/juanmamig"><img src="../public/img/icons/linkedin.svg" style="border:0"></a>
                         </li>
                     </ul>
                 </div>
@@ -68,7 +68,7 @@
                     <div class="separator">·</div>
                     <p class="large text-muted">Me gusta comprender c&oacute;mo los usuarios se conectan con la tecnolog&iacute;a, para brindarles la mejor navegaci&oacute;n en las aplicaciones que desarrollamos.</p>
                     <ul class="list-inline social-buttons">
-                        <li><a href="https://ar.linkedin.com/in/german-figueroa-27254490"><img src="../public/img/linkedin.svg" style="border:0"></a>
+                        <li><a href="https://ar.linkedin.com/in/german-figueroa-27254490"><img src="../public/img/icons/linkedin.svg" style="border:0"></a>
                         </li>
                     </ul>
                 </div>
