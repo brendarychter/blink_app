@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Blink App - Home</title>
+    <title class="newsletter_tab_title">Newsletter - Blink App</title>
     <meta name="description" content="Gracias por suscribirte!">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -47,9 +47,9 @@
 
     <section class="general-container not-found-page">
         <img src="public/img/newsletter.svg" width="250px">
-        <h1 class="title-newsletter">&iexcl;Gracias por suscribirte al newsletter!</h1>
-        <h4 style="text-transform: inherit; margin-top: 20px;" class="subtitle-newsletter">Revisa tu correo electr&oacute;nico para recibir las novedades</h4>
-        <a href="index.php" class="btn btn-xl" style="margin-top: 15px" class="button-newsletter">Volver a la p&aacute;gina de inicio</a>
+        <h1 class="title-newsletter newsletter_title">&iexcl;Gracias por suscribirte al newsletter!</h1>
+        <h4 style="text-transform: inherit; margin-top: 20px;" class="subtitle-newsletter newsletter_subtitle">Revisa tu correo electr&oacute;nico para recibir las novedades</h4>
+        <a href="index.php" style="margin-top: 15px" class="btn btn-xl button-newsletter newsletter_button">Volver a la p&aacute;gina de inicio</a>
     </section>
 
     <div class="no-newsletter">
@@ -60,5 +60,6 @@
     
     <!-- Change language -->
     <script src="public/js/content/common-content.js"></script>
+    <script src="public/js/content/newsletter-content.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mapa</title>
+    <title class="map_tab_title">Mapa de navegaci&oacute;n - Blink App</title>
     <meta name="description" content="Mapa de sitio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,17 +28,20 @@
     <script src="../public/js/actions/ga_commons.js"></script>
 </head>
 <body id="page-top" class="index landing-main-page main-page-blink">
-    <?php include('header.php');?> 
+    <?php 
+        include('header.php');
+    ?> 
     <section class="map-container">
-        <h1>Blink App Website</h1>
+        <h1 class="map_title">Mapa de navegación</h1>
+        <h2 class="map_subtitle">Web Blink App</h2>
         <ul>
-            <li><a href="../index.php">Home</a> <span class="separator"> - </span> </li>
+            <li><a href="../index.php" class="blink_menu">Home</a> <span class="separator"> - </span> </li>
             <li><a href="how_it_works.php" class="works_menu">Conoc&eacute; m&aacute;s</a> <span class="separator"> - </span> </li>
-            <li><a href="demo.php">Demo</a> <span class="separator"> - </span> </li>
-            <li><a href="faq.php">FAQ</a> <span class="separator"> - </span> </li>
-            <li><a href="team.php">Qui&eacute;nes somos</a> <span class="separator"> - </span> </li>
-            <li><a href="../index#contacto.php">Contacto</a></li>
-            
+            <li><a href="demo.php" class="demo_menu">Demo</a> <span class="separator"> - </span> </li>
+            <li><a href="faq.php" class="faq_menu">FAQ</a> <span class="separator"> - </span> </li>
+            <li><a href="team.php" class="team_menu">Qui&eacute;nes somos</a> <span class="separator"> - </span> </li>
+            <li><a href="../index#contacto.php" class="contact_menu">Contacto</a></li> <span class="separator"> - </span> </li>
+            <li><a href="log_in.php" class="log_in_menu">Inici&aacute; sesi&oacute;n</a></li>
         </ul>
     </section>
 
@@ -72,6 +75,7 @@
     
     <!-- Change language -->
     <script src="../public/js/content/common-content.js"></script>
+    <script src="../public/js/content/map-content.js"></script>
     
 </body>
 </html>

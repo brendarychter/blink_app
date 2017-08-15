@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sign up - Blink!</title>
+    <title class="sign_in_tab_title">Registrarme - Blink!</title>
     <meta name="description" content="Registrate en la plataforma de Blink App y conectate con tus amigos">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -50,19 +50,19 @@
                         <form role="form" id="signin-user-form" method="post">
                             <div class="messages"></div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Ingrese su nombre" name="nombre-usuario" type="input" autofocus="" id="new-user" style="border-radius: 0;" required />
+                                <input class="form-control sign_in_name" placeholder="Ingrese su nombre" name="nombre-usuario" type="input" autofocus="" id="new-user" style="border-radius: 0;" required />
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Ingrese su email" name="email-usuario" type="email" value="" id="new-mail" style="border-radius: 0;" required />
+                                <input class="form-control sign_in_mail" placeholder="Ingrese su email" name="email-usuario" type="email" value="" id="new-mail" style="border-radius: 0;" required />
                             </div>
                             <div class="form-group">
-                                <input id="form_phone" type="tel" name="phone-usuario" class="form-control" placeholder="Ingrese su n&uacute;mero de tel&eacute;fono" id="new-phonenumber" >
+                                <input id="form_phone" type="tel" name="phone-usuario" class="form-control sign_in_phone" placeholder="Ingrese su n&uacute;mero de tel&eacute;fono" id="new-phonenumber" >
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Ingrese su nombre de usuario" name="username-usuario" type="input" autofocus="" id="new-username" style="border-radius: 0;" required />
+                                <input class="form-control sign_in_username" placeholder="Ingrese su nombre de usuario" name="username-usuario" type="input" autofocus="" id="new-username" style="border-radius: 0;" required />
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Ingrese una contrase&ntilde;a" name="password-usuario" type="password" value="" id="new-passowrd" style="border-radius: 0;" required />
+                                <input class="form-control sign_in_password" placeholder="Ingrese una contrase&ntilde;a" name="password-usuario" type="password" value="" id="new-passowrd" style="border-radius: 0;" required />
                             </div><!-- 
                             <div class="form-group">
                                 <form method="post" enctype="multipart/form-data" id="imageUploadFormUser" data-form="">
@@ -74,7 +74,7 @@
                             <div class="form-group">
                                 <div class="g-recaptcha" data-sitekey="6Le78ScUAAAAAIwMiCcAfjo6XputN6OYM3LXyLQx"></div>
                             </div>
-                            <input type="submit" class="btn btn-primary btn-send send-form" id="signup-user" value="Iniciar sesi&oacute;n">
+                            <input type="submit" class="btn btn-primary btn-send send-form sign_in_button" id="signup-user" value="Registrarme">
                         </form>
                     </div>
                 </div>
@@ -96,6 +96,12 @@
     <script src="../public/js/global/bootstrap.min.js"></script>
     <script src="../public/js/contact/validator.js"></script>
     <script src="../public/js/actions/signinUser.js"></script>
+
+    <script src="../public/js/actions/renameLocation.js"></script>
+
+    <!-- Change language -->
+    <script src="../public/js/content/common-content.js"></script>
+    <script src="../public/js/content/sign-in-content.js"></script>
 
     <!-- Move menu to right -->
     <script type="text/javascript">

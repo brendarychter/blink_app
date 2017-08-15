@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var language = localStorage.getItem("language");
-	getPartialContent("team");
+	getPartialContent("users_log_in");
 
     function getPartialContent(table){
         params = {};
@@ -15,8 +15,10 @@ $(document).ready(function(){
             dataType: "json"
         }).done(function (data) {
             for (var i in data){
-                if (i.indexOf("linkedin") > -1){
-                    $('.'+i).attr("href", unescape(data[i][language]));
+                if (i == "log_in_username" || i == "log_in_password"){
+                    $('.'+i).attr("placeholder", unescape(data[i][language]));
+                }else if (i == "log_in_button"){
+                    $('.'+i).val(unescape(data[i][language]));
                 }else{
                     $('.'+i).text(unescape(data[i][language]));
                 }

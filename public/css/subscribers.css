@@ -67,8 +67,12 @@ only screen and (max-width: 760px),
 	.table-contact td:nth-of-type(4):before { content: "Mensaje"; }
 	.table-contact td:nth-of-type(5):before { content: "Fecha y hora"; }
 
-	.table-subscribers td:nth-of-type(1):before { content: "Nombre";}
-	.table-subscribers td:nth-of-type(2):before { content: "Mail";}
-	.table-subscribers td:nth-of-type(3):before { content: "Fecha y hora";}
-	.table-subscribers td:nth-of-type(4):before { content: "Estado";}
+	.table-users td:nth-of-type(1):before { content: "Nombre";}
+	.table-users td:nth-of-type(2):before { content: "Nombre de usuario";}
+	.table-users td:nth-of-type(3):before { content: "Contraseña";}
+	.table-users td:nth-of-type(4):before { content: "Mail";}
+	.table-users td:nth-of-type(5):before { content: "Número de teléfono";}
+	.table-users td:nth-of-type(6):before { content: "Ingreso"}
+	.table-users td:nth-of-type(7):before { content: "Estado"}
+	.table-users td:nth-of-type(8):before { content: "Acción"}
 }

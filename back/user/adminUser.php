@@ -8,6 +8,7 @@
 	if(!mysqli_connect_error()){
 
     	if(isset($_POST['action'])){
+
     		$action = $_POST['action'];
     		
 
@@ -30,6 +31,16 @@
 
 	    			$user->createNewUser($connection, $name, $username, $password, $email, $phone, $captcha, $datetime);
 		        }
+    		}else if ($action == "getAllUsers"){
+	    		$user = new User;
+	        	$user->getAllUsers($connection);
+
+    		}else if ($action == "activeUser"){
+	    		$user = new User;
+	    		$active = $_POST['active'];
+	    		$userID = $_POST['userID'];
+	        	$user->activeUser($connection, $userID, $active);
+
     		}else{
 	    		if(isset($_POST['username']) && isset($_POST['password'])){
 	    			$user = new User;

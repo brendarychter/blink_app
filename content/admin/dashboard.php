@@ -139,6 +139,7 @@
     <script src="../../public/js/actions/dashboard.js"></script>
     <script src="../../public/js/actions/loadMenu.js"></script>
     <script src="../../public/js/actions/admin_dashboard/getContactMessages.js"></script>
+    <script src="../../public/js/actions/admin_dashboard/app.js"></script>
     
     <script type="text/javascript">
 	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */

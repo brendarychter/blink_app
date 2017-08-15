@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var language = localStorage.getItem("language");
-	getPartialContent("team");
+	getPartialContent("map");
 
     function getPartialContent(table){
         params = {};
@@ -15,11 +15,7 @@ $(document).ready(function(){
             dataType: "json"
         }).done(function (data) {
             for (var i in data){
-                if (i.indexOf("linkedin") > -1){
-                    $('.'+i).attr("href", unescape(data[i][language]));
-                }else{
-                    $('.'+i).text(unescape(data[i][language]));
-                }
+                $('.'+i).text(unescape(data[i][language]));
             }
         }).error(function (error){
             console.log(error.statusText);

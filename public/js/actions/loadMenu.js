@@ -23,25 +23,10 @@ $(document).ready(function(){
             data: params,
             dataType: "json"
         }).done(function( data ) {
-            //Tener la seccion a mostrar
-            /* FOR LOCAL UPLOADS USE ../../../../blink_app/uploads/ */
-            /* FOR PROD UPLOADS USE urlImage */
-            
-            //cargo por sección, los ids
             for (i in data[table]){
                 var img = data[table][i];
                 console.log(table)
                 switch (table){
-                    case "menu":
-                        $('.img_'+table).attr("data-url", img.img);
-                        $('.img_'+table).prop("alt", img.nombre);
-                        $('.img_'+table).prop("title", img.nombre);
-                        var val = img.img;
-                        $('#img_url_'+table).text(val.substr(val.indexOf("/") + 1));
-                        $('.img_'+table).attr("src", urlImage + img.img);
-                        $('.img_icon_'+table).attr("href", urlImage + img.img);
-                        $('#title_img_'+table).val(img.nombre);
-                    break;
                     case "works":
                         $('.img_'+table).attr("data-url", img.img);
                         $('.img_'+table).prop("alt", img.nombre);
@@ -70,8 +55,6 @@ $(document).ready(function(){
             console.log(error);
         });
     }
-
-
 
     $('.save-img').on("click", function(){
         var table = $(this).attr("data-table");

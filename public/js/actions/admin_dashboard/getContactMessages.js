@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	console.log('hola');
 	$.ajax({
         url: "../../back/admin/subscribers/site_data.php",
         type: "POST",
@@ -10,7 +9,7 @@ $(document).ready(function(){
     		table.append('<tr id="contact-'+ data[i].id_contact+'"></tr>');
     		for (var n in data[i]){
     			if (n !== "id_contact"){
-    				$('#contact-'+ data[i].id_contact).append('<td>'+data[i][n]+'</hola>')
+    				$('#contact-'+ data[i].id_contact).append('<td>'+data[i][n]+'</td>')
     			}
     		}
     	}

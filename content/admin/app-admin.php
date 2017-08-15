@@ -3,19 +3,20 @@
 		<div class="panel-heading"></div>
 		<div class="panel-body">
 		</div>
-		<table class="contact-subscribers">
+		<table class="contact-users">
 			<thead>
 			<tr>
 				<th>Nombre</th>
+				<th>Nombre de usuario</th>
+				<th>Contrase&ntilde;a</th>
 				<th>Mail</th>
-				<th>Fecha y hora</th>
+				<th>N&uacute;mero de tel&eacute;fono</th>
+				<th>Ingreso</th>
 				<th>Estado</th>
+				<th>Accion</th>
 			</tr>
 			</thead>
-			<tbody class="table-subscribers">
-				<tr class="each-contact">
-					<td class="name-contact">James</td>
-				</tr>
+			<tbody class="table-users">
 			</tbody>
 		</table>
 	</div>
