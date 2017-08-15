@@ -1,4 +1,21 @@
 $(document).ready(function(){
+    /* Seleccionar las secciones del panel */
+    toggleTabs();
+    function toggleTabs(){
+    //borrar todas las que están en el dashboard de pestañas
+        $('.team-admin').hide();
+        $(".toggle-nav-admin").click(function() {
+            // remove classes from all
+            $(".toggle-nav-admin").removeClass("active");
+            $(".tab-admin-page .admin-nav").hide();
+            // add class to the one we clicked
+            $(this).addClass("active");
+            $(".tab-admin-page ." + $(this).attr('id')).show();
+        });
+    }
+
+    /* Cargar todo el panel de administración */
+    
     getPartialContent("menu");
     getPartialContent("home");
     getPartialContent("works");
@@ -34,8 +51,6 @@ $(document).ready(function(){
         urlAdmin = "back/admin/content/adminContent.php";
     }
 
-
-
     $('.show-page').on("click", function(){
         params= {};
         params.action = "showAndHideMenu";
@@ -60,5 +75,11 @@ $(document).ready(function(){
             console.log(error)
         });
     })
+
+
+
+    /* Cargar imagenes */
+    
+
 
 });

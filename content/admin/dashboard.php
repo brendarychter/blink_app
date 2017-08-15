@@ -124,18 +124,11 @@
 
     <!-- Plugin JavaScript -->
     <script src="../../public/js/global/jqueryeasing.js"></script>
-    <!--<script src="../../public/js/global/classie.js"></script>
-    <script src="../../public/js/global/cbpAnimatedHeader.js"></script>-->
-
-    <!-- Contact Form JavaScript -->
-    <script src="../../public/js/global/jqBootstrapValidation.js"></script>
-    <script src="../../public/js/global/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="../../public/js/global/agency.js"></script>
 
     <!-- Actions -->
-    <script src="../../public/js/global/jquery.validate.min.js"></script>
     <script src="../../public/js/actions/dashboard.js"></script>
     <script src="../../public/js/actions/loadMenu.js"></script>
     <script src="../../public/js/actions/admin_dashboard/getContactMessages.js"></script>

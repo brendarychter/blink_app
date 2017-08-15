@@ -5,11 +5,8 @@ $(document).ready(function(){
     $.ajaxSetup({cache: false})
     getSessionAdminUser();
 
-    toggleTabs();
-
     function getSessionAdminUser(){
     	console.log("entro")
-
         //$.get('http://www.blinkapp.com.ar/back/admin/users/getUserAdminSession.php', function (data) {
         $.get('../../back/admin/users/getUserAdminSession.php', function (data) {
           userAdmin = JSON.parse(data);
@@ -23,19 +20,6 @@ $(document).ready(function(){
             window.location.href = "../../indexAdmin.php";
         });
     })
-
-    function toggleTabs(){
-    //borrar todas las que están en el dashboard de pestañas
-        $('.team-admin').hide();
-        $(".toggle-nav-admin").click(function() {
-            // remove classes from all
-            $(".toggle-nav-admin").removeClass("active");
-            $(".tab-admin-page .admin-nav").hide();
-            // add class to the one we clicked
-            $(this).addClass("active");
-            $(".tab-admin-page ." + $(this).attr('id')).show();
-        });
-    }
 
     params2 = {};
     var switchToInput = function () {

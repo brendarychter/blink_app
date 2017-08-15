@@ -173,10 +173,6 @@
     <script src="public/js/global/classie.js"></script>
     <script src="public/js/global/cbpAnimatedHeader.js" data-top="180"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="public/js/global/jqBootstrapValidation.js"></script>
-    <script src="public/js/global/contact_me.js"></script>
-
     <!-- Custom Theme JavaScript -->
     <script src="public/js/global/agency.js"></script>
 
