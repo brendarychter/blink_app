@@ -8,15 +8,15 @@ $(document).ready(function(){
 
         var url, urlImage;
         if (window.location.href.indexOf("content") > -1){
-            url = "../../back/admin/content/getImages.php";
+            //url = "../../back/admin/content/getImages.php";
             urlImage = "uploads/";
         }else{
-            url = "back/admin/content/getImages.php";
-            urlImage = "uploads/";
-            //urlImage = "../../../../uploads/";
+            //url = "back/admin/content/getImages.php";
+            //urlImage = "uploads/";
+            urlImage = "../../../../uploads/";
         }
         $.ajax({
-            //url: "http://www.blinkapp.com.ar/back/admin/content/getImages.php",
+            url: "http://www.blinkapp.com.ar/back/admin/content/getImages.php",
             url: url,
             type: "POST",
             cache: false,
@@ -76,8 +76,8 @@ $(document).ready(function(){
         if (url == null || url ==undefined || url ==""){
             console.log("nueva");
             $.ajax({
-                //url: "http://www.blinkapp.com.ar/back/admin/content/loadImages.php",
-                url: "../../back/admin/content/loadImages.php",
+                url: "http://www.blinkapp.com.ar/back/admin/content/loadImages.php",
+                //url: "../../back/admin/content/loadImages.php",
                 type: "POST",
                 cache: false,
                 processData: false,
@@ -92,8 +92,8 @@ $(document).ready(function(){
         }else{
             console.log("url existe, hacer un update");
             $.ajax({
-                //url: "http://www.blinkapp.com.ar/back/admin/content/updateImages.php",
-                url: "../../back/admin/content/updateImages.php",
+                url: "http://www.blinkapp.com.ar/back/admin/content/updateImages.php",
+                //url: "../../back/admin/content/updateImages.php",
                 type: "POST",
                 cache: false,
                 processData: false,

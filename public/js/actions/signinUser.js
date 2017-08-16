@@ -4,12 +4,12 @@ $(function () {
 
     $('#signin-user-form').on('submit', function (e) {
         if (!e.isDefaultPrevented()) {
-            //url: "http://www.blinkapp.com.ar/back/admin/users/admin_user.php",
             var today = new Date();
             var date_time = today.getDate() + '/' + (today.getMonth()+1) + '/' + today.getFullYear() + '. ' + today.getHours() + ":" + today.getMinutes();
             $.ajax({
                 type: "POST",
-                url: "../back/user/adminUser.php",
+                url: "http://www.blinkapp.com.ar/back/admin/users/admin_user.php",
+                //url: "../back/user/adminUser.php",
                 data: $(this).serialize() + '&action=createNewUser' + '&datetime=' + date_time.toString()
             }).done(function( data ) {
                 console.log(data)

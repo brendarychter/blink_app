@@ -2,7 +2,8 @@ $(document).ready(function(){
     params = {};
     params.action = "getAllUsers";
 	$.ajax({
-        url: "../../back/user/adminUser.php",
+        url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
+        //url: "../../back/user/adminUser.php",
         type: "POST",
         dataType: "json",
         data: params

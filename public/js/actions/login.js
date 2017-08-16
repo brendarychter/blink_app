@@ -6,7 +6,8 @@ $(function () {
         params.username = $('#username-user').val();
         params.password = $('#pass-user').val();
         $.ajax({
-            url: "../back/user/adminUser.php",
+            url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
+            //url: "../back/user/adminUser.php",
             type: "POST",
             data: params,
         }).done(function( data ) {

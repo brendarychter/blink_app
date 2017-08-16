@@ -4,6 +4,7 @@ $(function () {
 
     $('#contact-form').on('submit', function (e) {
         if (!e.isDefaultPrevented()) {
+            //var url = "http://www.blinkapp.com.ar/back/contact/contact.php",
             var url = "back/contact/contact.php";
             var today = new Date();
             //CHEQUEAR UBICACION????
