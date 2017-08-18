@@ -1,0 +1,8 @@
+#RewriteEngine on
+#ErrorDocument 404 http://www.blinkapp.com.ar/error
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+#RewriteCond %{REQUEST_URI} !(.*)content 
+#RewriteRule ^(.*)$ content/$1 [L]
