@@ -33,6 +33,9 @@
     <script src="../public/js/actions/ga_commons.js"></script>
 </head>
 <body id="page-top" class="index landing-main-page">
+    <!-- Layer -->
+    <div class="bck"></div>
+    
     <?php 
         include('header.php');
     ?> 

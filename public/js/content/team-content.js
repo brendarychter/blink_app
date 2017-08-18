@@ -20,6 +20,7 @@ $(document).ready(function(){
                 }else{
                     $('.'+i).text(unescape(data[i][language]));
                 }
+                $('.bck').fadeOut("slow");
             }
         }).error(function (error){
             console.log(error.statusText);

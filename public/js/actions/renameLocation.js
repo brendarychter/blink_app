@@ -3,6 +3,8 @@ $(document).ready(function(){
 	    $(this).attr("src", "../" + $(this).attr("src"));
 	});
 
-	var source = $(".locate").prop("href").replace('content/','');
-	$(".locate").prop("href", source)
+	$(".locate-polytics").prop("href", $(".locate-polytics").prop("href").replace('content/',''));
+	$(".locate-terms").prop("href", $(".locate-terms").prop("href").replace('content/',''));
+	$(".locate-map").prop("href", $(".locate-map").prop("href").replace('content/',''));
+
 })

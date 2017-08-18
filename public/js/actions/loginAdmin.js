@@ -8,13 +8,13 @@ $(document).ready(function(){
         params.password = $('#pass-admin').val();
         $.ajax({
             //url: "http://www.blinkapp.com.ar/back/admin/users/admin_user.php",
-            url: "back/admin/users/admin_user.php",
+            url: "../back/admin/users/admin_user.php",
             type: "POST",
             data: params,
         }).done(function( data ) {
             data = JSON.parse(data);
             if (data.type == "success"){
-                window.location.href='content/admin/dashboard.php';
+                window.location.href='../platform/admin/dashboard.php';
             }else if (data.type=="danger"){
                 console.log('entro')
                 var messageAlert = 'alert-' + data.type;

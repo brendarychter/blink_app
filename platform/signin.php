@@ -34,7 +34,7 @@
 	<div class="row">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
 			<div class="login-panel panel panel-default" style="border-radius: 0; margin-top: 120px">
-				<img src="public/img/logo.svg" alt="Blink App" title="Blink App" class="logo-login">
+				<img src="../public/img/logo.svg" alt="Blink App" title="Blink App" class="logo-login">
 				<h2>Blink App</h2>
 				<h3>Panel de Administraci&oacute;n</h3>
 				<div class="panel-heading">S I G N &nbsp; U P</div>

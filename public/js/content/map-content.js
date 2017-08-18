@@ -17,6 +17,7 @@ $(document).ready(function(){
             for (var i in data){
                 $('.'+i).text(unescape(data[i][language]));
             }
+            $('.bck').fadeOut("slow");
         }).error(function (error){
             console.log(error.statusText);
         });

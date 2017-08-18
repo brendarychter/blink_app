@@ -40,7 +40,9 @@
     <script src="public/js/actions/ga_commons.js"></script>
 </head>
 <body id="page-top" class="index landing-main-page main-page-blink">
-
+    <!-- Layer -->
+    <div class="bck"></div>
+    
     <?php
         include 'header.php';
     ?>

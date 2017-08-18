@@ -13,7 +13,7 @@ $subject = 'Gracias :) - Blink App';
 $fields = array('name' => 'Name', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
 
 /*get session language!!!*/
-$okMessage = 'Gracias :) ¡En breve nos estaremos comunicando con vos!';
+$okMessage = 'Gracias '.$_POST["name"].' :) ¡En breve nos estaremos comunicando con vos!';
 
 /*$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';*/
 $errorMessage = 'Se produjo un error. Por favor, intente m&aacute;s tarde';
@@ -62,12 +62,12 @@ try
         $emailText = "Muchas gracias por contactarte con nosotros, en breve estaremos respondiendo tu consulta\nSaludos de todo el equipo de Blink App";
 
         /*sacar para cambiar con phpmailer*/
-        foreach ($_POST as $key => $value) {
+        // foreach ($_POST as $key => $value) {
 
-            if (isset($fields[$key])) {
-                $emailText .= "$fields[$key]: $value\n";
-            }
-        }
+        //     if (isset($fields[$key])) {
+        //         $emailText .= "$fields[$key]: $value\n";
+        //     }
+        // }
 
 
         //$emailTextHtml = "<h1>Blink App te da la bienvenida</h1><hr>";

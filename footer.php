@@ -8,11 +8,11 @@
             </br>
         </p>
         <p class="footer-links">
-            <a href="content/polytics.php" class="locate footer_policies" target="_blank">Pol&iacute;ticas de Privacidad</a>
+            <a href="content/polytics.php" class="locate-polytics footer_policies" target="_blank">Pol&iacute;ticas de Privacidad</a>
             </br>
-            <a href="content/terms.php" class="locate footer_terms" target="_blank">T&eacute;rminos de uso</a>
+            <a href="content/terms.php" class="locate-terms footer_terms" target="_blank">T&eacute;rminos de uso</a>
             </br>
-            <a href="content/map.php" class="locate footer_map" target="_blank">Mapa</a>
+            <a href="content/map.php" class="locate-map footer_map" target="_blank">Mapa</a>
         </p>
         <img src="public/img/fiscal.jpg" class="footer-links replace-image">
         <div class="separator">·</div>

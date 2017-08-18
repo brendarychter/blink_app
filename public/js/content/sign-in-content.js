@@ -22,6 +22,7 @@ $(document).ready(function(){
                 }else{
                     $('.'+i).attr("placeholder", unescape(data[i][language]));
                 }
+                $('.bck').fadeOut("slow");
             }
         }).error(function (error){
             console.log(error.statusText);

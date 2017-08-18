@@ -28,6 +28,9 @@
 </head>
 
 <body id="page-top" class="index landing-main-page main-page-blink">
+    <!-- Layer -->
+    <div class="bck"></div>
+    
     <!-- Header -->
     <header id="main-page" class="section_1 page-section-home img_home">
         <div class="container">
