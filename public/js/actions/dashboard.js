@@ -17,7 +17,7 @@ $(document).ready(function(){
     $('#log-out').on('click', function(){
         $.ajaxSetup({cache: false})
         $.get('../../back/global/destroySession.php', function (data) {
-            window.location.href = "../../indexAdmin.php";
+            window.location.href = "../../platform.php";
         });
     })
 

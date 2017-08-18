@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div style="text-align: center;">
-                    <a href="content/how_it_works.php" class="page-scroll btn btn-xl home_button_section_2" id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
+                    <a href="content/guide.php" class="page-scroll btn btn-xl home_button_section_2" id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
                 </div>
             </div>
         </section>

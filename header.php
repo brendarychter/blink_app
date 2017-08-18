@@ -23,7 +23,7 @@
                     <a class="page-scroll blink_menu" href="#main-page">blink!</a>
                 </li>
                 <li class="section_2 page-section">
-                    <a class="page-scroll works_menu" href="content/how_it_works.php">Conoc&eacute; m&aacute;s</a>
+                    <a class="page-scroll works_menu" href="content/guide.php">Conoc&eacute; m&aacute;s</a>
                 </li>
                 <li class="section_3 page-section">
                     <a class="page-scroll demo_menu" href="content/demo.php">Demo</a>
@@ -41,7 +41,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right logandsign" id="logandsign">
                 <li>
-                    <a class="button log_in_menu" href="content/log_in.php" style="font-weight: bold;">Inici&aacute; sesi&oacute;n</a>
+                    <a class="button log_in_menu" href="content/login.php" style="font-weight: bold;">Inici&aacute; sesi&oacute;n</a>
                 </li>
             </ul>
         </div>
