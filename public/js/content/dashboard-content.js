@@ -28,8 +28,8 @@ $(document).ready(function(){
         params.action = "getContent";
         params.table = table;
         $.ajax({
-            //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: "../../back/admin/content/adminContent.php",
+            url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+            //url: "../../back/admin/content/adminContent.php",
             type: "POST",
             cache: false,
             data: params,
@@ -63,8 +63,8 @@ $(document).ready(function(){
         }
 
         $.ajax({
-            //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: urlAdmin,
+            url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+            //url: urlAdmin,
             type: "POST",
             cache: false,
             data: params,
