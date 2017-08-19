@@ -35,11 +35,11 @@
 	    		$user = new User;
 	        	$user->getAllUsers($connection);
 
-    		}else if ($action == "activeUser"){
+    		}else if ($action == "activateUser"){
 	    		$user = new User;
-	    		$active = $_POST['active'];
-	    		$userID = $_POST['userID'];
-	        	$user->activeUser($connection, $userID, $active);
+	    		$status = $_POST['status'];
+	    		$userID = $_POST['id'];
+	        	$user->activateUser($connection, $userID, $status);
 
     		}else{
 	    		if(isset($_POST['username']) && isset($_POST['password'])){

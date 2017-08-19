@@ -1,5 +1,6 @@
 <div class="col-lg-12 col-sm-12 col-md-12 admin-partial" data-table="faq" id="faq">
 	<div class="panel panel-default">
+		<label class="section-name menu_menu_spanish" style="padding-top: 20px;font-size: 22px;color: #222;">Usuarios y mensajes</label>
 		<div class="panel-heading"></div>
 		<div class="panel-body">
 		</div>

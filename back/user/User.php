@@ -79,12 +79,15 @@
 			echo $datos;
 		}
 
-		public function activeUser($connection, $userID, $active){
+		public function activateUser($connection, $userID, $status){
 			$consulta = "SELECT * FROM users WHERE userID = '$userID'";
 
 			if($response = mysqli_query($connection->connected, $consulta)){
 				if(mysqli_num_rows($response)>=1){
-					echo "encontro";
+					$query ="UPDATE users SET active='$status' WHERE userID='$userID'";
+					if($response = mysqli_query($connection->connected, $query)){
+						echo true;
+					}
 				}else{
 					echo "no";
 				}

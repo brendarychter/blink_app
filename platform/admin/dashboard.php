@@ -62,7 +62,7 @@
 						  	<li role="presentation" class="toggle-nav-admin" id="faq-admin"><a href="#faq-admin">P&aacute;gina 3</a></li>
 						 	<li role="presentation" class="toggle-nav-admin" id="team-admin"><a href="#team-admin">P&aacute;gina 4</a></li>
 						 	<li role="presentation" class="toggle-nav-admin" id="menu-admin"><a href="#menu-admin">Men&uacute;</a></li>
-						 	<li role="presentation" class="toggle-nav-admin" id="contactos-admin"><a href="#contactos-admin">Contactos</a></li>
+						 	<li role="presentation" class="toggle-nav-admin" id="contactos-admin"><a href="#contactos-admin">Consultas</a></li>
 						 	<li role="presentation" class="toggle-nav-admin" id="app-admin"><a href="#app-admin">App</a></li>
 						</ul>
 					</div>
