@@ -76,7 +76,7 @@
                     </div>
                 </div>
                 <div style="text-align: center;">
-                    <a href="content/guide.php" class="page-scroll btn btn-xl home_button_section_2" id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
+                    <a href="content/guide" class="page-scroll btn btn-xl home_button_section_2" id="more-info">Todav&iacute;a quiero saber m&aacute;s</a>
                 </div>
             </div>
         </section>
@@ -85,7 +85,7 @@
         <section id="demo" class="section_3 page-section-home">
             <img src="public/img/play.svg" class="demo-img"><br><br>
             <p class="demo_description">
-                <a href="content/demo.php" style="cursor: pointer;">Video en construcci&oacute;n</a>
+                <a href="content/demo" style="cursor: pointer;">Video en construcci&oacute;n</a>
             </p>
         </section>
     

@@ -38,13 +38,13 @@
         <h1 class="map_title">Mapa de navegación</h1>
         <h2 class="map_subtitle">Web Blink App</h2>
         <ul>
-            <li><a href="../index.php" class="blink_menu">Home</a> <span class="separator"> - </span> </li>
-            <li><a href="guide.php" class="works_menu">Conoc&eacute; m&aacute;s</a> <span class="separator"> - </span> </li>
-            <li><a href="demo.php" class="demo_menu">Demo</a> <span class="separator"> - </span> </li>
-            <li><a href="faq.php" class="faq_menu">FAQ</a> <span class="separator"> - </span> </li>
-            <li><a href="team.php" class="team_menu">Qui&eacute;nes somos</a> <span class="separator"> - </span> </li>
-            <li><a href="../index#contacto.php" class="contact_menu">Contacto</a></li> <span class="separator"> - </span> </li>
-            <li><a href="login.php" class="log_in_menu">Inici&aacute; sesi&oacute;n</a></li>
+            <li><a href="../index" class="blink_menu">Home</a> <span class="separator"> - </span> </li>
+            <li><a href="guide" class="works_menu">Conoc&eacute; m&aacute;s</a> <span class="separator"> - </span> </li>
+            <li><a href="demo" class="demo_menu">Demo</a> <span class="separator"> - </span> </li>
+            <li><a href="faq" class="faq_menu">FAQ</a> <span class="separator"> - </span> </li>
+            <li><a href="team" class="team_menu">Qui&eacute;nes somos</a> <span class="separator"> - </span> </li>
+            <li><a href="../index#contacto" class="contact_menu">Contacto</a></li> <span class="separator"> - </span> </li>
+            <li><a href="login" class="log_in_menu">Inici&aacute; sesi&oacute;n</a></li>
         </ul>
     </section>
 

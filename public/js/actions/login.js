@@ -14,7 +14,7 @@ $(function () {
             data = JSON.parse(data);
             if (data.active == 1){
                if (data.type == "success"){
-                    window.location.href='application.php';
+                    window.location.href='application';
                 }else if (data.type=="danger"){
                     var messageAlert = 'alert-' + data.type;
                     var messageText = data.message;

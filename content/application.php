@@ -30,14 +30,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="../index.php" style="margin-top: -14px;"><img alt="Blink app" target="_blank" title="Blink app" src="../public/img/logo_small.svg" id="icon-top" style="height: 50px"></img></a>
+                <a class="navbar-brand page-scroll" href="../index" style="margin-top: -14px;"><img alt="Blink app" target="_blank" title="Blink app" src="../public/img/logo_small.svg" id="icon-top" style="height: 50px"></img></a>
                 <ul class="user-menu">
                     <li class="dropdown pull-right">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked camera"><use xlink:href="#stroked-camera"></use></svg> <span id="userName"></span> <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Mi perfil</a></li>
                             <li><a href="#"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> Configuraci&oacute;n</a></li>
-                            <li><a id="log-out" href="login.php"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Cerrar sesi&oacute;n</a></li>
+                            <li><a id="log-out" href="login"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Cerrar sesi&oacute;n</a></li>
                         </ul>
                     </li>
                 </ul>

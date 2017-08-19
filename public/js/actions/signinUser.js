@@ -34,7 +34,7 @@ $(function () {
                     if (data.type == "success"){
                         $('.all-boxes').hide();
                         setTimeout(function(){  
-                            window.location.href='../content/application.php'
+                            window.location.href='../content/application'
                         }, 2000);
                     }
                 }

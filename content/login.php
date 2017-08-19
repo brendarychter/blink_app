@@ -54,7 +54,7 @@
                                 </div>
                                 <input type="submit" class="btn btn-primary btn-send send-form log_in_button" id="login-user" value="Iniciar sesi&oacute;n">
                                 <div class="sign-in-user">
-                                    <span class="log_in_message">&iquest;Todav&iacute;a no ten&eacute;s cuenta?</span><a href="signin.php" class="register log_in_sign_in">Registrate</a>
+                                    <span class="log_in_message">&iquest;Todav&iacute;a no ten&eacute;s cuenta?</span><a href="signin" class="register log_in_sign_in">Registrate</a>
                                 </div>
                             </fieldset>
                         </form>

@@ -72,7 +72,7 @@ $(document).ready(function(){
                 console.log("not removed")
             }
             destroySessionUser();
-            window.location.href = "login.php";
+            window.location.href = "login";
         }).error(function(error, textStatus){
             console.log("No pudo borrar: " + textStatus);
         });
@@ -87,7 +87,7 @@ $(document).ready(function(){
     function destroySessionUser(){
         $.ajaxSetup({cache: false})
         $.get('../back/user/destroyUserSession.php', function (data) {
-            window.location.href = "login.php";
+            window.location.href = "login";
         });
     }
 
