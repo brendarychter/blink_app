@@ -83,12 +83,13 @@ $(document).ready(function(){
             //url: "http://www.blinkapp.com.ar/back/admin/users/admin_user.php",
             //get last url
             //relocate
+            var lan = localStorage.getItem("language");
             var today = new Date();
             var date_time = today.getDate() + '/' + (today.getMonth()+1) + '/' + today.getFullYear() + '. ' + today.getHours() + ":" + today.getMinutes();
             $.ajax({
                 type: "POST",
                 url: "../../back/user/adminUser.php",
-                data: $(this).serialize() + '&action=createNewUser' + '&datetime=' + date_time.toString()
+                data: $(this).serialize() + '&action=createNewUser' + '&datetime=' + date_time.toString() + '&lan=' + lan
             }).done(function( data ) {
                 console.log(data)
                 var data = JSON.parse(data);
