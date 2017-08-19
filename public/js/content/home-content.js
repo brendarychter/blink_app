@@ -18,7 +18,7 @@ $(document).ready(function(){
                 $('.'+i).text(unescape(data[i][language]));
                 if (data[i].section == 5){
                     $('.'+i).attr("placeholder", unescape(data[i][language]));
-                    if (i == "button_section_5"){
+                    if (i == "button_section_5" || i == "home_button_section_5"){
                         $('.'+i).attr("value", unescape(data[i][language]));
                     }
                 }

@@ -108,7 +108,8 @@
            	echo $datos;
 		}
 
-		public function createNewUser($connection, $name, $username, $password, $email, $phone, $captcha, $datetime){
+		public function createNewUser($connection, $name, $username, $password, $email, $phone, $captcha, $datetime, $lan){
+
 			// //Falta el timestamp y el GMT
 			// // remove all session variables
 			// session_unset(); 
@@ -120,10 +121,24 @@
        		$consulta = "SELECT * FROM users WHERE mail = '$email'";
 			$response = mysqli_query($connection->connected, $consulta);
 
+			if ($lan == "spanish"){
+				$errorMail = 'Ya existe un usuario registrado con ese mail. Utilice otro.';
+
+			}else if ($lan == "english"){
+				$errorMail = 'A registered user already exists with that mail. Use another..';
+			}
+
 			if(!mysqli_num_rows($response)>=1){
 
 				$consulta2 = "SELECT * FROM users WHERE username = '$username'";
 				$response2 = mysqli_query($connection->connected, $consulta2);
+
+				if ($lan == "spanish"){
+					$errorUsername = 'Ya existe un usuario registrado con ese nombre. Escoja otro.';
+				
+				}else if ($lan == "english"){
+					$errorUsername = 'A registered user already exists with that username. Use another..';
+				}
 
 				if(!mysqli_num_rows($response2)>=1){
 					$sql = "insert into users (username, password, mail, name, phoneNumber, datetime, active) values ('$username','$password','$email', '$name', '$phone', '$datetime', '1')";
@@ -132,17 +147,26 @@
 						$sendTo = $email;
 						$recaptchaSecret = '6Le78ScUAAAAALWRRZshuqD2iwNqp2m4ENHMIhvT';
         				$recaptcha = new \ReCaptcha\ReCaptcha($recaptchaSecret, new \ReCaptcha\RequestMethod\CurlPost());
-						$subject = 'Blink App te da la bienvenida :)';
+						
+						if ($lan == "spanish"){
+							$subject = $name . ', Blink App te da la bienvenida :)';
+							$errorCaptcha = 'El ReCaptcha no se valido correctamente.';
+							$successLogIn = 'Se ha registrado exitosamente. Revisa tu correo electronico';
+							$emailText = 'Ya formas parte de nuestra comunidad. ¡¡Encontrate con tus amigos y empeza a disfrutar!!';
+
+						}else if ($lan == "english"){
+							$subject = $name . ', Blink App welcomes you :)';
+							$errorCaptcha = 'Captcha is not valid';
+							$successLogIn = 'You have successfully registered. Check your email';
+							$emailText = 'You are already part of our community. Meet your friends and start enjoying !!';
+						}
 
         				$response = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
 
 				        if (!$response->isSuccess()) {
-	        				$responseArray = array('type' => 'success', 'message' => 'El ReCaptcha no se valido correctamente.');
+	        				$responseArray = array('type' => 'success', 'message' => $errorCaptcha);
 				        }
-
-				        $emailText = "Ya formas parte de nuestra comunidad. ¡¡Encontrate con tus amigos y empeza a disfrutar!!";
-
 
 				        $headers = array('Content-Type: text/plain; charset="UTF-8";',
 				            'From: ' . $from,
@@ -153,13 +177,13 @@
 				        mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
 
-	        			$responseArray = array('type' => 'success', 'message' => 'Se ha registrado exitosamente. Revisa tu correo electronico');
+	        			$responseArray = array('type' => 'success', 'message' => $successLogIn);
 					}
 				}else{
-	        		$responseArray = array('type' => 'danger', 'message' => 'Ya existe un usuario registrado con ese nombre. Escoja otro.');
+	        		$responseArray = array('type' => 'danger', 'message' => $errorUsername);
 				}
 			}else{
-	        	$responseArray = array('type' => 'danger', 'message' => 'Ya existe un usuario registrado con ese mail. Utilice otro.');
+	        	$responseArray = array('type' => 'danger', 'message' => $errorMail);
 			}
     		
     		$encoded = json_encode($responseArray);

@@ -9,18 +9,19 @@ $connection = new connection;
 // configure
 $from = 'brendarychter@gmail.com';
 $sendTo = $_POST["email"];
-$subject = 'Gracias :) - Blink App';
+$lan = $_POST["lan"];
+
 $fields = array('name' => 'Name', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
 
-/*get session language!!!*/
-$okMessage = 'Gracias '.$_POST["name"].' :) ¡En breve nos estaremos comunicando con vos!';
-
-/*$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';*/
-$errorMessage = 'Se produjo un error. Por favor, intente m&aacute;s tarde';
-/*$errorMessage = 'There was an error while submitting the form. Please try again later';*/
 $recaptchaSecret = '6Le78ScUAAAAALWRRZshuqD2iwNqp2m4ENHMIhvT';
 
 // let's do the sending
+if ($lan == "spanish"){
+    $errorMessage = 'Se produjo un error. Por favor, intente m&aacute;s tarde';
+
+}else if ($lan == "english"){
+    $errorMessage = 'There was an error while submitting the form. Please try again later';
+}
 try
 {
     if (!empty($_POST)) {
@@ -54,50 +55,29 @@ try
         $mail = $_POST["email"];
         $message = $_POST["message"];
         $datetime = $_POST["datetime"];
+        $lan = $_POST["lan"];
+
+        if ($lan == "spanish"){
+            $subject = 'Gracias :) - Blink App';
+            $okMessage = 'Gracias '.$_POST["name"].' :) ¡En breve nos estaremos comunicando con vos!';
+            $emailText = "Muchas gracias por contactarte con nosotros, en breve estaremos respondiendo tu consulta\nSaludos de todo el equipo de Blink App";
+
+        }else if ($lan == "english"){
+            $subject = 'Thanks :) - Blink App';
+            $okMessage = 'Thanks '.$_POST["name"].' :) We will get back to you soon!';
+            $emailText = "Thank you very much for contacting us, we will be answering your inquiry soon\n Greetings from the entire team of Blink App";
+        }
 
         $query = "insert into contactos (name, phone, mail, message, active, date_time) values ('$name','$phone','$mail', '$message', 'true', '$datetime')";
 
         mysqli_query($connection->connected, $query);
 
-        $emailText = "Muchas gracias por contactarte con nosotros, en breve estaremos respondiendo tu consulta\nSaludos de todo el equipo de Blink App";
+        $headers = array('Content-Type: text/plain; charset="UTF-8";',
+            'From: ' . $from,
+            'Reply-To: ' . $from,
+            'Return-Path: ' . $from,
+        );
 
-        /*sacar para cambiar con phpmailer*/
-        // foreach ($_POST as $key => $value) {
-
-        //     if (isset($fields[$key])) {
-        //         $emailText .= "$fields[$key]: $value\n";
-        //     }
-        // }
-
-
-        //$emailTextHtml = "<h1>Blink App te da la bienvenida</h1><hr>";
-        //$emailTextHtml .= "<table>";
-
-        //$emailTextHtml .= "</table><hr>";
-        //$emailTextHtml .= "<h2> Hola <strong>". $name ."</strong></h2><br><p>Muchas gracias por contactarte con nosotros, en breve estaremos respondiendo tu consulta,<br>Saludos de todo el equipo de Blink App</p>";
-
-
-        // $headers = array('Content-Type: text/plain; charset="UTF-8";',
-        //     'From: ' . $from,
-        //     'Reply-To: ' . $from,
-        //     'Return-Path: ' . $from,
-        // );
-
-        // $mail = new PHPMailer;
-
-        // $mail->setFrom($from, $from);
-        // $mail->addAddress($sendTo, $name);
-        // $mail->addReplyTo($from);
-
-
-        // $mail->isHTML(true);
-
-        // $mail->Subject = $subject;
-        // $mail->msgHTML($emailTextHtml); 
-
-        // if(!$mail->send()) {
-        //     throw new \Exception('I could not send the email.' . $mail->ErrorInfo);
-        // }
         mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
         $responseArray = array('type' => 'success', 'message' => $okMessage);

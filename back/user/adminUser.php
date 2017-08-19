@@ -14,7 +14,11 @@
 
     		if ($action == "createNewUser"){
     			if (!isset($_POST['g-recaptcha-response']) || empty($_POST['g-recaptcha-response'])) {
-	        		$responseArray = array('type' => 'danger', 'message' => 'Valide el ReCaptcha.');
+    				if ($_POST["lan"] == "english"){
+	        			$responseArray = array('type' => 'danger', 'message' => 'Validate ReCaptcha.');
+    				}else if($_POST["lan"] == "spanish"){
+	        			$responseArray = array('type' => 'danger', 'message' => 'Valide el ReCaptcha.');
+    				}
 	        		$encoded = json_encode($responseArray);
 					echo $encoded;
 		      	}else{
@@ -26,10 +30,11 @@
 	    			$captcha = $_POST['g-recaptcha-response'];
 	    			//$photo = $_POST['imagen-usuario'];
 					$datetime = $_POST["datetime"];
+					$lan = $_POST["lan"];
 
 	    			$user = new User;
 
-	    			$user->createNewUser($connection, $name, $username, $password, $email, $phone, $captcha, $datetime);
+	    			$user->createNewUser($connection, $name, $username, $password, $email, $phone, $captcha, $datetime, $lan);
 		        }
     		}else if ($action == "getAllUsers"){
 	    		$user = new User;
