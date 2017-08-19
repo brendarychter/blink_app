@@ -5,18 +5,19 @@
 		<div class="panel-body">
 			<div class="form-group col-md-12 box-section col-sm-12 " style="border-right: none; padding-left: 0;">
 				<div class="col-md-12 col-sm-12 line-sections">
-					<div class="title-box">
-						<label class="section-name">logo</label> 
-					</div>
 					<div class="col-md-12 col-sm-12 line-sections">
 						<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="menu">
 							<div class="col-md-3 col-sm-12 line-sections">
+								<div class="title-box">
+									<label class="section-name">logo</label> 
+								</div>
 								<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
 									<div class="title-box">
 										<span class="img-titles" style="float: right; font-weight: bold;"></span>
 									</div>
-									<input type="file" class="img_menu" data-id="img_menu" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_menu"></label>
-									<input class="title-load" data-title="title-1" type="text" placeholder="T&iacute;tulo" name="titulo" id="title_img_menu" data-id="title_img_menu" required/>
+									<input type="file" class="img_menu" id="img_menu" data-id="img_menu" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_menu"></label>
+									<input class="title-load" data-title="title-1" type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_menu_es" data-id="title_img_menu" required/>
+									<input class="title-load" data-title="title-1" type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_menu_en" data-id="title_img_menu" required/>
 									<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-table="menu"/>Guardar foto</button>
 									<p class="help-block"></p>
 								</div>
@@ -24,6 +25,7 @@
 						</form>
 					</div>
 				</div>
+				
 				<form role="form" class="form-section" id="form-section-6" method="post" enctype="multipart/form-data" data-toggle="validator">
 
 					<div class="col-md-12 col-sm-12 line-sections">

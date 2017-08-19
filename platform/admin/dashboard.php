@@ -131,7 +131,6 @@
     <!-- Actions -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="../../public/js/actions/dashboard.js"></script>
-    <script src="../../public/js/actions/loadMenu.js"></script>
     <script src="../../public/js/contact/validator.js"></script>
     <script src="../../public/js/actions/admin_dashboard/getContactMessages.js"></script>
     <script src="../../public/js/actions/admin_dashboard/app.js"></script>

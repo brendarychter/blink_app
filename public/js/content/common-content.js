@@ -105,6 +105,7 @@ $(document).ready(function(){
                     $('.'+logo_image["id_name"]).prop("alt", logo_image["nombre_en"])
                     $('.'+logo_image["id_name"]).prop("title", logo_image["nombre_en"])
                     $('.'+logo_image["id_name"]).attr("src", urlImage + logo_image.img);
+                    $('.'+logo_image["id_name"]).attr("href", urlImage + logo_image.img);
                 }
             }
         }).error(function(error, textStatus){

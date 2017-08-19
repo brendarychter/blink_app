@@ -291,7 +291,7 @@
 		<div class="panel-heading"></div>
 		<div class="panel-body">
 			<form role="form" class="form-section" id="form-section-3" method="post" enctype="multipart/form-data" data-toggle="validator">
-				<label class="section-name">SECCI&oacute;n 3</label>
+				<label class="section-name">SECCI&oacute;n 5</label>
 				<div class="col-md-12 col-sm-12 line-sections">
 					<div class="form-group col-md-4 box-section first-section col-sm-12 ">
 						<div class="title-box">

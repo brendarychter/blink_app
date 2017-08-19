@@ -20,6 +20,7 @@
 		
 		// LEVANTO EL NOMBRE DEL ARCHIVO USANDO LA FUNCION subir_imagen DECLARADA ARRIBA
 		$imagen = subir_imagen($_FILES["imagen"]);
+		$file = str_replace(' ', '%20', $imagen);
 
 		if($imagen=="error"){
 			echo "Error. Hubo un error con la imagen, por favor revisar";
@@ -28,7 +29,7 @@
 
 			// CONTINUO CON EL RESTO DE MI CÓDIGO...
 
-			$sql = "update fotos SET nombre_es='$name_es', img='$imagen', nombre_en='$name_en' where id_name='$id'";
+			$sql = "update fotos SET nombre_es='$name_es', img='$file', nombre_en='$name_en' where id_name='$id'";
 			
 			// IMPRIMO LA CONSULTA SÓLO PARA DEBUG
 			echo $sql;

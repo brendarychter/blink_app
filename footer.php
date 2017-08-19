@@ -29,7 +29,7 @@
     <div class="footer-box">
         <span class="footer-box-title footer_follow">Seguinos en las redes</span>
         <ul class="list-inline social-buttons">
-            <li><a href="http://www.facebook.com" target="_blank"><img src="public/img/icons/fb.svg" class="replace-image"></a>
+            <li><a href="https://www.facebook.com/blinkthenewapp/" target="_blank"><img src="public/img/icons/fb.svg" class="replace-image"></a>
             <li><a href="http://www.youtube.com" target="_blank"><img src="public/img/icons/youtube.svg" class="replace-image"></a>
         </ul>
         <div class="separator">·</div>

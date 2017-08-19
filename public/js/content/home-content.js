@@ -29,6 +29,8 @@ $(document).ready(function(){
         });
     }
 
+
+    //Cargo imagen de fondo seccion 1
     var lan = localStorage.getItem("language");
     loadHome("home");
     function loadHome(table){
@@ -56,7 +58,7 @@ $(document).ready(function(){
         }).done(function( data ) {
             for (var i in data[table]){
                 var img = data[table][i];
-                console.log(img)
+                console.log(img);
                 $('.img_'+table).css('background-image', 'url(' + urlImage +  img.img + ')');
                 $('.img_'+table).attr("data-url", img.img);
 
