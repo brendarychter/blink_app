@@ -7,8 +7,8 @@ $(document).ready(function(){
 
     function getSessionAdminUser(){
     	console.log("entro")
-        //$.get('http://www.blinkapp.com.ar/back/admin/users/getUserAdminSession.php', function (data) {
-        $.get('../../back/admin/users/getUserAdminSession.php', function (data) {
+        $.get('http://www.blinkapp.com.ar/back/admin/users/getUserAdminSession.php', function (data) {
+        //$.get('../../back/admin/users/getUserAdminSession.php', function (data) {
           userAdmin = JSON.parse(data);
           $("#admin-logged").append(userAdmin.username);
         });
@@ -81,8 +81,8 @@ $(document).ready(function(){
             if (newValue !== oldValue){
                 console.log("insert");
                 $.ajax({
-                    //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-                    url: "../../back/admin/content/adminContent.php",
+                    url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+                    //url: "../../back/admin/content/adminContent.php",
                     type: "POST",
                     data: params
                 }).done(function( data ) {
@@ -154,8 +154,8 @@ $(document).ready(function(){
         }, 2000);
         console.log(params)
         $.ajax({
-            //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: "../../back/admin/content/adminContent.php",
+            url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+            //url: "../../back/admin/content/adminContent.php",
             type: "POST",
             cache: false,
             data: params,
