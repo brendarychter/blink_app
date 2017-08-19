@@ -110,13 +110,10 @@
 
 		public function createNewUser($connection, $name, $username, $password, $email, $phone, $captcha, $datetime, $lan){
 
-			// //Falta el timestamp y el GMT
 			// // remove all session variables
 			// session_unset(); 
 
-			// // destroy the session 
 			// session_destroy(); 
-			// //Chequear que no exista un usuario con ese mail y nombre de usuario
 			
        		$consulta = "SELECT * FROM users WHERE mail = '$email'";
 			$response = mysqli_query($connection->connected, $consulta);
@@ -175,7 +172,6 @@
 				        );
 
 				        mail($sendTo, $subject, $emailText, implode("\n", $headers));
-
 
 	        			$responseArray = array('type' => 'success', 'message' => $successLogIn);
 					}

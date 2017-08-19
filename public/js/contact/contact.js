@@ -7,7 +7,7 @@ $(function () {
             var url = "back/contact/contact.php";
             var today = new Date();
             var lan = localStorage.getItem("language");
-            //CHEQUEAR UBICACION????
+
             var date_time = today.getDate() + '/' + (today.getMonth()+1) + '/' + today.getFullYear() + '. ' + today.getHours() + ":" + today.getMinutes();
             $('.bck').fadeIn("slow");
             $.ajax({
