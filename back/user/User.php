@@ -126,7 +126,7 @@
 				$response2 = mysqli_query($connection->connected, $consulta2);
 
 				if(!mysqli_num_rows($response2)>=1){
-					$sql = "insert into users (username, password, mail, name, phoneNumber, datetime, active) values ('$username','$password','$email', '$name', '$phone', '$datetime', 'true')";
+					$sql = "insert into users (username, password, mail, name, phoneNumber, datetime, active) values ('$username','$password','$email', '$name', '$phone', '$datetime', '1')";
 					if(mysqli_query($connection->connected, $sql)){
 	        			$from = 'brendarychter@gmail.com';
 						$sendTo = $email;

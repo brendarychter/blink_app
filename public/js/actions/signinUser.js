@@ -5,8 +5,11 @@ $(function () {
     $('#signin-user-form').on('submit', function (e) {
         if (!e.isDefaultPrevented()) {
             //url: "http://www.blinkapp.com.ar/back/admin/users/admin_user.php",
+            //get last url
+            //relocate
             var today = new Date();
             var date_time = today.getDate() + '/' + (today.getMonth()+1) + '/' + today.getFullYear() + '. ' + today.getHours() + ":" + today.getMinutes();
+            $('.bck').fadeIn("slow");
             $.ajax({
                 type: "POST",
                 url: "../back/user/adminUser.php",
@@ -19,15 +22,21 @@ $(function () {
 
                 var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert">&times;</button>' + messageText + '</div>';
                 if (messageAlert && messageText) {
+                    $('.bck').fadeOut("slow");
+
                     grecaptcha.reset();
                     $('#signin-user-form').find('.messages').html(alertBox);
                     $('#signin-user-form')[0].reset();
                     $('.messages').show();
+
                     setTimeout(function(){
                         $('.messages').fadeOut('slow');
-                    }, 3000);
+                    }, 2000);
                     if (data.type == "success"){
-                        setTimeout(function(){  window.location.href='../content/application.php'}, 2000);
+                        $('.all-boxes').hide();
+                        setTimeout(function(){  
+                            window.location.href='../content/application.php'
+                        }, 2000);
                     }
                 }
             }).error(function(error, textStatus){

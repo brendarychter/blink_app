@@ -52,32 +52,35 @@
                     <div class="panel-body">
                         <form role="form" id="signin-user-form" method="post">
                             <div class="messages"></div>
-                            <div class="form-group">
-                                <input class="form-control sign_in_name" placeholder="Ingrese su nombre" name="nombre-usuario" type="input" autofocus="" id="new-user" style="border-radius: 0;" required />
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control sign_in_mail" placeholder="Ingrese su email" name="email-usuario" type="email" value="" id="new-mail" style="border-radius: 0;" required />
-                            </div>
-                            <div class="form-group">
-                                <input id="form_phone" type="tel" name="phone-usuario" class="form-control sign_in_phone" placeholder="Ingrese su n&uacute;mero de tel&eacute;fono" id="new-phonenumber" >
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control sign_in_username" placeholder="Ingrese su nombre de usuario" name="username-usuario" type="input" autofocus="" id="new-username" style="border-radius: 0;" required />
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control sign_in_password" placeholder="Ingrese una contrase&ntilde;a" name="password-usuario" type="password" value="" id="new-passowrd" style="border-radius: 0;" required />
-                            </div><!-- 
-                            <div class="form-group">
-                                <form method="post" enctype="multipart/form-data" id="imageUploadFormUser" data-form="">
-                                    <input name="imagen-usuario" class="titulo-img form-control" data-title="title-2" type="text" placeholder="Seleccione una imagen de usuario" name="titulo" style="width: 100%; margin-bottom: 10px;"/>
-                                    <input style="display: inline-block;" type="file" class="imagen-img" data-img="img-2" name="imagen-usuario" data-id="" data-section="2" data-url="" data-num="2"/>
-                                    <span style="display: inline-block; float: right">Puedes elegirla m&aacute;s tarde</span>
-                                </form>
-                            </div> -->
-                            <div class="form-group">
-                                <div class="g-recaptcha" data-sitekey="6Le78ScUAAAAAIwMiCcAfjo6XputN6OYM3LXyLQx"></div>
-                            </div>
-                            <input type="submit" class="btn btn-primary btn-send send-form sign_in_button" id="signup-user" value="Registrarme">
+                            <div class="all-boxes">
+                                <div class="form-group">
+                                    <input class="form-control sign_in_name" placeholder="Ingrese su nombre" name="nombre-usuario" type="input" autofocus="" id="new-user" style="border-radius: 0;" required />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control sign_in_mail" placeholder="Ingrese su email" name="email-usuario" type="email" value="" id="new-mail" style="border-radius: 0;" required />
+                                </div>
+                                <div class="form-group">
+                                    <input id="form_phone" type="tel" name="phone-usuario" class="form-control sign_in_phone" placeholder="Ingrese su n&uacute;mero de tel&eacute;fono" id="new-phonenumber" >
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control sign_in_username" placeholder="Ingrese su nombre de usuario" name="username-usuario" type="input" autofocus="" id="new-username" style="border-radius: 0;" required />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control sign_in_password" placeholder="Ingrese una contrase&ntilde;a" name="password-usuario" type="password" value="" id="new-passowrd" style="border-radius: 0;" required />
+                                </div><!-- 
+                                <div class="form-group">
+                                    <form method="post" enctype="multipart/form-data" id="imageUploadFormUser" data-form="">
+                                        <input name="imagen-usuario" class="titulo-img form-control" data-title="title-2" type="text" placeholder="Seleccione una imagen de usuario" name="titulo" style="width: 100%; margin-bottom: 10px;"/>
+                                        <input style="display: inline-block;" type="file" class="imagen-img" data-img="img-2" name="imagen-usuario" data-id="" data-section="2" data-url="" data-num="2"/>
+                                        <span style="display: inline-block; float: right">Puedes elegirla m&aacute;s tarde</span>
+                                    </form>
+                                </div> -->
+                                <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="6Le78ScUAAAAAIwMiCcAfjo6XputN6OYM3LXyLQx"></div>
+                                </div>
+                                <input type="submit" class="btn btn-primary btn-send send-form sign_in_button" id="signup-user" value="Registrarme">
+                           </div>
+                            
                         </form>
                     </div>
                 </div>

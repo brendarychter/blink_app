@@ -25,7 +25,7 @@ $(function () {
                         $('.messages').fadeOut('slow');
                     }, 3000);
                     if (data.type == "success"){
-                        setTimeout(function(){  window.location.href='../platform/index.php'}, 2000);
+                        setTimeout(function(){  window.location.href='../platform/index.php'}, 1000);
                     }
                 }
             }).error(function(error, textStatus){
