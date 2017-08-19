@@ -1,8 +1,8 @@
 
 <?php
 	// INCLUYO EL ARCHIVO DE CONEXIÓN A LA BASE DE DATOS
- 	//$conexion = @mysqli_connect("localhost", "root", "", "blink");
- 	$conexion = @mysqli_connect("localhost", "m6000758_blink", "lu43seGIza", "m6000758_blink");
+ 	$conexion = @mysqli_connect("localhost", "root", "", "blink");
+ 	//$conexion = @mysqli_connect("localhost", "m6000758_blink", "lu43seGIza", "m6000758_blink");
 	// LA FUNCION PUEDE ESTAR EN UN ARCHIVO EXTERNO DE FUNCIONES GENERALES DEL SITIO
 	// RECIBE COMO PARÁMETRO EL OBJETO $FILE Y DEVUELVE EL NOMBRE DEL ARCHIVO O LA PALABRA "error" SI NO PUDO GUARDARLO
 
@@ -12,7 +12,8 @@
 
 		// LEVANTO ALGUNOS DATOS DEL FORM
 
-		$name = mysqli_real_escape_string($conexion,$_POST["titulo"]);
+		$name_es = mysqli_real_escape_string($conexion,$_POST["titulo_es"]);
+		$name_en = mysqli_real_escape_string($conexion,$_POST["titulo_en"]);
 		$table_name = $_POST["table"];
 		$section = $_POST["section"];
 		$id = $_POST["id_name"];
@@ -27,7 +28,7 @@
 
 			// CONTINUO CON EL RESTO DE MI CÓDIGO...
 
-			$sql = "update fotos SET nombre='$name', img='$imagen' where id_name='$id'";
+			$sql = "update fotos SET nombre_es='$name_es', img='$imagen', nombre_en='$name_en' where id_name='$id'";
 			
 			// IMPRIMO LA CONSULTA SÓLO PARA DEBUG
 			echo $sql;
@@ -46,8 +47,8 @@
 		if($file && $file["name"]!=""){
 
 			// DEFINO CUÁL VA A SER LA URL DE MI SITIO WEB, Y LA CARPETA DONDE SE GUARDARÁN LAS IMÁGENES (ESTO DEBERÍA ESTAR EN UN ARCHIVO EXTERNO DE CONFIGURACIÓN)
-			$direccion_web = "http://www.blinkapp.com.ar/uploads/";
-			//$direccion_web = "http://localhost/uploads/";
+			//$direccion_web = "http://www.blinkapp.com.ar/uploads/";
+			$direccion_web = "http://localhost/blink_app/uploads/";
 			$nombre_carpeta = "../../../uploads/";
 			chmod("../../../uploads/", 0755);
 			// DEFINICIONES INTERNAS PARA CONTROL

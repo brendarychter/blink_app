@@ -75,7 +75,7 @@ $(document).ready(function(){
     }
 
 
-    /* Cargar imagen del logo y el tab */
+    /* Cargar imagen del logo y el tab (para mostrar)*/
     loadImagesMenu();
     function loadImagesMenu(){
         params= {};

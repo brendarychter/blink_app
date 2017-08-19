@@ -6,7 +6,6 @@ $(document).ready(function(){
     getSessionAdminUser();
 
     function getSessionAdminUser(){
-    	console.log("entro")
         //$.get('http://www.blinkapp.com.ar/back/admin/users/getUserAdminSession.php', function (data) {
         $.get('../../back/admin/users/getUserAdminSession.php', function (data) {
           userAdmin = JSON.parse(data);

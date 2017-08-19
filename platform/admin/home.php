@@ -60,7 +60,8 @@
 								<span class="img-titles" style="float: right; font-weight: bold;"></span>
 							</div>
 							<input type="file" class="img_home" id="img_home" data-id="img_home" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_home"></label>
-							<input class="title-load" data-title="title-1" type="text" placeholder="T&iacute;tulo" name="titulo" id="title_img_home" data-id="title_img_home" required/>
+							<input class="title-load" data-title="title-1" type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_home_es" data-id="title_img_home" required/>
+							<input class="title-load" data-title="title-1" type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_home_en" data-id="title_img_home" required/>
 							<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-table="home"/>Guardar foto</button>
 							<p class="help-block"></p>
 						</div>
