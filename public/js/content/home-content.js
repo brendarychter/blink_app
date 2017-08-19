@@ -58,16 +58,18 @@ $(document).ready(function(){
         }).done(function( data ) {
             for (var i in data[table]){
                 var img = data[table][i];
-                console.log(img);
-                $('.img_'+table).css('background-image', 'url(' + urlImage +  img.img + ')');
-                $('.img_'+table).attr("data-url", img.img);
+                if (img.id_name=="img_home_1"){
+                    $('.img_'+table+'_'+img.position).css('background-image', 'url(' + urlImage +  img.img + ')');
+                }else{
+                    $('.img_'+table+'_'+img.position).attr("src", urlImage + img.img);
+                }
 
                 if (lan == "spanish"){
-                    $('.img_'+table).attr("title", img.nombre_es);
-                    $('.img_'+table).attr("alt", img.nombre_es);
+                    $('.img_'+table+'_'+img.position).attr("title", img.nombre_es);
+                    $('.img_'+table+'_'+img.position).attr("alt", img.nombre_es);
                 }else if (lan == "english"){
-                    $('.img_'+table).attr("title", img.nombre_en);
-                    $('.img_'+table).attr("alt", img.nombre_en);
+                    $('.img_'+table+'_'+img.position).attr("title", img.nombre_en);
+                    $('.img_'+table+'_'+img.position).attr("alt", img.nombre_en);
                 }
 
             }

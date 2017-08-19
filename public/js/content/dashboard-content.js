@@ -100,15 +100,17 @@ $(document).ready(function(){
             dataType: "json"
         }).done(function( data ) {
             for (var i in data[table]){
-                var img = data[table][i];
-                var val = img.img;
-                //Info imagen
-                $('.img_'+table).css('background-image', 'url(' + urlImage +  img.img + ')');
-                $('#img_url_'+table).text(val.substr(val.indexOf("/") + 1));
-                $('.img_'+table).attr("data-url", img.img);
-                //Titulo
-                $('#title_img_'+table+'_es').val(img.nombre_es);
-                $('#title_img_'+table+'_en').val(img.nombre_en);
+                var imagen = data[table][i];
+                
+                // //Info imagen
+                $('.img_'+table+'_'+imagen.position).css('background-image', 'url(' + urlImage +  imagen.img + ')');
+                $('#img_url_'+table+'_'+imagen.position).text(imagen.img.substr(imagen.img.indexOf("/") + 1));
+                $('.img_'+table+'_'+imagen.position).attr("data-url", imagen.img);
+
+                // //Titulo
+                $('#title_img_'+table+'_'+imagen.position+'_en').val(imagen.nombre_en);
+                $('#title_img_'+table+'_'+imagen.position+'_es').val(imagen.nombre_es);
+
             }
         }).error(function(error, textStatus){
             console.log(error.statusText);
@@ -143,12 +145,12 @@ $(document).ready(function(){
                 var img = data[table][i];
                 var val = img.img;
                 //Info imagen
-                $('.img_'+table).css('background-image', 'url(' + urlImage +  img.img + ')');
-                $('#img_url_'+table).text(val.substr(val.indexOf("/") + 1));
-                $('.img_'+table).attr("data-url", img.img);
+                $('.img_'+table+'_'+img.position).css('background-image', 'url(' + urlImage +  img.img + ')');
+                $('#img_url_'+table+'_'+img.position).text(val.substr(val.indexOf("/") + 1));
+                $('.img_'+table+'_'+img.position).attr("data-url", img.img);
                 //Titulo
-                $('#title_img_'+table+'_es').val(img.nombre_es);
-                $('#title_img_'+table+'_en').val(img.nombre_en);
+                $('#title_img_'+table+'_'+img.position+'_es').val(img.nombre_es);
+                $('#title_img_'+table+'_'+img.position+'_en').val(img.nombre_en);
             }
         }).error(function(error, textStatus){
             console.log(error.statusText);
@@ -158,23 +160,24 @@ $(document).ready(function(){
 
     ///Button save image
     $('.save-img').on("click", function(){
+
         var table = $(this).attr("data-table");
-        var id_name = 'img_'+table;
-        var url = $('#img_url_'+table).text();
-        var title_en = $('#title_img_'+table+'_en').val().toString();
-        var title_es = $('#title_img_'+table+'_es').val().toString();
+        var order = $(this).attr("data-order");
+        var id_name = 'img_'+table+'_'+order;
+        var url = $('#img_url_'+table+'_'+order).text();
+        var title_en = $('#title_img_'+table+'_'+order+'_en').val().toString();
+        var title_es = $('#title_img_'+table+'_'+order+'_es').val().toString();
         var file_data;
 
         var form_data = new FormData();
         if(table == "menu"){
-            file_data = $('#img_menu').prop('files')[0];
+            file_data = $('#img_menu_'+order).prop('files')[0];
         }else{
-            file_data = $('.img_'+table).prop('files')[0];
+            file_data = $('.img_'+table+'_'+order).prop('files')[0];
         }
 
         form_data.append('imagen', file_data);
         form_data.append('id_name', id_name);
-        form_data.append('section', 0);
         form_data.append('table', table);
         form_data.append('submit', "submit");
         form_data.append('titulo_en', title_en);

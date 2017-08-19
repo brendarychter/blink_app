@@ -102,6 +102,7 @@ $(document).ready(function(){
             for (var i in data){
                 for (var n in data[i]){
                     var logo_image = data[i][n];
+                    console.log(logo_image)
                     $('.'+logo_image["id_name"]).prop("alt", logo_image["nombre_en"])
                     $('.'+logo_image["id_name"]).prop("title", logo_image["nombre_en"])
                     $('.'+logo_image["id_name"]).attr("src", urlImage + logo_image.img);

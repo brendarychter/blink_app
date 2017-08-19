@@ -14,7 +14,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="public/css/styles_default.css">
-    <link rel="shortcut icon" type="image/png" href="public/img/icon_tab.png" class="img_menu" />
+    <link rel="shortcut icon" type="image/png" href="public/img/icon_tab.png" class="img_menu_1" />
     <style type="text/css">
         .no-newsletter .newsletter, .no-newsletter .newsletter-title {
             display: none;

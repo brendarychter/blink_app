@@ -13,7 +13,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../public/css/styles_default.css">
-    <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png" class="img_menu" />
+    <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png" class="img_menu_1" />
     <link rel="stylesheet" href="../public/css/style.css">
     <link rel="stylesheet" href="../public/css/fonts.css">
     

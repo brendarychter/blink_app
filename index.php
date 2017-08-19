@@ -14,7 +14,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="public/css/styles_default.css">
 
-    <link rel="shortcut icon" type="image/png" href="public/img/icon_tab.png" class="img_menu" />
+    <link rel="shortcut icon" type="image/png" href="public/img/icon_tab.png" class="img_menu_1" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,7 +32,7 @@
     <div class="bck"></div>
     
     <!-- Header -->
-    <header id="main-page" class="section_1 page-section-home img_home">
+    <header id="main-page" class="section_1 page-section-home img_home_1">
         <div class="container">
             <div class="intro-text">
                 <h2 class="intro-lead-in home_subtitle_section_1">Una &uacute;nica aplicaci&oacute;n. Todo lo que necesit&aacute;s.</h2>
@@ -59,19 +59,19 @@
                 </div>
                 <div class="row text-center">
                     <div class="col-md-3">
-                        <h4 class="service-heading"><img src="public/img/group.svg" /></h4>
+                        <h4 class="service-heading"><img src="public/img/group.svg" class="img_home_2"/></h4>
                         <p class="text-muted home_text_1_section_2">Cre&aacute; todos los grupos que necesites</p>
                     </div>
                     <div class="col-md-3">
-                        <h4 class="service-heading"><img src="public/img/hour.svg" /></h4>
+                        <h4 class="service-heading"><img src="public/img/hour.svg" class="img_home_3"/></h4>
                         <p class="text-muted home_text_2_section_2">Llev&aacute; un registro de los gastos grupales</p>
                     </div>
                     <div class="col-md-3">
-                        <h4 class="service-heading"><img src="public/img/calendar.svg" /></h4>
+                        <h4 class="service-heading"><img src="public/img/calendar.svg" class="img_home_4"/></h4>
                         <p class="text-muted home_text_3_section_2">No te olvides de ning&uacute;n evento</p>
                     </div>
                     <div class="col-md-3">
-                        <h4 class="service-heading"><img src="public/img/chat.svg" /></h4>
+                        <h4 class="service-heading"><img src="public/img/chat.svg" class="img_home_5"/></h4>
                         <p class="text-muted home_text_4_section_2">Enterate de las &uacute;ltimas novedades</p>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
     
         <!-- VIDEO Section -->
         <section id="demo" class="section_3 page-section-home">
-            <img src="public/img/play.svg" class="demo-img"><br><br>
+            <img src="public/img/play.svg" class="demo-img" class="img_home_6"><br><br>
             <p class="demo_description">
                 <a href="content/demo.php" style="cursor: pointer;">Video en construcci&oacute;n</a>
             </p>
@@ -94,7 +94,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center download-application">
-                        <img src="public/img/chart.png">
+                        <img src="public/img/chart.png" class="img_home_7">
                         <h2 class="section-heading text-app home_title_section_4">Descargate la aplicaci&oacute;n para el celular</h2>
                         <h3 class="section-subheading text-muted home_text_section_4">Vas a poder acceder a las novedades m&aacute;s r&aacute;pidamente y usar la aplicaci&oacute;n de forma m&aacute;s c&oacute;moda y eficiente</h3>
                         <div style="text-align: center;">

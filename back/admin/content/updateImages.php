@@ -15,7 +15,6 @@
 		$name_es = mysqli_real_escape_string($conexion,$_POST["titulo_es"]);
 		$name_en = mysqli_real_escape_string($conexion,$_POST["titulo_en"]);
 		$table_name = $_POST["table"];
-		$section = $_POST["section"];
 		$id = $_POST["id_name"];
 		
 		// LEVANTO EL NOMBRE DEL ARCHIVO USANDO LA FUNCION subir_imagen DECLARADA ARRIBA

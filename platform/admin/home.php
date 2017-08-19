@@ -59,10 +59,10 @@
 							<div class="title-box">
 								<span class="img-titles" style="float: right; font-weight: bold;"></span>
 							</div>
-							<input type="file" class="img_home" id="img_home" data-id="img_home" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_home"></label>
-							<input class="title-load" data-title="title-1" type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_home_es" data-id="title_img_home" required/>
-							<input class="title-load" data-title="title-1" type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_home_en" data-id="title_img_home" required/>
-							<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-table="home"/>Guardar foto</button>
+							<input type="file" class="img_home_1" id="img_home_1" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_home_1"></label>
+							<input type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_home_1_es" required/>
+							<input type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_home_1_en" required/>
+							<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-order="1" data-table="home"/>Guardar foto</button>
 							<p class="help-block"></p>
 						</div>
 					</div>
@@ -143,12 +143,19 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text home_text_1_section_2_english" realvalue="home_text_1_section_2" language="english"></span>
 						</div>
-						<form method="post" enctype="multipart/form-data" id="imageUploadForm" data-form="">
-							<div class="col-md-3 col-sm-12 line-sections">
+						<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="home">
+							<div class="col-md-12 col-sm-12 line-sections">
+								<div class="title-box">
+									<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">&iacute;cono 1</span>
+								</div>
 								<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
-									<input type="file" class="imagen-img" data-img="img-2" name="imagen" data-id="" data-section="2" data-url="" data-num="1" required/>
-									<input class="titulo-img" data-title="title-2" type="text" placeholder="T&iacute;tulo" name="titulo" required/>
-									<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="2" data-table="home"/>Guardar foto</button>
+									<div class="title-box">
+										<span class="img-titles" style="float: right; font-weight: bold;"></span>
+									</div>
+									<input type="file" class="img_home_2" id="img_home_2" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_home_2"></label>
+									<input type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_home_2_es" required/>
+									<input type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_home_2_en" required/>
+									<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-order="2" data-table="home"/>Guardar foto</button>
 									<p class="help-block"></p>
 								</div>
 							</div>
@@ -166,12 +173,19 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text home_text_2_section_2_english" realvalue="home_text_2_section_2" language="english"></span>
 						</div>
-						<form method="post" enctype="multipart/form-data" id="imageUploadForm" data-form="">
-							<div class="col-md-3 col-sm-12 line-sections">
+						<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="home">
+							<div class="col-md-12 col-sm-12 line-sections">
+								<div class="title-box">
+									<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">&iacute;cono 2</span>
+								</div>
 								<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
-									<input type="file" class="imagen-img" data-img="img-2" name="imagen" data-id="" data-section="2" data-url="" data-num="2" required/>
-									<input class="titulo-img" data-title="title-2" type="text" placeholder="T&iacute;tulo" name="titulo" required/>
-									<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="2" data-table="home"/>Guardar foto</button>
+									<div class="title-box">
+										<span class="img-titles" style="float: right; font-weight: bold;"></span>
+									</div>
+									<input type="file" class="img_home_3" id="img_home_3" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_home_3"></label>
+									<input type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_home_3_es" required/>
+									<input type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_home_3_en" required/>
+									<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-order="3" data-table="home"/>Guardar foto</button>
 									<p class="help-block"></p>
 								</div>
 							</div>
@@ -189,12 +203,19 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text home_text_3_section_2_english" realvalue="home_text_3_section_2" language="english"></span>
 						</div>
-						<form method="post" enctype="multipart/form-data" id="imageUploadForm" data-form="">
-							<div class="col-md-3 col-sm-12 line-sections">
+						<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="home">
+							<div class="col-md-12 col-sm-12 line-sections">
+								<div class="title-box">
+									<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">&iacute;cono 3</span>
+								</div>
 								<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
-									<input type="file" class="imagen-img" data-img="img-2" name="imagen" data-id="" data-section="2" data-url="" data-num="3" required/>
-									<input class="titulo-img" data-title="title-2" type="text" placeholder="T&iacute;tulo" name="titulo" required/>
-									<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="2" data-table="home"/>Guardar foto</button>
+									<div class="title-box">
+										<span class="img-titles" style="float: right; font-weight: bold;"></span>
+									</div>
+									<input type="file" class="img_home_4" id="img_home_4" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_home_4"></label>
+									<input type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_home_4_es" required/>
+									<input type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_home_4_en" required/>
+									<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-order="4" data-table="home"/>Guardar foto</button>
 									<p class="help-block"></p>
 								</div>
 							</div>
@@ -212,12 +233,19 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text home_text_4_section_2_english" realvalue="home_text_4_section_2" language="english"></span>
 						</div>
-						<form method="post" enctype="multipart/form-data" id="imageUploadForm" data-form="">
-							<div class="col-md-3 col-sm-12 line-sections">
+						<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="home">
+							<div class="col-md-12 col-sm-12 line-sections">
+								<div class="title-box">
+									<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">&iacute;cono 4</span>
+								</div>
 								<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
-									<input type="file" class="imagen-img" data-img="img-2" name="imagen" data-id="" data-section="2" data-url="" data-num="4" required/>
-									<input class="titulo-img" data-title="title-2" type="text" placeholder="T&iacute;tulo" name="titulo" required/>
-									<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="2" data-table="home"/>Guardar foto</button>
+									<div class="title-box">
+										<span class="img-titles" style="float: right; font-weight: bold;"></span>
+									</div>
+									<input type="file" class="img_home_5" id="img_home_5" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_home_5"></label>
+									<input type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_home_5_es" required/>
+									<input type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_home_5_en" required/>
+									<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-order="5" data-table="home"/>Guardar foto</button>
 									<p class="help-block"></p>
 								</div>
 							</div>
@@ -290,15 +318,23 @@
 							<span class="editable-text home_button_section_4_english" realvalue="home_button_section_4" language="english"></span>
 						</div>
 					</div>
-					<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
-						<div class="title-box">
-							<span class="global-title">imagen QR</span>
+					<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="home">
+						<div class="col-md-3 col-sm-12 line-sections">
+							<div class="title-box">
+								<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">imagen QR</span>
+							</div>
+							<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
+								<div class="title-box">
+									<span class="img-titles" style="float: right; font-weight: bold;"></span>
+								</div>
+								<input type="file" class="img_home_7" id="img_home_7" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_home_7"></label>
+								<input type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_home_7_es" required/>
+								<input type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_home_7_en" required/>
+								<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-order="7" data-table="home"/>Guardar foto</button>
+								<p class="help-block"></p>
+							</div>
 						</div>
-						<input type="file">
-						<input type="text" placeholder="T&iacute;tulo" required/>
-						<button class="btn btn-primary" type="submit" id="save-photo-1"/>Guardar foto</button>
-						<p class="help-block"></p>
-					</div>
+					</form>
 				</div>
 			</form>	
 

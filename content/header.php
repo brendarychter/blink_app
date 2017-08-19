@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
             </button>
              <!-- href="#page-top"-->
-            <a class="navbar-brand page-scroll" href="../index.php" style="margin-top: -4px; padding: 0;"><img alt="Blink App" title="Blink App" src="../public/img/logo.svg" class="img_menu" id="icon-top"></img></a>
+            <a class="navbar-brand page-scroll" href="../index.php" style="margin-top: -4px; padding: 0;"><img alt="Blink App" title="Blink App" src="../public/img/logo.svg" class="img_menu_1" id="icon-top"></img></a>
 
         </div>
 

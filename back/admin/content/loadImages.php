@@ -10,13 +10,14 @@
 
 		// LEVANTO ALGUNOS DATOS DEL FORM
 
-		$name = mysqli_real_escape_string($conexion,$_POST["titulo"]);
+		$name_es = mysqli_real_escape_string($conexion,$_POST["titulo_es"]);
+		$name_en = mysqli_real_escape_string($conexion,$_POST["titulo_en"]);
 		$table_name = $_POST["table"];
-		$section = $_POST["section"];
-		$id_name = $_POST["id_name"];
+		$id = $_POST["id_name"];
 		
 		// LEVANTO EL NOMBRE DEL ARCHIVO USANDO LA FUNCION subir_imagen DECLARADA ARRIBA
 		$imagen = subir_imagen($_FILES["imagen"]);
+		$file = str_replace(' ', '%20', $imagen);
 
 		if($imagen=="error"){
 			echo "Error. Hubo un error con la imagen, por favor revisar";
@@ -25,7 +26,7 @@
 
 			// CONTINUO CON EL RESTO DE MI CÓDIGO...
 
-			$sql = "insert into fotos (nombre, img, table_name, section, id_name) values ('$name','$imagen','$table_name', '$section', '$id_name')";
+			$sql = "insert into fotos (nombre_es, img, table_name, section, id_name, nombre_en) values ('$name','$imagen','$table_name', '$section', '$id_name', '$nombre_en')";
 			
 			// IMPRIMO LA CONSULTA SÓLO PARA DEBUG
 			echo $sql;

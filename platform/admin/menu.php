@@ -15,10 +15,10 @@
 									<div class="title-box">
 										<span class="img-titles" style="float: right; font-weight: bold;"></span>
 									</div>
-									<input type="file" class="img_menu" id="img_menu" data-id="img_menu" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_menu"></label>
-									<input class="title-load" data-title="title-1" type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_menu_es" data-id="title_img_menu" required/>
-									<input class="title-load" data-title="title-1" type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_menu_en" data-id="title_img_menu" required/>
-									<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-table="menu"/>Guardar foto</button>
+									<input type="file" class="img_menu_1" id="img_menu_1" data-id="img_menu_1" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_menu_1"></label>
+									<input class="title-load" data-title="title-1" type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_menu_1_es" data-id="title_img_menu_1" required/>
+									<input class="title-load" data-title="title-1" type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_menu_1_en" data-id="title_img_menu_1" required/>
+									<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-order="1" data-section="1" data-table="menu"/>Guardar foto</button>
 									<p class="help-block"></p>
 								</div>
 							</div>
