@@ -95,19 +95,20 @@
 				</div>
 				
 			</form>	
-			<div class="col-md-12 col-sm-12 line-sections">
+			<div class="col-md-3 col-sm-12 line-sections">
 				<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="works">
-					<div class="col-md-3 col-sm-12 line-sections">
-						<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
-							<div class="title-box">
-								<span class="img-titles" style="float: right; font-weight: bold;"></span>
-							</div>
-							<input type="file" class="img_works" name="imagen" data-url="" required/><span>Imagen actual: </span><label for="img_works" style="display: inline-block" id="img_url_works"></label>
-							<input class="title-load" data-title="title-1" type="text" placeholder="T&iacute;tulo" name="titulo" id="title_img_works" required/>
-							<label class="img_url_menu"></label>
-							<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-table="works"/>Guardar foto</button>
-							<p class="help-block"></p>
+					<div class="title-box">
+						<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">imagen 1</span>
+					</div>
+					<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
+						<div class="title-box">
+							<span class="img-titles" style="float: right; font-weight: bold;"></span>
 						</div>
+						<input type="file" class="img_works_1" id="img_works_1" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_works_1"></label>
+						<input type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_works_1_es" required/>
+						<input type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_works_1_en" required/>
+						<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-order="1" data-table="works"/>Guardar foto</button>
+						<p class="help-block"></p>
 					</div>
 				</form>
 			</div>
@@ -159,18 +160,20 @@
 				</div>
 				
 			</form>	
-			<div class="col-md-12 col-sm-12 line-sections">
+			<div class="col-md-3 col-sm-12 line-sections">
 				<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="works">
-					<div class="col-md-3 col-sm-12 line-sections">
-						<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
-							<div class="title-box">
-								<span class="img-titles" style="float: right; font-weight: bold;">imagen</span>
-							</div>
-							<input type="file" class="img-load" id="img_2_section_works" data-img="img-2" name="imagen" data-id="" data-section="2" data-url="" required/>
-							<input class="title-load" data-title="title-2" type="text" placeholder="T&iacute;tulo" name="titulo" id="title_2_section_works" required/>
-							<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="2" data-table="works"/>Guardar foto</button>
-							<p class="help-block"></p>
+					<div class="title-box">
+						<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">imagen 1</span>
+					</div>
+					<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
+						<div class="title-box">
+							<span class="img-titles" style="float: right; font-weight: bold;"></span>
 						</div>
+						<input type="file" class="img_works_2" id="img_works_2" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_works_2"></label>
+						<input type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_works_2_es" required/>
+						<input type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_works_2_en" required/>
+						<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-order="2" data-section="1" data-table="works"/>Guardar foto</button>
+						<p class="help-block"></p>
 					</div>
 				</form>
 			</div>
@@ -209,18 +212,20 @@
 				</div>
 				
 			</form>	
-			<div class="col-md-12 col-sm-12 line-sections">
+			<div class="col-md-3 col-sm-12 line-sections">
 				<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="works">
-					<div class="col-md-3 col-sm-12 line-sections">
-						<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
-							<div class="title-box">
-								<span class="img-titles" style="float: right; font-weight: bold;">imagen</span>
-							</div>
-							<input type="file" class="img-load" id="img_3_section_works" data-img="img-3" name="imagen" data-id="" data-section="2" data-url="" required/>
-							<input class="title-load" data-title="title-3" type="text" placeholder="T&iacute;tulo" name="titulo" id="title_3_section_works" required/>
-							<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="3" data-table="works"/>Guardar foto</button>
-							<p class="help-block"></p>
+					<div class="title-box">
+						<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">imagen 1</span>
+					</div>
+					<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
+						<div class="title-box">
+							<span class="img-titles" style="float: right; font-weight: bold;"></span>
 						</div>
+						<input type="file" class="img_works_3" id="img_works_3" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_works_3"></label>
+						<input type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_works_3_es" required/>
+						<input type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_works_3_en" required/>
+						<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-order="3" data-section="1" data-table="works"/>Guardar foto</button>
+						<p class="help-block"></p>
 					</div>
 				</form>
 			</div>
@@ -272,18 +277,20 @@
 				</div>
 				
 			</form>	
-			<div class="col-md-12 col-sm-12 line-sections">
+			<div class="col-md-3 col-sm-12 line-sections">
 				<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="works">
-					<div class="col-md-4 col-sm-12 line-sections">
-						<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
-							<div class="title-box">
-								<span class="img-titles" style="float: right; font-weight: bold;">imagen</span>
-							</div>
-							<input type="file" class="img-load" id="img_4_section_works" data-img="img-4" name="imagen" data-id="" data-section="2" data-url="" required/>
-							<input class="title-load" data-title="title-4" type="text" placeholder="T&iacute;tulo" name="titulo" id="title_4_section_works" required/>
-							<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="4" data-table="works"/>Guardar foto</button>
-							<p class="help-block"></p>
+					<div class="title-box">
+						<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">imagen 1</span>
+					</div>
+					<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
+						<div class="title-box">
+							<span class="img-titles" style="float: right; font-weight: bold;"></span>
 						</div>
+						<input type="file" class="img_works_4" id="img_works_4" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_works_4"></label>
+						<input type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_works_4_es" required/>
+						<input type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_works_4_en" required/>
+						<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-order="4" data-section="1" data-table="works"/>Guardar foto</button>
+						<p class="help-block"></p>
 					</div>
 				</form>
 			</div>
@@ -322,18 +329,20 @@
 				</div>
 				
 			</form>	
-			<div class="col-md-12 col-sm-12 line-sections">
+			<div class="col-md-3 col-sm-12 line-sections">
 				<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="works">
-					<div class="col-md-3 col-sm-12 line-sections">
-						<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
-							<div class="title-box">
-								<span class="img-titles" style="float: right; font-weight: bold;">imagen</span>
-							</div>
-							<input type="file" class="img-load" id="img_5_section_works" data-img="img-5" name="imagen" data-id="" data-section="2" data-url="" required/>
-							<input class="title-load" data-title="title-5" type="text" placeholder="T&iacute;tulo" name="titulo" id="title_5_section_works" required/>
-							<button class="save-photo btn btn-primary btn-md" type="submit" name="submit" data-section="5" data-table="works"/>Guardar foto</button>
-							<p class="help-block"></p>
+					<div class="title-box">
+						<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">imagen 1</span>
+					</div>
+					<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
+						<div class="title-box">
+							<span class="img-titles" style="float: right; font-weight: bold;"></span>
 						</div>
+						<input type="file" class="img_works_5" id="img_works_5" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_works_5"></label>
+						<input type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_works_5_es" required/>
+						<input type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_works_5_en" required/>
+						<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-order="5" data-section="1" data-table="works"/>Guardar foto</button>
+						<p class="help-block"></p>
 					</div>
 				</form>
 			</div>

@@ -76,8 +76,10 @@ $(document).ready(function(){
         });
     })
 
-    loadHome("home");
-    function loadHome(table){
+    loadAdmin("home");
+    loadAdmin("works");
+    loadAdmin("team");
+    function loadAdmin(table){
         params= {};
         params.action = "getContent";
         params.tableName = table;
@@ -103,13 +105,13 @@ $(document).ready(function(){
                 var imagen = data[table][i];
                 
                 // //Info imagen
-                $('.img_'+table+'_'+imagen.position).css('background-image', 'url(' + urlImage +  imagen.img + ')');
+                //$('.img_'+table+'_'+imagen.position).css('background-image', 'url(' + urlImage +  imagen.img + ')');
                 $('#img_url_'+table+'_'+imagen.position).text(imagen.img.substr(imagen.img.indexOf("/") + 1));
                 $('.img_'+table+'_'+imagen.position).attr("data-url", imagen.img);
 
                 // //Titulo
-                $('#title_img_'+table+'_'+imagen.position+'_en').val(imagen.nombre_en);
-                $('#title_img_'+table+'_'+imagen.position+'_es').val(imagen.nombre_es);
+                $('#title_img_'+table+'_'+imagen.position+'_en').val(unescape(imagen.nombre_en));
+                $('#title_img_'+table+'_'+imagen.position+'_es').val(unescape(imagen.nombre_es));
 
             }
         }).error(function(error, textStatus){
@@ -156,7 +158,6 @@ $(document).ready(function(){
             console.log(error.statusText);
         });
     }
-
 
     ///Button save image
     $('.save-img').on("click", function(){

@@ -8,15 +8,15 @@ $(document).ready(function(){
     function getSessionAdminUser(){
         //$.get('http://www.blinkapp.com.ar/back/admin/users/getUserAdminSession.php', function (data) {
         $.get('../../back/admin/users/getUserAdminSession.php', function (data) {
-          userAdmin = JSON.parse(data);
-          $("#admin-logged").append(userAdmin.username);
+            userAdmin = JSON.parse(data);
+            $("#admin-logged").append(userAdmin.user);
         });
     }
 
     $('#log-out').on('click', function(){
         $.ajaxSetup({cache: false})
         $.get('../../back/global/destroySession.php', function (data) {
-            window.location.href = "../../platform.php";
+            window.location.href = "../index.php";
         });
     })
 

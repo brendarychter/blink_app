@@ -42,7 +42,7 @@
         <div class="container" style="padding-top:35px">
             <div class="row" style="padding:35px">
                 <div class="col-sm-12 col-md-4 col-lg-4 team-member">
-                    <img src="../public/img/team/1.jpg" class="img-responsive img-circle" alt="Designer" title="title">
+                    <img src="../public/img/team/1.jpg" class="img-responsive img-circle img_team_1" alt="Designer" title="title">
                     <h4 class="team_member_1_name">Dami&aacute;n Cukierman</h4>
                     <p class="text-muted profession team_member_1_job">Project Manager</p>
                     <div class="separator">·</div>
@@ -53,7 +53,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4 team-member">
-                    <img src="../public/img/team/2.jpg" class="img-responsive img-circle" alt="Designer" title="title">
+                    <img src="../public/img/team/2.jpg" class="img-responsive img-circle img_team_2" alt="Designer" title="title">
                     <h4 class="team_member_2_name">Juan Mar&iacute;a Migliore</h4>
                     <p class="text-muted profession team_member_2_job">Front and Back End Developer</p>
                     <div class="separator">·</div>
@@ -64,7 +64,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4 team-member">
-                    <img src="../public/img/team/3.jpg" class="img-responsive img-circle" alt="Designer" title="title">
+                    <img src="../public/img/team/3.jpg" class="img-responsive img-circle img_team_3" alt="Designer" title="title">
                     <h4 class="team_member_3_name">Germ&aacute;n Figueroa</h4>
                     <p class="text-muted profession team_member_3_job">UI &#38; UX designer</p>
                     <div class="separator">·</div>

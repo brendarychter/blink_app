@@ -49,22 +49,20 @@
 				</div>
 				
 			</form>	
-			<div class="col-md-12 col-sm-12 line-sections">
+			<div class="col-md-3 col-sm-12 line-sections">
 				<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="home">
-					<div class="col-md-3 col-sm-12 line-sections">
+					<div class="title-box">
+						<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">imagen de fondo</span>
+					</div>
+					<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
 						<div class="title-box">
-							<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">imagen de fondo</span>
+							<span class="img-titles" style="float: right; font-weight: bold;"></span>
 						</div>
-						<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
-							<div class="title-box">
-								<span class="img-titles" style="float: right; font-weight: bold;"></span>
-							</div>
-							<input type="file" class="img_home_1" id="img_home_1" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_home_1"></label>
-							<input type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_home_1_es" required/>
-							<input type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_home_1_en" required/>
-							<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-order="1" data-table="home"/>Guardar foto</button>
-							<p class="help-block"></p>
-						</div>
+						<input type="file" class="img_home_1" id="img_home_1" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_home_1"></label>
+						<input type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_home_1_es" required/>
+						<input type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_home_1_en" required/>
+						<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-order="1" data-table="home"/>Guardar foto</button>
+						<p class="help-block"></p>
 					</div>
 				</form>
 			</div>

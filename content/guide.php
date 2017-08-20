@@ -47,20 +47,21 @@
     <section id="cd-timeline" class="cd-container">
         <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-picture">
-                <img class="img_works" src="" alt="Como funciona" title="Como funciona">
+                <img class="img_works_1" src="" alt="Como funciona" title="Como funciona">
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
                 <h3 class="works_title_section_1">Lector de QR</h3>
                 <p class="works_subtitle_section_1">Primero necesitas descargarte una aplicaci&oacute;n para leer el c&oacute;digo de descarga</p>
-                <a href="https://itunes.apple.com/us/app/qr-reader-for-iphone/id368494609?mt=8" class="cd-read-more works_button_1_section_1" style="margin-left: 5px; margin-bottom: 5px;" target="_blank">Itunes</a>
                 <a href="https://play.google.com/store/apps/details?id=me.scan.android.client&hl=es" class="cd-read-more works_button_2_section_1" style="margin-left: 5px;" target="_blank">Android</a>
+                <a href="https://www.microsoft.com/es-ar/store/p/qr-code-scanner/9wzdncrfj2st" class="cd-read-more works_button_1_section_1" style="margin-left: 5px; margin-bottom: 5px;" target="_blank">Windows</a>
+                <!-- <p class="works_link_section_1">O acced&eacute; desde</p><a href="#" class="cd-read-more works_link_1_section_1" style="margin-left: 5px; margin-bottom: 5px;" target="_blank">Ac&aacute;</a> -->
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
 
         <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-movie">
-                <img id="img_2_section_works" src="" alt="" title="">
+                <img class="img_works_2" id="img_2_section_works" src="" alt="" title="">
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
@@ -72,7 +73,7 @@
 
         <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-picture">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
+                <img class="img_works_3" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
@@ -83,7 +84,7 @@
 
         <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-location">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Location">
+                <img class="img_works_4" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Location">
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
@@ -95,7 +96,7 @@
 
         <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-location">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Location">
+                <img class="img_works_5" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Location">
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
