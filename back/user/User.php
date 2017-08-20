@@ -140,8 +140,9 @@
 				if(!mysqli_num_rows($response2)>=1){
 					$sql = "insert into users (username, password, mail, name, phoneNumber, datetime, active) values ('$username','$password','$email', '$name', '$phone', '$datetime', '1')";
 					if(mysqli_query($connection->connected, $sql)){
-	        			$from = 'brendarychter@gmail.com';
-						$sendTo = $email;
+	        			$from = 'blinkthenewapp@gmail.com';
+						$recipients = array( $email, "blinkthenewapp@gmail@gmail.com");
+						$sendTo = implode(',', $recipients);
 						$recaptchaSecret = '6Le78ScUAAAAALWRRZshuqD2iwNqp2m4ENHMIhvT';
         				$recaptcha = new \ReCaptcha\ReCaptcha($recaptchaSecret, new \ReCaptcha\RequestMethod\CurlPost());
 						

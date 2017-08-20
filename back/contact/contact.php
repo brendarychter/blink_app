@@ -7,7 +7,7 @@ require_once("../admin/connection.php");
 $connection = new connection;
 
 // configure
-$from = 'brendarychter@gmail.com';
+$from = 'blinkthenewapp@gmail@gmail.com';
 $sendTo = $_POST["email"];
 $lan = $_POST["lan"];
 

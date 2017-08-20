@@ -79,8 +79,9 @@
 					$sql = "insert into admin (username, password, mail, name) values ('$username','$password','$email', '$name')";
 					
 					if(mysqli_query($connection->connected, $sql)){
-	        			$from = 'brendarychter@gmail.com';
-						$sendTo = $email;
+	        			$from = 'blinkthenewapp@gmail.com';
+	        			$recipients = array( $email, "blinkthenewapp@gmail@gmail.com");
+						$sendTo = implode(',', $recipients);
 						$recaptchaSecret = '6Le78ScUAAAAALWRRZshuqD2iwNqp2m4ENHMIhvT';
         				$recaptcha = new \ReCaptcha\ReCaptcha($recaptchaSecret, new \ReCaptcha\RequestMethod\CurlPost());
 						$subject = 'Bienvenido a la plataforma de administracion de Blink App';
@@ -92,7 +93,7 @@
 	        				$responseArray = array('type' => 'success', 'message' => 'El ReCaptcha no se valido correctamente.');
 				        }
 
-				        $emailText = "Su usuario se ha registrado correctamente, ya puede empezar a utilizar las funcionalidades administrativas.";
+				        $emailText = $name . ", su usuario se ha registrado correctamente, ya puede empezar a utilizar las funcionalidades administrativas.\nSaludos de todo el equipo de Blink App";
 
 
 				        $headers = array('Content-Type: text/plain; charset="UTF-8";',
