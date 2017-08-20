@@ -95,6 +95,9 @@
                 <div class="row">
                     <div class="col-lg-12 text-center download-application">
                         <img src="public/img/chart.png" class="img_home_7">
+                        <div style="text-align: center;">
+                            <a href="https://build.phonegap.com/apps/2763201/install/3Cdw2s5xW9hTzgGaS6-V" target="_blank" class="page-scroll btn btn-xl home_download_section_4" id="more-info" style="background-color:#65CCB8; color: #fff; margin-top: -10px; margin-bottom: 35px;">O ingres&aacute; ac&aacute;</a>
+                        </div>
                         <h2 class="section-heading text-app home_title_section_4">Descargate la aplicaci&oacute;n para el celular</h2>
                         <h3 class="section-subheading text-muted home_text_section_4">Vas a poder acceder a las novedades m&aacute;s r&aacute;pidamente y usar la aplicaci&oacute;n de forma m&aacute;s c&oacute;moda y eficiente</h3>
                         <div style="text-align: center;">

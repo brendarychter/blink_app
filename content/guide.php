@@ -53,9 +53,9 @@
             <div class="cd-timeline-content">
                 <h3 class="works_title_section_1">Lector de QR</h3>
                 <p class="works_subtitle_section_1">Primero necesitas descargarte una aplicaci&oacute;n para leer el c&oacute;digo de descarga</p>
-                <a href="https://play.google.com/store/apps/details?id=me.scan.android.client&hl=es" class="cd-read-more works_button_2_section_1" style="margin-left: 5px;" target="_blank">Android</a>
+                <a href="https://play.google.com/store/apps/details?id=me.scan.android.client&hl=es" class="cd-read-more works_button_2_section_1" style="margin-left: 5px; margin-bottom: 5px;" target="_blank">Android</a>
                 <a href="https://www.microsoft.com/es-ar/store/p/qr-code-scanner/9wzdncrfj2st" class="cd-read-more works_button_1_section_1" style="margin-left: 5px; margin-bottom: 5px;" target="_blank">Windows</a>
-                <!-- <p class="works_link_section_1">O acced&eacute; desde</p><a href="#" class="cd-read-more works_link_1_section_1" style="margin-left: 5px; margin-bottom: 5px;" target="_blank">Ac&aacute;</a> -->
+                <a  class="cd-read-more works_download_section_1" style="margin-left: 5px; margin-bottom: 5px;" target="_blank" href="https://build.phonegap.com/apps/2763201/install/3Cdw2s5xW9hTzgGaS6-V">O ingres&aacute; ac&aacute;</a>
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
 

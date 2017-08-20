@@ -78,6 +78,10 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text works_button_1_section_1_english" realvalue="works_button_1_section_1" language="english"></span>
 						</div>
+						<div class="portion portion-english">
+							<label class="lan">Link</label>
+							<span class="editable-text works_link_1_section_1_spanish" realvalue="works_link_1_section_1" language="english"></span>
+						</div>
 					</div>
 					<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
 						<div class="title-box">
@@ -91,27 +95,50 @@
 							<label class="lan">Ingl&eacute;s</label>
 							<span class="editable-text works_button_2_section_1_english" realvalue="works_button_2_section_1" language="english"></span>
 						</div>
+						<div class="portion portion-english">
+							<label class="lan">Link</label>
+							<span class="editable-text works_link_2_section_1_spanish" realvalue="works_link_2_section_1" language="english"></span>
+						</div>
 					</div>
 				</div>
-				
-			</form>	
-			<div class="col-md-3 col-sm-12 line-sections">
-				<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="works">
-					<div class="title-box">
-						<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">imagen 1</span>
-					</div>
-					<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
+				<div class="col-md-12 col-sm-12 line-sections">
+					<div class="form-group col-md-3 box-section first-section col-sm-12 ">
 						<div class="title-box">
-							<span class="img-titles" style="float: right; font-weight: bold;"></span>
+							<span class="global-title">link descarga</span>
 						</div>
-						<input type="file" class="img_works_1" id="img_works_1" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_works_1"></label>
-						<input type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_works_1_es" required/>
-						<input type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_works_1_en" required/>
-						<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-order="1" data-table="works"/>Guardar foto</button>
-						<p class="help-block"></p>
+						<div class="portion portion-spanish">
+							<label class="lan">Espa&ntilde;ol</label>
+							<span class="editable-text works_download_section_1_spanish" realvalue="works_download_section_1" language="spanish"></span>
+						</div>
+						<div class="portion portion-english">
+							<label class="lan">Ingl&eacute;s</label>
+							<span class="editable-text works_download_section_1_english" realvalue="works_download_section_1" language="english"></span>
+						</div>
+						<div class="portion portion-english">
+							<label class="lan">Link</label>
+							<span class="editable-text works_download_link_section_1_spanish" realvalue="works_download_link_section_1" language="english"></span>
+						</div>
+					</div>	
+					<div class="col-md-3 col-sm-12 line-sections">
+						<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="works">
+							<div class="title-box">
+								<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">imagen 1</span>
+							</div>
+							<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
+								<div class="title-box">
+									<span class="img-titles" style="float: right; font-weight: bold;"></span>
+								</div>
+								<input type="file" class="img_works_1" id="img_works_1" name="imagen" data-url="" required style="display: inline-block"/><span>Imagen actual: </span><label style="display: inline-block" id="img_url_works_1"></label>
+								<input type="text" placeholder="T&iacute;tulo espa&ntilde;ol" name="titulo" id="title_img_works_1_es" required/>
+								<input type="text" placeholder="T&iacute;tulo ingl&eacute;s" name="titulo" id="title_img_works_1_en" required/>
+								<button class="save-img btn btn-primary btn-md" type="submit" name="submit" data-section="1" data-order="1" data-table="works"/>Guardar foto</button>
+								<p class="help-block"></p>
+							</div>
+						</form>
 					</div>
-				</form>
-			</div>
+				</div>
+
+			</form>	
 		</div>
 		<div class="panel-heading"></div>
 		<div class="panel-body">

@@ -333,6 +333,23 @@
 							</div>
 						</div>
 					</form>
+					<div class="form-group col-md-3 box-section col-sm-12">
+						<div class="title-box">
+							<span class="global-title">link</span>
+						</div>
+						<div class="portion portion-spanish">
+							<label class="lan">Espa&ntilde;ol</label>
+							<span class="editable-text home_download_section_4_spanish" realvalue="home_download_section_4" language="spanish"></span>
+						</div>
+						<div class="portion portion-english">
+							<label class="lan">Ingl&eacute;s</label>
+							<span class="editable-text home_download_section_4_english" realvalue="home_download_section_4" language="english"></span>
+						</div>
+						<div class="portion portion-english">
+							<label class="lan">Descarga</label>
+							<span class="editable-text home_link_section_4_spanish" realvalue="home_link_section_4"></span>
+						</div>
+					</div>	
 				</div>
 			</form>	
 

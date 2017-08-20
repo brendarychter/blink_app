@@ -16,6 +16,8 @@ $(document).ready(function(){
                 var active;
                 var action;
                 for (var n in data[i]){
+                //table.append('<td><span class="editable-text home_subtitle_section_1_spanish" realvalue="home_subtitle_section_1" language="spanish"></span></td>')
+
                     if (n !== "userID"){
                         if (n == "active"){
                             if (data[i][n] == 1){
@@ -73,53 +75,56 @@ $(document).ready(function(){
     })
 
 
+    $('.close-modal').on("click", function(){
+        $('.signInUser').hide();
+    })
 
     $(function () {
 
-    $('#signin-user-form').validator();
+        $('#signin-user-form').validator();
 
-    $('#signin-user-form').on('submit', function (e) {
-        if (!e.isDefaultPrevented()) {
-            //url: "http://www.blinkapp.com.ar/back/admin/users/admin_user.php",
-            //get last url
-            //relocate
-            var lan = localStorage.getItem("language");
-            var today = new Date();
-            var date_time = today.getDate() + '/' + (today.getMonth()+1) + '/' + today.getFullYear() + '. ' + today.getHours() + ":" + today.getMinutes();
-            $.ajax({
-                type: "POST",
-                url: "../../back/user/adminUser.php",
-                data: $(this).serialize() + '&action=createNewUser' + '&datetime=' + date_time.toString() + '&lan=' + lan
-            }).done(function( data ) {
-                console.log(data)
-                var data = JSON.parse(data);
-                var messageAlert = 'alert-' + data.type;
-                var messageText = data.message;
+        $('#signin-user-form').on('submit', function (e) {
+            if (!e.isDefaultPrevented()) {
+                //url: "http://www.blinkapp.com.ar/back/admin/users/admin_user.php",
+                //get last url
+                //relocate
+                var lan = localStorage.getItem("language");
+                var today = new Date();
+                var date_time = today.getDate() + '/' + (today.getMonth()+1) + '/' + today.getFullYear() + '. ' + today.getHours() + ":" + today.getMinutes();
+                $.ajax({
+                    type: "POST",
+                    url: "../../back/user/adminUser.php",
+                    data: $(this).serialize() + '&action=createNewUser' + '&datetime=' + date_time.toString() + '&lan=' + lan
+                }).done(function( data ) {
+                    console.log(data)
+                    var data = JSON.parse(data);
+                    var messageAlert = 'alert-' + data.type;
+                    var messageText = data.message;
 
-                var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert">&times;</button>' + messageText + '</div>';
-                if (messageAlert && messageText) {
+                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert">&times;</button>' + messageText + '</div>';
+                    if (messageAlert && messageText) {
 
-                    grecaptcha.reset();
-                    $('#signin-user-form').find('.messages').html(alertBox);
-                    $('#signin-user-form')[0].reset();
-                    $('.messages').show();
+                        grecaptcha.reset();
+                        $('#signin-user-form').find('.messages').html(alertBox);
+                        $('#signin-user-form')[0].reset();
+                        $('.messages').show();
 
-                    setTimeout(function(){
-                        $('.messages').fadeOut('slow');
-                    }, 2000);
-                    if (data.type == "success"){
-                        $('.signInUser').hide();
-                        $('.contact-users > tbody').empty();
-                        updateUsersTable();
+                        setTimeout(function(){
+                            $('.messages').fadeOut('slow');
+                        }, 2000);
+                        if (data.type == "success"){
+                            $('.signInUser').hide();
+                            $('.contact-users > tbody').empty();
+                            updateUsersTable();
+                        }
                     }
-                }
-            }).error(function(error, textStatus){
-                console.log(error);
-            });
-            return false;
-        }
-    })
-});
+                }).error(function(error, textStatus){
+                    console.log(error);
+                });
+                return false;
+            }
+        })
+    });
 
 })
 
