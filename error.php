@@ -38,7 +38,7 @@
         <img src="public/img/not-found.svg" width="250px" alt="Error" title="Error">
         <h1 class="error_title">&iexcl;Error!</h1>
         <h4 style="text-transform: inherit; margin-top: 20px;" class="subtitle-error error_subtitle">No podemos localizar la p&aacute;gina a la que intentas acceder</h4>
-        <a href="index.php" style="margin-top: 15px" class="button-error error_button btn btn-xl">Volver al inicio</a>
+        <a href="index" style="margin-top: 15px" class="button-error error_button btn btn-xl">Volver al inicio</a>
     </section>
 
     <?php

@@ -17,7 +17,7 @@ $(document).ready(function(){
         $.ajaxSetup({cache: false})
         $.get('http://www.blinkapp.com.ar/back/global/destroySession.php', function (data) {
         //$.get('../../back/global/destroySession.php', function (data) {
-            window.location.href = "../index.php";
+            window.location.href = "../index";
         });
     })
 
