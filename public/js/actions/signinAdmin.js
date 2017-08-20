@@ -4,10 +4,10 @@ $(function () {
 
     $('#signin-admin-form').on('submit', function (e) {
         if (!e.isDefaultPrevented()) {
-            //url: "http://www.blinkapp.com.ar/back/admin/users/admin_user.php",
             $.ajax({
                 type: "POST",
-                url: "../back/admin/users/admin_user.php",
+                url: "http://www.blinkapp.com.ar/back/admin/users/admin_user.php",
+                //url: "../back/admin/users/admin_user.php",
                 data: $(this).serialize() + '&action=setUserAdmin'
             }).done(function( data ) {
                 data = JSON.parse(data);
