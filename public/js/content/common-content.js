@@ -68,6 +68,7 @@ $(document).ready(function(){
                         $('.show-page:checkbox[value='+i+']').attr('checked', false);
                     }
                 }
+                $('.bck').fadeOut("slow");
             }
         }).error(function (error){
             console.log(error);

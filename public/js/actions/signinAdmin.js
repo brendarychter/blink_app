@@ -2,8 +2,19 @@ $(function () {
 
     $('#signin-admin-form').validator();
 
+    function validateMail(mail) {
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(mail);
+    }
+    $('#mail-admin').on('click', function(){
+        $('#mail-admin').css("border", "1px solid #ccc");
+    })
     $('#signin-admin-form').on('submit', function (e) {
-        if (!e.isDefaultPrevented()) {
+        if (!validateMail($('#mail-admin').val())){
+            $('#mail-admin').css("border", "1px red solid");
+            $('#mail-admin').focus();
+            return false;
+        }else if (!e.isDefaultPrevented()) {
             //url: "http://www.blinkapp.com.ar/back/admin/users/admin_user.php",
             $.ajax({
                 type: "POST",
@@ -21,6 +32,7 @@ $(function () {
                     $('#signin-admin-form').find('.messages').html(alertBox);
                     $('#signin-admin-form')[0].reset();
                     $('.messages').show();
+                    $('#mail-admin').css("border", "0");
                     setTimeout(function(){
                         $('.messages').fadeOut('slow');
                     }, 3000);

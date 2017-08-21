@@ -35,7 +35,7 @@
                     <a class="page-scroll team_menu" href="content/team.php">Qui&eacute;nes somos</a>
                 </li>
                 <li class="page-section">
-                    <a class="page-scroll contact_menu" href="#contact">Contactate</a>
+                    <a class="page-scroll contact_menu" href="index#contact">Contactate</a>
                 </li>
                 
             </ul>
