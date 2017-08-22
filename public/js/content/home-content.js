@@ -15,12 +15,13 @@ $(document).ready(function(){
             dataType: "json"
         }).done(function (data) {
             for (var i in data){
-                $('.'+i).text(unescape(data[i][language]));
                 if (data[i].section == 5){
                     $('.'+i).attr("placeholder", unescape(data[i][language]));
                     if (i == "button_section_5" || i == "home_button_section_5"){
                         $('.'+i).attr("value", unescape(data[i][language]));
                     }
+                }else{
+                    $('.'+i).text(unescape(data[i][language]));
                 }
                 $('.bck').fadeOut("slow");
             }
