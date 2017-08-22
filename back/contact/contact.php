@@ -60,12 +60,12 @@ try
         if ($lan == "spanish"){
             $subject = 'Gracias :) - Blink App';
             $okMessage = 'Gracias '.$_POST["name"].' :) ¡En breve nos estaremos comunicando con vos!';
-            $emailText = "Muchas gracias por contactarte con nosotros, en breve estaremos respondiendo tu consulta\nSaludos de todo el equipo de Blink App";
+            $emailText = $name. ", muchas gracias por contactarte con nosotros, en breve estaremos respondiendo tu consulta\nSaludos de todo el equipo de Blink App";
 
         }else if ($lan == "english"){
             $subject = 'Thanks :) - Blink App';
             $okMessage = 'Thanks '.$_POST["name"].' :) We will get back to you soon!';
-            $emailText = "Thank you very much for contacting us, we will be answering your inquiry soon\n Greetings from the entire team of Blink App";
+            $emailText = $name. ", thank you very much for contacting us, we will be answering your inquiry soon\n Greetings from the entire team of Blink App";
         }
 
         $query = "insert into contactos (name, phone, mail, message, active, date_time) values ('$name','$phone','$mail', '$message', 'true', '$datetime')";
