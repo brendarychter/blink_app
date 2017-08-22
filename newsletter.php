@@ -51,7 +51,7 @@
         <img src="public/img/newsletter.svg" width="250px">
         <h1 class="title-newsletter newsletter_title">&iexcl;Gracias por suscribirte al newsletter!</h1>
         <h4 style="text-transform: inherit; margin-top: 20px;" class="subtitle-newsletter newsletter_subtitle">Revisa tu correo electr&oacute;nico para recibir las novedades</h4>
-        <a href="index.php" style="margin-top: 15px" class="btn btn-xl button-newsletter newsletter_button">Volver a la p&aacute;gina de inicio</a>
+        <a href="index" style="margin-top: 15px" class="btn btn-xl button-newsletter newsletter_button">Volver a la p&aacute;gina de inicio</a>
     </section>
 
     <div class="no-newsletter">

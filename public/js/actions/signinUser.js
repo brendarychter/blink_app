@@ -21,8 +21,8 @@ $(function () {
             $('.bck').fadeIn("slow");
             $.ajax({
                 type: "POST",
-                //url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
-                url: "../back/user/adminUser.php",
+                url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
+                //url: "../back/user/adminUser.php",
                 data: $(this).serialize() + '&action=createNewUser' + '&datetime=' + date_time.toString() + '&lan=' + lan
             }).done(function( data ) {
                 console.log(data)
