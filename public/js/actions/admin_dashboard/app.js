@@ -126,6 +126,45 @@ $(document).ready(function(){
         })
     });
 
+
+    function getMessagesFromGroups(){
+        params = {};
+        $.ajax({
+            //url: "http://www.blinkapp.com.ar/back/admin/getAllGroups.php",
+            url: "../../back/admin/getAllGroups.php",
+            type: "POST",
+            dataType: "json",
+            data: params
+        }).done(function( data ) {
+            //por cada grupo una tabla. 3 fors
+            table = $('.contact-users');
+            for (var i in data){
+                table.append('<tr id="user-'+ data[i].userID+'"></tr>');
+                for (var n in data[i]){
+                    $('#user-'+ data[i].userID).append('<td>'+data[i][n]+'</td>');
+                }
+            }
+        }).error(function(error, textStatus){
+            console.log(error.responseText);
+        });
+        return false;
+    }
+
+    $('#show-users-app').on("click", function(){
+        $('#show-groups-app').removeClass("active-app-content");
+        $(this).addClass("active-app-content");
+        $('#content-users').show("slow", function(){
+            $('#content-groups').hide();
+        });
+    })
+
+    $('#show-users-app').on("click", function(){
+        $('#show-groups-app').removeClass("active-app-content");
+        $(this).addClass("active-app-content");
+        $('#content-users').show("slow", function(){
+            $('#content-groups').hide();
+        });
+    })
 })
 
 
