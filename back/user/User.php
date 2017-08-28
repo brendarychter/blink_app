@@ -193,7 +193,7 @@
 			$response = mysqli_query($connection->connected,$consulta);
 
 			while($obj = mysqli_fetch_object($response)){
-				$matriz[] = array('name' => $obj->name, 'username' => $obj->username, 'password' => $obj->password, 'userID' => $obj->userID, 'mail' => $obj->mail, 'phoneNumber' => $obj->phoneNumber, 'datetime' => $obj->datetime, 'active' => $obj->active);
+				$matriz[] = array('photo' => $obj->photo, 'name' => $obj->name, 'username' => $obj->username, 'password' => $obj->password, 'userID' => $obj->userID, 'mail' => $obj->mail, 'phoneNumber' => $obj->phoneNumber, 'datetime' => $obj->datetime, 'active' => $obj->active);
 			}
 
 			$datos = json_encode($matriz);
