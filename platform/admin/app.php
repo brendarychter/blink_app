@@ -1,6 +1,6 @@
 <div class="col-lg-12 col-sm-12 col-md-12 admin-partial" data-table="faq" id="faq">
 	<div class="panel panel-default">
-		<label class="section-name menu_menu_spanish actions-app" id="show-users-app">Usuarios</label>
+		<label class="section-name menu_menu_spanish actions-app active-app-content" id="show-users-app">Usuarios</label>
 		<label class="section-name menu_menu_spanish actions-app" id="show-groups-app">Grupos</label>
 		<div class="panel-heading"></div>
 		<div class="panel-body">
@@ -59,19 +59,6 @@
             </div>
         </div>
         <div id="content-groups">
-            <span>Nombre grupo</span>
-            <table class="groups-conv">
-                <thead>
-                <tr>
-                    <th>Mensaje</th>
-                    <th>Usuario</th>
-                    <th>Mail</th>
-                    <th>Hora</th>
-                </tr>
-                </thead>
-                <tbody class="table-groups">
-                </tbody>
-            </table>
         </div>
 	</div>
 </div>

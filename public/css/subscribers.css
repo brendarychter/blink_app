@@ -22,9 +22,16 @@ td, th {
 
 .actions-app{
 	cursor: pointer;
-	padding-top: 20px;
+	margin-top: 20px;
+	padding: 5px;
 	font-size: 22px;
 	color: #222;
+	background-color: #eee;
+	display: inline-block !important;
+}
+.active-app-content{
+	background-color: #ccc;
+	color: #fff;
 }
 
 @media 

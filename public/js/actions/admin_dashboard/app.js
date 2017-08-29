@@ -16,8 +16,6 @@ $(document).ready(function(){
                 var active;
                 var action;
                 for (var n in data[i]){
-                //table.append('<td><span class="editable-text home_subtitle_section_1_spanish" realvalue="home_subtitle_section_1" language="spanish"></span></td>')
-
                     if (n !== "userID"){
                         if (n == "active"){
                             if (data[i][n] == 1){
@@ -28,10 +26,17 @@ $(document).ready(function(){
                                 $('#user-'+ data[i].userID).append('<td val='+data[i][n]+'>Inactivo</td>')
                             }
                         }else{
-                            $('#user-'+ data[i].userID).append('<td>'+data[i][n]+'</td>');
+                            if (n == "photo"){
+                                if (data[i].photo != ""){
+                                    $('#user-'+ data[i].userID).append('<td><img style="width:30px; height: 30px" src="'+data[i][n]+'"/></td>');
+                                }else{
+                                    $('#user-'+ data[i].userID).append('<td>   </td>');
+                                }
+                            }else{
+                                $('#user-'+ data[i].userID).append('<td>'+data[i][n]+'</td>');
+                            }
                         }
-                    }
-                    //agregar el boton de activar y desactivar
+                    } 
                 }
                 if (active == 0){
                     action = "Activar";
@@ -137,13 +142,30 @@ $(document).ready(function(){
             data: params
         }).done(function( data ) {
             //por cada grupo una tabla. 3 fors
-            table = $('.contact-users');
+            console.log(data)
+            var content = $('#content-groups');
             for (var i in data){
-                table.append('<tr id="user-'+ data[i].userID+'"></tr>');
-                for (var n in data[i]){
-                    $('#user-'+ data[i].userID).append('<td>'+data[i][n]+'</td>');
+                group = data[i];
+                console.log(group)
+                content.append("<span>"+group.groupName+"</span>")
+                var startTable = '<table class="groups-conv"><thead><tr><th>Mensaje</th><th>Usuario</th><th>Mail</th><th>Hora</th></tr></thead><tbody class="table-groups">';
+                content.append(startTable);
+                $('.groups-conv').append('<tr id="group-'+ group.idText+'"></tr>');
+
+                for (var n in group){
+                    $('#group-'+ group.idText).append('<td>'+group[n]+'</td>');
                 }
+                var endTable = '</tbody></table>';
+
+                content.append(endTable)
             }
+            // table = $('.contact-users');
+            // for (var i in data){
+            //     table.append('<tr id="user-'+ data[i].userID+'"></tr>');
+            //     for (var n in data[i]){
+            //         $('#user-'+ data[i].userID).append('<td>'+data[i][n]+'</td>');
+            //     }
+            // }
         }).error(function(error, textStatus){
             console.log(error.responseText);
         });
@@ -151,19 +173,23 @@ $(document).ready(function(){
     }
 
     $('#show-users-app').on("click", function(){
-        $('#show-groups-app').removeClass("active-app-content");
+        $('.actions-app').removeClass("active-app-content");
         $(this).addClass("active-app-content");
-        $('#content-users').show("slow", function(){
-            $('#content-groups').hide();
+        $('#content-users').fadeIn("slow", function(){
+            $('#content-groups').fadeOut();
         });
     })
 
-    $('#show-users-app').on("click", function(){
-        $('#show-groups-app').removeClass("active-app-content");
+    $('#content-groups').hide();
+
+    $('#show-groups-app').on("click", function(){
+        $('.actions-app').removeClass("active-app-content");
         $(this).addClass("active-app-content");
-        $('#content-users').show("slow", function(){
-            $('#content-groups').hide();
+        $('#content-groups').fadeIn("slow", function(){
+            $('#content-users').fadeOut();
         });
+
+        getMessagesFromGroups();
     })
 })
 
