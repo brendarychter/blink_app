@@ -144,28 +144,39 @@ $(document).ready(function(){
             //por cada grupo una tabla. 3 fors
             console.log(data)
             var content = $('#content-groups');
-            for (var i in data){
+            for (var i in data) {
                 group = data[i];
-                console.log(group)
-                content.append("<span>"+group.groupName+"</span>")
-                var startTable = '<table class="groups-conv"><thead><tr><th>Mensaje</th><th>Usuario</th><th>Mail</th><th>Hora</th></tr></thead><tbody class="table-groups">';
-                content.append(startTable);
-                $('.groups-conv').append('<tr id="group-'+ group.idText+'"></tr>');
+                console.log(group);
+                var array = {};
 
-                for (var n in group){
-                    $('#group-'+ group.idText).append('<td>'+group[n]+'</td>');
+                if (array[group.idGroup]) {
+                    array[group.idGroup].push(group);
+                } else {
+                    array[group.idGroup] = [];
+                    array[group.idGroup].push(group);
+                    array[group.idGroup].shift(group);
                 }
-                var endTable = '</tbody></table>';
+            }
 
+            for (var a in array){
+                console.log(array[a]);
+                content.append('<span style="text-tranform: uppercase; letter-spacing: 1px; font-weight: bold; font-size: 12px; margin: 4px;">' + group.groupName + '</span>')
+                var startTable = '<table style="margin-bottom: 15px;" id="groups-conv-'+array[a].idGroup+"'><thead><tr><th>Hora</th><th>Mensaje</th><th>Usuario</th><th>Mail</th></tr></thead><tbody class="table-groups">';
+                content.append(startTable);
+
+                $('#groups-conv-'+array[a].idGroup').append('<tr id="group-' + group.idText + '"></tr>');
+
+                for (var n in array[a]){
+                    if (n == "username" || n == "datetimeText" || n == "mail" || n == "texto"){
+                        $('#group-'+ group.idText).append('<td>'+array[a][n]+'</td>');
+                    }
+                }
+
+                var endTable = '</tbody></table>';
                 content.append(endTable)
             }
-            // table = $('.contact-users');
-            // for (var i in data){
-            //     table.append('<tr id="user-'+ data[i].userID+'"></tr>');
-            //     for (var n in data[i]){
-            //         $('#user-'+ data[i].userID).append('<td>'+data[i][n]+'</td>');
-            //     }
-            // }
+
+
         }).error(function(error, textStatus){
             console.log(error.responseText);
         });
