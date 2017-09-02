@@ -30,7 +30,7 @@ $(document).ready(function(){
                                 if (data[i].photo != ""){
                                     $('#user-'+ data[i].userID).append('<td><img style="width:30px; height: 30px" src="'+data[i][n]+'"/></td>');
                                 }else{
-                                    $('#user-'+ data[i].userID).append('<td>   </td>');
+                                    $('#user-'+ data[i].userID).append('<td><img style="width:30px; height: 30px" src="../../public/img/default_user.svg"/></td>');
                                 }
                             }else{
                                 $('#user-'+ data[i].userID).append('<td>'+data[i][n]+'</td>');
@@ -159,17 +159,21 @@ $(document).ready(function(){
             for (var a in array){
                 //console.log(a);
                 $('#groups-conv-'+a).empty();
-                content.append('Grupo: <span style="text-transform: uppercase; letter-spacing: 1px; font-weight: bold; font-size: 15px; margin: 4px;"> ' + a + '</span>')
-                var startTable = '<table style="margin-bottom: 20px; margin-top: 15px;" id="groups-conv-'+a+'"><thead><tr><th>Hora</th><th>Mensaje</th><th>Usuario</th><th>Mail</th></tr></thead><tbody class="table-groups">';
+                content.append('Grupo: <span style="text-transform: uppercase; letter-spacing: 1px; font-weight: bold; font-size: 15px; margin: 4px; rgba(254, 209, 54, 0.53);"> ' + a + '</span>')
+                var startTable = '<table style="margin-bottom: 20px; margin-top: 25px;" id="groups-conv-'+a+'"><thead><tr><th>Foto</th><th>Usuario</th><th>Mail</th><th>Mensaje</th><th>Hora</th></tr></thead><tbody class="table-groups">';
                 content.append(startTable);
 
                 
                 for (var n in array[a]){
                     $('#groups-conv-'+a).append('<tr id="group-' + array[a][n].idText + '"></tr>');
-                    $('#group-'+ array[a][n].idText).append('<td>'+array[a][n].datetimeText+'</td>');
-                    $('#group-'+ array[a][n].idText).append('<td>'+array[a][n].texto+'</td>');
+                    if (array[a][n].photo == ""){
+                        array[a][n].photo = '../../public/img/default_user.svg'
+                    }
+                    $('#group-'+ array[a][n].idText).append('<td><img style="width:30px; height: 30px" src="'+array[a][n].photo+'"></td>');
                     $('#group-'+ array[a][n].idText).append('<td>'+array[a][n].username+'</td>');
                     $('#group-'+ array[a][n].idText).append('<td>'+array[a][n].mail+'</td>');
+                    $('#group-'+ array[a][n].idText).append('<td>'+array[a][n].texto+'</td>');
+                    $('#group-'+ array[a][n].idText).append('<td>'+array[a][n].datetimeText+'</td>');
 
                 }
                 var endTable = '</tbody></table>';
