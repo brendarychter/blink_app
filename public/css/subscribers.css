@@ -95,6 +95,6 @@ only screen and (max-width: 760px),
 	.table-groups td:nth-of-type(2):before { content: "Usuario";}
 	.table-groups td:nth-of-type(3):before { content: "Mail";}
 	.table-groups td:nth-of-type(4):before { content: "Mensaje";}
-	.table-groups td:nth-of-type(5):before { content: "Hora";}
+	.table-groups td:nth-of-type(15):before { content: "Hora";}
 
 }

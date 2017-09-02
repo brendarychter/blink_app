@@ -159,7 +159,7 @@ $(document).ready(function(){
             for (var a in array){
                 //console.log(a);
                 $('#groups-conv-'+a).empty();
-                content.append('Grupo: <span style="text-transform: uppercase; letter-spacing: 1px; font-weight: bold; font-size: 15px; margin: 4px; rgba(254, 209, 54, 0.53);"> ' + a + '</span>')
+                content.append('Grupo: <span style="text-transform: uppercase; letter-spacing: 1px; font-weight: bold; font-size: 15px; margin: 4px; background-color: rgba(254, 209, 54, 0.53); padding: 4px;"> ' + a + '</span>')
                 var startTable = '<table style="margin-bottom: 20px; margin-top: 25px;" id="groups-conv-'+a+'"><thead><tr><th>Foto</th><th>Usuario</th><th>Mail</th><th>Mensaje</th><th>Hora</th></tr></thead><tbody class="table-groups">';
                 content.append(startTable);
 
