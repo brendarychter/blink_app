@@ -134,6 +134,8 @@ $(document).ready(function(){
 
     function getMessagesFromGroups(){
         params = {};
+        var content = $('#content-groups');
+        content.empty();
         $.ajax({
             //url: "http://www.blinkapp.com.ar/back/admin/getAllGroups.php",
             url: "../../back/admin/getAllGroups.php",
@@ -142,36 +144,34 @@ $(document).ready(function(){
             data: params
         }).done(function( data ) {
             //por cada grupo una tabla. 3 fors
-            console.log(data)
-            var content = $('#content-groups');
+            
+
+            var array = {};
             for (var i in data) {
                 group = data[i];
-                console.log(group);
-                var array = {};
-
-                if (array[group.idGroup]) {
-                    array[group.idGroup].push(group);
-                } else {
-                    array[group.idGroup] = [];
-                    array[group.idGroup].push(group);
-                    array[group.idGroup].shift(group);
+                if (array[group.groupName] == undefined) {
+                    array[group.groupName] = [];
                 }
+                array[group.groupName].push(group);
             }
+            console.log(array);
 
             for (var a in array){
-                console.log(array[a]);
-                content.append('<span style="text-tranform: uppercase; letter-spacing: 1px; font-weight: bold; font-size: 12px; margin: 4px;">' + group.groupName + '</span>')
-                var startTable = '<table style="margin-bottom: 15px;" id="groups-conv-'+array[a].idGroup+"'><thead><tr><th>Hora</th><th>Mensaje</th><th>Usuario</th><th>Mail</th></tr></thead><tbody class="table-groups">';
+                //console.log(a);
+                $('#groups-conv-'+a).empty();
+                content.append('Grupo: <span style="text-transform: uppercase; letter-spacing: 1px; font-weight: bold; font-size: 15px; margin: 4px;"> ' + a + '</span>')
+                var startTable = '<table style="margin-bottom: 20px; margin-top: 15px;" id="groups-conv-'+a+'"><thead><tr><th>Hora</th><th>Mensaje</th><th>Usuario</th><th>Mail</th></tr></thead><tbody class="table-groups">';
                 content.append(startTable);
 
-                $('#groups-conv-'+array[a].idGroup').append('<tr id="group-' + group.idText + '"></tr>');
-
+                
                 for (var n in array[a]){
-                    if (n == "username" || n == "datetimeText" || n == "mail" || n == "texto"){
-                        $('#group-'+ group.idText).append('<td>'+array[a][n]+'</td>');
-                    }
-                }
+                    $('#groups-conv-'+a).append('<tr id="group-' + array[a][n].idText + '"></tr>');
+                    $('#group-'+ array[a][n].idText).append('<td>'+array[a][n].datetimeText+'</td>');
+                    $('#group-'+ array[a][n].idText).append('<td>'+array[a][n].texto+'</td>');
+                    $('#group-'+ array[a][n].idText).append('<td>'+array[a][n].username+'</td>');
+                    $('#group-'+ array[a][n].idText).append('<td>'+array[a][n].mail+'</td>');
 
+                }
                 var endTable = '</tbody></table>';
                 content.append(endTable)
             }

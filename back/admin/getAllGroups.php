@@ -8,7 +8,7 @@
 
 		while($obj = mysqli_fetch_object($response)){
 			if($obj->active){
-				$matriz[] = array('idText' => $obj->idText, 'datetimeText' => $obj->datetimeText, 'texto' => utf8_encode($obj->texto), 'username' => $obj->username, 'mail' => $obj->mail, 'groupName' => $obj->groupName);
+				$matriz[] = array('idText' => $obj->idText, 'datetimeText' => $obj->datetimeText, 'texto' => utf8_encode($obj->texto), 'username' => $obj->username, 'mail' => $obj->mail, 'groupName' => $obj->groupName, 'idGroup' => $obj->idGroup);
 			}
 		}
 
