@@ -30,18 +30,18 @@ $(function () {
                 } 
             }else{
                 console.log('entro')
-                    var messageAlert = 'alert-danger';
-                    //if (localStorage.getItem("language"))
-                    var messageText = "El usuario no se encuentra activo";
-                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert">&times;</button>' + messageText + '</div>';
-                    if (messageAlert && messageText) {
-                        $('#login-user-form').find('.messages').html(alertBox);
-                        $('#login-user-form')[0].reset();
-                        $('.messages').show();
-                        setTimeout(function(){
-                            $('.messages').fadeOut('slow');
-                        }, 3000);
-                    }
+                var messageAlert = 'alert-danger';
+                //if (localStorage.getItem("language"))
+                var messageText = "El usuario no se encuentra activo";
+                var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert">&times;</button>' + messageText + '</div>';
+                if (messageAlert && messageText) {
+                    $('#login-user-form').find('.messages').html(alertBox);
+                    $('#login-user-form')[0].reset();
+                    $('.messages').show();
+                    setTimeout(function(){
+                        $('.messages').fadeOut('slow');
+                    }, 3000);
+                }
             }
             
         }).error(function(error, textStatus){

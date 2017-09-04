@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
             </button>
              <!-- href="#page-top"-->
-            <a class="navbar-brand page-scroll" href="../index.php" style="margin-top: -4px; padding: 0;"><img alt="Blink App" title="Blink App" src="../public/img/logo.svg" class="img_menu_1" id="icon-top"></img></a>
+            <a class="navbar-brand page-scroll" href="../index" style="margin-top: -4px; padding: 0;"><img alt="Blink App" title="Blink App" src="../public/img/logo.svg" class="img_menu_1" id="icon-top"></img></a>
 
         </div>
 
@@ -20,28 +20,28 @@
                     <a href="#page-top"></a>
                 </li>
                 <li class="section_1">
-                    <a class="page-scroll blink_menu" href="../index.php">blink!</a>
+                    <a class="page-scroll blink_menu" href="../index">blink!</a>
                 </li>
                 <li>
-                    <a class="page-scroll works_menu" id="page-works" href="guide.php">Conoc&eacute; m&aacute;s</a>
+                    <a class="page-scroll works_menu" id="page-works" href="guide">Conoc&eacute; m&aacute;s</a>
                 </li>
                 <li>
-                    <a class="page-scroll demo_menu" id="page-demo" href="demo.php">Demo</a>
+                    <a class="page-scroll demo_menu" id="page-demo" href="demo">Demo</a>
                 </li>
                 <li>
-                    <a class="page-scroll faq_menu" id="page-faq" href="faq.php">FAQ</a>
+                    <a class="page-scroll faq_menu" id="page-faq" href="faq">FAQ</a>
                 </li>
                 <li>
-                    <a class="page-scroll team_menu" id="page-team" href="team.php">Qui&eacute;nes somos</a>
+                    <a class="page-scroll team_menu" id="page-team" href="team">Qui&eacute;nes somos</a>
                 </li>
                 <li>
-                    <a class="page-scroll contact_menu" href="../index.php#contact">Contactate</a>
+                    <a class="page-scroll contact_menu" href="../index#contact">Contactate</a>
                 </li>
                 
             </ul>
             <ul class="nav navbar-nav navbar-right logandsign" id="logandsign">
                 <li>
-                    <a class="button log_in_menu" href="login.php" style="font-weight: bold;">Inici&aacute; sesi&oacute;n</a>
+                    <a class="button log_in_menu" href="login" style="font-weight: bold;">Inici&aacute; sesi&oacute;n</a>
                 </li>
             </ul>
         </div>
