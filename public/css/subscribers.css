@@ -19,7 +19,11 @@ td, th {
   border: 1px solid #ddd; 
   text-align: left; 
 }
-
+@media(min-width: 1024px){
+	td, th{
+		width: 10%;
+	}
+}
 .actions-app{
 	cursor: pointer;
 	margin-top: 20px;

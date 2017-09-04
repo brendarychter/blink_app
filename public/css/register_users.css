@@ -49,6 +49,9 @@
 }
 .logo-login{
 	position: absolute;
+	width: 35px;
+    margin-top: 10px;
+    margin-left: 9px;
 }
 input, .btn {
     border-radius: 0;
