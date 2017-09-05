@@ -31,6 +31,7 @@
         <ul class="list-inline social-buttons">
             <li><a href="https://www.facebook.com/blinkthenewapp/" target="_blank"><img src="public/img/icons/fb.svg" class="replace-image"></a>
             <li><a href="http://www.youtube.com" target="_blank"><img src="public/img/icons/youtube.svg" class="replace-image"></a>
+            <li><a href="https://plus.google.com/u/1/109061889548334410796" target="_blank"><img src="public/img/icons/google.svg" class="replace-image"></a>
         </ul>
         <div class="separator">·</div>
     </div>
@@ -41,7 +42,7 @@
             <h5 class="dev-name">Brenda Yael Rychter</h5>
             <a href="http://www.brendarychter.com.ar" target="_blank" class="web-dev">www.brendarychter.com.ar</a> 
             <ul class="list-inline social-buttons">
-                <li><a href="https://ar.linkedin.com/in/brenda-rychter-97a55465" target="_blank"><img src="public/img/icons/linkedin.svg" class="replace-image"></a>
+                <li><a href="https://ar.linkedin.com/in/brenda-rychter-97a55465" target="_blank"><img src="public/img/icons/linkedin2.svg" class="replace-image"></a>
                 <li><a href="https://api.whatsapp.com/send?phone=1165220958" target="_blank"><img src="public/img/icons/whatsapp.svg" class="replace-image"></a>
                 <li><a href="mailto:brendarychter@gmail.com" target="_blank"><img src="public/img/icons/mail.svg" class="replace-image"></a>
             </ul>
