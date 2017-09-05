@@ -53,23 +53,15 @@
 				<form role="form" class="form-section" id="form-section-2">
 					<div class="panel-heading" style="overflow: hidden; margin-bottom: 30px;"></div>
 					<div class="col-md-12 col-sm-12 line-sections">
-						<div class="form-group col-md-3 box-section col-sm-12">
+						<div class="form-group col-md-4 box-section col-sm-12">
 							<div class="title-box">
-								<span class="global-title">descripci&oacute;n 1</span>
-							</div>
-							<div class="portion portion-spanish">
-								<label class="lan">Espa&ntilde;ol</label>
-								<span class="editable-text home_text_1_section_2_spanish" realvalue="home_text_1_section_2" language="spanish"></span>
-							</div>
-							<div class="portion portion-english">
-								<label class="lan">Ingl&eacute;s</label>
-								<span class="editable-text home_text_1_section_2_english" realvalue="home_text_1_section_2" language="english"></span>
+								<span class="global-title">usuario 1</span>
 							</div>
 							<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="home">
 								<div class="col-md-12 col-sm-12 line-sections">
-									<div class="title-box">
+									<!-- <div class="title-box">
 										<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">&iacute;cono 1</span>
-									</div>
+									</div> -->
 									<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
 										<div class="title-box">
 											<span class="img-titles" style="float: right; font-weight: bold;"></span>
@@ -82,24 +74,32 @@
 									</div>
 								</div>
 							</form>
-						</div>
-						<div class="form-group col-md-4 box-section col-sm-12">
+							<div class="portion">
+								<label class="lan">Nombre</label>
+								<span class="editable-text team_member_1_name_spanish" realvalue="team_member_1_name" language="spanish"></span>
+							</div>
 							<div class="title-box">
-								<span class="global-title">descripci&oacute;n 2</span>
+								<span class="global-title">descripci&oacute;n</span>
 							</div>
 							<div class="portion portion-spanish">
 								<label class="lan">Espa&ntilde;ol</label>
-								<span class="editable-text home_text_2_section_2_spanish" realvalue="home_text_2_section_2" language="spanish"></span>
+								<span class="editable-text home_text_1_section_2_spanish" realvalue="home_text_1_section_2" language="spanish"></span>
 							</div>
 							<div class="portion portion-english">
 								<label class="lan">Ingl&eacute;s</label>
-								<span class="editable-text home_text_2_section_2_english" realvalue="home_text_2_section_2" language="english"></span>
+								<span class="editable-text home_text_1_section_2_english" realvalue="home_text_1_section_2" language="english"></span>
+							</div>
+							
+						</div>
+						<div class="form-group col-md-4 box-section col-sm-12">
+							<div class="title-box">
+								<span class="global-title">usuario 2</span>
 							</div>
 							<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="home">
 								<div class="col-md-12 col-sm-12 line-sections">
-									<div class="title-box">
+									<!-- <div class="title-box">
 										<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">&iacute;cono 2</span>
-									</div>
+									</div> -->
 									<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
 										<div class="title-box">
 											<span class="img-titles" style="float: right; font-weight: bold;"></span>
@@ -112,24 +112,29 @@
 									</div>
 								</div>
 							</form>
-						</div>
-						<div class="form-group col-md-4 box-section col-sm-12">
-							<div class="title-box">
-								<span class="global-title">descripci&oacute;n 3</span>
+							<div class="portion">
+								<label class="lan">Nombre</label>
+								<span class="editable-text team_member_1_name_spanish" realvalue="team_member_1_name" language="spanish"></span>
 							</div>
 							<div class="portion portion-spanish">
 								<label class="lan">Espa&ntilde;ol</label>
-								<span class="editable-text home_text_3_section_2_spanish" realvalue="home_text3_section_2" language="spanish"></span>
+								<span class="editable-text home_text_2_section_2_spanish" realvalue="home_text_2_section_2" language="spanish"></span>
 							</div>
 							<div class="portion portion-english">
 								<label class="lan">Ingl&eacute;s</label>
-								<span class="editable-text home_text_3_section_2_english" realvalue="home_text_3_section_2" language="english"></span>
+								<span class="editable-text home_text_2_section_2_english" realvalue="home_text_2_section_2" language="english"></span>
+							</div>
+							
+						</div>
+						<div class="form-group col-md-4 box-section col-sm-12" style="border-right: none;">
+							<div class="title-box">
+								<span class="global-title">usuario 3</span>
 							</div>
 							<form method="post" enctype="multipart/form-data" data-type="submit-image" data-form="" data-table="home">
 								<div class="col-md-12 col-sm-12 line-sections">
-									<div class="title-box">
+									<!-- <div class="title-box">
 										<span class="global-title" style="margin-bottom:5px;float:right;padding-bottom:5px;font-weight:bold">&iacute;cono 3</span>
-									</div>
+									</div> -->
 									<div class="form-group col-md-12 box-section col-sm-12" style="border-right: none">
 										<div class="title-box">
 											<span class="img-titles" style="float: right; font-weight: bold;"></span>
@@ -142,6 +147,19 @@
 									</div>
 								</div>
 							</form>
+							<div class="portion">
+								<label class="lan">Nombre</label>
+								<span class="editable-text team_member_1_name_spanish" realvalue="team_member_1_name" language="spanish"></span>
+							</div>
+							<div class="portion portion-spanish">
+								<label class="lan">Espa&ntilde;ol</label>
+								<span class="editable-text home_text_3_section_2_spanish" realvalue="home_text3_section_2" language="spanish"></span>
+							</div>
+							<div class="portion portion-english">
+								<label class="lan">Ingl&eacute;s</label>
+								<span class="editable-text home_text_3_section_2_english" realvalue="home_text_3_section_2" language="english"></span>
+							</div>
+							
 						</div>
 					</div>
 				</form>
