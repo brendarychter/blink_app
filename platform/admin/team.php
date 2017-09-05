@@ -52,7 +52,7 @@
 		<div class="panel-body">
 			<label class="section-name">Equipo</label>
 			<form role="form" class="form-section" id="form-section-2">
-				<div class="panel-heading" style="overflow: hidden; margin-bottom: 30px;"></div>
+				<div class="panel-heading" style="overflow: hidden; border-bottom: transparent;"></div>
 				<div class="col-md-12 col-sm-12 line-sections">
 					<div class="form-group col-md-4 box-section col-sm-12">
 						<div class="title-box">

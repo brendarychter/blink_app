@@ -33,6 +33,7 @@
 						</div>
 					</div>
 				</div>
+				<div class="panel-heading"></div>
 				<label class="section-name">Secci&oacute;n 1</label>
 				<div class="col-md-12 col-sm-12 line-sections">
 					<div class="form-group col-md-3 box-section first-section col-sm-12 ">
@@ -127,6 +128,7 @@
 						</div>
 					</div>
 				</div>
+				<div class="panel-heading"></div>
 				<label class="section-name">Secci&oacute;n 2</label>
 				<div class="col-md-12 col-sm-12 line-sections">
 					<div class="form-group col-md-3 box-section first-section col-sm-12 ">
@@ -221,6 +223,7 @@
 						</div>
 					</div>
 				</div>
+				<div class="panel-heading"></div>
 				<label class="section-name">Secci&oacute;n 3</label>
 				<div class="col-md-12 col-sm-12 line-sections">
 					<div class="form-group col-md-3 box-section first-section col-sm-12">
