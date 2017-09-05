@@ -38,8 +38,8 @@ $(document).ready(function(){
         params.phoneNumberUpdate = $("#mobile-logged").val();
         params.action = "updateUser";
         $.ajax({
-            url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
-            //url: "../back/user/adminUser.php",
+            //url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
+            url: "../back/user/adminUser.php",
             type: "POST",
             data: params,
             cache: false,
@@ -58,8 +58,8 @@ $(document).ready(function(){
         params.userID = id;
         params.action = "deleteUser";
         $.ajax({
-            url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
-            //url: "../back/user/adminUser.php",
+            //url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
+            url: "../back/user/adminUser.php",
             type: "POST",
             data: params,
             cache: false
@@ -114,8 +114,8 @@ $(document).ready(function(){
         params.userID = user.userID;
         console.log(user);
         $.ajax({
-            url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
-            //url: "../back/groups/adminUserGroups.php",
+            //url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
+            url: "../back/groups/adminUserGroups.php",
             type: "POST",
             data: params,
             cache: false,
@@ -175,8 +175,8 @@ $(document).ready(function(){
             paramsUsers.username = "brenda";
             paramsUsers.password = "1234";
             $.ajax({
-                url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
-                //url: "../back/user/adminUser.php",
+                //url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
+                url: "../back/user/adminUser.php",
                 type: "POST",
                 data: paramsUsers,
                 cache: false,
@@ -195,8 +195,8 @@ $(document).ready(function(){
         params.groupName = $('#group-name').val();
         params.userID = USUARIO.userID;
         $.ajax({
-            url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
-            //url: "../back/groups/adminUserGroups.php",
+            //url: "http://www.blinkapp.com.ar/back/user/adminUser.php",
+            url: "../back/groups/adminUserGroups.php",
             type: "POST",
             data: params,
             cache: false,
