@@ -77,4 +77,27 @@ $(document).ready(function(){
             console.log(error.statusText);
         });
     }
+
+    getVideoHome();
+    function getVideoHome(){
+        params = {};
+        params.table = "home";
+        $.ajax({
+            //url: "http://www.blinkapp.com.ar/back/admin/content/getVideoContent.php",
+            url: "back/admin/content/getVideoContent.php",
+            type: "POST",
+            cache: false,
+            data: params,
+            dataType: "json"
+        }).done(function (data) {
+            //table:
+            //table_name
+            //id_video
+            //src
+            var url = "https://www.youtube.com/embed/";
+            $("#video-home").attr("src", url + data.src);
+        }).error(function (error){
+            console.log(error);
+        });
+    }
 });

@@ -168,4 +168,52 @@ $(document).ready(function(){
         });
     })
 
+
+    $('#save-video-1').on("click", function(){
+        params = {};
+        params.table = "home";
+        var url = "https://www.youtube.com/embed/";
+        var val = $("#video-home-admin");
+        src = url + val.substr(val.indexOf("v=") + 1);
+        //https://stackoverflow.com/questions/4232462/get-value-from-a-string-after-a-special-character
+        $.ajax({
+            //url: "http://www.blinkapp.com.ar/back/admin/content/postVideoContent.php",
+            url: "back/admin/content/postVideoContent.php",
+            type: "POST",
+            cache: false,
+            data: params,
+            dataType: "json"
+        }).done(function (data) {
+            //table:
+            //table_name
+            //id_video
+            //src
+            console.log("ok");
+        }).error(function (error){
+            console.log(error);
+        });
+    })
+
+    getVideoHome();
+    function getVideoHome(){
+        params = {};
+        params.table = "home";
+        $.ajax({
+            //url: "http://www.blinkapp.com.ar/back/admin/content/getVideoContent.php",
+            url: "back/admin/content/getVideoContent.php",
+            type: "POST",
+            cache: false,
+            data: params,
+            dataType: "json"
+        }).done(function (data) {
+            //table:
+            //table_name
+            //id_video
+            //src
+            var url = "https://www.youtube.com/embed/";
+            $("#video-home-admin").val("src", url + data.src);
+        }).error(function (error){
+            console.log(error);
+        });
+    }
 })

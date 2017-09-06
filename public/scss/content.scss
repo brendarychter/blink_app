@@ -15,7 +15,16 @@
 }
 #demo{
 	background-color:#EEE; 
-	padding: 200px 0;
+	padding: 0;
+	#video-home{
+		width: 100%;
+		@media (min-width: 769px){
+    		height: 600px;
+		}
+		@media (max-width: 768px){
+	    	height: 300px;
+		}
+	}
 }
 #conoce, #download-app{
 	background-color: #fff;

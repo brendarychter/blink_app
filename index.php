@@ -92,10 +92,11 @@
     
         <!-- VIDEO Section -->
         <section id="demo" class="section_3 page-section-home">
-            <img src="public/img/play.svg" class="demo-img" class="img_home_6"><br><br>
+            <!-- <img src="public/img/play.svg" class="demo-img" class="img_home_6"><br><br>
             <p class="demo_description">
                 <a href="content/demo" style="cursor: pointer;">Video en construcci&oacute;n</a>
-            </p>
+            </p> -->
+            <iframe id="video-home" src="https://www.youtube.com/embed/6mBxW_jbBtY" frameborder="0"></iframe>
         </section>
     
         <!-- DOWNLOAD APP Section -->

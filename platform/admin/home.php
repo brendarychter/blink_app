@@ -259,12 +259,11 @@
 				<div class="col-md-12 col-sm-12 line-sections">
 					<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
 						<div class="title-box">
-							<span class="global-title">video</span>
+							<span class="global-title">url video</span>
 						</div>
 						<div class="portion">
-							<input type="file">
-							<input type="text" placeholder="T&iacute;tulo" required/>
-							<button class="btn btn-primary" type="submit" id="save-photo-1"/>Guardar video</button>
+							<input type="text" placeholder="T&iacute;tulo" required id="video-home-admin"/>
+							<button class="btn btn-primary" type="submit" id="save-video-1"/>Guardar video</button>
 							<p class="help-block"></p>
 						</div>
 					</div>	
