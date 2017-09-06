@@ -175,6 +175,8 @@ $(document).ready(function(){
         var url = "https://www.youtube.com/embed/";
         var val = $("#video-home-admin");
         src = url + val.substr(val.indexOf("v=") + 1);
+
+        //si en la url no tiene youtube, formato invalido
         //https://stackoverflow.com/questions/4232462/get-value-from-a-string-after-a-special-character
         $.ajax({
             //url: "http://www.blinkapp.com.ar/back/admin/content/postVideoContent.php",

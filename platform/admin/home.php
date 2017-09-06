@@ -259,7 +259,7 @@
 				<div class="col-md-12 col-sm-12 line-sections">
 					<div class="form-group col-md-3 box-section col-sm-12" style="border-right: none">
 						<div class="title-box">
-							<span class="global-title">url video</span>
+							<span class="global-title">youtube video</span>
 						</div>
 						<div class="portion">
 							<input type="text" placeholder="T&iacute;tulo" required id="video-home-admin"/>

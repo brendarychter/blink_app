@@ -100,4 +100,6 @@ $(document).ready(function(){
             console.log(error);
         });
     }
+
+    //https://stackoverflow.com/questions/21163756/html5-and-javascript-to-play-videos-only-when-visible
 });
