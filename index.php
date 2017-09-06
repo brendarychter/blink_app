@@ -25,11 +25,16 @@
 
     <!-- Analytics -->
     <script src="public/js/actions/ga_commons.js"></script>
+    <script src="public/js/actions/animation.js"></script>
 </head>
 
 <body id="page-top" class="index landing-main-page main-page-blink">
     <!-- Layer -->
-    <div class="bck"></div>
+    <div class="bck">
+        <div class="slider" data-content="Ver mis trabajos" href="galeria.html">
+            <img src="public/img/animation/Comp_1_00000.png" id="slider-images">
+        </div>
+    </div>
     
     <!-- Header -->
     <header id="main-page" class="section_1 page-section-home img_home_1">
