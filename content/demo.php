@@ -42,11 +42,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="../public/img/portfolio/1.png" class="img-responsive" alt="">
+                        <img src="../public/img/portfolio/portfolio_1.jpg" class="img-responsive img_demo_1" alt="">
                     </a>
-                    <div class="portfolio-caption" style="background-color: #eee">
-                        <h4>Micaela Rolnik</h4>
-                        <p class="text-muted">Excelente</p>
+                    <div class="portfolio-caption">
+                        <h4 class="demo_user_1_name">Micaela Rolnik</h4>
+                        <p class="text-muted demo_user_1_description">Excelente</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -56,11 +56,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="../public/img/portfolio/2.png" class="img-responsive" alt="">
+                        <img src="../public/img/portfolio/portfolio_2.jpg" class="img-responsive img_demo_2" alt="">
                     </a>
-                    <div class="portfolio-caption" style="background-color: #eee">
-                        <h4>Sharon Perelmuter</h4>
-                        <p class="text-muted">La uso todos los d&iacute;as</p>
+                    <div class="portfolio-caption">
+                        <h4 class="demo_user_2_name">Sharon Perelmuter</h4>
+                        <p class="text-muted demo_user_2_description">La uso todos los d&iacute;as</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -70,11 +70,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="../public/img/portfolio/3.png" class="img-responsive" alt="">
+                        <img src="../public/img/portfolio/portfolio_3.jpg" class="img-responsive img_demo_3" alt="">
                     </a>
-                    <div class="portfolio-caption" style="background-color: #eee">
-                        <h4>Nicolas Di Santi</h4>
-                        <p class="text-muted">Muy buena herramienta</p>
+                    <div class="portfolio-caption">
+                        <h4 class="demo_user_3_name">Nicolas Di Santi</h4>
+                        <p class="text-muted demo_user_3_description">Muy buena herramienta</p>
                     </div>
                 </div>
             </div>

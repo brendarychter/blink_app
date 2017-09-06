@@ -29,7 +29,7 @@ $(document).ready(function(){
         params.table = table;
         $.ajax({
             //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-            /url: "../../back/admin/content/adminContent.php",
+            url: "../../back/admin/content/adminContent.php",
             type: "POST",
             cache: false,
             data: params,
@@ -79,6 +79,7 @@ $(document).ready(function(){
     loadAdmin("home");
     loadAdmin("works");
     loadAdmin("team");
+    loadAdmin("demo");
     function loadAdmin(table){
         params= {};
         params.action = "getContent";
