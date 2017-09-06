@@ -262,8 +262,8 @@
 							<span class="global-title">youtube video</span>
 						</div>
 						<div class="portion">
-							<input type="text" placeholder="T&iacute;tulo" required id="video-home-admin"/>
-							<button class="btn btn-primary" type="submit" id="save-video-1"/>Guardar video</button>
+							<input type="text" placeholder="T&iacute;tulo" required id="video-home-admin" data-id="1"/>
+							<button class="btn-md btn-primary" type="submit" id="save-video-1"/>Guardar video</button>
 							<p class="help-block"></p>
 						</div>
 					</div>	

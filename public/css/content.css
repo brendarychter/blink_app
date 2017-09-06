@@ -432,7 +432,15 @@ header {
 
 #demo {
   background-color: #EEE;
-  padding: 200px 0; }
+  padding: 0; }
+  #demo #video-home {
+    width: 100%; }
+    @media (min-width: 769px) {
+      #demo #video-home {
+        height: 600px; } }
+    @media (max-width: 768px) {
+      #demo #video-home {
+        height: 300px; } }
 
 #conoce, #download-app {
   background-color: #fff; }
