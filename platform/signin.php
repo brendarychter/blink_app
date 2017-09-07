@@ -11,8 +11,7 @@
 	<link rel="stylesheet" href="../public/css/styles_default.css">
 	<link rel="stylesheet" href="../public/css/register_users.css">
 
-	<link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png"/>
-    <link rel="shortcut icon" type="image/png" href="" class="img_icon_menu" />
+    <link rel="shortcut icon" type="image/png" href="../public/img/logo.png" class="img_icon_menu" />
 	
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
