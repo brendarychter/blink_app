@@ -11,7 +11,8 @@
 	<link href="../../public/css/_admin.css" rel="stylesheet">
 	<link href="../../public/css/subscribers.css" rel="stylesheet">
 
-    <link rel="shortcut icon" type="image/png" href="../../public/img/icon_tab.png" class="img_menu" />
+    <link rel="shortcut icon" type="image/png" href="../../public/img/logo.png" class="img_icon_menu" />
+	
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
 	<script src="js/respond.min.js"></script>
