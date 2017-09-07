@@ -5,7 +5,7 @@
 	
 	$src = $_POST["src"];
 	$id = $_POST["id"];
-	$consulta = "UPDATE videos SET src=$src WHERE id_video=$id";
+	$consulta = "UPDATE videos SET src='$src' WHERE id_video='$id'";
 
 	if (mysqli_query ($connection->connected, $consulta)) {
 	    echo "Escribio.";

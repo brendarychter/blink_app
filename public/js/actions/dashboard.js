@@ -182,8 +182,7 @@ $(document).ready(function(){
             url: "../../back/admin/content/postVideoContent.php",
             type: "POST",
             cache: false,
-            data: params,
-            dataType: "json"
+            data: params
         }).done(function (data) {
             console.log(data);
         }).error(function (error){
