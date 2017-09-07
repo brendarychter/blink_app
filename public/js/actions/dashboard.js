@@ -172,25 +172,19 @@ $(document).ready(function(){
     $('#save-video-1').on("click", function(){
         params = {};
         params.table = "home";
-        var url = "https://www.youtube.com/embed/";
-        var val = $("#video-home-admin");
-        src = url + val.substr(val.indexOf("v=") + 1);
-
-        //si en la url no tiene youtube, formato invalido
+        var url = $("#video-home-admin").val().split("?v=").pop();
+        params.src = url;
+        params.id = $("#video-home-admin").attr("data-id");
+        console.log(params);
         //https://stackoverflow.com/questions/4232462/get-value-from-a-string-after-a-special-character
         $.ajax({
             //url: "http://www.blinkapp.com.ar/back/admin/content/postVideoContent.php",
-            url: "back/admin/content/postVideoContent.php",
+            url: "../../back/admin/content/postVideoContent.php",
             type: "POST",
             cache: false,
-            data: params,
-            dataType: "json"
+            data: params
         }).done(function (data) {
-            //table:
-            //table_name
-            //id_video
-            //src
-            console.log("ok");
+            console.log(data);
         }).error(function (error){
             console.log(error);
         });
@@ -202,18 +196,16 @@ $(document).ready(function(){
         params.table = "home";
         $.ajax({
             //url: "http://www.blinkapp.com.ar/back/admin/content/getVideoContent.php",
-            url: "back/admin/content/getVideoContent.php",
+            url: "../../back/admin/content/getVideoContent.php",
             type: "POST",
             cache: false,
             data: params,
             dataType: "json"
         }).done(function (data) {
-            //table:
-            //table_name
-            //id_video
-            //src
-            var url = "https://www.youtube.com/embed/";
-            $("#video-home-admin").val("src", url + data.src);
+            var url = "https://www.youtube.com/watch?v=";
+            console.log(url);
+            $("#video-home-admin").val(url + data.src);
+            $("#video-home-admin").attr("data-id", data.id);
         }).error(function (error){
             console.log(error);
         });

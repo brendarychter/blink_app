@@ -102,3 +102,6 @@ only screen and (max-width: 760px),
 	.table-groups td:nth-of-type(15):before { content: "Hora";}
 
 }
+#video-home-admin{
+	width: 100%;
+}

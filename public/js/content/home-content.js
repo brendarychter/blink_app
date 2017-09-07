@@ -90,10 +90,6 @@ $(document).ready(function(){
             data: params,
             dataType: "json"
         }).done(function (data) {
-            //table:
-            //table_name
-            //id_video
-            //src
             var url = "https://www.youtube.com/embed/";
             $("#video-home").attr("src", url + data.src);
         }).error(function (error){
