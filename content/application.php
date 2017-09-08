@@ -11,8 +11,6 @@
 <link href="../public/css/newAppStyles.css" rel="stylesheet">
 <link rel="shortcut icon" type="image/png" href="../public/img/icon_tab.png" class="img_menu_1" />
 
-<!--Icons-->
-<script src="../public/js/global/lumino.glyphs.js"></script>
 
 <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>
@@ -46,238 +44,32 @@
         </div><!-- /.container-fluid -->
     </nav>
         
-    <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-        <form role="search">
-            <div class="form-group">
-                <input type="text" class="form-control search-box" placeholder="Buscar">
-            </div>
-        </form>
-        <ul class="nav menu">
-            <li class="active mis-grupos menu-side"><a href="#"><svg class="glyph stroked app-window-with-content"><use xlink:href="#stroked-app-window-with-content"></use></svg> Mis grupos</a></li>
-            <li class="crear-grupo menu-side"><a href="#"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Crear grupo</a></li>
-            <li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Contactos</a></li>
-            <li role="presentation" class="divider"></li>
-        </ul>
-
-    </div><!--/.sidebar-->
-    
-
-
-    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 no-groups block-content">           
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header my-groups">Mi panel</h1>
-            </div>
-        </div>
-        <div class="row no-group">
-            <div class="col-lg-12 col-sm-12 info-no-groups">
-                <h4 class="action-todo-groups" style="display: inline-block"></h4>
-                <button type="submit" class="btn btn-primary" id="create-group">Crear</button>
-            </div>
-
-            <div class="col-sm-12 col-md-16 form-create-group">
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Nuevo grupo</div>
-                        <div class="panel-body">
-                            <div class="col-md-12">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label style="margin-bottom: 20px;">Informaci&oacute;n principal</label>
-                                        <div class="form-group">
-                                            <input class="form-control" id="group-name" placeholder="Nombre">
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" placeholder="Foto">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <!-- Esto carga todos los usuarios menos el mio -->
-                                    <div class="form-group">
-                                        <label style="margin-bottom: 20px;">Lista de contactos</label>
-                                        <div class="panel panel-blue">
-                                            <ul class="todo-list">
-                                                <li class="todo-list-item">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" id="checkbox"/>
-                                                        <label for="checkbox">Mile</label>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary" id="add-group">Crear y agregar</button>
-                            </div>
+    <div class="big-container">
+        <section id="download-app" class="section_4 page-section-home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center download-application">
+                        <img src="../uploads/chart.png" class="img_home_7" title="QR" alt="QR">
+                        <div style="text-align: center;">
+                            <a href="https://build.phonegap.com/apps/2763201/install/3Cdw2s5xW9hTzgGaS6-V" target="_blank" class="page-scroll btn btn-xl home_download_section_4" id="more-info-1" style="background-color:#65CCB8; color: #fff; margin-top: -10px; margin-bottom: 35px;">O ingresá acá</a>
+                        </div>
+                        <h2 class="section-heading text-app home_title_section_4" id="dwn-app">&iexcl;Ahora descarg&aacute; la app!</h2>
+                        <h3 class="section-subheading text-muted home_text_section_4" id="start-enjoy">Y empez&aacute; a disfrutar</h3>
+                        <div style="text-align: center;">
+                            <a href="../index.php" class="page-scroll btn btn-xl home_button_section_4" id="more-info">Volver al inicio</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
-    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main block-content" id="main">           
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header my-groups">Mis grupos</h1>
-            </div>
-        </div><!--/.row-->
-        <div class="row groups-list">
-            <div class="col-md-4 " id="each-group">
-                <div class="panel panel-default">
-                    <div class="panel-body easypiechart-panel group-box" id="group-selection">
-                        <div class="group-image">
-                            <!-- <img src="../public/img/nefetz.jpg" alt="Nefetz" title="Nefetz" /> -->
-                        </div>
-                        <div class="group-actions">
-                            <div class="icons">
-                           <!--      <a href="#"><svg class="glyph stroked calendar icon" ><use xlink:href="#stroked-calendar"></use></svg></a>
-                                <a href="#"><svg class="glyph stroked clipboard-with-paper icon"><use xlink:href="#stroked-clipboard-with-paper"></use></svg></a>
-                                <a href="#"><svg class="glyph stroked two-messages icon"><use xlink:href="#stroked-two-messages"></use></svg></a>
-                            --> </div>
-                            <h4 class="group-name"></h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!--/.row-->
-                             
-    </div>  <!--/.main-->
-
-    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 selected-group block-content">           
-        
-        
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">NEFETZ</h1>
-            </div>
-        </div><!--/.row-->
-        
-        <div class="row">
-            <div class="col-md-8">
-                <div class="panel panel-default chat">
-                    <div class="panel-heading title-heading" id="accordion" style="background-color:"><svg class="glyph stroked two-messages"><use xlink:href="#stroked-two-messages"></use></svg> Muro</div>
-                    <div class="panel-body">
-                        <ul>
-                            <li class="left clearfix">
-                                <span class="chat-img pull-left">
-                                    <img src="http://placehold.it/80/30a5ff/fff" alt="User Avatar" class="img-circle" />
-                                </span>
-                                <div class="chat-body clearfix">
-                                    <div class="header">
-                                        <strong class="primary-font">Pame</strong> <small class="text-muted">Hace 32 min</small>
-                                    </div>
-                                    <p>
-                                        El ensayo es en la sede. Cesar D&iacute;az 1441.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="right clearfix">
-                                <span class="chat-img pull-right">
-                                    <img src="http://placehold.it/80/dde0e6/5f6468" alt="User Avatar" class="img-circle" />
-                                </span>
-                                <div class="chat-body clearfix">
-                                    <div class="header">
-                                        <strong class="pull-left primary-font">Brenda</strong> <small class="text-muted">20 mins ago</small>
-                                    </div>
-                                    <p>
-                                        No olvidar comprar luces para llevar al teatro.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="left clearfix">
-                                <span class="chat-img pull-left">
-                                    <img src="http://placehold.it/80/30a5ff/fff" alt="User Avatar" class="img-circle" />
-                                </span>
-                                <div class="chat-body clearfix">
-                                    <div class="header">
-                                        <strong class="primary-font">Pame</strong> <small class="text-muted">Hace 6 min</small>
-                                    </div>
-                                    <p>
-                                        El ensayo con vestuario es el mi&eacute;rcoles.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="panel-footer">
-                        <div class="input-group">
-                            <input id="btn-input" type="text" class="form-control input-md" placeholder="Escribe el mensaje aqu&iacute;..." />
-                            <span class="input-group-btn">
-                                <button class="btn btn-success btn-md" id="btn-chat">Enviar</button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                
-            </div><!--/.col-->
-            
-            <div class="col-md-4">
-                <div class="panel">
-                    <div class="panel-heading dark-overlay title-heading"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg>Calendario</div>
-                    <div class="panel-body">
-                        <div id="calendar"></div>
-                    </div>
-                </div>
-                
-                <div class="panel panel-blue">
-                    <div class="panel-heading dark-overlay title-heading"><svg class="glyph stroked clipboard-with-paper"><use xlink:href="#stroked-clipboard-with-paper"></use></svg>Registro del mes</div>
-                    <div class="panel-body">
-                        <ul class="todo-list">
-                            <li class="todo-list-item">
-                                <div class="checkbox">
-                                    <input type="checkbox" id="checkbox" checked/>
-                                    <label for="checkbox">Mile - $150</label>
-                                </div>
-                                <div class="pull-right action-buttons">
-                                    <a href="#"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg></a>
-                                    <a href="#" class="trash"><svg class="glyph stroked trash"><use xlink:href="#stroked-trash"></use></svg></a>
-                                </div>
-                            </li>
-                            <li class="todo-list-item">
-                                <div class="checkbox">
-                                    <input type="checkbox" id="checkbox" checked/>
-                                    <label for="checkbox">Yani - $150</label>
-                                </div>
-                                <div class="pull-right action-buttons">
-                                    <a href="#"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg></a>
-                                    <a href="#" class="trash"><svg class="glyph stroked trash"><use xlink:href="#stroked-trash"></use></svg></a>
-                                </div>
-                            </li>
-                            <li class="todo-list-item">
-                                <div class="checkbox">
-                                    <input type="checkbox" id="checkbox" />
-                                    <label for="checkbox">Stefi - $150</label>
-                                </div>
-                                <div class="pull-right action-buttons">
-                                    <a href="#"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg></a>
-                                    <a href="#" class="trash"><svg class="glyph stroked trash"><use xlink:href="#stroked-trash"></use></svg></a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="panel-footer">
-                        <div class="input-group">
-                            <input id="btn-input" type="text" class="form-control input-md" placeholder="Agregar registro" />
-                            <span class="input-group-btn">
-                                <button class="btn btn-primary btn-md" id="btn-todo">Agregar</button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                                
-            </div><!--/.col-->
-        </div><!--/.row-->
-                             
-    </div>  <!--/.main-->
 
     <script src="../public/js/global/jquery.js"></script>
     <script src="../public/js/global/bootstrap.min.js"></script>
     <script src="../public/js/global/bootstrap-datepicker.js"></script>
     <script src="../public/js/actions/application.js"></script>
+    
     <script>
-
         !function ($) {
             $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
                 $(this).find('em:first').toggleClass("glyphicon-minus");      
@@ -292,6 +84,23 @@
           if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
         })
     </script>   
+
+    <script src="../public/js/content/common-content.js"></script>
+    <script src="../public/js/content/home-content.js"></script>
+    <script>
+        if (localStorage.getItem.language == "spanish"){
+            $('#more-info').text = "Volver al inicio";
+            $('#start-enjoy').text = "Y empeza a disfrutar";
+            $('#dwn-app').text = "¡Ahora descarga la app!";
+            $('#more-info-1').text = "O ingresa aca";
+
+        }else if (localStorage.getItem.language == "english"){
+            $('#more-info').text = "Back to home";
+            $('#start-enjoy').text = "And start enjoying";
+            $('#dwn-app').text = "And now download the app!";
+            $('#more-info-1').text = "Or access here";
+        }
+    </script>
 </body>
 
 </html>
