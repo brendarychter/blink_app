@@ -160,6 +160,11 @@ $(document).ready(function(){
         });
     }
 
+
+    function showAlertImg(text){
+        var alert = "<div class='alert alert-danger fade in alert-dismissable col-md-11 col-sm-12' style='border-radius: 0; margin-bottom: 0;position: fixed; bottom: 0; margin-left:-15px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Error.</strong>"+texto+"</div>"
+        $('.admin-partial').append(alert);
+    }
     ///Button save image
     $('.save-img').on("click", function(){
 
@@ -199,7 +204,8 @@ $(document).ready(function(){
             }).done(function( data ) {
                 console.log(data);
             }).error(function(error, textStatus){
-                console.log(error)
+                //console.log(error)
+                showAlertImg(textStatus);
             });
         }else{
             console.log("url existe, hacer un update");
@@ -216,6 +222,7 @@ $(document).ready(function(){
                 console.log(data);
             }).error(function(error, textStatus){
                 console.log(error)
+                showAlertImg(textStatus);
             });
         }
     })

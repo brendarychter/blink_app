@@ -168,6 +168,10 @@ $(document).ready(function(){
         });
     })
 
+    function showAlertVideo(text){
+        var alert = "<div class='alert alert-danger fade in alert-dismissable col-md-11 col-sm-12' style='border-radius: 0; margin-bottom: 0;position: fixed; bottom: 0; margin-left:-15px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Error.</strong>"+texto+"</div>"
+        $('.admin-partial').append(alert);
+    }
 
     $('#save-video-1').on("click", function(){
         params = {};
@@ -177,17 +181,26 @@ $(document).ready(function(){
         params.id = $("#video-home-admin").attr("data-id");
         console.log(params);
         //https://stackoverflow.com/questions/4232462/get-value-from-a-string-after-a-special-character
-        $.ajax({
-            //url: "http://www.blinkapp.com.ar/back/admin/content/postVideoContent.php",
-            url: "../../back/admin/content/postVideoContent.php",
-            type: "POST",
-            cache: false,
-            data: params
-        }).done(function (data) {
-            console.log(data);
-        }).error(function (error){
-            console.log(error);
-        });
+
+        if ($("#video-home-admin").val() == ""){
+            showAlertVideo("Debe ingresar un valo");
+            $("#video-home-admin").focus();
+        }else if (params.src.indexOf("youtube") == -1){
+            showAlertVideo("El video debe ser de youtube");
+            $("#video-home-admin").focus();
+        }else{
+            $.ajax({
+                //url: "http://www.blinkapp.com.ar/back/admin/content/postVideoContent.php",
+                url: "../../back/admin/content/postVideoContent.php",
+                type: "POST",
+                cache: false,
+                data: params
+            }).done(function (data) {
+                console.log(data);
+            }).error(function (error){
+                console.log(error);
+            });
+        }
     })
 
     getVideoHome();
