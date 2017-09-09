@@ -169,7 +169,7 @@ $(document).ready(function(){
     })
 
     function showAlertVideo(text){
-        var alert = "<div class='alert alert-danger fade in alert-dismissable col-md-11 col-sm-12' style='border-radius: 0; margin-bottom: 0;position: fixed; bottom: 0; margin-left:-15px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Error.</strong>"+texto+"</div>"
+        var alert = "<div class='alert alert-danger fade in alert-dismissable col-md-11 col-sm-12' style='border-radius: 0; margin-bottom: 0;position: fixed; bottom: 0; margin-left:-15px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>"+text+"</strong></div>"
         $('.admin-partial').append(alert);
     }
 
@@ -179,16 +179,17 @@ $(document).ready(function(){
         var url = $("#video-home-admin").val().split("?v=").pop();
         params.src = url;
         params.id = $("#video-home-admin").attr("data-id");
-        console.log(params);
+        console.log(params.src.indexOf("youtube"));
         //https://stackoverflow.com/questions/4232462/get-value-from-a-string-after-a-special-character
 
-        if ($("#video-home-admin").val() == ""){
-            showAlertVideo("Debe ingresar un valo");
+         if (url.indexOf("youtube") == -1 || $("#video-home-admin").val() == ""){
+            showAlertVideo("El video debe ser de youtube. Ingrese un campo valido");
             $("#video-home-admin").focus();
-        }else if (params.src.indexOf("youtube") == -1){
-            showAlertVideo("El video debe ser de youtube");
-            $("#video-home-admin").focus();
+            setTimeout(function(){
+                $('.alert-danger').fadeOut("slow")
+            }, 2000)
         }else{
+            console.log("entro")
             $.ajax({
                 //url: "http://www.blinkapp.com.ar/back/admin/content/postVideoContent.php",
                 url: "../../back/admin/content/postVideoContent.php",
@@ -202,7 +203,8 @@ $(document).ready(function(){
             });
         }
     })
-
+    
+    //validar el video en focus out. si es valido, poner preview.
     getVideoHome();
     function getVideoHome(){
         params = {};

@@ -162,7 +162,7 @@ $(document).ready(function(){
 
 
     function showAlertImg(text){
-        var alert = "<div class='alert alert-danger fade in alert-dismissable col-md-11 col-sm-12' style='border-radius: 0; margin-bottom: 0;position: fixed; bottom: 0; margin-left:-15px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>Error.</strong>"+texto+"</div>"
+        var alert = "<div class='alert alert-danger fade in alert-dismissable col-md-11 col-sm-12' style='border-radius: 0; margin-bottom: 0;position: fixed; bottom: 0; margin-left:-15px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>"+text+"</strong></div>"
         $('.admin-partial').append(alert);
     }
     ///Button save image
@@ -220,9 +220,10 @@ $(document).ready(function(){
                 contentType: false,
             }).done(function( data ) {
                 console.log(data);
+                showAlertImg(data);
+                
             }).error(function(error, textStatus){
                 console.log(error)
-                showAlertImg(textStatus);
             });
         }
     })

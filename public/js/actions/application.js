@@ -125,7 +125,7 @@ $(document).ready(function(){
             if(data.length == 0){
                 //No tiene grupos asociados
                 $('.no-groups').show();
-                $('.action-todo-groups').text("Todavíaa no tenés grupos");
+                $('.action-todo-groups').text("Todavía no tenés grupos");
             }else{
                 //Tiene grupos asociados
                 $('.no-groups').hide();

@@ -171,7 +171,7 @@ $(document).ready(function(){
                     $('#group-'+ array[a][n].idText).append('<td><img style="width:30px; height: 30px" src="'+array[a][n].photo+'"></td>');
                     $('#group-'+ array[a][n].idText).append('<td>'+array[a][n].username+'</td>');
                     $('#group-'+ array[a][n].idText).append('<td>'+array[a][n].mail+'</td>');
-                    $('#group-'+ array[a][n].idText).append('<td>'+array[a][n].texto+'</td>');
+                    $('#group-'+ array[a][n].idText).append('<td>'+unescape(array[a][n].texto)+'</td>');
                     $('#group-'+ array[a][n].idText).append('<td>'+array[a][n].datetimeText+'</td>');
 
                 }
