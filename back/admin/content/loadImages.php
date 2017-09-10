@@ -58,7 +58,7 @@
 		        $randomString .= $characters[rand(0, $charactersLength - 1)];
 		    }
 
-			$target_file = $nombre_carpeta . basename($file["name"]);
+			$target_file = $nombre_carpeta .time(). basename($file["name"]);
 			$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 			$checkFile = getimagesize($file["tmp_name"]);
 			$uploadOk = true;
@@ -86,7 +86,7 @@
 			    if(move_uploaded_file($file["tmp_name"], $target_file)){
 			    	
 			    	// SI LO PUDE SUBIR BIEN, DEVUELVO LA URL COMPLETA DEL ARCHIVO QUE ACABO DE SUBIR
-			    	return $direccion_web.basename($file["name"]);
+			    	return $direccion_web.time().basename($file["name"]);
 			    }
 			}
 		}

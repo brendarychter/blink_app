@@ -1,8 +1,8 @@
 
 <?php
 	// INCLUYO EL ARCHIVO DE CONEXIÓN A LA BASE DE DATOS
- 	//$conexion = @mysqli_connect("localhost", "root", "", "blink");
- 	$conexion = @mysqli_connect("localhost", "m6000758_blink", "lu43seGIza", "m6000758_blink");
+ 	$conexion = @mysqli_connect("localhost", "root", "", "blink");
+ 	//$conexion = @mysqli_connect("localhost", "m6000758_blink", "lu43seGIza", "m6000758_blink");
 	// LA FUNCION PUEDE ESTAR EN UN ARCHIVO EXTERNO DE FUNCIONES GENERALES DEL SITIO
 	// RECIBE COMO PARÁMETRO EL OBJETO $FILE Y DEVUELVE EL NOMBRE DEL ARCHIVO O LA PALABRA "error" SI NO PUDO GUARDARLO
 
@@ -47,14 +47,14 @@
 		if($file && $file["name"]!=""){
 
 			// DEFINO CUÁL VA A SER LA URL DE MI SITIO WEB, Y LA CARPETA DONDE SE GUARDARÁN LAS IMÁGENES (ESTO DEBERÍA ESTAR EN UN ARCHIVO EXTERNO DE CONFIGURACIÓN)
-			$direccion_web = "http://www.blinkapp.com.ar/uploads/";
-			//$direccion_web = "http://localhost/blink_app/uploads/";
+			//$direccion_web = "http://www.blinkapp.com.ar/uploads/";
+			$direccion_web = "http://localhost/blink_app/uploads/";
 			$nombre_carpeta = "../../../uploads/";
 			chmod("../../../uploads/", 0755);
 			// DEFINICIONES INTERNAS PARA CONTROL
 			
 
-			$target_file = $nombre_carpeta . basename($file["name"]);
+			$target_file = $nombre_carpeta .time(). basename($file["name"]);
 			$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 			$checkFile = getimagesize($file["tmp_name"]);
 			$uploadOk = true;
@@ -82,7 +82,7 @@
 			    if(move_uploaded_file($file["tmp_name"], $target_file)){
 			    	
 			    	// SI LO PUDE SUBIR BIEN, DEVUELVO LA URL COMPLETA DEL ARCHIVO QUE ACABO DE SUBIR
-			    	return $direccion_web.basename($file["name"]);
+			    	return $direccion_web.time().basename($file["name"]);
 			    }
 			}
 		}

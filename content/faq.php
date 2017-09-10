@@ -110,7 +110,7 @@
             </div> <!-- cd-faq-items -->
             <a href="#0" class="cd-close-panel">Close</a>
         </section> <!-- cd-faq -->
-   <?php
+    <?php
         include '../footer.php';
     ?>
 

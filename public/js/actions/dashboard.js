@@ -173,21 +173,27 @@ $(document).ready(function(){
         $('.admin-partial').append(alert);
     }
 
-    $('#save-video-1').on("click", function(){
+    function okAlertVideo(text){
+        var divSuccess = "<div class='alert alert-success fade in alert-dismissable col-md-11 col-sm-12' style='border-radius: 0; margin-bottom: 0;position:fixed; bottom: 0; margin-right:15px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>"+text+"</strong>"
+        $('.admin-partial').append(divSuccess);
+    }
+
+    $('#save-video-1').on("click", function(e){
         params = {};
         params.table = "home";
         var url = $("#video-home-admin").val().split("?v=").pop();
         params.src = url;
         params.id = $("#video-home-admin").attr("data-id");
-        console.log(params.src.indexOf("youtube"));
+        console.log(params);
         //https://stackoverflow.com/questions/4232462/get-value-from-a-string-after-a-special-character
 
-         if (url.indexOf("youtube") == -1 || $("#video-home-admin").val() == ""){
+        if ($("#video-home-admin").val().indexOf("youtube") == -1 || $("#video-home-admin").val() == ""){
             showAlertVideo("El video debe ser de youtube. Ingrese un campo valido");
             $("#video-home-admin").focus();
             setTimeout(function(){
                 $('.alert-danger').fadeOut("slow")
             }, 2000)
+
         }else{
             console.log("entro")
             $.ajax({
@@ -198,6 +204,11 @@ $(document).ready(function(){
                 data: params
             }).done(function (data) {
                 console.log(data);
+                okAlertVideo("Video guardado correctamente");
+                setTimeout(function(){
+                    $('.alert-success').fadeOut("slow")
+                }, 2000)
+
             }).error(function (error){
                 console.log(error);
             });

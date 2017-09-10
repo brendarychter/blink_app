@@ -162,7 +162,7 @@ $(document).ready(function(){
 
 
     function showAlertImg(text){
-        var alert = "<div class='alert alert-danger fade in alert-dismissable col-md-11 col-sm-12' style='border-radius: 0; margin-bottom: 0;position: fixed; bottom: 0; margin-left:-15px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>"+text+"</strong></div>"
+        var alert = "<div class='alert alert-info fade in alert-dismissable col-md-11 col-sm-12' style='border-radius: 0; margin-bottom: 0;position: fixed; bottom: 0; margin-left:-15px;'><a href='#' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a><strong>"+text+"</strong></div>"
         $('.admin-partial').append(alert);
     }
     ///Button save image
@@ -202,7 +202,11 @@ $(document).ready(function(){
                 dataType: "text",
                 contentType: false,
             }).done(function( data ) {
-                console.log(data);
+                showAlertImg(data);
+                
+                setTimeout(function(){
+                    $('.alert-info').fadeOut("slow")
+                }, 2000);
             }).error(function(error, textStatus){
                 //console.log(error)
                 showAlertImg(textStatus);
@@ -221,6 +225,10 @@ $(document).ready(function(){
             }).done(function( data ) {
                 console.log(data);
                 showAlertImg(data);
+
+                setTimeout(function(){
+                    $('.alert-info').fadeOut("slow")
+                }, 2000)
                 
             }).error(function(error, textStatus){
                 console.log(error)
