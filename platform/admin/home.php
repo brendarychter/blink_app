@@ -266,7 +266,15 @@
 							<button class="btn-md btn-primary" type="submit" id="save-video-1"/>Guardar video</button>
 							<p class="help-block"></p>
 						</div>
-					</div>	
+					</div>
+					<div class="video-preview">
+						<div class="form-group col-md-4 box-section col-sm-12" style="border-right: none">
+							<div class="title-box">
+								<span class="global-title">vista previa</span>
+	            				<iframe id="video-home-preview" src="" frameborder="0" style="width:100%; height: 220px;"></iframe>
+							</div>
+						</div>
+					</div>
 				</div>
 			</form>	
 		</div>
