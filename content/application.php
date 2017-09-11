@@ -44,13 +44,16 @@
     <section id="big-container" class="section_4 page-section-home">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center download-application">
+                <div class="col-lg-12 text-center download-application" id="app-download-section">
                     <img src="../uploads/chart.png" class="img_home_7" title="QR" alt="QR">
                     <div style="text-align: center;">
                         <a href="https://build.phonegap.com/apps/2763201/install/3Cdw2s5xW9hTzgGaS6-V" target="_blank" class="page-scroll btn btn-xl home_download_section_4" id="more-info-1" style="background-color:#65CCB8; color: #fff; margin-top: -10px; margin: 35px;">O ingresá acá</a>
                     </div>
                     <h2 class="section-heading text-app home_title_section_4" id="dwn-app">&iexcl;Ahora descarg&aacute; la app!</h2>
                     <h3 class="section-subheading text-muted home_text_section_4" id="start-enjoy">Y empez&aacute; a disfrutar</h3>
+                    <video width="300" height="220" loop autoplay>
+                        <source src="../public/video/blink-app-loading.mp4" type="video/mp4">
+                    </video>
                     <div style="text-align: center;">
                         <a href="../index.php" class="page-scroll btn btn-xl home_button_section_4" id="more-info">Volver al inicio</a>
                     </div>

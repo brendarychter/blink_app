@@ -31,11 +31,8 @@
 <body id="page-top" class="index landing-main-page main-page-blink">
     <!-- Layer -->
 
-    <div class="bck"><!-- 
-        <div class="slider" data-content="Ver mis trabajos" href="galeria.html">
-            <img src="public/img/animation/Comp_1_00000.png" id="slider-images">
-        </div> -->
-        <video width="300" height="220" loop autoplay style="width: 100%; margin: 0 auto; position: absolute; top: 45%;">
+    <div class="bck">
+        <video width="300" height="220" loop autoplay>
             <source src="public/video/blink-app-loading.mp4" type="video/mp4">
         </video>
     </div>

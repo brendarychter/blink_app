@@ -29,7 +29,12 @@
 </head>
 <body id="page-top" class="index landing-main-page">
     <!-- Layer -->
-    <div class="bck"></div>
+    
+    <div class="bck">
+        <video width="300" height="220" loop autoplay>
+            <source src="../public/video/blink-app-loading.mp4" type="video/mp4">
+        </video>
+    </div>
     
     <?php 
         include('header.php');

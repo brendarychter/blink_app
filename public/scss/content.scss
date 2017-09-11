@@ -98,6 +98,30 @@
     height: 100%;
     background:rgba(0,0,0,0.8); 
     z-index: 1500;
+	text-align: center; 
+	video{
+	    width: 100%;
+		margin: 0 auto;
+		border-radius: 50%;
+		top: 45%;
+		width: 150px;
+		height: 150px;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 30%;
+	}
+}
+#app-download-section{
+	video{
+	    width: 100%;
+		margin: 0 auto;
+		border-radius: 50%;
+		top: 45%;
+		width: 150px;
+		height: 150px;
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 h1{
 	line-height: 35px;
