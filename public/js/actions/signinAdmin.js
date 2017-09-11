@@ -18,8 +18,8 @@ $(function () {
         if (!e.isDefaultPrevented()) {
             $.ajax({
                 type: "POST",
-                //url: "http://www.blinkapp.com.ar/back/admin/users/admin_user.php",
-                url: "../back/admin/users/admin_user.php",
+                url: "http://www.blinkapp.com.ar/back/admin/users/admin_user.php",
+                //url: "../back/admin/users/admin_user.php",
                 data: $(this).serialize() + '&action=setUserAdmin'
             }).done(function( data ) {
                 data = JSON.parse(data);

@@ -81,8 +81,8 @@ $(document).ready(function(){
             if (newValue !== oldValue){
                 console.log("insert");
                 $.ajax({
-                    //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-                    url: "../../back/admin/content/adminContent.php",
+                    url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+                    //url: "../../back/admin/content/adminContent.php",
                     type: "POST",
                     data: params
                 }).done(function( data ) {
@@ -154,8 +154,8 @@ $(document).ready(function(){
         }, 2000);
         console.log(params)
         $.ajax({
-            //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: "../../back/admin/content/adminContent.php",
+            url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+            //url: "../../back/admin/content/adminContent.php",
             type: "POST",
             cache: false,
             data: params,
@@ -210,8 +210,8 @@ $(document).ready(function(){
         }else{
             console.log("entro")
             $.ajax({
-                //url: "http://www.blinkapp.com.ar/back/admin/content/postVideoContent.php",
-                url: "../../back/admin/content/postVideoContent.php",
+                url: "http://www.blinkapp.com.ar/back/admin/content/postVideoContent.php",
+                //url: "../../back/admin/content/postVideoContent.php",
                 type: "POST",
                 cache: false,
                 data: params
@@ -234,8 +234,8 @@ $(document).ready(function(){
         params = {};
         params.table = "home";
         $.ajax({
-            //url: "http://www.blinkapp.com.ar/back/admin/content/getVideoContent.php",
-            url: "../../back/admin/content/getVideoContent.php",
+            url: "http://www.blinkapp.com.ar/back/admin/content/getVideoContent.php",
+            //url: "../../back/admin/content/getVideoContent.php",
             type: "POST",
             cache: false,
             data: params,

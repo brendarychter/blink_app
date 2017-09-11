@@ -7,8 +7,8 @@ $(document).ready(function(){
         params.action = "getContent";
         params.table = table;
         $.ajax({
-            //url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
-            url: "back/admin/content/adminContent.php",
+            url: "http://www.blinkapp.com.ar/back/admin/content/adminContent.php",
+            //url: "back/admin/content/adminContent.php",
             type: "POST",
             cache: false,
             data: params,
@@ -50,8 +50,8 @@ $(document).ready(function(){
         }
 
         $.ajax({
-            //url: "http://www.blinkapp.com.ar/back/admin/content/getImages.php",
-            url: url,
+            url: "http://www.blinkapp.com.ar/back/admin/content/getImages.php",
+            //url: url,
             type: "POST",
             cache: false,
             data: params,
@@ -83,8 +83,8 @@ $(document).ready(function(){
         params = {};
         params.table = "home";
         $.ajax({
-            //url: "http://www.blinkapp.com.ar/back/admin/content/getVideoContent.php",
-            url: "back/admin/content/getVideoContent.php",
+            url: "http://www.blinkapp.com.ar/back/admin/content/getVideoContent.php",
+            //url: "back/admin/content/getVideoContent.php",
             type: "POST",
             cache: false,
             data: params,
