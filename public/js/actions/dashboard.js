@@ -178,7 +178,7 @@ $(document).ready(function(){
         $('.admin-partial').append(divSuccess);
     }
 
-    $("#video-home-admin").focusout(function(){
+    $('#preview-video').on("click", function(e){
         if($("#video-home-admin").val() != "" || $("#video-home-admin").val().indexOf("youtube") == -1 ){
             jQuery("#video-home-preview").css('opacity', '1')
             var id = $("#video-home-admin").val().split("?v=").pop();
@@ -188,7 +188,7 @@ $(document).ready(function(){
         }else{
             jQuery("#video-home-preview").css('opacity', '0')
         }
-
+        e.preventDefault();
     });
 
     $('#save-video-1').on("click", function(e){
